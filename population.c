@@ -7,7 +7,10 @@ int main(void){
     int starting_number = get_int("How many lammas at start ");
     int ending_number = get_int("How many lammas at end ");
 
-starting_number*(13/12);
-printf();
+    int years_to_get_to_goal(starting_number){
+
+        starting_number
+    }
+printf(years_to_get_to_goal);
 
 }
