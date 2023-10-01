@@ -8,4 +8,6 @@ int main(void){
     int ending_number = get_int("How many lammas at end ");
 
 
+printf();
+
 }
