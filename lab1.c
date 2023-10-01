@@ -4,5 +4,6 @@
 int main(void){
 
     string name = get_sting("wht ur name ");
-    string age = get_sting("wht ur age ");
+    int age = get_int("wht ur age ");
+    
 }
