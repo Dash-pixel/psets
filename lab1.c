@@ -5,5 +5,6 @@ int main(void){
 
     string name = get_sting("wht ur name ");
     int age = get_int("wht ur age ");
-    
+    string phone = get_string("wht ur phone ");
+
 }
