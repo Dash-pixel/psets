@@ -9,6 +9,6 @@ int main(void){
     float const increase = 13/12;
     float years = ending_number / (starting_number*increase);
 
-printf("$fl", years);
+printf(years);
 
 }
