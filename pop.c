@@ -7,7 +7,7 @@ int main(void){
     float const n = 13/12;
     float years = 0;
 
-    if (starting_number < ending_number){
+    while (starting_number < ending_number){
         starting_number = starting_number*n;
         years ++;
     };
