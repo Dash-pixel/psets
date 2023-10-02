@@ -12,6 +12,5 @@ int main(void){
         years++;
     };
 
-printf("%f", n);
 printf("%i\n", years);
 }
