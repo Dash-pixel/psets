@@ -6,13 +6,13 @@ int main(void){
     float ending_number = get_float("How many lammas at end ");
     float n = 13/12;
     int years = 0;
+printf("%f", n);
 
     while (starting_number < ending_number){
         starting_number = starting_number*n;
         years++;
-        printf("while");
     };
 
-printf("main void");
+printf("%f", n);
 printf("%i\n", years);
 }
