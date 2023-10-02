@@ -4,7 +4,7 @@
 int main(void){
     float starting_number = get_float("How many lammas at start ");
     float ending_number = get_float("How many lammas at end ");
-    float n = 13/12;
+    float n = 13/12.;
     int years = 0;
 printf("%f", n);
 
