@@ -9,7 +9,7 @@ int main(void){
 
     while (starting_number < ending_number){
         starting_number = starting_number*n;
-        years ++;
+        years++;
     };
 printf("%f\n", years);
 }
