@@ -4,11 +4,13 @@
 
 
 int main(void){
-    float starting_number = get_float("How many lammas at start ");
-    float ending_number = get_float("How many lammas at end ");
+    int starting_number = get_int("How many lammas at start ");
+    int ending_number = get_int("How many lammas at end ");
+    int years;
 
-    for (i = 0; i <){
-
+    if (starting_number < ending_number){
+        starting_number = starting_number*13/12;
+        years ++;
     }
-
+print(years)
 }
