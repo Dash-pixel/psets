@@ -10,6 +10,6 @@ int main(void){
     if (starting_number < ending_number){
         starting_number = starting_number + n;
         years ++;
-    }
+    };
 printf("$f\n", years);
 }
