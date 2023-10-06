@@ -11,7 +11,7 @@ int main(void)
     while (height < 1 || height > 8);
 
     for (int i = 0; i < height; i++){
-        repeat_char("#", i);
+        repeat_char(char "#", i);
         printf("\n");
     }
 
