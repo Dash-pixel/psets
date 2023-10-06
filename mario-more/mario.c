@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-void repeat_char (char);
+void repeat_char (char charecter, int number_of_times);
 int main(void)
 {
     int height;
@@ -16,7 +16,11 @@ int main(void)
 
 }
 
-void repeat_char (char)
+
+
+//////////////////////////
+
+void repeat_char (char charecter, int number_of_times)
 {
     for (int j = 0; j < i; j++)
     {
