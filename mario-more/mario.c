@@ -11,12 +11,15 @@ int main(void)
     while (height < 1 || height > 8);
 
     for (int i = 0; i < height; i++){
-        for (int j = 0; j < i; j++){
-            printf(" ");
-            printf("#");
-
-        }
         printf("\n");
     }
 
+}
+
+void repeat_char (char)
+{
+    for (int j = 0; j < i; j++)
+    {
+
+    }
 }
