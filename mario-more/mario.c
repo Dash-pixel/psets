@@ -14,6 +14,7 @@ int main(void)
         print(" ");
         printf("#\n");
         for (int j = 0; j < i; j++){
+            print(" ");
             
         }
     }
