@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-void repeat_char (char charecter, int number_of_times);
+void repeat_char(char charecter, int number_of_times);
 int main(void)
 {
     int height;
@@ -10,7 +10,7 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    for (int i = 1; i < (height+1); i++)
+    for (int i = 1; i < (height + 1); i++)
     {
         int b = height - i;
         repeat_char(' ', height - i);
@@ -20,7 +20,10 @@ int main(void)
         printf("\n");
     }
 }
-void repeat_char (char charecter, int number_of_times)
+
+//////////////////////////
+
+void repeat_char(char charecter, int number_of_times)
 {
     for (int j = 0; j < number_of_times; j++)
     {
