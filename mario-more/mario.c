@@ -11,8 +11,7 @@ int main(void)
     while (height > 0 && height < 9);
 
     for (i = 0; i < height; i++){
-
-        printf()
+        (8 - i)* " "
     }
 
 }
