@@ -8,7 +8,7 @@ int main(void)
     {
         height = get_int("What is the height? ");
     }
-    while (height > 0 && height < 9);
+    while (height < 0 || height > 9);
 
     for (int i = 0; i < height; i++){
         printf("#");
