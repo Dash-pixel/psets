@@ -11,6 +11,10 @@ int main(void)
     while (height < 1 || height > 8);
 
     for (int i = 0; i < height; i++){
+        int b = height - i;
+        repeat_char(' ', b);
+        repeat_char('#', i);
+        printf("  ");
         repeat_char('#', i);
         printf("\n");
     }
