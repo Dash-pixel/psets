@@ -24,6 +24,6 @@ void repeat_char (char charecter, int number_of_times)
 {
     for (int j = 0; j < number_of_times; j++)
     {
-
+        printf("%c", charecter);
     }
 }
