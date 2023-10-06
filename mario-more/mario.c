@@ -6,7 +6,7 @@ int main(void)
     int height;
     do
     {
-        int height = get_int("What is the height? ");
+        height = get_int("What is the height? ");
     }
     while (height > 0 && height < 9);
 
