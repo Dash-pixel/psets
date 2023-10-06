@@ -12,7 +12,7 @@ int main(void)
 
     for (int i = 0; i < height; i++){
         int b = height - i;
-        repeat_char(' ', b);
+        repeat_char(' ', height - i);
         repeat_char('#', i);
         printf("  ");
         repeat_char('#', i);
