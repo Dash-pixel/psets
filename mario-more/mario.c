@@ -10,8 +10,8 @@ int main(void)
     }
     while (height > 0 && height < 9);
 
-    for (let i = 0; i < height; i++){
-        print(#);
+    for (int i = 0; i < height; i++){
+        printf("#");
     }
 
 }
