@@ -21,8 +21,6 @@ int main(void)
 
 }
 
-
-
 //////////////////////////
 
 void repeat_char (char charecter, int number_of_times)
