@@ -10,7 +10,7 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    for (int i = 0; i < height; i++){
+    for (int i = 1; i < (height+1); i++){
         int b = height - i;
         repeat_char(' ', height - i);
         repeat_char('#', i);
