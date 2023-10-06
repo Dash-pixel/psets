@@ -12,11 +12,11 @@ int main(void)
 
     for (int i = 0; i < height; i++){
         print(" ");
-        printf("#\n");
         for (int j = 0; j < i; j++){
-            print(" ");
-            
+            print("#");
+
         }
+        printf("#\n");
     }
 
 }
