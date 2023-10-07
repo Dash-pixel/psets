@@ -4,5 +4,10 @@
 int main(void)
 {
     long credit_number = get_long("Number:");
+
+}
+
+
+get_digits (){
     
 }
