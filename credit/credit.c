@@ -9,5 +9,7 @@ int main(void)
 
 
 get_digits (){
-    
+    for ( i = 0; i < ; i++){
+        number % (10 * n) =
+    }
 }
