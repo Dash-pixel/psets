@@ -8,7 +8,7 @@ int main(void)
 // превратить все числа числа в отдельные диджиты
         for ( i = 1; i < 5; i++)
         {
-           digit = credit_number % (10 * i);
+           summ_of_digits += credit_number % (10 * i);
         }
 
 }
