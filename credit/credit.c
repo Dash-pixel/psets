@@ -3,10 +3,12 @@
 
 int main(void)
 {
-    //long credit_number = get_long("Number:");
+    long credit_number = get_long("Number:");
 
-    for ( i = 1; i < ; i++){
-        = number % (10 * n)
+        for ( i = 1; i < 5; i++){
+             = get_long % (10 * n)
+        }
     }
 
 }
+
