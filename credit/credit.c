@@ -6,7 +6,8 @@ int main(void)
     long credit_number = get_long("Number:");
 
 // превратить все числа числа в отдельные диджиты
-        for ( i = 1; i < 5; i++){
+        for ( i = 1; i < 5; i++)
+        {
             = credit_number % (10 * n)
         }
 
