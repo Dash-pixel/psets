@@ -4,7 +4,7 @@
 int main(void)
 {
     do {
-    
+    long credit_number = get_long("Number:");
     }
     while ();
 }
