@@ -9,7 +9,6 @@ int main(void)
         for ( i = 1; i < 5; i++){
             = credit_number % (10 * n)
         }
-    }
 
 }
 
