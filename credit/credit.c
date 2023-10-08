@@ -27,9 +27,10 @@ int main(void)
 
     for (int i = 0; i < length; i++){
 // 222222 --- legth % 2
-        even_numbers = card_number % (10*i) * 2;
+// 12 12 12 12 12 1
+        even_numbers = card_number % (100*i) * 2;
         card
-        odd_numbers = card_number % (10*i) * 2;
+        odd_numbers = card_number % (100*i) * 2;
 
         if (even_number > 9)
         {
