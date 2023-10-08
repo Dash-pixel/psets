@@ -10,7 +10,7 @@ int main(void)
 
     if (340000000000000 <= credit_number < 350000000000000 || 370000000000000 <= credit_number < 350000000000000)
     {
-        prinf("")
+        prinf("AMEX\n");
     }
     else if (5100000000000000 <= credit_number < 5600000000000000)
     {
@@ -22,7 +22,7 @@ int main(void)
     }
     else
     {
-
+        prinf("INVALID\n");
     }
 
 
