@@ -29,15 +29,14 @@ int main(void)
 // 222222 --- legth % 2
 // 12 12 12 12 12 1
 
-        odd_number = number * 2 / (pow(100, i));
+        odd_number = number / (pow(100, i));
 
-        even_number = number / (pow(100, i));
+        even_number = number * 2 / (pow(100, i));
 
         if (even_number > 9)
         {
             even_number = (even_number % 10) + 1;
         }
-
 
         summ += even_number + odd_number;
     }
