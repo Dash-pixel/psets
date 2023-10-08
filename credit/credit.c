@@ -27,21 +27,20 @@ int main(void)
 */
 // % 2
 
-int even_number = get_long("Number:");
+int even_number;
 int summ;
 
-    for (int i = 0; i < (length / 2); i++){
-        if (i % 2 == 1){
+    for (int i = 0; i < length; i++){
+        if (i % 2 == 0)
+        {
+            
+        }
+        else
+        {
 
-            num
         }
 
-      //  odd_number = number % (pow(100, i));
 
-       // even_number = 2 * credit_number % (pow(100, i)*10);
-//
-// 1 21 21 21 21
-// number / 10
         if (even_number > 9)
         {
             even_number = (even_number % 10) + 1;
@@ -54,3 +53,13 @@ int summ;
 
 }
 
+
+
+
+
+     //  odd_number = number % (pow(100, i));
+
+       // even_number = 2 * credit_number % (pow(100, i)*10);
+//
+// 1 21 21 21 21
+// number / 10
