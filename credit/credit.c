@@ -56,14 +56,3 @@ int summ;
     }
 
 }
-
-
-
-
-
-     //  odd_number = number % (pow(100, i));
-
-       // even_number = 2 * credit_number % (pow(100, i)*10);
-//
-// 1 21 21 21 21
-// number / 10
