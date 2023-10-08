@@ -55,9 +55,13 @@ int summ;
         summ += digit;
     }
 
-    if (){
-
-        
+    if (summ % 10 == 0)
+    {
+        printf("%s", card_type);
+    }
+    else
+    {
+        printf("INVALID\n")
     }
 
 }
