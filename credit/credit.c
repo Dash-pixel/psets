@@ -27,14 +27,14 @@ int main(void)
 
 
 
-odd_number = number / 10;
+odd_number = number % 10;
 
     for (int i = 0; i < (length / 2); i++){
 
 
-        odd_number = number / (pow(100, i));
+        odd_number = number % (pow(100, i));
 
-        even_number = 2 * number / (pow(100, i)*10);
+        even_number = 2 * number % (pow(100, i)*10);
 //
 // 1 21 21 21 21
 // number / 10
