@@ -25,7 +25,7 @@ int main(void)
         printf("INVALID\n");
     }
 */
-// % 2
+//  9283479
 
 int digit;
 int summ;
