@@ -25,7 +25,8 @@ int main(void)
     }
     else if (4000000000000 <= credit_number && credit_number < 5000000000000)
     {
-
+        printf("AMEX\n");
+        length = 13;
     }
     else
     {
