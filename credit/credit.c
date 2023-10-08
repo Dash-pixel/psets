@@ -43,11 +43,11 @@ int summ;
     for (int i = 0; i < length; i++){
         if (i % 2 == 0)
         {
-            digit = credit_number % (pow(10, i);
+            digit = credit_number % (pow(10, i));
         }
         else
         {
-            digit = 2 * credit_number % (pow(10, i);
+            digit = 2 * credit_number % (pow(10, i));
 
             if (digit > 9)
             {
