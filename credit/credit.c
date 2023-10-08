@@ -25,6 +25,7 @@ int main(void)
         printf("INVALID\n");
     }
 
+even_number 
     for (int i = 0; i < length; i++){
 // 222222 --- legth % 2
 // 12 12 12 12 12 1
