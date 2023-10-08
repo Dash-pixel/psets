@@ -16,7 +16,7 @@ int main(void)
     {
 
     }
-    else if ((4000000000000000 <= credit_number && credit_number < 5000000000000000) || (40000000000000 <= credit_number && credit_number < 50000000000000))
+    else if ((4000000000000000 <= credit_number && credit_number < 5000000000000000) || (4000000000000 <= credit_number && credit_number < 5000000000000))
     {
 
     }
