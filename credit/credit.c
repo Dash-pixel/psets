@@ -27,8 +27,7 @@ int main(void)
 
 
     for (int i = 0; i < (length / 2); i++){
-// 222222 --- legth % 2
-// 12 12 12 12 12 1
+
 
         odd_number = number / (pow(100, i));
 
