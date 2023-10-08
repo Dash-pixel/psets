@@ -27,12 +27,13 @@ int main(void)
 
 
 
-odd_number = number % 10;
+int even_number;
+int summ;
 
     for (int i = 0; i < (length / 2); i++){
 
 
-        odd_number = number % (pow(100, i));
+    //    odd_number = number % (pow(100, i));
 
         even_number = 2 * number % (pow(100, i)*10);
 //
@@ -43,9 +44,10 @@ odd_number = number % 10;
             even_number = (even_number % 10) + 1;
         }
 
-        summ += even_number + odd_number;
+        summ += even_number; // + odd_number;
     }
 
+    printf("%i", summ);
 
 }
 
