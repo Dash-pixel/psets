@@ -31,7 +31,7 @@ int main(void)
     else
     {
         printf("INVALID\n");
-        
+        return;
     }
 
 
@@ -62,7 +62,7 @@ int summ;
     }
     else
     {
-        printf("INVALID\n")
+        printf("INVALID\n");
     }
 
 }
