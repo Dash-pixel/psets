@@ -29,7 +29,7 @@ int main(void)
 // 222222 --- legth % 2
 // 12 12 12 12 12 1
 
-        even_number = number / 10
+        even_number = number * 2 / pow(100, i);
 
         if (even_number > 9)
         {
