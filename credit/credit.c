@@ -27,7 +27,7 @@ int main(void)
 
 
 
-int even_number;
+int even_number = get_long("Number:");
 int summ;
 
     for (int i = 0; i < (length / 2); i++){
