@@ -26,17 +26,18 @@ int main(void)
     }
 
     for (int i = 0; i < length; i++){
-// 1234500
-        even_numbers = card_number % (10*i);
+// 222222
+        even_numbers = card_number % (10*i) * 2;
 
-        odd_numbers
-        if (even_number > 9){
+        odd_numbers = card_number % (10*i) * 2;
 
-            
+        if (even_number > 9)
+        {
+            even_number = (even_number % 10) + 1;
         }
 
 
-        summ =
+        summ += even_number + odd_number;
     }
 
 
