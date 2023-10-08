@@ -29,7 +29,7 @@ int main(void)
 // 222222 --- legth % 2
 // 12 12 12 12 12 1
 
-        number % 10 = 1
+        even
 
         if (even_number > 9)
         {
