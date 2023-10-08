@@ -59,6 +59,7 @@ int main(void)
     if (summ % 10 == 0)
     {
         printf("%s", card_type);
+        printf("does it ever come down here");
     }
     else
     {
