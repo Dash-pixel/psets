@@ -8,7 +8,7 @@ int main(void)
 // Visa cards start with 4 /// Visa has either 13 or 16 digits.
     long credit_number = get_long("Number:");
 
- /*   if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 380000000000000))
+    if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 380000000000000))
     {
         printf("AMEX\n");
     }
@@ -24,8 +24,7 @@ int main(void)
     {
         printf("INVALID\n");
     }
-*/
-//  9283479
+
 
 int digit;
 int summ;
@@ -33,23 +32,20 @@ int summ;
     for (int i = 0; i < length; i++){
         if (i % 2 == 0)
         {
-           digit = 2 * credit_number % (pow(10, i);
+            digit = credit_number % (pow(10, i);
         }
         else
         {
+            digit = 2 * credit_number % (pow(10, i);
 
+            if (digit > 9)
+            {
+                digit = (digit % 10) + 1;
+            }
         }
 
-
-        if (even_number > 9)
-        {
-            even_number = (even_number % 10) + 1;
-        }
-
-        summ += even_number; // + odd_number;
+        summ += digit;
     }
-
-    printf("%i", summ);
 
 }
 
