@@ -42,7 +42,6 @@ int main(void)
         if (i % 2 == 0)
         {
             digit = credit_number % (poww(10, i));
-            printf("does it ever come down here");
         }
         else
         {
@@ -55,6 +54,7 @@ int main(void)
         }
 
         summ += digit;
+        printf("does it ever come down here");
     }
 
     if (summ % 10 == 0)
