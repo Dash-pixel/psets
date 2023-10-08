@@ -31,7 +31,7 @@ int main(void)
     else
     {
         printf("INVALID\n");
-        return;
+        return(0);
     }
 
 
@@ -41,7 +41,7 @@ int summ;
     for (int i = 0; i < length; i++){
         if (i % 2 == 0)
         {
-            digit = credit_number % (pow(10, i);
+            digit = credit_number % (pow(10, i);f
         }
         else
         {
