@@ -25,17 +25,20 @@ int main(void)
         printf("INVALID\n");
     }
 */
-// % 2 
+// % 2
 
 int even_number = get_long("Number:");
 int summ;
 
     for (int i = 0; i < (length / 2); i++){
+        if (i % 2 == 1){
 
+            num
+        }
 
-    //    odd_number = number % (pow(100, i));
+      //  odd_number = number % (pow(100, i));
 
-        even_number = 2 * credit_number % (pow(100, i)*10);
+       // even_number = 2 * credit_number % (pow(100, i)*10);
 //
 // 1 21 21 21 21
 // number / 10
