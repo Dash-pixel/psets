@@ -11,22 +11,22 @@ int main(void)
     if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 380000000000000))
     {
         string card_type = "AMEX\n";
-        length = 15;
+        int length = 15;
     }
     else if (5100000000000000 <= credit_number && credit_number < 5600000000000000)
     {
         string card_type = "MASTERCARD\n";
-        length = 16;
+        int length = 16;
     }
     else if (4000000000000000 <= credit_number && credit_number < 5000000000000000)
     {
         string card_type = "VISA\n";
-        length = 16;
+        int length = 16;
     }
     else if (4000000000000 <= credit_number && credit_number < 5000000000000)
     {
         string card_type = "VISA\n";
-        length = 13;
+        int length = 13;
     }
     else
     {
