@@ -33,7 +33,7 @@ int main(void)
 
         even_number = number * 2 / (pow(100, i));
 //
-// number / 100^(i)
+// number / 100^( )
 // number / 10
         if (even_number > 9)
         {
