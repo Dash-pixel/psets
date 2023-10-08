@@ -8,7 +8,7 @@ int main(void)
 // Visa cards start with 4 /// Visa has either 13 or 16 digits.
     long credit_number = get_long("Number:");
 
-    if
+    if (340000000000000 <= credit_number < 350000000000000 || 370000000000000 <= credit_number < 350000000000000)
     {
 
     }
