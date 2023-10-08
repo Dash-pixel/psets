@@ -24,8 +24,8 @@ int main(void)
     {
         printf("INVALID\n");
     }
-*/ 
-
+*/
+// % 2 
 
 int even_number = get_long("Number:");
 int summ;
