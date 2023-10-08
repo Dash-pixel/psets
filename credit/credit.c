@@ -26,6 +26,9 @@ int main(void)
     }
 
 
+
+odd_number = number / 10;
+
     for (int i = 0; i < (length / 2); i++){
 
 
