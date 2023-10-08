@@ -27,13 +27,13 @@ int main(void)
 */
 // % 2
 
-int even_number;
+int digit;
 int summ;
 
     for (int i = 0; i < length; i++){
         if (i % 2 == 0)
         {
-            
+           digit = 2 * credit_number % (pow(10, i);
         }
         else
         {
