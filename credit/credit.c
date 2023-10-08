@@ -54,7 +54,6 @@ int main(void)
         }
 
         summ += digit;
-        printf("does it ever come down here");
     }
 
     if (summ % 10 == 0)
