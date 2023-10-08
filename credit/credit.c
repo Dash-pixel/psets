@@ -11,7 +11,7 @@ int main(void)
     int length = 0;
     long poww (long a, int b);
     int digit;
-    int summ;
+    int summ = 0;
 
     if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 380000000000000))
     {
