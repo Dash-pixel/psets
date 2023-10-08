@@ -31,7 +31,7 @@ int main(void)
 
         odd_number = number / (pow(100, i));
 
-        even_number = number * 2 / (pow(100, i)/10);
+        even_number = number * 2 / (pow(100, i)*10);
 //
 // number / 100^( )
 // number / 10
