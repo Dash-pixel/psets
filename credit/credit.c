@@ -55,4 +55,9 @@ int summ;
         summ += digit;
     }
 
+    if (){
+
+        
+    }
+
 }
