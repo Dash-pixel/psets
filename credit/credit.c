@@ -12,11 +12,11 @@ int main(void)
     {
 
     }
-    if else
+    else if (5100000000000000 <= credit_number < 5600000000000000)
     {
 
     }
-    if else
+    else if (4000000000000000 <= credit_number < 4000000000000000)
     {
 
     }
