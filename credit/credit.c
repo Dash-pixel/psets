@@ -8,7 +8,7 @@ int main(void)
 // Visa cards start with 4 /// Visa has either 13 or 16 digits.
     long credit_number = get_long("Number:");
 
-    if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 350000000000000))
+    if ((34 * 10^(14) <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 350000000000000))
     {
         printf("AMEX\n");
     }
