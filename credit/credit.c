@@ -25,10 +25,20 @@ int main(void)
         printf("INVALID\n");
     }
 
+    for (int i = 0; i < length; i++){
+// 1234500
+        even_numbers = card_number % (10*i);
+
+        odd_numbers
+        if (even_number > 9){
+
+            
+        }
 
 
-// превратить все числа числа в отдельные диджиты
-//        for ( i = 1; i < 5; i++)
+        summ =
+    }
+
 
 }
 
