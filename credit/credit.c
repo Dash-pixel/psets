@@ -15,17 +15,17 @@ int main(void)
     }
     else if (5100000000000000 <= credit_number && credit_number < 5600000000000000)
     {
-        printf("AMEX\n");
-        length = 15;
+        printf("MASTERCARD\n");
+        length = 16;
     }
     else if (4000000000000000 <= credit_number && credit_number < 5000000000000000)
     {
-        printf("AMEX\n");
-        length = 15;
+        printf("VISA\n");
+        length = 16;
     }
     else if (4000000000000 <= credit_number && credit_number < 5000000000000)
     {
-        printf("AMEX\n");
+        printf("VISA\n");
         length = 13;
     }
     else
