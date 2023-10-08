@@ -32,7 +32,9 @@ int main(void)
         odd_number = number / (pow(100, i));
 
         even_number = number * 2 / (pow(100, i));
-
+//
+// number / 100^(i)
+// number / 10
         if (even_number > 9)
         {
             even_number = (even_number % 10) + 1;
