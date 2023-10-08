@@ -8,6 +8,7 @@ int main(void)
 // Visa cards start with 4 /// Visa has either 13 or 16 digits.
     long credit_number = get_long("Number:");
     int length = 0;
+    long pow (long a, int b);
 
     if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 380000000000000))
     {
@@ -71,7 +72,7 @@ int summ;
  long pow (long a, int b){
 
     for (int i = 0; i < b; i++){
-        a = a * a;
+        a *= a;
     }
 
  }
