@@ -10,7 +10,7 @@ int main(void)
 
     if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 380000000000000))
     {
-        printf("AMEX\n");
+        str type = "AMEX\n";
         length = 15;
     }
     else if (5100000000000000 <= credit_number && credit_number < 5600000000000000)
