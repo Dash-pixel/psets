@@ -42,7 +42,7 @@ int main(void)
         if (i % 2 == 0)
         {
             digit = credit_number % (poww(10, i));
-            printf(" %li ", poww(10, i));
+            printf(" %li - %i// ", poww(10, i), i);
         }
         else
         {
