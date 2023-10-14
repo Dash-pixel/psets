@@ -69,7 +69,6 @@ int main(void)
 }
 
  long poww (long a, int b){
-
     for (int i = 0; i < b; i++){
         a *= a;
     }
