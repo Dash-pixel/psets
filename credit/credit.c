@@ -6,11 +6,12 @@ int main(void)
     long credit_number = get_long("Number:");
     string card_type;
     int length = 0;
-    long poww (long a, int b);
+    long poww(long a, int b);
     int digit;
     int summ = 0;
 
-    if ((340000000000000 <= credit_number && credit_number< 350000000000000) || (370000000000000 <= credit_number && credit_number < 380000000000000))
+    if ((340000000000000 <= credit_number && credit_number < 350000000000000) ||
+        (370000000000000 <= credit_number && credit_number < 380000000000000))
     {
         card_type = "AMEX\n";
         length = 15;
@@ -33,20 +34,22 @@ int main(void)
     else
     {
         printf("INVALID\n");
-        return(0);
+        return (0);
     }
 
+    for (int i = 0; i < length; i++)
+    {
 
+        long dosens = poww(10, i);
 
-    for (int i = 0; i < length; i++){
         if (i % 2 == 0)
         {
-            digit = credit_number % (poww(10, i));
-            printf(" %li - %i// ", poww(10, i), i);
+            digit = credit_number / (dosens / 10);
         }
         else
         {
-            digit = 2 * credit_number % (poww(10, i));
+            digit = credit_number / (dosens / 10);
+            digit = 2 * digit;
 
             if (digit > 9)
             {
@@ -55,6 +58,7 @@ int main(void)
         }
 
         summ += digit;
+        // printf("%i\n", digit);
     }
 
     if (summ % 10 == 0)
@@ -65,13 +69,14 @@ int main(void)
     {
         printf("INVALID\n");
     }
-
 }
 
- long poww (long a, int b){
+long poww(long a, int b)
+{
     long c = a;
-    for (int i = 0; i < b; i++){
+    for (int i = 0; i < b; i++)
+    {
         a *= c;
     }
-    return(a);
- }
+    return (a);
+}
