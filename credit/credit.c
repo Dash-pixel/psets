@@ -44,11 +44,11 @@ int main(void)
 
         if (i % 2 == 0)
         {
-            digit = credit_number / (dosens / 10);
+            digit = (credit_number % dosens) / (dosens / 10);
         }
         else
         {
-            digit = credit_number / (dosens / 10);
+            digit = (credit_number % dosens) / (dosens / 10);
             digit = 2 * digit;
 
             if (digit > 9)
