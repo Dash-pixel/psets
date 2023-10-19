@@ -17,7 +17,12 @@ int main(void)
         }
         else if (text[i] == 46 || text[i] == 33 || text[i] == 63)
         {
-            
+            sentances;
         }
+        else
+        {
+
+        }
+
     }
 }
