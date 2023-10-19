@@ -11,14 +11,13 @@ int main(void)
 
     for (int i = 0; text[i] != 0; i++){
 
-        if ()
         if (text[i] == 32)
         {
             words++;
         }
         else if (text[i] == 46 || text[i] == 33 || text[i] == 63)
         {
-
+            
         }
     }
 }
