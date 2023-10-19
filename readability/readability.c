@@ -7,7 +7,7 @@
 int main(void)
 {
     string text = get_string ("Text: ");
-    printf("Text: %s\n", text);
+   // printf("Text: %s\n", text);
 
     int letters = 0, words = 0, sentances = 0;
 
@@ -38,7 +38,7 @@ int main(void)
     {
         printf("Before Grade 1\n");
     }
-    else (index > 15)
+    else if (index > 15)
     {
         printf("Grade 16+\n");
     }
