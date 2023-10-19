@@ -25,5 +25,8 @@ int main(void)
             letters++;
         }
     }
-    printf()
+    
+    words ++;
+
+
 }
