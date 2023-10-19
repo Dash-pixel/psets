@@ -34,7 +34,7 @@ int main(void)
 
     float index = (0.0588 * L) - (0.296 * S) - 15.8;
 
-    float round(float index);
+    index = round(index);
 
     if (index < 1)
     {
@@ -46,7 +46,7 @@ int main(void)
     }
     else
     {
-        printf("Grade %i\n", index);
+        printf("Grade %f\n", index);
     }
 
 }
