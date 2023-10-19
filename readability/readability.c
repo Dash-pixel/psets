@@ -10,6 +10,8 @@ int main(void)
     int letters, words, sentances;
 
     for (int i = 0; text[i] != 0; i++){
-        if (text[i] == )
+        if (text[i] == 32){
+            words++
+        }
     }
 }
