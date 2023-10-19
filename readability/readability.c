@@ -6,5 +6,5 @@ int main(void)
     string text = get_string;
     printf("Text: %s\n", text);
 
-    for (i=)
+    for (int i = )
 }
