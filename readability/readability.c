@@ -7,7 +7,9 @@ int main(void)
     string text = get_string;
     printf("Text: %s\n", text);
 
+    int letters, words, sentances;
+
     for (int i = 0; text[i] != 0; i++){
-        
+        if (text[i] == )
     }
 }
