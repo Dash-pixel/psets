@@ -25,8 +25,10 @@ int main(void)
             letters++;
         }
     }
-    
+
     words ++;
+
+    L = letters / (100 * words)
 
 
 }
