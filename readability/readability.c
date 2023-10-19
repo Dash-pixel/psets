@@ -32,9 +32,7 @@ int main(void)
     float L = (float) (100.0 * letters) /((float) words);
     float S = (float) (100.0 * sentances) /((float) words);
 
-    float index = (0.0588 * L) - (0.296 * S) - 15.8;
-
-    index = round(index);
+    int index = round((0.0588 * L) - (0.296 * S) - 15.8);
 
     if (index < 1)
     {
