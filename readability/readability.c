@@ -34,6 +34,6 @@ int main(void)
 
     int index = 0.0588 * L - 0.296 * S - 15.8;
 
-    printf("%i\n" index);
+    printf("%i\n", index);
 
 }
