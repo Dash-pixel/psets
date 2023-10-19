@@ -48,14 +48,14 @@ int main(void)
         }
         else
         {
-            digit = 2 * ((credit_number % dosens) / (dosens / 10));
-          //  digit = 2 * digit;
+            digit = 2 * (credit_number % dosens) / (dosens / 10);
+            digit = 2 * digit;
 
-          /*  if (digit > 9)
+            if (digit > 9)
             {
                 digit = (digit % 10) + 1;
             }
-            */
+
         }
 
         summ += digit;
