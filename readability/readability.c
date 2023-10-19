@@ -1,17 +1,17 @@
 #include <cs50.h>
-#include <stdio.h>
-#include <math.h>
 #include <ctype.h>
-
+#include <math.h>
+#include <stdio.h>
 
 int main(void)
 {
-    string text = get_string ("Text: ");
-   // printf("Text: %s\n", text);
+    string text = get_string("Text: ");
+    // printf("Text: %s\n", text);
 
     int letters = 0, words = 0, sentances = 0;
 
-    for (int i = 0; text[i] != 0; i++){
+    for (int i = 0; text[i] != 0; i++)
+    {
 
         if (text[i] == 32)
         {
@@ -27,10 +27,10 @@ int main(void)
         }
     }
 
-    words ++;
+    words++;
 
-    float L = (float) (100.0 * letters) /((float) words);
-    float S = (float) (100.0 * sentances) /((float) words);
+    float L = (float) (100.0 * letters) / ((float) words);
+    float S = (float) (100.0 * sentances) / ((float) words);
 
     int index = round((0.0588 * L) - (0.296 * S) - 15.8);
 
@@ -46,5 +46,4 @@ int main(void)
     {
         printf("Grade %i\n", index);
     }
-
 }
