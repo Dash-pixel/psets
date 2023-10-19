@@ -29,8 +29,8 @@ int main(void)
 
     words ++;
 
-    float L = (float) letters / words;
-    float S = (float) sentances / words;
+    float L = (float) (100 * letters) / words;
+    float S = (float) (100 * sentances) / words;
 
     int index = (0.0588 * L) - (0.296 * S) - 15.8;
 
