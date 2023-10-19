@@ -8,7 +8,6 @@ int main(void)
     printf("Text: %s\n", text);
 
     for (int i = 0; text[i] != 0; i++){
-
-        i
+        
     }
 }
