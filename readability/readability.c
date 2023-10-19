@@ -29,7 +29,10 @@ int main(void)
     words ++;
 
     float L = (float) letters / (100.0 * words);
-    float S = (float) letters / (100.0 * words);
+    float S = (float) sentances / (100.0 * words);
 
+    int index = 0.0588 * L - 0.296 * S - 15.8;
+
+    printf("%i\n" index);
 
 }
