@@ -28,7 +28,8 @@ int main(void)
 
     words ++;
 
-    L = letters / (100 * words)
+    float L = (float) letters / (100.0 * words);
+    float S = (float) letters / (100.0 * words);
 
 
 }
