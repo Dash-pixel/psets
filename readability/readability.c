@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <ctype.h>
+
 
 int main(void)
 {
@@ -10,8 +10,15 @@ int main(void)
     int letters, words, sentances;
 
     for (int i = 0; text[i] != 0; i++){
-        if (text[i] == 32){
-            words++
+
+        if ()
+        if (text[i] == 32)
+        {
+            words++;
+        }
+        else if (text[i] == 46 || text[i] == 33 || text[i] == 63)
+        {
+
         }
     }
 }
