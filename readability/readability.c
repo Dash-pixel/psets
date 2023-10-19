@@ -34,7 +34,17 @@ int main(void)
 
     int index = 0.0588 * L - 0.296 * S - 15.8;
 
-    
-    printf("%i\n", index);
+    if (index < 1)
+    {
+        printf("Before Grade 1", index);
+    }
+    else (index > 15)
+    {
+        printf("%i\n", index);
+    }
+    else
+    {
+        printf("Grade %i\n", index);
+    }
 
 }
