@@ -19,7 +19,7 @@ int main(void)
         {
             sentances;
         }
-        else if ()
+        else if ((text[i] == 46) && (text[i] == 33))
         {
 
         }
