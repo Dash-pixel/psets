@@ -36,11 +36,11 @@ int main(void)
 
     if (index < 1)
     {
-        printf("Before Grade 1", index);
+        printf("Before Grade 1\n");
     }
     else (index > 15)
     {
-        printf("%i\n", index);
+        printf("Grade 16+\n");
     }
     else
     {
