@@ -17,11 +17,11 @@ int main(void)
         }
         else if ((text[i] == 46) || (text[i] == 33) || (text[i] == 63))
         {
-            sentances;
+            sentances++;
         }
-        else if (((text[i] >= 65) && (text[i] <= 90)) || ((text[i] >= 97) && (text[i] <= 122)))
+        else if (isalpha(text[i]))
         {
-
+            letters++;
         }
 
     }
