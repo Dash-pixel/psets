@@ -4,7 +4,7 @@
 int main(void)
 {
     string word = get_string("Word: ");
-// abc whether alphabetical order
+// "wlkwoef" whether alphabetical order
     int i = 0;
     while (word[i] < word[i+1])
     {
