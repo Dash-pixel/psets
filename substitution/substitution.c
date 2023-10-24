@@ -4,8 +4,8 @@
 
 int main(int argc, string argv[])
 {
- string code = string argv[1];
- 
+ string key = string argv[1];
+
 }
 
 // как идея можно использовать разницу чисел
