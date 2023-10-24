@@ -27,7 +27,7 @@ int main(int argc, string argv[])
     {
         plaintext[i] = key [i];
 
-        printf("%c", plaintext[i]);
+        printf("%c\n", plaintext[i]);
     }
 
 }
