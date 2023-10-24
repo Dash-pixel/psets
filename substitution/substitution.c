@@ -27,7 +27,9 @@ int main(int argc, string argv[])
     {
         int numberofchar = plaintext[i] - 65;
 
-        printf("%c", key[numberofchar]);
+        plaintext[i] = key[numberofchar];
+
+        printf("%c", plaintext[i]);
     }
 
 }
