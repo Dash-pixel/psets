@@ -6,7 +6,6 @@ int main(int argc, string argv[])
 {
     string key = argv[1];
 
-    printf("%s", key);
 
     for (int i = 0; i != 26; i++){
 
