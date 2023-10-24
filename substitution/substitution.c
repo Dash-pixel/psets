@@ -11,7 +11,7 @@ int main(int argc, string argv[])
 
         if (isalpha(key[i]))
         {
-        key[i] = toupper(key[i]) - 65;
+        key[i] = toupper(key[i]) - 64 - i;
         }
 
         else
