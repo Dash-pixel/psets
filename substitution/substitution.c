@@ -7,7 +7,8 @@ int main(int argc, string argv[])
     string key = argv[1];
 
 
-    for (int i = 0; i != 26; i++){
+    for (int i = 0; i != 26; i++)
+    {
 
         if (isalpha(key[i]))
         {
@@ -22,6 +23,11 @@ int main(int argc, string argv[])
     }
 
     string plaintext = get_string("plaintext: ");
+
+    for (int i = 0; i != 26; i++)
+    {
+        
+    }
 
 }
 
