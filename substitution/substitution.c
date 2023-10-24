@@ -8,7 +8,7 @@ int main(int argc, string argv[])
 
     for (i = 0; i != 26; i++){
 
-        
+        key[i] = key[i]
     }
 }
 
