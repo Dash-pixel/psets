@@ -6,7 +6,10 @@ int main(int argc, string argv[])
 {
     string key = string argv[1];
 
-    for 
+    for (i = 0; i != 26; i++){
+
+        
+    }
 }
 
 // как идея можно использовать разницу чисел
