@@ -4,9 +4,9 @@
 
 int main(int argc, string argv[])
 {
-    string key = string argv[1];
+    string key = argv[1];
 
-    for (i = 0; i != 26; i++){
+    for (int i = 0; i != 26; i++){
 
         if (isalpha(key[i]))
         {
@@ -16,7 +16,7 @@ int main(int argc, string argv[])
         else
         {
             printf("your stuff incorrect");
-            retrun(1);
+            return(1);
         }
     }
 }
