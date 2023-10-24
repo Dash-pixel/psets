@@ -26,7 +26,7 @@ int main(int argc, string argv[])
 
     for (int i = 0; plaintext[i] != 0; i++){
 
-        plaintext[i] = 
+        plaintext[i] = key [i] - 
     }
 
 }
