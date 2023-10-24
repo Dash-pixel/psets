@@ -4,8 +4,9 @@
 
 int main(int argc, string argv[])
 {
- string key = string argv[1];
+    string key = string argv[1];
 
+    for 
 }
 
 // как идея можно использовать разницу чисел
