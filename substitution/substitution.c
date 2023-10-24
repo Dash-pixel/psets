@@ -8,8 +8,8 @@ int main(int argc, string argv[])
 
     for (i = 0; i != 26; i++){
 
-        if
-        key[i] = key[i
+        if (isalpha(key[i]))
+        key[i] = key[i]
 
         else
         {
