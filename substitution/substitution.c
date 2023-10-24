@@ -26,11 +26,7 @@ int main(int argc, string argv[])
 
     for (int i = 0; plaintext[i] != 0; i++){
 
-        
+        plaintext[i] = 
     }
 
 }
-
-// как идея можно использовать разницу чисел
-// а код замены можно сразу to_lowercase
-// решить задачу математически короч
