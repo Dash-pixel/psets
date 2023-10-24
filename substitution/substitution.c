@@ -8,7 +8,14 @@ int main(int argc, string argv[])
 
     for (i = 0; i != 26; i++){
 
-        key[i] = key[i]
+        if
+        key[i] = key[i
+
+        else
+        {
+            printf("your stuff incorrect");
+            retrun(1);
+        }
     }
 }
 
