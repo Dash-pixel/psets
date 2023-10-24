@@ -11,7 +11,7 @@ int main(int argc, string argv[])
 
         if (isalpha(key[i]))
         {
-        key[i] = toupper(key[i]);
+        key[i] = toupper(key[i]) - 65;
         }
 
         else
@@ -36,3 +36,5 @@ int main(int argc, string argv[])
 
 // моя проблема в том что я референсю числа
 // за пределами моего key
+// или мне сначала нужно посчитать разницу кода
+// с буквой которую представл
