@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <cs50.c>
+#include <ctype.h>
 
 int main(int argc, string argv[])
 {
