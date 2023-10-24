@@ -25,7 +25,8 @@ int main(int argc, string argv[])
 
     for (int i = 0; plaintext[i] != 0; i++)
     {
-        plaintext[i] = key [i];
+        numberofchar = plaintext[i];
+        key[numberofchar];
 
         printf("%c\n");
     }
