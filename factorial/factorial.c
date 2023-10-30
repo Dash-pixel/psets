@@ -11,6 +11,9 @@ int main(void)
 
 int factorial (int number)
 {
-    number = factorial(number - 1) * ;
+    if (number == 0){
+        return;
+    }
 
+    number = factorial(number - 1) * number;
 }
