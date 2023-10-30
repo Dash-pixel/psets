@@ -15,5 +15,5 @@ int factorial (int number)
         return 1;
     }
 
-    number = factorial(number - 1) * number;
+    return factorial(number - 1) * number;
 }
