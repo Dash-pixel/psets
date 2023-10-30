@@ -11,6 +11,6 @@ int main(void)
 
 int factorial (int number)
 {
-    number = factorial
+    number = factorial(number - 1) * ;
 
 }
