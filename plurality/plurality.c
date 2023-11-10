@@ -67,10 +67,8 @@ bool vote(string name)
 {
     for (int i = 0; i < voter_count; i++)
     {
-
-        if (strcmp(name, candidate[i]) == 0){
-
-            
+        if (strcmp(name, candidates[i]) == 0){
+            candidates[i].votes ++;
         }
     }
 }
@@ -94,3 +92,4 @@ If name matches one of the names of the candidates in the election, then update 
 If name does not match the name of any of the candidates in the election, no vote totals should change, and the vote function should return false to indicate an invalid ballot.
 You may assume that no two candidates will have the same name.
 */
+// 00000000 --
