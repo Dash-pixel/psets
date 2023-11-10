@@ -66,7 +66,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
 
-    
+
     return false;
 }
 
@@ -77,6 +77,11 @@ void print_winner(void)
     return;
 }
 
+
+
+
+//// if /// candidate[i].name == "a"
+// candidate[i].vote ++;
 /*
 Complete the vote function.
 vote takes a single argument, a string called name, representing the name of the candidate who was voted for.
