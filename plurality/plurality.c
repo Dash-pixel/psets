@@ -22,6 +22,8 @@ int candidate_count;
 bool vote(string name);
 void print_winner(void);
 
+int winner_votes;
+
 int main(int argc, string argv[])
 {
     // Check for invalid usage
@@ -90,7 +92,10 @@ void print_winner(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
-
-    return false;
+        if (candidates[i].votes == winner_votes)
+        {
+            printf("%s\n", candidates[i].name);
+        }
+    }
 }
 
