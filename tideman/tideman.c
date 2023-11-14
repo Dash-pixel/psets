@@ -102,8 +102,9 @@ bool vote(int rank, string name, int ranks[])
     for(int i = 0; i < MAX; i++)
     {
     candidates[MAX];
-    return false;
+
     }
+    return false;
 }
 
 // Update preferences given one voter's ranks
