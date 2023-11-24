@@ -102,7 +102,10 @@ bool vote(int rank, string name, int ranks[])
     for(int i = 0; i < candidate_count; i++)
     {
         if (strcmp(candidates[i], name) == 0)
-        {}
+        {
+            ranks[rank] = i;
+            return true;
+        }
     }
     return false;
 }
@@ -110,17 +113,42 @@ bool vote(int rank, string name, int ranks[])
 // Update preferences given one voter's ranks
 void record_preferences(int ranks[])
 {
-    // TODO
+    for (int b = 1; b < candidate_count; b++)
+    {
+        for (int a = 0; a < b; a++)
+        {
+            preferences[ranks[a]][ranks[b]]++;
+        }
+    }
     return;
 }
 
 // Record pairs of candidates where one is preferred over the other
 void add_pairs(void)
 {
-    // TODO
+    // preferences[i][j] > preferences[j][i]
+    int i = 0;
+    for (int b = 1; b < candidate_count; b++)
+    {
+        for (int a = 0; a < b; a++)
+        {
+
+            if (preferences[a][b] > preferences[b][a])
+            {
+                pairs[i].winner = a;
+                pairs[i].loser = b;
+                i++;
+            }
+            else if (preferences[a][b] < preferences[b][a])
+            {
+                pairs[i].winner = b;
+                pairs[i].loser = a;
+                i++;
+            }
+        }
+    }
     return;
 }
-
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
@@ -141,3 +169,19 @@ void print_winner(void)
     // TODO
     return;
 }
+
+
+
+    // Recall that preferences[i][j] should represent
+    // the number of voters who prefer
+    // candidate i over candidate j.
+    // ranks of the voter ranks 2 1 0
+    // ranks[0] is prefered to the ones bellow it
+    // ranks[n] is prefered to the ones bellow it
+    // preferences[2][1] ++
+    // preferences[2][0] ++
+    // preferences[1][0] ++
+    //
+    // but not preferences[0][1]
+    // preferences[rank[0]][rank[1]] ++
+    // if a < b --> preferences[rank[a]][rank[b]] ++
