@@ -39,4 +39,8 @@ array 1 == array 2
 
 //
 
+4! fucked (4)
+
+if n = 0 -> return
+
 
