@@ -39,8 +39,12 @@ array 1 == array 2
 
 //
 
-4! fucked (4)
+n! fucked (n)
 
-if n = 0 -> return
+if n = 1 -> return 1;
+
+n! = n * fucked(n-1);
+
+return n!;
 
 
