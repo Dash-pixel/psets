@@ -4,7 +4,7 @@
 ///// 12 - 2
 /////
 ////////////////////
-function()
+function(array.lethgth)
 {
     if array.length = 1
     {
