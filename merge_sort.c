@@ -10,7 +10,7 @@ function
         return;
     }
     function //(с каким-то аргументом?)
-    array.length
+    array.length / 2
 
     a = 0;
     b = (array.length / 2) + 1  // как б получается и как мы делим массив
