@@ -11,7 +11,7 @@ function()
         return;
     }
 
-    array.length/2
+    function(array.length/2)
 
     a = 0;
     b = (array.length / 2) + 1  // как б получается и как мы делим массив
