@@ -3,30 +3,31 @@
 
 
 ////////////////////
-
-if array.length = 1
+function
 {
-    return;
-}
-
-a = 0;
-b = (array.length / 2) + 1
-
-for(int i = 0; i < array.length; i++)
-{
-    if(array[a] < array[b])
+    if array.length = 1
     {
-    array2[i] = array[a];
-    a++;
+        return;
     }
+    function //(с каким-то аргументом?)
+    a = 0;
+    b = (array.length / 2) + 1
 
-    else if(array[a] > array[b])
+    for(int i = 0; i < array.length; i++)
     {
-    array2[i] = array[b];
-    b++;
+        if(array[a] < array[b])
+        {
+        array2[i] = array[a];
+        a++;
+        }
+
+        else if(array[a] > array[b])
+        {
+        array2[i] = array[b];
+        b++;
+        }
     }
 }
-
 // я понимаю что не могу использовать arrey2 не создавая его, а как мне его создать?
 // все арреи должны быть одной длинны? или  создавать кучу мелких из 2 например чисел?
 // мне больше нравится первый вариант но тогда их создавать не рекурсивно? как?
