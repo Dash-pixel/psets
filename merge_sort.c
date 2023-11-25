@@ -9,7 +9,6 @@ function(array.length)
 {
     if array.length = 1
     {
-
         return;
     }
 
