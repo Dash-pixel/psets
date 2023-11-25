@@ -152,8 +152,18 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    // TODO
+    // preferences[][]
+    // тут нужно найти самые большие числа и записать в их порядке
+    // нужно сортировать 2d массив в порядке
+    // нужно взять только победителей pairs.
+
+    prefences[pairs[i].winner][pairs[i].loser]
+// поняла еще одну проблему - в преференцес арей есть и лузеры и нужно сортить не их, а что-то другое
+
+
     return;
+
+    //max is candidate_count
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
@@ -169,19 +179,3 @@ void print_winner(void)
     // TODO
     return;
 }
-
-
-
-    // Recall that preferences[i][j] should represent
-    // the number of voters who prefer
-    // candidate i over candidate j.
-    // ranks of the voter ranks 2 1 0
-    // ranks[0] is prefered to the ones bellow it
-    // ranks[n] is prefered to the ones bellow it
-    // preferences[2][1] ++
-    // preferences[2][0] ++
-    // preferences[1][0] ++
-    //
-    // but not preferences[0][1]
-    // preferences[rank[0]][rank[1]] ++
-    // if a < b --> preferences[rank[a]][rank[b]] ++
