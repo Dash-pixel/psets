@@ -25,10 +25,8 @@ int main(void)
 
 int convert(string input)
 {
-    if strlen(input) = 
-   int digit = input[strlen(input)-1] - '0';
-   input[strlen(input)] // deleted last charecter 1
 
+ return int i + convert(string input shorter)
 
 }
 
@@ -40,3 +38,11 @@ where the next char will be processed.
 
 
 at first we take the last char change it to
+
+
+we have to use add integers ---> new integer + all old integers, and here we are recursing
+
+
+// if strlen(input) =
+   int digit = input[strlen(input)-1] - '0';
+   input[strlen(input)] // deleted last charecter 1
