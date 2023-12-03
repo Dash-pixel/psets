@@ -25,7 +25,8 @@ int main(void)
 
 int convert(string input)
 {
-    = char i - 
+   int digit = char i - '0'
+   
 }
 
 
