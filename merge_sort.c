@@ -27,5 +27,6 @@ function(array_length)
         array2[i] = array[b];
         b++;
         }
+        else
     }
 }
