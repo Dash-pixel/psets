@@ -56,8 +56,3 @@ at first we take the last char change it to
 we have to use add integers ---> new integer + all old integers, and here we are recursing
 
 // for starters lets just add numbers in string recursivelly.
-
-// if strlen(input) =
-   int digit = input[strlen(input)-1] - '0';
-   int digit = input[strlen(input)-1] - '0';
-
