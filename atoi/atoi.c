@@ -25,7 +25,7 @@ int main(void)
 
 int convert(string input)
 {
-    char last_element = input[strlen(input)-1]
+    char last_element = input[strlen(input)-1];
 
     if (strlen(input) > 1)
     {
