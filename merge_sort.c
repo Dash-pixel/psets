@@ -1,9 +1,3 @@
-
-0 2 3 4 || 1 5 6 7 ||| 0 2 3 4 || 1 5 6 7
-0 2 3 4 || 1 5 6 7
-0 2 3 4
-///// 12 - 2
-
 function(array.length)
 {
     if array.length = 1
@@ -14,7 +8,7 @@ function(array.length)
     function(array.length/2);
 
     a = 0;
-    b = (array.length / 2) + 1  // как б получается и как мы делим массив
+    b = (array.length / 2) + 1 
 
     for(int i = 0; i < array.length; i++)
     {
@@ -32,18 +26,5 @@ function(array.length)
     }
 }
 
-
-12 69 34 56 78
-array 1 == array 2
-
-//
-
-n! fucked (n)
-
-if n = 1 -> return 1;
-
-n! = n * fucked(n-1);
-
-return n!;
 
 
