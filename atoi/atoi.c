@@ -26,11 +26,14 @@ int main(void)
 int convert(string input)
 {
     "1234"
-    
+    "4"
+    "34"
+    "
     4
     34
     234
     1234
+    
    int digit = char i - '0';
 
 }
