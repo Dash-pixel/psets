@@ -25,7 +25,7 @@ int main(void)
 
 int convert(string input)
 {
-
+    if strlen(input) = 
    int digit = input[strlen(input)-1] - '0';
    input[strlen(input)] // deleted last charecter 1
 
