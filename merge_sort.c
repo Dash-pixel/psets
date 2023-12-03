@@ -1,6 +1,6 @@
-function(array.length)
+function(array_length)
 {
-    if array.length = 1
+    if array_length = 1
     {
         return;
     }
