@@ -16,6 +16,9 @@ function(array_length)
 
     for(int i = a(начальная); i < (array_length + a начальная); i++)
     {
+
+        a = b (начальная)
+
         if(array[a] < array[b])
         {
         array2[i] = array[a];
@@ -27,6 +30,5 @@ function(array_length)
         array2[i] = array[b];
         b++;
         }
-        else
     }
 }
