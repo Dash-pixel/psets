@@ -26,9 +26,9 @@ int main(void)
 int convert(string input)
 {
 
-   int digit = char i - '0';
-   input[strlen(input)] // deleted last charecter
-   
+   int digit = input[strlen(input)] - '0';
+   input[strlen(input)] // deleted last charecter 123
+
 
 }
 
@@ -38,3 +38,5 @@ Then shorten the string, removing the last char,
 and then recursively call convert using the shortened string as input,
 where the next char will be processed.
 
+
+at first we take the last char change it to
