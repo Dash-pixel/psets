@@ -25,7 +25,8 @@ int main(void)
 
 int convert(string input)
 {
-1 + 2 + 3 + 4
+
+return convert(string input - last element)
 
 
 
