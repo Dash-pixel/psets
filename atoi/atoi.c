@@ -26,11 +26,15 @@ int main(void)
 int convert(string input)
 {
 
-return convert(string input - first_element) + input[0] - '0'
+return convert(string input - last_element) + input[strlen(input)-1] - '0'
+
+
+
+
 
 }
 
-// create
+// create // string input - last_element
 In the recursive version of convert, start with the last char and convert it into an integer value.
 Then shorten the string, removing the last char,
 and then recursively call convert using the shortened string as input,
