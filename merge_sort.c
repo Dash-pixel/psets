@@ -2,7 +2,7 @@ function(array_length)
 {
     if array_length = 1
     {
-        array[n] = 
+        array2[a] = array[a];
         return;
     }
 
