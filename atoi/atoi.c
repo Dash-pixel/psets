@@ -26,8 +26,8 @@ int main(void)
 int convert(string input)
 {
 
-   int digit = input[strlen(input)] - '0';
-   input[strlen(input)] // deleted last charecter 123
+   int digit = input[strlen(input)-1] - '0';
+   input[strlen(input)] // deleted last charecter 1
 
 
 }
