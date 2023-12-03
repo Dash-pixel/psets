@@ -25,6 +25,8 @@ int main(void)
 
 int convert(string input)
 {
+    char last_element = input[strlen(input)-1]
+
     if (strlen(input) > 1)
     {
         // instead of deleting elements you can use the string end symbol \0
@@ -35,11 +37,7 @@ int convert(string input)
         return input[strlen(input)-1] - '0';
     }
 
-    return convert(string input - last_element) + input[strlen(input)-1] - '0'
-
-///
-
-
+    return convert(string input - last_element) + last_element - '0';
 
 }
 
