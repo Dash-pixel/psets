@@ -1,4 +1,6 @@
 
+array1[];
+array2[];
 
 function(array_length)
 {
