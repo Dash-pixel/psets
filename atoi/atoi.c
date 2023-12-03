@@ -29,7 +29,7 @@ int convert(string input)
 
     if (strlen(input) > 1)
     {
-        input[strlen(input)] = '\0';
+        input[strlen(input)-1] = '\0';
     }
     else
     {
