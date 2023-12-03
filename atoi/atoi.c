@@ -36,7 +36,7 @@ int convert(string input)
         return input[strlen(input)-1] - '0';
     }
 
-    return convert(string input - last_element) + last_element - '0';
+    return convert(input) + last_element - '0';
 
 }
 
