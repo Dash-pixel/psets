@@ -25,6 +25,7 @@ function(array.length)
         }
     }
 }
+// 1234 || 5678
 
 
 
