@@ -14,7 +14,7 @@ function(array_length)
 
     b = a + (array_length / 2) + 1
 
-    for(int i = a(начальная); i < full_array_length; i++)
+    for(int i = a(начальная); i < (array_length + a начальная); i++)
     {
 
         if a = b (начальная) or b будет в конце отрезка {
