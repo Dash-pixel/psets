@@ -36,7 +36,7 @@ int convert(string input)
         return last_element - '0';
     }
 
-    return convert(input) + last_element - '0';
+    return convert(input) * 10 + last_element - '0';
 
 }
 
