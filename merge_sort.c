@@ -10,8 +10,7 @@ function(Left_start; Right_end)
         return;
     }
 
-    function(Left_start; );
-
+    
 
     Right_start = Left_start + (array_length / 2) + 1
 
