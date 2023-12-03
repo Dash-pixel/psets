@@ -2,15 +2,16 @@ function(array_length)
 {
     if array_length = 1
     {
+        array[n] = 
         return;
     }
 
-    function(array.length/2);
+    function(array_length/2);
 
     a = 0;
-    b = a + (array.length / 2) + 1
+    b = a + (array_length / 2) + 1
 
-    for(int i = 0; i < array.length; i++)
+    for(int i = 0; i < array_length; i++)
     {
         if(array[a] < array[b])
         {
