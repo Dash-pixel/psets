@@ -28,6 +28,7 @@ int convert(string input)
     if (strlen > 1)
     {
         // instead of deleting elements you can use the string end symball \0
+        input[strlen(input)]
     }
 
     return convert(string input - last_element) + input[strlen(input)-1] - '0'
