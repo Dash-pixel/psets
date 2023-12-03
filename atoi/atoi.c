@@ -29,7 +29,6 @@ int convert(string input)
 
     if (strlen(input) > 1)
     {
-        // instead of deleting elements you can use the string end symbol \0
         input[strlen(input)] = '\0';
     }
     else
