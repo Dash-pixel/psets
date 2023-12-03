@@ -1,3 +1,5 @@
+
+
 function(array_length)
 {
     if array_length = 1
