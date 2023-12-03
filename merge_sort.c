@@ -25,6 +25,11 @@ function(array.length)
         }
     }
 }
+
+
+
+
+
 1 2 3 4
 array2 1 -- > array1 (под соответствующим номером)
 
