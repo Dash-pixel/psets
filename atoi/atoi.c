@@ -25,9 +25,6 @@ int main(void)
 
 int convert(string input)
 {
-    1234
-    "4" -> 4
-    (123) 34
 
    int digit = char i - '0';
 
