@@ -42,15 +42,5 @@ int convert(string input)
 }
 
 // create // string input - last_element
-In the recursive version of convert, start with the last char and convert it into an integer value.
-Then shorten the string, removing the last char,
-and then recursively call convert using the shortened string as input,
-where the next char will be processed.
-
-
-at first we take the last char change it to
-
-
-we have to use add integers ---> new integer + all old integers, and here we are recursing
 
 // for starters lets just add numbers in string recursivelly.
