@@ -33,7 +33,7 @@ int convert(string input)
     }
     else
     {
-        return last_element;
+        return last_element - '0';
     }
 
     return convert(input) + last_element - '0';
