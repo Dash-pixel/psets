@@ -33,13 +33,10 @@ int convert(string input)
     }
     else
     {
-        return input[strlen(input)-1] - '0';
+        return last_element;
     }
 
     return convert(input) + last_element - '0';
 
 }
 
-// create // string input - last_element
-
-// for starters lets just add numbers in string recursivelly.
