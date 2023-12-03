@@ -8,7 +8,7 @@ function(array.length)
     function(array.length/2);
 
     a = 0;
-    b = (array.length / 2) + 1 
+    b = a + (array.length / 2) + 1
 
     for(int i = 0; i < array.length; i++)
     {
