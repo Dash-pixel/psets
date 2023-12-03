@@ -12,7 +12,7 @@ function(array_length)
 
     function(array_length/2);
 
-    b = a + (array_length / 2) + 1
+    Right_start = Left_start + (array_length / 2) + 1
 
     for(int i = a(начальная); i < (array_length + a начальная); i++)
     {
