@@ -14,7 +14,7 @@ function(array_length)
 
     b = a + (array_length / 2) + 1
 
-    for(int i = a(типа начальная); i < (array_length+a начальная); i++)
+    for(int i = a(начальная); i < (array_length + a начальная); i++)
     {
         if(array[a] < array[b])
         {
