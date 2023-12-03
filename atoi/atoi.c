@@ -27,6 +27,7 @@ int convert(string input)
 {
 
    int digit = char i - '0';
+   input[strlen(input)]
 
 }
 
