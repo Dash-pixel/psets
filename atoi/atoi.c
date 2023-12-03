@@ -25,10 +25,14 @@ int main(void)
 
 int convert(string input)
 {
-    if (strlen > 1)
+    if (strlen(input) > 1)
     {
-        // instead of deleting elements you can use the string end symball \0
-        input[strlen(input)]
+        // instead of deleting elements you can use the string end symbol \0
+        input[strlen(input)] = '\0';
+    }
+    else
+    {
+        return input[strlen(input)-1] - '0';
     }
 
     return convert(string input - last_element) + input[strlen(input)-1] - '0'
