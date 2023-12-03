@@ -37,7 +37,7 @@ int convert(string input)
 
     return convert(string input - last_element) + input[strlen(input)-1] - '0'
 
-
+///
 
 
 
@@ -59,7 +59,5 @@ we have to use add integers ---> new integer + all old integers, and here we are
 
 // if strlen(input) =
    int digit = input[strlen(input)-1] - '0';
-   input[strlen(input)] // deleted last charecter 1
-   return int i + convert(string input shorter)
    int digit = input[strlen(input)-1] - '0';
 
