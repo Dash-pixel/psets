@@ -20,7 +20,7 @@ int main(void)
     {
         if(Right == Left_start + array_length){
             array2[i] = array[Right];
-            return;
+ //           return;
             printf("%i\n", array2[i]);
         }
 
