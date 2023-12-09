@@ -7,7 +7,7 @@ int main(void)
     int array_length = 8;
 
     int array[] = {10, 11, 12, 1, 2, 3, 4, 5};
-    int array2[array_length];
+    int arraya2[array_length];
 
 
 sorting_inside(Left_start; Right_end)
