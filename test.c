@@ -18,7 +18,10 @@ int main(void)
 
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
-        if(
+        if(Right == Left_start + array_length){
+            
+            return
+        }
 
         if (Left != Right_start)
         {
