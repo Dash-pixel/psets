@@ -5,7 +5,6 @@
 int main(void)
 {
     int array_length = 8;
-
     int array[] = {10, 11, 12, 1, 2, 3, 4, 5};
     int arraya2[array_length];
 
@@ -17,10 +16,7 @@ sorting_inside(Left_start; Right_end)
         return;
     }
 
-    Right_start = Left_start + (array_length / 2) + 1;
-
-    Left = Left_start;
-    Right = Right_start;
+    
 
     int Left_start = 0;
     int Right_start = Left_start + (array_length / 2);
