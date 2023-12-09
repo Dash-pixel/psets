@@ -31,7 +31,6 @@ int main(void)
         }
         else
         {
-
             if(array[Left] < array[Right])
             {
             array2[i] = array[Left];
