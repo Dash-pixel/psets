@@ -4,7 +4,6 @@
 
 void sorting_inside(int Left_start, int Right_end);
 
-    int array_length = 10;
     int array[] = {10, 11, 12, 1, 2, 3, 4, 5, 8, 9};
     int array2[10];
 
