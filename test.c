@@ -11,16 +11,19 @@ int main(void)
 
 sorting_inside(Left_start; Right_end)
 {
+    int array_length =  Right_end - Left_start;
+
     if array_length = 1
     {
         return;
     }
-    int array_length =  Right_end - Left_start;
     int Right_start = Left_start + (array_length / 2);
+
+    sorting_inside(Left_start; Right_start);
+    sorting_inside(Left_start; Right_start)
 
     int Left = Left_start;
     int Right = Right_start;
-
 
 for(int i = Left_start; i < Right_end; i++)
     {
