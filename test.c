@@ -44,10 +44,6 @@ int main(void)
             array2[i+1] = array[Right];
             printf("%i\n", array2[i+1]);
 
-      //<--глупая идея потому что мы остонавливамся на посленем элементе
-      // только тогда когда когда он единственный
-       //   }
-
     }
 
     for(int i = Left_start; i < Left_start + array_length; i++)
