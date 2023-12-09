@@ -28,6 +28,10 @@ function(Left_start; Right_end)
         Right++;
         }
     }
+    for(int i = Left_start; i < Left_start + array_length; i++)
+    {
+        array[i] = array2[i];
+    }
 
-    
+
 }
