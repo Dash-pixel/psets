@@ -19,7 +19,7 @@ int main(void)
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
 
-        if (Left != Right_start)
+        if ((Left != Right_start) || (Right != Left_start + array_length))
         {
 
             if(array[Left] < array[Right])
@@ -34,14 +34,19 @@ int main(void)
             Right++;
             }
         }
-        else
+        else if (Left == Right_start)
         {
             array2[i] = array[Right];
             Right++;
         }
+        else if (Right == Left_start + array_length)
+        {
+
+            
+        }
 
          // if right is smaller than 6, else just increase left and write
-         
+
     }
 
     for(int i = Left_start; i < Left_start + array_length; i++)
