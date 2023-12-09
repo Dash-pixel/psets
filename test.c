@@ -40,7 +40,7 @@ int main(void)
             Right++;
         }
 
-           if(Right > Left_start + array_length){
+           if(Right  Left_start + array_length){
             array2[i+1] = array[Right];
             printf("%i\n", array2[i+1]);
 
