@@ -41,7 +41,7 @@ int main(void)
         }
 
          // if right is smaller than 6, else just increase left and write
-
+         
     }
 
     for(int i = Left_start; i < Left_start + array_length; i++)
