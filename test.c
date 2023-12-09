@@ -16,7 +16,7 @@ int main(void)
     int Right = Right_start;
 
 
-    for(int i = Left_start; i < Left_start + array_length - 1; i++)
+    for(int i = Left_start; i < Left_start + array_length; i++)
     {
 
         if (Left != Right_start)
@@ -40,10 +40,13 @@ int main(void)
             Right++;
         }
 
-           if(Right == 5){
-               array2[i+1] = array[Right];
-              printf("%i\n", array2[i+1]);
-          }
+           if(Right > Left_start + array_length){
+            array2[i+1] = array[Right];
+            printf("%i\n", array2[i+1]);
+
+      //<--глупая идея потому что мы остонавливамся на посленем элементе
+      // только тогда когда когда он единственный
+       //   }
 
     }
 
