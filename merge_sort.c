@@ -13,7 +13,6 @@ function(Left_start; Right_end)
     Left = Left_start;
     Right = Right_start;
 
-
     for(int i = Left_start; i < Right_start; i++)
     {
 
