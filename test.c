@@ -19,8 +19,9 @@ int main(void)
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
         if(Right == Left_start + array_length){
-            Right
+            array2[i] = array[Right];
             return;
+            printf("%i\n", array2[i]);
         }
 
         if (Left != Right_start)
