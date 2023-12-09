@@ -6,7 +6,7 @@ int main(void)
 {
     int array_length = 6;
 
-    int array[] = {0, 5, 9, 3, 7, 8};
+    int array[] = {3, 4, 5, 0, 1, 2};
     int array2[array_length];
 
     int Left_start = 0;
@@ -40,10 +40,10 @@ int main(void)
             Right++;
         }
 
-        if(Right == 5){
-            array2[i] = array[Right];
-            printf("%i\n", array2[i]);
-        }
+    //   if(Right == 5){
+    //       array2[i] = array[Right];
+    //      printf("%i\n", array2[i]);
+    //  }
 
     }
 
