@@ -9,7 +9,7 @@ int main(void)
     int arraya2[array_length];
 
 
-sorting_inside(Left_start, Right_end)
+void sorting_inside(int Left_start, int Right_end)
 {
     int array_length =  Right_end - Left_start;
 
@@ -59,4 +59,7 @@ for(int i = Left_start; i < Right_end; i++)
         array[i] = array2[i];
     }
 }
+
+ sorting_inside(0, 9);
 }
+
