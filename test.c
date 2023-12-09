@@ -44,7 +44,6 @@ int main(void)
 
     }
 
-
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
         printf("%i\n", array2[i]);
