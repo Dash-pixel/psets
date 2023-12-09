@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    int array_length = 6;
+    int array_length = 12;
 
-    int array[] = {3, 4, 5, 0, 1, 2};
+    int array[] = {0, 4, 6, 9, 12, 20, 1, 2, 10, 22, 26, 30};
     int array2[array_length];
 
     int Left_start = 0;
@@ -44,7 +44,6 @@ int main(void)
             array2[i] = array[Left];
             Left++;
         }
-
          // if right is smaller than 6, else just increase left and write
 
     }
