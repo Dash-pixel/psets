@@ -23,7 +23,7 @@ void sorting_inside(int Left_start, int Right_end)
     int Right_start = Left_start + (array_length / 2);
 
     sorting_inside(Left_start, Right_start);
-    sorting_inside(Right_start, Right_end);
+    sorting_inside(Right_start+1, Right_end);
 
     int Left = Left_start;
     int Right = Right_start;
