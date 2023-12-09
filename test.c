@@ -40,7 +40,7 @@ int main(void)
             Right++;
         }
 
-         // if right is smaller than 6, else just increase 
+         // if right is smaller than 6, else just increase left and write
 
     }
 }
