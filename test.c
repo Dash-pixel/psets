@@ -43,8 +43,7 @@ int main(void)
         if(Right == Left_start + array_length){
             array2[i] = array[Right];
             printf("%i\n", array2[i]);
- //         return;
-        }
+./ma        }
 
     }
 
