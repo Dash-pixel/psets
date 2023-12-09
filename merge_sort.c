@@ -1,5 +1,5 @@
 array 0 1 2 3 4 5 6 7 8 9
-array2 
+array2
 
 function(Left_start; Right_end)
 {
@@ -13,7 +13,7 @@ function(Left_start; Right_end)
     Left = Left_start;
     Right = Right_start;
 
-    for(int i = Left_start; i < _____ ; i++)
+    for(int i = Left_start; i < Left_start + array_length; i++)
     {
 
         if(array[Left] < array[Right])
