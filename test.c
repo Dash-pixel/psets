@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    int array_length = 12;
+    int array_length = 13;
 
-    int array[] = {0, 4, 6, 9, 12, 31, 1, 2, 10, 22, 26, 30};
+    int array[] = {0, 1, 2, 12, 12, 32, 1, 9, 9, 22, 26, 30};
     int array2[array_length];
 
     int Left_start = 0;
@@ -37,7 +37,7 @@ int main(void)
             Left++;
             }
 
-            else if(array[Left] > array[Right])
+            else if(array[Left] >= array[Right])
             {
             array2[i] = array[Right];
             Right++;
