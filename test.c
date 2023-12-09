@@ -16,14 +16,13 @@ sorting_inside(Left_start; Right_end)
         return;
     }
 
-    int Left_start = 0;
     int Right_start = Left_start + (array_length / 2);
 
     int Left = Left_start;
     int Right = Right_start;
 
 
-for(int i = Left_start; i < Left_start + array_length; i++)
+for(int i = Left_start; i < Right_end; i++)
     {
 
         if (Left == Right_start)
@@ -52,7 +51,7 @@ for(int i = Left_start; i < Left_start + array_length; i++)
         }
     }
 
-    for(int i = Left_start; i < Left_start + array_length; i++)
+    for(int i = Left_start; i < Right_end; i++)
     {
         array[i] = array2[i];
     }
