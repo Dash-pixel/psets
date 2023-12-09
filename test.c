@@ -9,7 +9,7 @@ int main(void)
     int arraya2[array_length];
 
 
-array legth sorting_inside(Left_start; Right_end)
+sorting_inside(Left_start; Right_end)
 {
     if array_length = 1
     {
