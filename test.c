@@ -16,7 +16,7 @@ int main(void)
     int Right = Right_start;
 
 
-    for(int i = Left_start; i < Left_start + array_length; i++)
+    for(int i = Left_start; i < Left_start + array_length - 1; i++)
     {
 
         if (Left != Right_start)
@@ -40,10 +40,10 @@ int main(void)
             Right++;
         }
 
-    //   if(Right == 5){
-    //       array2[i] = array[Right];
-    //      printf("%i\n", array2[i]);
-    //  }
+           if(Right == 5){
+               array2[i+1] = array[Right];
+              printf("%i\n", array2[i+1]);
+          }
 
     }
 
