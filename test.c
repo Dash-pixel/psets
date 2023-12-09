@@ -41,8 +41,8 @@ int main(void)
         }
         else if (Right == Left_start + array_length)
         {
-
-            
+            array2[i] = array[Left];
+            Left++;
         }
 
          // if right is smaller than 6, else just increase left and write
