@@ -4,12 +4,12 @@
 
 int main(void)
 {
-    int array_length = 8;
-    int array[] = {10, 11, 12, 1, 2, 3, 4, 5};
+    int array_length = 10;
+    int array[] = {10, 11, 12, 1, 2, 3, 4, 5, 8, 9};
     int arraya2[array_length];
 
 
-sorting_inside(Left_start; Right_end)
+sorting_inside(Left_start, Right_end)
 {
     int array_length =  Right_end - Left_start;
 
@@ -19,8 +19,8 @@ sorting_inside(Left_start; Right_end)
     }
     int Right_start = Left_start + (array_length / 2);
 
-    sorting_inside(Left_start; Right_start);
-    sorting_inside(Left_start; Right_start)
+    sorting_inside(Left_start, Right_start);
+    sorting_inside(Right_start, Right_end);
 
     int Left = Left_start;
     int Right = Right_start;
