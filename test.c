@@ -19,6 +19,21 @@ int main(void)
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if ((Left != Right_start) && (Right != Left_start + array_length))
         {
 
