@@ -9,6 +9,19 @@ int main(void)
     int array[] = {10, 11, 12, 1, 2, 3, 4, 5};
     int array2[array_length];
 
+
+sorting_inside(Left_start; Right_end)
+{
+    if array_length = 1
+    {
+        return;
+    }
+
+    Right_start = Left_start + (array_length / 2) + 1;
+
+    Left = Left_start;
+    Right = Right_start;
+
     int Left_start = 0;
     int Right_start = Left_start + (array_length / 2);
 
@@ -16,7 +29,7 @@ int main(void)
     int Right = Right_start;
 
 
-    for(int i = Left_start; i < Left_start + array_length; i++)
+for(int i = Left_start; i < Left_start + array_length; i++)
     {
 
         if (Left == Right_start)
@@ -47,7 +60,7 @@ int main(void)
 
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
-        printf("%i\n", array2[i]);
+        array[i] = array2[i];
     }
-
+}
 }
