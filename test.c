@@ -43,6 +43,7 @@ int main(void)
          //  if(Right  Left_start + array_length){
          //   array2[i+1] = array[Right];
          //   printf("%i\n", array2[i+1]);
+         // if right is smaller than 
 
     }
 }
