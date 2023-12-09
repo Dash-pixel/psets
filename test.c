@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    int array[6]{2, 5, 7, 3, 8, 9};
+    int array[6] = {2, 5, 7, 3, 8, 9};
     int array2[6];
 
     Right_start = Left_start + (array_length / 2) + 1;
