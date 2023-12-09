@@ -16,8 +16,6 @@ sorting_inside(Left_start; Right_end)
         return;
     }
 
-    
-
     int Left_start = 0;
     int Right_start = Left_start + (array_length / 2);
 
