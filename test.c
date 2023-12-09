@@ -4,7 +4,8 @@
 
 int main(void)
 {
-    int array_length = argc - 1;
+    int array[6];
+    int array[]
     int Leftstart
 
     for(int i = Left_start; i < Left_start + array_length; i++)
