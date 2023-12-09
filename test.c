@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    int array_length = 7;
+    int array_length = 8;
 
-    int array[] = {10, 11, 12, 1, 2, 3, 4};
+    int array[] = {10, 11, 12, 1, 2, 3, 4, 5};
     int array2[array_length];
 
     int Left_start = 0;
