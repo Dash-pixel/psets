@@ -6,7 +6,7 @@ int main(void)
 {
     int array_length = 6;
 
-    int array[array_length] = {2, 5, 7, 3, 8, 9};
+    int array[] = {2, 5, 7, 3, 8, 9};
     int array2[array_length];
 
     int Left_start = 0;
@@ -42,5 +42,9 @@ int main(void)
 
     }
 
-    
+    for(int i = Left_start; i < Left_start + array_length; i++)
+    {
+        printf("%i\n", array2[i]);
+    }
+
 }
