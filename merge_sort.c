@@ -10,11 +10,11 @@ function(Left_start; Right_end)
         return;
     }
 
-    
+
 
     Right_start = Left_start + (array_length / 2) + 1
 
-    for(int i = Left_start; i < (array_length + Left_start); i++)
+    for(int i = Left_start; i < Right_start; i++)
     {
 
         if a = b (начальная) or b будет в конце отрезка {
