@@ -43,7 +43,7 @@ int main(void)
         if(Right == Left_start + array_length){
             array2[i] = array[Right];
             printf("%i\n", array2[i]);
-./ma        }
+        }
 
     }
 
@@ -51,5 +51,5 @@ int main(void)
     {
         printf("%i\n", array2[i]);
     }
-
+    
 }
