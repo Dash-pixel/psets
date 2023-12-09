@@ -6,7 +6,7 @@ int main(void)
 {
     int array_length = 12;
 
-    int array[] = {0, 4, 6, 9, 12, 20, 1, 2, 10, 22, 26, 30};
+    int array[] = {0, 4, 6, 9, 12, 31, 1, 2, 10, 22, 26, 30};
     int array2[array_length];
 
     int Left_start = 0;
