@@ -4,12 +4,13 @@
 
 int main(void)
 {
-    int array[6] = {2, 5, 7, 3, 8, 9};
-    int array2[6];
+    int array_length = 6;
+
+    int array[array_length] = {2, 5, 7, 3, 8, 9};
+    int array2[array_length];
 
     int Left_start = 0;
-
-    int Right_start = Left_start + (array_length / 2) + 1;
+    int Right_start = Left_start + (array_length / 2);
 
     int Left = Left_start;
     int Right = Right_start;
@@ -40,4 +41,6 @@ int main(void)
         }
 
     }
+
+    
 }
