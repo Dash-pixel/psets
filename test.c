@@ -18,11 +18,6 @@ int main(void)
 
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
-        if(Right == 6 /*Left_start + array_length*/){
-            array2[i] = array[Right];
- //           return;
-            printf("%i\n", array2[i]);
-        }
 
         if (Left != Right_start)
         {
@@ -43,6 +38,12 @@ int main(void)
         {
             array2[i] = array[Right];
             Right++;
+        }
+
+        if(Right == Left_start + array_length){
+            array2[i] = array[Right];
+            printf("%i\n", array2[i]);
+ //         return;
         }
 
     }
