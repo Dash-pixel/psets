@@ -19,7 +19,17 @@ int main(void)
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
 
-
+        if (Left == Right_start)
+        {
+            array2[i] = array[Right];
+            Right++;
+        }
+        else if (Right == Left_start + array_length)
+        {
+            array2[i] = array[Left];
+            Left++;
+        }
+        else
 
 
 
