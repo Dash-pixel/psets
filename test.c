@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
+int main(int argc, string argv[])
+{
+    int array_length = argc;
+    
 
     for(int i = Left_start; i < Left_start + array_length; i++)
     {
@@ -28,3 +32,4 @@
         }
 
     }
+}
