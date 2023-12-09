@@ -1,5 +1,7 @@
-array 2 1 0 3 4 5 6 7 8 9
-array2
+
+array1[1 3 5 6 7 8 2 4 9];
+array2[1 3 - 5 6 - 6 7 - 2 8 - 4 9];
+
 
 function(Left_start; Right_end)
 {
@@ -8,30 +10,27 @@ function(Left_start; Right_end)
         return;
     }
 
-    Right_start = Left_start + (array_length / 2) + 1;
 
-    Left = Left_start;
-    Right = Right_start;
 
-    for(int i = Left_start; i < Left_start + array_length; i++)
+    Right_start = Left_start + (array_length / 2) + 1
+
+    for(int i = Left_start; i < ; i++)
     {
 
-        if(array[Left] < array[Right])
-        {
-        array2[i] = array[Left];
-        Left++;
+        if a = b (начальная) or b будет в конце отрезка {
+
         }
 
-        else if(array[Left] > array[Right])
+        if(array[a] < array[b])
         {
-        array2[i] = array[Right];
-        Right++;
+        array2[i] = array[a];
+        a++;
+        }
+
+        else if(array[a] > array[b])
+        {
+        array2[i] = array[b];
+        b++;
         }
     }
-    for(int i = Left_start; i < Left_start + array_length; i++)
-    {
-        array[i] = array2[i];
-    }
-
-
 }
