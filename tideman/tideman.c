@@ -152,16 +152,10 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    // preferences[][]
-    // тут нужно найти самые большие числа и записать в их порядке
-    // нужно сортировать 2d массив в порядке
-    // нужно взять только победителей pairs.
 
     prefences[pairs[i].winner][pairs[i].loser]
 
     return;
-
-    //max is candidate_count
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
