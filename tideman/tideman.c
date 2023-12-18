@@ -152,6 +152,7 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
+    for()
 [candidate_count * (candidate_count - 1) / 2]
     prefences[pairs[i].winner][pairs[i].loser]
 
