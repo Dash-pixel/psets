@@ -155,8 +155,10 @@ void sort_pairs(void)
     int pref_count = [candidate_count * (candidate_count - 1) / 2];
     for(int i = 0; i < pref_count; i++)
     {
-        for(int j = i; )
-        prefences[pairs[i].winner][pairs[i].loser];
+        for(int j = i; j < pref_count; i++)
+        {
+            prefences[pairs[i].winner][pairs[i].loser];
+        }
     }
 
     return;
