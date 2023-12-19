@@ -157,10 +157,14 @@ void sort_pairs(void)
     {
         for(int j = i; j < pref_count; i++)
         {
-            if (a > prefences[pairs[i].winner][pairs[i].loser])
-            a = prefences[pairs[i].winner][pairs[i].loser];
+            if (a > prefences[pairs[j].winner][pairs[j].loser])
+            {
+            a = prefences[pairs[j].winner][pairs[j].loser];
+            b = j;
+            }
+
         }
-        
+
     }
 
     return;
