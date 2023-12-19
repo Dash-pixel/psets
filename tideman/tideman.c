@@ -152,7 +152,7 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    int pref_count = [candidate_count * (candidate_count - 1) / 2];
+    int pref_count = (candidate_count * (candidate_count - 1) / 2);
     int a = 0;
     int exchange_number = 0;
 
