@@ -160,13 +160,10 @@ void sort_pairs(void)
             if (a > prefences[pairs[j].winner][pairs[j].loser])
             {
                 a = prefences[pairs[j].winner][pairs[j].loser];
-                b = j;
+                exchange_number = j;
             }
         }
-
         
-
-
     }
 
     return;
