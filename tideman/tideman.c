@@ -154,7 +154,7 @@ void sort_pairs(void)
 {
     int pref_count = [candidate_count * (candidate_count - 1) / 2];
     int a = 0;
-    int exchange number = 0;
+    int exchange_number = 0;
 
     for(int i = 0; i < pref_count; i++)
     {
@@ -166,7 +166,7 @@ void sort_pairs(void)
                 exchange_number = j;
             }
         }
-        preferences [pairs[i].winner][pairs[i].loser]
+        preferences[pairs[i].winner][pairs[i].loser]
     }
 
     return;
