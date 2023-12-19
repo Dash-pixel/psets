@@ -159,8 +159,8 @@ void sort_pairs(void)
         {
             if (a > prefences[pairs[i].winner][pairs[i].loser])
             a = prefences[pairs[i].winner][pairs[i].loser];
-
         }
+        
     }
 
     return;
