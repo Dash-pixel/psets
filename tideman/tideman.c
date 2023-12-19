@@ -147,7 +147,7 @@ void add_pairs(void)
             else
             {
 
-                
+                preferances 
             }
         }
     }
