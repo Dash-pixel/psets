@@ -167,6 +167,7 @@ void sort_pairs(void)
             }
         }
 
+        preferences
     }
 
     return;
