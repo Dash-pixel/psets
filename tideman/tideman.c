@@ -171,6 +171,7 @@ void sort_pairs(void)
         temporary = pairs[i];
         pairs[i] = pairs[x_index];
         pairs[x_index] = temporary;
+        a = 0;
     }
     return;
 }
