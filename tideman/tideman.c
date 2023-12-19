@@ -167,7 +167,7 @@ void sort_pairs(void)
             }
         }
         temporary.winner = pairs[i].winner;
-        temporary.looser = pairs[i].loser;
+        temporary.loser = pairs[i].loser;
 
         pairs[i].winner = pairs[x_index].winner;
         pairs[i].loser = pairs[x_index].loser;
@@ -181,7 +181,7 @@ void sort_pairs(void)
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-    
+
     return;
 }
 
