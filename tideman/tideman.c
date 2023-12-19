@@ -160,13 +160,13 @@ void sort_pairs(void)
     {
         for(int j = i; j < pref_count; j++)
         {
-            if (a > preferences[pairs[j].winner][pairs[j].loser])
+            if (a < preferences[pairs[j].winner][pairs[j].loser])
             {
                 a = preferences[pairs[j].winner][pairs[j].loser];
                 exchange_number = j;
             }
         }
-        
+
         preferences[pairs[exchange_number].winner][pairs[exchange_number].loser] = preferences[pairs[i].winner][pairs[i].loser];
         preferences[pairs[i].winner][pairs[i].loser] = a;
     }
