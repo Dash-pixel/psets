@@ -161,7 +161,7 @@ void sort_pairs(void)
         {
             if (a < preferences[pairs[j].winner][pairs[j].loser])
             {
-                
+                a = preferences[pairs[j].winner][pairs[j].loser]
             }
         }
 
