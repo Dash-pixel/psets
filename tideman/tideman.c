@@ -166,8 +166,6 @@ void sort_pairs(void)
             }
         }
 
-    pairs[i] = pairs[exchange_number];
-
     }
 
     return;
