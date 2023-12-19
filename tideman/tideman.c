@@ -153,6 +153,9 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     int pref_count = [candidate_count * (candidate_count - 1) / 2];
+    int a = 0;
+    int exchange number = 0;
+
     for(int i = 0; i < pref_count; i++)
     {
         for(int j = i; j < pref_count; i++)
@@ -163,7 +166,7 @@ void sort_pairs(void)
                 exchange_number = j;
             }
         }
-        
+
     }
 
     return;
