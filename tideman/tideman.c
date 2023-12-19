@@ -144,6 +144,11 @@ void add_pairs(void)
                 pairs[i].loser = a;
                 i++;
             }
+            else
+            {
+
+                
+            }
         }
     }
     return;
