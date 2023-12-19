@@ -181,6 +181,7 @@ void lock_pairs(void)
 {
     pairs[i].winner
     pairs[i].loser
+    
     return;
 }
 
