@@ -169,14 +169,9 @@ void sort_pairs(void)
                 x_index = j;
             }
         }
-        temporary.winner = pairs[i].winner;
-        temporary.loser = pairs[i].loser;
-
-        pairs[i].winner = pairs[x_index].winner;
-        pairs[i].loser = pairs[x_index].loser;
-
-        pairs[x_index].winner = temporary.winner;
-        pairs[x_index].loser = temporary.loser;
+        temporary= pairs[i];
+        pairs[i] = pairs[x_index];
+        pairs[x_index] = temporary;
     }
     return;
 }
