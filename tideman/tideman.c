@@ -166,6 +166,7 @@ void sort_pairs(void)
                 exchange_number = j;
             }
         }
+        
         preferences[pairs[exchange_number].winner][pairs[exchange_number].loser] = preferences[pairs[i].winner][pairs[i].loser];
         preferences[pairs[i].winner][pairs[i].loser] = a;
     }
