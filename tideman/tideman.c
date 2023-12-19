@@ -153,7 +153,8 @@ void sort_pairs(void)
 {
     int pref_count = (candidate_count * (candidate_count - 1) / 2);
     int a = 0;
-    int exchange_number = 0;
+    int x_index = 0;
+    pair 
 
     for(int i = 0; i < pref_count; i++)
     {
@@ -162,10 +163,11 @@ void sort_pairs(void)
             if (a < preferences[pairs[j].winner][pairs[j].loser])
             {
                 a = preferences[pairs[j].winner][pairs[j].loser];
-                exchange_number = j;
+                x_index = j;
             }
         }
-
+        pairs[i] = pairs[x_index];
+        pairs[x_index] =[i];
     }
 
     return;
