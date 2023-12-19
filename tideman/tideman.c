@@ -166,7 +166,12 @@ void sort_pairs(void)
                 x_index = j;
             }
         }
+        temporary.winner = pairs[i].winner;
+        temporary.looser = pairs[i].loser;
+
         pairs[i] = pairs[x_index];
+        pairs[i] = pairs[x_index];
+        
         pairs[x_index] =[i];
     }
 
