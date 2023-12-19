@@ -91,13 +91,6 @@ int main(int argc, string argv[])
 
     add_pairs();
     sort_pairs();
-    // Print sorted pairs////////////////////////////////
-    printf("Sorted Pairs:\n");
-    for (int i = 0; i < pair_count; i++)
-    {
-        printf("%s beats %s\n", candidates[pairs[i].winner], candidates[pairs[i].loser]);
-    }
-    /////////////////////////////////////////////////////
     lock_pairs();
     print_winner();
     return 0;
