@@ -154,7 +154,7 @@ void sort_pairs(void)
     int pref_count = (candidate_count * (candidate_count - 1) / 2);
     int a = 0;
     int x_index = 0;
-    pair 
+    pair temporary;
 
     for(int i = 0; i < pref_count; i++)
     {
