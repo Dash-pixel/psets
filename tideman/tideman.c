@@ -169,7 +169,7 @@ void sort_pairs(void)
                 x_index = j;
             }
         }
-        temporary= pairs[i];
+        temporary = pairs[i];
         pairs[i] = pairs[x_index];
         pairs[x_index] = temporary;
     }
