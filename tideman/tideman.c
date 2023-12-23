@@ -179,6 +179,7 @@ void sort_pairs(void)
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
+
     
 // стак - это арей размером с кол-во кандидатов
 // в котором последнее не -1 значение это узел который посещается
