@@ -182,7 +182,6 @@ void lock_pairs(void)
 {
     for (int i = 0; i < pair_count; i++)
     {
-        int visited[MAX] = {-1};
         int unvisited[MAX] = {-1};
         bool no_stroke = true;
         int length = 0; // pairs[i].winner
@@ -198,7 +197,7 @@ void lock_pairs(void)
             {
                 if (pair[i].winner == locked[j][unvisited[length]])
                 {
-                    
+
                 }
                 if (locked[j][unvisited[length]] == true)
                 {
