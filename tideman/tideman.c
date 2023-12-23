@@ -197,7 +197,7 @@ void lock_pairs(void)
 // следующим
 // locked[pairs[i].winner][pairs[i].loser]
 // for if  locked[b][pairs[i].winner] = true
-// 
+// for if  locked[c][pairs[b].winner] = true
 
 
 
