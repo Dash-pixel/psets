@@ -190,7 +190,7 @@ void lock_pairs(void)
     {
         for (int j = 0; j < candidate_count; j++)
         {
-            if (locked[pairs[i].loser][j] == true)
+            if (locked[j][unvisited[length]] == true)
             {
             then write in array unvisited the number
             }
@@ -198,17 +198,6 @@ void lock_pairs(void)
     }
 
 
-
-
-
-    for (int j = 0; j < candidate_count; j++)
-    {
-         if (locked[pairs[i].loser][j] == true)
-         {
-            then write in array unvisited the number
-         }
-    }
-    for first unvisited
 
 
 
