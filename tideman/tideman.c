@@ -192,7 +192,7 @@ void lock_pairs(void)
         visited[length] = unvisited[length];
         unvisited[length] = -1;
         length --;
-        
+
         for (int j = 0; j < candidate_count; j++)
         {
             if (locked[j][unvisited[length]] == true)
@@ -202,14 +202,6 @@ void lock_pairs(void)
             }
         }
     }
-
-
-
-
-
-
-
-
 }
 
 // Print the winner of the election
