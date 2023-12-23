@@ -180,7 +180,9 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
 
-    int visited[can]
+    int visited[candidate_count]{-1};
+    int visited[candidate_count]{-1};
+
     for (int i = 0; i < pair_count; i++)
     {
     if (there is no loop){
