@@ -188,7 +188,13 @@ void lock_pairs(void)
 
     while (length >= 0)
     {
-        
+        for (int j = 0; j < candidate_count; j++)
+        {
+            if (locked[pairs[i].loser][j] == true)
+            {
+            then write in array unvisited the number
+            }
+        }
     }
 
 
