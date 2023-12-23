@@ -189,7 +189,6 @@ void lock_pairs(void)
 
         while (length >= 0)
         {
-            visited[//length] = unvisited[length];
             unvisited[length] = -1;
             length --;
 
