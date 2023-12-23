@@ -195,6 +195,9 @@ void lock_pairs(void)
 // стак - это арей размером с кол-во кандидатов
 // в котором последнее не -1 значение это узел который посещается
 // следующим
+// locked[pairs[i].winner][pairs[i].loser]
+// locked[pairs [].winner][pairs[i].winner]
+
 
 
 }
