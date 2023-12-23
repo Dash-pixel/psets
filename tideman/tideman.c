@@ -196,7 +196,8 @@ void lock_pairs(void)
 // в котором последнее не -1 значение это узел который посещается
 // следующим
 // locked[pairs[i].winner][pairs[i].loser]
-// locked[pairs [].winner][pairs[i].winner]
+// for if  locked[b][pairs[i].winner] = true
+// 
 
 
 
