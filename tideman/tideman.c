@@ -193,7 +193,8 @@ void lock_pairs(void)
         {
             if (locked[j][unvisited[length]] == true)
             {
-            then write in array unvisited the number
+                length++;
+                unvisited[length] = pairs[j].loser;
             }
         }
     }
