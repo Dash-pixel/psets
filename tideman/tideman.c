@@ -184,11 +184,11 @@ void lock_pairs(void)
     int visited[MAX] = {-1};
     int unvisited[MAX] = {-1};
 
-    for (int j = 0; j < pair_count; j++)
+    for (int j = 0; j < candidate_count; j++)
     {
         if (locked[pairs[j].winner][pairs[i].loser] = true)
         {
-            visited
+            visited [pairs[j].winner]
         }
 
 
