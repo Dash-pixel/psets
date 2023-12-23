@@ -186,7 +186,7 @@ void lock_pairs(void)
 
     for (int j = 0; j < candidate_count; j++)
     {
-        locked[pairs[i].winner][pairs[i].loser]
+        visited 
     }
 
 
