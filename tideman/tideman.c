@@ -201,41 +201,6 @@ void lock_pairs(void)
 
 
 
-
-
-
-
-
-
-
-/*    for (int j = 0; j < candidate_count; j++)
-    {
-        if (locked[pairs[j].winner][pairs[i].loser] = true)
-        {
-            visited [pairs[j].winner]
-        }
-
-
-
-    }
-
-    if (there is no loop){
-        locked[pairs[i].winner][pairs[i].loser] = true;
-    }
-    }
-    return;
-*/
-
-// стак - это арей размером с кол-во кандидатов
-// в котором последнее не -1 значение это узел который посещается
-// следующим
-// locked[pairs[i].winner][pairs[i].loser]
-// for if  locked[b][pairs[i].winner] = true
-// for if  locked[c][b] = true
-//
-
-
-
 }
 
 // Print the winner of the election
