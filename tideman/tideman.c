@@ -186,6 +186,21 @@ void lock_pairs(void)
 
     for (int j = 0; j < candidate_count; j++)
     {
+        locked[pairs[i].winner][pairs[i].loser]
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*    for (int j = 0; j < candidate_count; j++)
+    {
         if (locked[pairs[j].winner][pairs[i].loser] = true)
         {
             visited [pairs[j].winner]
@@ -200,7 +215,7 @@ void lock_pairs(void)
     }
     }
     return;
-
+*/
 
 // стак - это арей размером с кол-во кандидатов
 // в котором последнее не -1 значение это узел который посещается
