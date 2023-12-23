@@ -189,6 +189,10 @@ void lock_pairs(void)
 
     while (length >= 0)
     {
+        visited[length] = unvisited[length];
+        unvisited[length] = -1;
+        length --;
+        
         for (int j = 0; j < candidate_count; j++)
         {
             if (locked[j][unvisited[length]] == true)
