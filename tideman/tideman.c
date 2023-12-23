@@ -181,27 +181,29 @@ void lock_pairs(void)
 {
     for (int i = 0; i < pair_count; i++)
     {
-    int visited[MAX] = {-1};
-    int unvisited[MAX] = {-1};
-    int length = 0;
+        int visited[MAX] = {-1};
+        int unvisited[MAX] = {-1};
+        int length = 0;
 
-    unvisited[length] = pairs[i].loser;
+        unvisited[length] = pairs[i].loser;
 
-    while (length >= 0)
-    {
-        visited[length] = unvisited[length];
-        unvisited[length] = -1;
-        length --;
-
-        for (int j = 0; j < candidate_count; j++)
+        while (length >= 0)
         {
-            if (locked[j][unvisited[length]] == true)
+            visited[length] = unvisited[length];
+            unvisited[length] = -1;
+            length --;
+
+            for (int j = 0; j < candidate_count; j++)
             {
-                unvisited[length] = pairs[j].loser;
-                length++;
+                if (locked[j][unvisited[length]] == true)
+                {
+                    unvisited[length] = pairs[j].loser;
+                    length++;
+                }
             }
         }
     }
+    /// некст степ понять как выявить круг и записать тру в локед
 }
 
 // Print the winner of the election
