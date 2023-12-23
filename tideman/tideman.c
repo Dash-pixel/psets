@@ -194,6 +194,11 @@ void lock_pairs(void)
 
             for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
             {
+                if (pair[i].winner =)
+                {
+
+
+                }
                 if (locked[j][unvisited[length]] == true)
                 {
                     unvisited[length] = pairs[j].loser;
