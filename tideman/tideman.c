@@ -183,7 +183,8 @@ void lock_pairs(void)
     {
     int unvisited[MAX] = {-1};
     int length = 0;
-    un
+    
+    unvisited[length] = pairs[i].loser;
 
 
     for (int j = 0; j < candidate_count; j++)
