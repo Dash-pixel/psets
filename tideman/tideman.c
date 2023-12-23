@@ -186,7 +186,12 @@ void lock_pairs(void)
 
     for (int j = 0; j < pair_count; j++)
     {
-        
+        if (locked[pairs[j].winner][pairs[i].loser] = true)
+        {
+            visited
+        }
+
+
     }
 
     if (there is no loop){
