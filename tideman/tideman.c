@@ -191,7 +191,7 @@ void lock_pairs(void)
         {
             visited[length] = unvisited[length];
             unvisited[length] = -1;
-            44 --;
+            length --;
 
             for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
             {
