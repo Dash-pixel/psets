@@ -217,9 +217,8 @@ void print_winner(void)
 {
     for(i=0; i<candidate_count; i++)
     {
-        for(j=0; j<candidate_count; j++)
+        for(j=0; locked[j][i] == 1; j++)
         {
-            if (locked[j][i] == 0)
         }
     }
     return;
