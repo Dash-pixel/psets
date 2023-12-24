@@ -185,11 +185,11 @@ void lock_pairs(void)
         bool no_stroke = false;
         int length = 0;
 
-        unvisited[length] = pairs[i].loser;
+        unvisited[length] = pairs[i].winer;
 
         while (length >= 0)
         {
-            if (pairs[i].winner == unvisited[length])
+            if (pairs[i].loser == unvisited[length])
                 {
                     no_stroke = true;
                 }
@@ -198,7 +198,7 @@ void lock_pairs(void)
             {
                 if (locked[j][unvisited[length]] == true)
                 {
-                    unvisited[length] = pairs[j].loser;
+                    unvisited[length] = pairs[j].winer;
                     length++;
                 }
             }
