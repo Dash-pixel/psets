@@ -219,12 +219,18 @@ void print_winner(void)
     {
         for(j=0; j<candidate_count; j++)
         {
-            if (locked[][] == 0)
+            if (locked[j][i] == 0)
         }
     }
     return;
 }
 
 // locked (winner) (looser)
+// i is winner if locked[j 0-->all][i] ==0
 // i need to find so that no looser
-// 
+//  winnner
+// L 1
+// o
+// s
+// e 000000
+// r
