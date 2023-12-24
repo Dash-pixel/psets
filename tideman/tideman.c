@@ -220,8 +220,10 @@ void print_winner(void)
 
         for(j=0; j < candidate_count; j++)
         {
-            not_winner = locked [i
+            not_winner += locked [j][i];
         }
+
+        if 
     }
     return;
 }
