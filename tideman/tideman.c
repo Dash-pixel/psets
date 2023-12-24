@@ -189,7 +189,7 @@ void lock_pairs(void)
 
         while (length >= 0)
         {
-            if (pairs[i].winner == ////)
+            if (pairs[i].winner == unvisited[length])
                 {
                     no_stroke = true;
                 }
