@@ -217,10 +217,11 @@ void print_winner(void)
 {
     for(i=0; i<candidate_count; i++)
     {
-        for(j=0; locked[j][i]==0; j++)
+        while (locked[j][i]==0)
         {
-            
+            j++;
         }
+
     }
     return;
 }
