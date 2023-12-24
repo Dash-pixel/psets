@@ -193,12 +193,12 @@ void lock_pairs(void)
                 {
                     no_stroke = true;
                 }
-            int length2 = length;
+            int visiting_candidate = unvisited[length];
             length --;
 
             for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
             {
-                if (locked[j][unvisited[length2]] == true)
+                if (locked[j][visiting_candidate] == true)
                 {
                     unvisited[length] = j;
                     length++;
