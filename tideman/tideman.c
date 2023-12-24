@@ -200,8 +200,8 @@ void lock_pairs(void)
             {
                 if (locked[j][visiting_candidate] == true)
                 {
-                    unvisited[length] = j;
                     length++;
+                    unvisited[length] = j;
                 }
             }
         }
