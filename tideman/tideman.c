@@ -217,10 +217,13 @@ void print_winner(void)
 {
     for(i=0; i<candidate_count; i++)
     {
-        for(j=0; locked[][i] == 0; j++)
+        for(j=0; j<candidate_count; j++)
         {
+            if (locked[][] == 0)
         }
     }
     return;
 }
 
+// locked (winner) (looser)
+// i need to find 
