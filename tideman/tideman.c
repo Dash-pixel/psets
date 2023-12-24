@@ -219,10 +219,6 @@ void print_winner(void)
     {
         for(j=0; j<candidate_count; j++)
         {
-            if (locked[j][i] == 0)
-            {
-                
-            }
         }
     }
     return;
