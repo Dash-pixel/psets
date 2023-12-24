@@ -189,13 +189,13 @@ void lock_pairs(void)
 
         while (length >= 0)
         {
-
-            for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
-            {
-                if (pairs[i].winner == ////)
+            if (pairs[i].winner == ////)
                 {
                     no_stroke = true;
                 }
+
+            for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
+            {
                 if (locked[j][unvisited[length]] == true)
                 {
                     unvisited[length] = pairs[j].loser;
