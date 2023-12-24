@@ -204,7 +204,7 @@ void lock_pairs(void)
             }
             length --;
         }
-        if (!no_stroke)
+        if (no_stroke)
         {
             locked[pairs[i].winner][pairs[i].loser] = true;
         }
