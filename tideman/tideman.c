@@ -189,11 +189,11 @@ void lock_pairs(void)
 
         while (length >= 0)
         {
-            if (pairs[i].loser == unvisited[length])
+            int visiting_candidate = unvisited[length];
+            if (pairs[i].loser == visiting_candidate)
                 {
                     no_stroke = true;
                 }
-            int visiting_candidate = unvisited[length];
             length --;
 
             for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
