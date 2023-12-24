@@ -193,16 +193,17 @@ void lock_pairs(void)
                 {
                     no_stroke = true;
                 }
+            int length2 = length;
+            length --;
 
             for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
             {
-                if (locked[j][unvisited[length]] == true)
+                if (locked[j][unvisited[length2]] == true)
                 {
-                    unvisited[length+1] = pairs[j].winner;
+                    unvisited[length] = pairs[j].winner;
                     length++;
                 }
             }
-            length --;
         }
         if (!no_stroke)
         {
