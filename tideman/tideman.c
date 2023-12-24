@@ -178,13 +178,12 @@ void sort_pairs(void)
 
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
-
 {
     for (int i = 0; i < pair_count; i++)
     {
         int unvisited[MAX] = {-1};
-        bool no_stroke = true;
-        int length = 0; // pairs[i].winner
+        bool no_stroke = false;
+        int length = 0;
 
         unvisited[length] = pairs[i].loser;
 
@@ -197,7 +196,7 @@ void lock_pairs(void)
             {
                 if (pair[i].winner == locked[j][unvisited[length]])
                 {
-
+                    no_stroke = true;
                 }
                 if (locked[j][unvisited[length]] == true)
                 {
