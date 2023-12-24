@@ -194,7 +194,7 @@ void lock_pairs(void)
 
             for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
             {
-                if (pair[i].winner == locked[j][unvisited[length]])
+                if (pairs[i].winner == locked[j][unvisited[length]])
                 {
                     no_stroke = true;
                 }
@@ -207,11 +207,9 @@ void lock_pairs(void)
         }
         if (!no_stroke)
         {
-            locked[i]
+            locked[pairs[i].winner][pairs[i].looser] = true;
         }
-
     }
-    /// некст степ понять как выявить круг и записать тру в локед
 }
 
 // Print the winner of the election
