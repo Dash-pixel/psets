@@ -223,7 +223,10 @@ void print_winner(void)
             not_winner += locked [j][i];
         }
 
-        if 
+        if (!not_winner)
+        {
+            printf()
+        }
     }
     return;
 }
