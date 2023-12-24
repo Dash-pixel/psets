@@ -226,4 +226,5 @@ void print_winner(void)
 }
 
 // locked (winner) (looser)
-// i need to find 
+// i need to find so that no looser
+// 
