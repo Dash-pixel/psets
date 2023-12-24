@@ -198,7 +198,7 @@ void lock_pairs(void)
             {
                 if (locked[j][unvisited[length]] == true)
                 {
-                    unvisited[length] = pairs[j].winner;
+                    unvisited[length+1] = pairs[j].winner;
                     length++;
                 }
             }
