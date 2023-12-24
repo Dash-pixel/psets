@@ -189,8 +189,6 @@ void lock_pairs(void)
 
         while (length >= 0)
         {
-            unvisited[length] = -1;
-            length --;
 
             for (int j = 0; j < candidate_count; j++) //проходимся, находим следующих кандидатов
             {
@@ -204,6 +202,7 @@ void lock_pairs(void)
                     length++;
                 }
             }
+            length --;
         }
         if (!no_stroke)
         {
