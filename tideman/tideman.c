@@ -231,13 +231,3 @@ void print_winner(void)
     }
     return;
 }
-
-// locked (winner) (looser)
-// i is winner if locked[j 0-->all][i] ==0
-// i need to find so that no looser
-//  winnner
-// L 1
-// o
-// s
-// e 000000
-// r
