@@ -21,7 +21,8 @@ int main(int argc, char *argv[])
     // Open new file under the name stored at filename
     FILE *new_file = fopen(filename, "w");
 
-    fclose(filename, "w");
+    fclose(new_file);
+    free(filename);
 
-    
+
 }
