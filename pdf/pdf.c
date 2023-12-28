@@ -5,6 +5,7 @@ int main(int argc, string argv[])
 {
     //open file
     string filename = argv[1];
+    int pdf_type [4] = {37, 80, 68, 70};
 
     FILE *file = fopen(filename, "r");$
 
@@ -12,9 +13,10 @@ int main(int argc, string argv[])
 
     fread(buffer, 1, 4, file);
 
-    for (i = 0; i < 4)
-    {
 
+    for (i = 0; i < 4; i++)
+    {
+        buffer[i] 
     }
 
 }
