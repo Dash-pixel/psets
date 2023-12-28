@@ -16,7 +16,14 @@ int main(int argc, string argv[])
 
     for (i = 0; i < 4; i++)
     {
-        buffer[i] 
+        if (buffer[i] != pdf[i])
+        {
+            printf("not pdf");
+            return;
+        }
     }
+
+    printf("pdf");
+
 
 }
