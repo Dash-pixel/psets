@@ -6,7 +6,7 @@ int main(int argc, string argv[])
     //open file
     string filename = argv[1];
 
-    fread (buffer, 1, 3, filename);
+    FILE *file = fopen(filename, "r");$
 
 
 }
