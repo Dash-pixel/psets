@@ -8,5 +8,8 @@ int main(int argc, string argv[])
 
     FILE *file = fopen(filename, "r");$
 
+    uint8_t buffer[4];
+
+    fread(buffer, 1, 4, file);
 
 }
