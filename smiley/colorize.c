@@ -3,7 +3,7 @@
 
 #include "helpers.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]) // this is a pointer, why -- used to be string
 {
     // ensure proper usage
     if (argc != 3)
