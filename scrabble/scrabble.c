@@ -26,7 +26,7 @@ int compute_score(string word)
     int points = 0;
     for (int i = 0; word[i] != '\0'; i++)
     {
-        
+        if (word[i] == )
     }
     return points;
 }
