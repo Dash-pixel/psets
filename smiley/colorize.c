@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) // this is a pointer, why -- used to be string
 
     // allocate memory for image
     RGBTRIPLE (*image)[width] = calloc(height, width * sizeof(RGBTRIPLE));
-    if (image == NULL)
+    if (image == NULL) /// dont get it
     {
         printf("Not enough memory to store image.\n");
         fclose(outptr);
