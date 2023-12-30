@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) // this is a pointer, why -- used to be string
     char *outfile = argv[2];
 
     // open input file
-    FILE *inptr = fopen(infile, "r");
+    FILE *inptr = fopen(infile, "r"); //why is it the pointer to RAM
     if (inptr == NULL)
     {
         printf("Could not open %s.\n", infile);
