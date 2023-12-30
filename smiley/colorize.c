@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) // this is a pointer, why -- used to be string
     // read infile's BITMAPFILEHEADER
     BITMAPFILEHEADER bf; // file header data_type ----> bf is declared --> found place for bf
     fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);
-    // &bf where saves --- sizeof from inptr
+    // &bf where saves --- sizeof from inptr --- 1 это кол-во отрезков???
     //&bf find place where stored
     //inptr - stores infile place
 
