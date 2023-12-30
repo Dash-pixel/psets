@@ -56,7 +56,7 @@ typedef struct
     DWORD  biClrUsed;
     DWORD  biClrImportant;
 } __attribute__((__packed__))
-BITMAPINFOHEADER;
+BITMAPINFOHEADER; //// this is type to save info about picture -- how to show it??
 
 /**
  * RGBTRIPLE
