@@ -32,9 +32,9 @@ int main(int argc, char *argv[])
         printf("Could not create %s.\n", outfile);
         return 5;
     }
-
+////////////////////////////////////////////////////////////////////////////////////
     // read infile's BITMAPFILEHEADER
-    BITMAPFILEHEADER bf;
+    BITMAPFILEHEADER bf; // file header data_type ----> bf is declared
     fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);
 
     // read infile's BITMAPINFOHEADER
