@@ -54,8 +54,9 @@ int main(int argc, char *argv[]) // this is a pointer, why -- used to be string
         return 6;
     }
 //////////////////////////////////////////////////////////////
-    int height = abs(bi.biHeight); //what the fuck is abs -- a module in math.
+    int height = abs(bi.biHeight); //what the fuck is abs -- a module in math. (why its not done with width?)
     int width = bi.biWidth;
+//////////////////////////////////////////////////////////////
 
     // allocate memory for image
     RGBTRIPLE (*image)[width] = calloc(height, width * sizeof(RGBTRIPLE));
