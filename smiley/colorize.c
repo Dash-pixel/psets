@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) // this is a pointer, why -- used to be string
         printf("Unsupported file format.\n");
         return 6;
     }
-
+//////////////////////////////////////////////////////////////
     int height = abs(bi.biHeight);
     int width = bi.biWidth;
 
