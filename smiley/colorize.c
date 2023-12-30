@@ -34,8 +34,10 @@ int main(int argc, char *argv[])
     }
 ////////////////////////////////////////////////////////////////////////////////////
     // read infile's BITMAPFILEHEADER
-    BITMAPFILEHEADER bf; // file header data_type ----> bf is declared
+    BITMAPFILEHEADER bf; // file header data_type ----> bf is declared --> found place for bf
     fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);
+
+    //&bf find place where stored
 
     // read infile's BITMAPINFOHEADER
     BITMAPINFOHEADER bi;
