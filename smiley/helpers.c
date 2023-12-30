@@ -7,6 +7,4 @@ void colorize(int height, int width, RGBTRIPLE image[height][width])
     BYTE rgbtGreen = 0xFF;
     BYTE rgbtRed; = 0xFF;
 
-
-}
 }
