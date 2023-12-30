@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) // this is a pointer, why -- used to be string
     //inptr - stores infile place
 
     // read infile's BITMAPINFOHEADER
-    BITMAPINFOHEADER bi;
+    BITMAPINFOHEADER bi; // 
     fread(&bi, sizeof(BITMAPINFOHEADER), 1, inptr);
 
     // ensure infile is (likely) a 24-bit uncompressed BMP 4.0
