@@ -26,9 +26,13 @@ int compute_score(string word)
     int points = 0;
     for (int i = 0; word[i] != '\0'; i++)
     {
-        if (isalpha(word[i]))
+        if (isupper(word[i]))
         {
-            
+            points += word[i] - 'A';
+        }
+        else if(islower[i])
+        {
+            points += word[i] - 'a';
         }
     }
     return points;
