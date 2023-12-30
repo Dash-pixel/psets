@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
     fread(&bf, sizeof(BITMAPFILEHEADER), 1, inptr);
 
     //&bf find place where stored
+    //inptr - stores infile place
 
     // read infile's BITMAPINFOHEADER
     BITMAPINFOHEADER bi;
