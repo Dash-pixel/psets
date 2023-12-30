@@ -23,5 +23,10 @@ int main(void)
 
 int compute_score(string word)
 {
-    // TODO: Compute and return score for string
+    int points = 0;
+    for (int i = 0; word[i] != '\0'; i++)
+    {
+        
+    }
+    return points;
 }
