@@ -42,6 +42,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 
         RGBTRIPLE temp;
         int half_of_width = width / 2;
+        int lastpixel_index = width - 1;
 
         for (int j = 0; j < half_of_width; j++) {
 
