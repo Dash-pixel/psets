@@ -72,7 +72,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     for (int i = 0; i < height; i++)
     {
 
-        //can i itterate by color? smth smth do three times .color (thats the mega circle)
+        //can i itterate by color / property? smth smth do three times .color (thats the mega circle)
 
 
         for (int j = 0; j < width; j++)
@@ -84,7 +84,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             else if (i != 0 && j == 0)
             {
                 pixels_numb = 6;
-                
+                left
             }
 
             left_green = middle_green;
