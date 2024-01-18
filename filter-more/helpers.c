@@ -68,8 +68,12 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 temp[i][j] = image[i][j];
             }
     }
+
 //////////////////////////////////////////////////////////////////////////////////////////
-    for (int i = 0; i < height; i++)
+
+    int height_min1 = height - 1, width_min1 = width - 1;
+
+    for (int i = 1; i < height_min1 ; i++)
     {
 
         //can i itterate by color / property? smth smth do three times .color (thats the mega circle)
@@ -77,6 +81,16 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
         for (int j = 0; j < width; j++)
         {
+            if (j !=0 && j ! width)
+            {
+                pixels_numb = 9;
+            }
+            else if (j == 0)
+            {
+                pixels_numb = 6;
+                middle_green = 0;
+                right_green = temp[i-1][0].green + temp[i][0].green + temp[i+1][0].green
+            }
 
             left_green = middle_green;
             middle_green = right_green;
@@ -84,10 +98,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
             image[i][j].green = ((((left_green + middle_green + right_green) * 100) + 50)/9)/100;
 
-
         }
     }
-
 
     return;
 }
