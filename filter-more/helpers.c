@@ -90,7 +90,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int l = -1; l <= 1; k++)
                 {
-                    pixels9[i][]
+                    pixels9[i+l][j+k].green
+
                 }
             }
 
