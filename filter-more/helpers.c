@@ -77,6 +77,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     image[0][width-1].rgbtGreen = (temp[1][width-1].rgbtGreen + temp[0][width-1].rgbtGreen + temp[1][width-2].rgbtGreen + temp[0][width-2]).rgbtGreen/4;
     image[height-1][0].rgbtGreen = (temp[height-1][1].rgbtGreen + temp[height-2][1].rgbtGreen + temp[height-1][0].rgbtGreen + temp[height-2][0]).rgbtGreen/4;
 
+    image[0][0].rgbtRed = (temp[0][0].rgbtRed + temp[0][1].rgbtRed + temp[1][0].rgbtRed + temp[1][1])/4;
+    image[height-1][width-1].rgbtRed = (temp[height-1][width-1].rgbtRed + temp[height-2][width-1].rgbtRed + temp[height-1][width-2].rgbtRed + temp[height-2][width-2]).rgbtRed/4;
+    image[0][width-1].rgbtRed = (temp[1][width-1].rgbtRed + temp[0][width-1].rgbtRed + temp[1][width-2].rgbtRed + temp[0][width-2]).rgbtRed/4;
+    image[height-1][0].rgbtRed = (temp[height-1][1].rgbtRed + temp[height-2][1].rgbtRed + temp[height-1][0].rgbtRed + temp[height-2][0]).rgbtRed/4;
+
+    image[0][0].rgbtBlue = (temp[0][0].rgbtBlue + temp[0][1].rgbtBlue + temp[1][0].rgbtBlue + temp[1][1])/4;
+    image[height-1][width-1].rgbtBlue = (temp[height-1][width-1].rgbtBlue + temp[height-2][width-1].rgbtBlue + temp[height-1][width-2].rgbtBlue + temp[height-2][width-2]).rgbtBlue/4;
+    image[0][width-1].rgbtBlue = (temp[1][width-1].rgbtBlue + temp[0][width-1].rgbtBlue + temp[1][width-2].rgbtBlue + temp[0][width-2]).rgbtBlue/4;
+    image[height-1][0].rgbtBlue = (temp[height-1][1].rgbtBlue + temp[height-2][1].rgbtBlue + temp[height-1][0].rgbtBlue + temp[height-2][0]).rgbtBlue/4;
 
 
 for (int i = 1; i < height_min1; i++) {
