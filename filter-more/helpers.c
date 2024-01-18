@@ -73,9 +73,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 //////////////////////////////////////////////////////////////////////////////////////////
 
     image[0][0].rgbtGreen = (temp[0][0].rgbtGreen + temp[0][1].rgbtGreen + temp[1][0].rgbtGreen + temp[1][1])/4;
-    image[height-1][width-1].rgbtGreen = (temp[height-1][width-1].rgbtGreen + temp[height-2][width-1].rgbtGreen + temp[height-1][width-2].rgbtGreen + temp[height-2][width-2])/4;
-    image[0][width-1].rgbtGreen = (temp[1][width-1].rgbtGreen + temp[0][width-1].rgbtGreen + temp[1][width-2].rgbtGreen + temp[0][width-2])/4;
-    image[height-1][0].rgbtGreen = (temp[height-1][1].rgbtGreen + temp[height-2][1].rgbtGreen + temp[height-1][0].rgbtGreen + temp[height-2][0])/4;
+    image[height-1][width-1].rgbtGreen = (temp[height-1][width-1].rgbtGreen + temp[height-2][width-1].rgbtGreen + temp[height-1][width-2].rgbtGreen + temp[height-2][width-2]).rgbtGreen/4;
+    image[0][width-1].rgbtGreen = (temp[1][width-1].rgbtGreen + temp[0][width-1].rgbtGreen + temp[1][width-2].rgbtGreen + temp[0][width-2]).rgbtGreen/4;
+    image[height-1][0].rgbtGreen = (temp[height-1][1].rgbtGreen + temp[height-2][1].rgbtGreen + temp[height-1][0].rgbtGreen + temp[height-2][0]).rgbtGreen/4;
 
 
 
