@@ -68,7 +68,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 temp[i][j] = image[i][j];
             }
     }
-
+//////////////////////////////////////////////////////////////////////////////////////////
     for (int i = 0; i < height; i++)
     {
 
@@ -81,7 +81,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 pixels_numb = 9;
             }
-            else if (i != 0 && j == 0 || )
+            else if (i != 0 && j == 0 || ///)
             {
                 pixels_numb = 6;
                 middle_green = 0;
