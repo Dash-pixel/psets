@@ -77,13 +77,17 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
         for (int j = 0; j < width; j++) {
 
+           left_green = middle_green;
+           middle_green = right_green;
+           right_green = temp[i-1][j+1] + temp[i][j+1] + temp[i+1][j+1];
+
+           green_average = (((left_green + middle_green + right_green) * 100) + 50)/100;
+
+
+
            // left_green = temp[i-1][j-1] + temp[i][j-1] + temp[i+1][j-1];
            // middle_green = temp[i-1][j] + temp[i][j] + temp[i+1][j];
            // right_green = temp[i-1][j+1] + temp[i][j+1] + temp[i+1][j+1];
-           //
-
-           green_average = (((left_green + middle_green + right_green) * 100) + 50)/100;
-           
 
 // so there we run into problem - there is not enough space in RGBTRIPLE to store summed up numbers
 // there is still issue with the NULL pixels, can be solved with an if statement, but its bullshit
