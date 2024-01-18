@@ -81,11 +81,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
         for (int j = 1; j < width; j++)
         {
-            if (i !=0 || j !=0)
+            if (i !=0 && j !=0)
             {
                 pixels_numb = 9;
             }
-            else if
+            else if (i == 0 && j != 0)
+            {
+                pixels_numb = 6;
+                
+            }
 
             left_green = middle_green;
             middle_green = right_green;
