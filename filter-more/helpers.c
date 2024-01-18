@@ -72,7 +72,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     int height_min1 = height - 1, width_min1 = width - 1;
 //////////////////////////////////////////////////////////////////////////////////////////
 
-    image[0][0].green = temp[][].green + temp[][].green + temp[][].green
+    image[0][0].green = temp[0][0].green + temp[0][1].green + temp[1][0].green
 
     for (int i = 1; i < height_min1 ; i++)
     {
