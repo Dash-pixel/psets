@@ -72,10 +72,10 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     int height_min1 = height - 1, width_min1 = width - 1;
 //////////////////////////////////////////////////////////////////////////////////////////
 
-    image[0][0].green = (temp[0][0].green + temp[0][1].green + temp[1][0].green + temp[1][1])/4;
-    image[height-1][width-1].green = (temp[height-1][width-1].green + temp[height-2][width-1].green + temp[height-1][width-2].green + temp[height-2][width-2])/4;
-    image[0][width-1].green = (temp[1][width-1].green + temp[0][width-1].green + temp[1][width-2].green + temp[0][width-2])/4;
-    image[height-1][0].green = (temp[height-1][1].green + temp[height-2][1].green + temp[height-1][0].green + temp[height-2][0])/4;
+    image[0][0].rgbtGreen = (temp[0][0].rgbtGreen + temp[0][1].rgbtGreen + temp[1][0].rgbtGreen + temp[1][1])/4;
+    image[height-1][width-1].rgbtGreen = (temp[height-1][width-1].rgbtGreen + temp[height-2][width-1].rgbtGreen + temp[height-1][width-2].rgbtGreen + temp[height-2][width-2])/4;
+    image[0][width-1].rgbtGreen = (temp[1][width-1].rgbtGreen + temp[0][width-1].rgbtGreen + temp[1][width-2].rgbtGreen + temp[0][width-2])/4;
+    image[height-1][0].rgbtGreen = (temp[height-1][1].rgbtGreen + temp[height-2][1].rgbtGreen + temp[height-1][0].rgbtGreen + temp[height-2][0])/4;
 
 
 
@@ -85,15 +85,15 @@ for (int i = 1; i < height_min1; i++) {
 
         for (int k = -1; k <= 1; k++) {
             for (int l = -1; l <= 1; l++) {
-                red_total += temp[i + k][j + l].red;
-                green_total += temp[i + k][j + l].green;
-                blue_total += temp[i + k][j + l].blue;
+                red_total += temp[i + k][j + l].rgbtRed;
+                green_total += temp[i + k][j + l].rgbtGreen;
+                blue_total += temp[i + k][j + l].rgbtBlue;
             }
         }
 
-        image[i][j].red = red_total / 9;
-        image[i][j].green = green_total / 9;
-        image[i][j].blue = blue_total / 9;
+        image[i][j].rgbtRed = red_total / 9;
+        image[i][j].rgbtGreen = green_total / 9;
+        image[i][j].rgbtBlue = blue_total / 9;
     }
 }
 
@@ -117,7 +117,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 pixels_numb = 6;
                 middle_green = 0;
-                right_green = temp[i-1][0].green + temp[i][0].green + temp[i+1][0].green
+                right_green = temp[i-1][0].rgbtGreen + temp[i][0].rgbtGreen + temp[i+1][0].rgbtGreen
             }
             else if (i == 0 && j != 0)
             {
@@ -126,14 +126,14 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             }*/
 
 /*
-        int middle_green = temp[i-1][0].green + temp[i][0].green + temp[i+1][0].green;
-        int right_green = temp[i-1][1].green + temp[i][1].green + temp[i+1][1].green;
-        image[i][0].green = (middle_green + right_green) /6;
+        int middle_green = temp[i-1][0].rgbtGreen + temp[i][0].rgbtGreen + temp[i+1][0].rgbtGreen;
+        int right_green = temp[i-1][1].rgbtGreen + temp[i][1].rgbtGreen + temp[i+1][1].rgbtGreen;
+        image[i][0].rgbtGreen = (middle_green + right_green) /6;
 */
 /*            left_green = middle_green;
             middle_green = right_green;
-            right_green = temp[i-1][j+1].green + temp[i][j+1].green + temp[i+1][j+1].green;
+            right_green = temp[i-1][j+1].rgbtGreen + temp[i][j+1].rgbtGreen + temp[i+1][j+1].rgbtGreen;
 
-            image[i][j].green = (left_green + middle_green + right_green)/9;
+            image[i][j].rgbtGreen = (left_green + middle_green + right_green)/9;
 
 */
