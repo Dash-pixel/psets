@@ -75,7 +75,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
 
 
-        for (int j = 0; j < width; j++) {
+        for (int j = 1; j < width; j++) {
 
             if (j!=0){
                 left_green = middle_green;
@@ -83,6 +83,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 right_green = temp[i-1][j+1].green + temp[i][j+1].green + temp[i+1][j+1]green;
 
                 green_average = (((left_green + middle_green + right_green) * 100) + 50)/100;
+            }
+
+            else
 
 
 
