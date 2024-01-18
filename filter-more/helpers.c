@@ -87,7 +87,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         image[i][0].green = (middle_green + right_green) /6;
 
 
-        for (int j = 1; j < width_min1; j++)
+        for (int j = 0; j < width_min1; j++)
         {
 
             left_green = middle_green;
@@ -98,9 +98,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
         }
 
-        int middle_green = temp[i-1][0].green + temp[i][0].green + temp[i+1][0].green;
-        int right_green = temp[i-1][1].green + temp[i][1].green + temp[i+1][1].green;
-        image[i][0].green = (middle_green + right_green) /6;
     }
 
     return;
@@ -129,3 +126,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 pixels_numb = 6;
 
             }*/
+
+/*
+        int middle_green = temp[i-1][0].green + temp[i][0].green + temp[i+1][0].green;
+        int right_green = temp[i-1][1].green + temp[i][1].green + temp[i+1][1].green;
+        image[i][0].green = (middle_green + right_green) /6;
+*/
