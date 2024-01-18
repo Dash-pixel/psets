@@ -9,10 +9,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 
         for (int j = 0; j < width; j++) {
 
-            average_color = (((image[i][j].rgbtGreen + image[i][j].rgbtRed + image[i][j].rgbtBlue) * 100 / 3) + 50)/100;
-            image[i][j].rgbtGreen = average_color;
-            image[i][j].rgbtRed = average_color;
-            image[i][j].rgbtBlue = average_color;
+            average_color = image[i][j].rgbtGreen + image[i][j].rgbtRed + image[i][j].rgbtBlue;
+            average_color =  ((average_color * 100) / 3 + 50)/100;
+            image[i][j].rgbtGreen = image[i][j].rgbtRed = image[i][j].rgbtBlue = average_color;
 
         }
     }
@@ -54,14 +53,47 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 
     }
 
-
     return;
 }
 
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    
+//  RGBTRIPLE avrg_pixl[9];
+    RGBTRIPLE temp[height][width];
+    int blue_average, red_average, green_average;
+
+        for (int i = 0; i < height; i++)
+    {
+            for (int j = 0; j < width; j++)
+            {
+                temp[i][j] = image[i][j];
+            }
+    }
+
+    for (int i = 0; i < height; i++) {
+
+
+
+        for (int j = 0; j < width; j++) {
+
+           // left_green = temp[i-1][j-1] + temp[i][j-1] + temp[i+1][j-1];
+           // middle_green = temp[i-1][j] + temp[i][j] + temp[i+1][j];
+           // right_green = temp[i-1][j+1] + temp[i][j+1] + temp[i+1][j+1];
+           //
+
+           green_average = (((left_green + middle_green + right_green) * 100) + 50)/100;
+           
+
+// so there we run into problem - there is not enough space in RGBTRIPLE to store summed up numbers
+// there is still issue with the NULL pixels, can be solved with an if statement, but its bullshit
+// i can do it with an array of the nine pixels?
+// maybe could even speed the process up by saving the pixels on the right
+
+        }
+    }
+
+
     return;
 }
 
