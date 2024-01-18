@@ -82,6 +82,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             right_green = temp[i-1][j+1].green + temp[i][j+1].green + temp[i+1][j+1]green;
 
             image[i][j].green = (((left_green + middle_green + right_green) * 100) + 50)/sides/100;
+           /*
+           left_green = middle_green;
+            middle_green = right_green;
+            right_green = temp[i-1][j+1].green + temp[i][j+1].green + temp[i+1][j+1]green;
+
+            image[i][j].green = (((left_green + middle_green + right_green) * 100) + 50)/sides/100;
+            */
 
 
         }
