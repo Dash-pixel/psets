@@ -27,11 +27,13 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         RGBTRIPLE line[width];
 
         for (int j = 0; j < width; j++) {
-        image[i][j];
+
+            line[width - j] = image[i][j];
         }
 
         for (int k = 0; k < width; k++) {
-            //image[i][k];
+
+            image[i][k] = line[k];
         }
 
     }
