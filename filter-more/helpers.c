@@ -24,14 +24,14 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i++) {
 
-        
+        RGBTRIPLE []
 
         for (int j = 0; j < width; j++) {
             image[i][j]
         }
 
         for (int k = 0; k < width; k++) {
-            image[i][j]
+            image[i][k]
         }
 
     }
