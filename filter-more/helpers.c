@@ -69,12 +69,10 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
     }
 
+    int height_min1 = height - 1, width_min1 = width - 1;
 //////////////////////////////////////////////////////////////////////////////////////////
 
-    int height_min1 = height - 1, width_min1 = width - 1;
-
-
-
+    
 
     for (int i = 1; i < height_min1 ; i++)
     {
