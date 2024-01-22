@@ -29,4 +29,5 @@ int main(int argc, char *argv[])
 
     sprintf(filename, "%031.jpg", 2);
     FILE *img = fopen(filename, "w");
+    fwrite(data, size, number, outptr);
 }
