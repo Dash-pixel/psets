@@ -25,4 +25,8 @@ int main(int argc, char *argv[])
     printf("File has been written successfully.\n");
 
     return 0;
+
+
+    sprintf(filename, "%031.jpg", 2);
+    FILE *img = fopen(filename, "w");
 }
