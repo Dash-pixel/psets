@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 
     char buffer[];
 
-    while (fread (*buffer, sizeof(char), 512, raw_pointer) = sizeof(char)) == 512?
+    while (fread (*buffer, sizeof(char), 512, raw_pointer) = sizeof(char)) == 255?
 
  buffer[0] == 0xff
  buffer [1] == 0xd8
