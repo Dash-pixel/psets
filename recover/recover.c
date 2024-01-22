@@ -9,10 +9,10 @@ int main(int argc, char *argv[])
 
     while (fread (*buffer, sizeof(char), 512, raw_pointer) = sizeof(char)) == 512?
 
-    if buffer [0] == 0xff
-// need to write in the buffer the whole card.raw?
-
-// while 512 bytes are not jpeg header, write down a file
+ buffer[0] == 0xff
+ buffer [1] == 0xd8
+buffer [2] == 0xff
+(buffer[3] & 0xf0) == 0xe0
 
     fclose(raw_pointer);
 
