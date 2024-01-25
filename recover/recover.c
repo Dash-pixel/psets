@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
       }
       else
       {
-        // continue writing
+        fwrite(data, size, number, outptr);
       }
 
     }
