@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
         {
           fclose(previous file);
         }
+
+        sprintf(filename, "%031.jpg", 2);
         FILE *img = fopen(filename, "w");
         fwrite(filename, size, number, outptr);
         i++;
