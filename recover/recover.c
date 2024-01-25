@@ -17,11 +17,12 @@ int main(int argc, char *argv[])
           fclose(previous file);
         }
 
+        i++;
         sprintf(filename, "%03i.jpg", i);
         FILE *img = fopen(filename, "w");
-        fwrite(filename, size, number, outptr);
-        i++;
+        fwrite(filename, sizeof(char), 512, outptr);
       }
+
       else if(i > 0)
       {
         fwrite(filename, size, number, outptr);
