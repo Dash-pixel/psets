@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         fwrite(filename, size, number, outptr);
         i++;
       }
-      else
+      else if(i > 0)
       {
         fwrite(filename, size, number, outptr);
       }
