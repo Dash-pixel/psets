@@ -12,7 +12,10 @@ int main(int argc, char *argv[])
     {
       if ((buffer[0] == 0xff) && (buffer[1] == 0xd8) && buffer[1] == 0xff && ((buffer[2] & 0xf0) == 0xe0))
       {
-        fclose(previous file);
+        if (i != 0)
+        {
+          fclose(previous file);
+        }
         FILE *img = fopen(filename, "w");
         fwrite(filename, size, number, outptr);
         i++;
