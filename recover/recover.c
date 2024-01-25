@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     FILE *raw_pointer = fopen(argv[1], "r");
     char buffer[];
 
-    fread (*buffer, sizeof(char), 512, raw_pointer);
+    while (fread (*buffer, sizeof(char), 512, raw_pointer) == 512){}
 
     for (i = 0; ((fread (*buffer, sizeof(char), 512, raw_pointer) == 512)); i++)
     {
