@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
       if ((buffer[0 + i] == 0xff) && (buffer[1 + i] == 0xd8) && buffer[2] == 0xff && ((buffer[3 + i] & 0xf0) == 0xe0))
       {
         FILE *img = fopen(filename, "w");
-        
+      }
+      else
+      {
+        continue writing 
       }
 
     }
