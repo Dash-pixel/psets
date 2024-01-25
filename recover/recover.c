@@ -5,9 +5,12 @@ int main(int argc, char *argv[])
 {
     FILE *raw_pointer = fopen(argv[1], "r");
 
-    char buffer[512];
+    char buffer[512]; // why this?
+    // just declaring how many elements in buffer, fread utterates through by itself
     int i = 0;
-    char *filename_pointer = maloc
+    char *filename = malloc(sizeof(char) * 8); // why this needed?
+    //
+
 
     while(fread(*buffer, sizeof(char), 512, raw_pointer) == 512)
     {
