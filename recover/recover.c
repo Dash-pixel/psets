@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 
     char buffer[512];
     int i = 0;
-    ma
+    char *filename_pointer = maloc
 
     while(fread(*buffer, sizeof(char), 512, raw_pointer) == 512)
     {
