@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     FILE *raw_pointer = fopen(argv[1], "r");
-    char buffer[];
+    char buffer[512];
 
     int i = 0;
 
