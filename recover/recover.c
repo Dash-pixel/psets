@@ -14,6 +14,8 @@ int main(int argc, char *argv[])
       {
         fclose(previous file);
         FILE *img = fopen(filename, "w");
+        fwrite(filename, size, number, outptr);
+        i++;
       }
       else
       {
