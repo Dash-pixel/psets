@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
         i++;
         sprintf(filename, "%03i.jpg", i);
         FILE *img = fopen(filename, "w");
-        fwrite(*buffer, sizeof(char), 512, //outptr);
+        fwrite(*buffer, sizeof(char), 512, filename);
       }
       else if(i > 0)
       {
-        fwrite(*buffer, sizeof(char), 512, //outptr);
+        fwrite(*buffer, sizeof(char), 512, filename);
       }
     }
 }
