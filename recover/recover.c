@@ -22,10 +22,9 @@ int main(int argc, char *argv[])
         FILE *img = fopen(filename, "w");
         fwrite(*buffer, sizeof(char), 512, //outptr);
       }
-
       else if(i > 0)
       {
-        fwrite(filename, size, number, outptr);
+        fwrite(*buffer, sizeof(char), 512, //outptr);
       }
     }
 }
