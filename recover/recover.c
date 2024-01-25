@@ -10,7 +10,11 @@ int main(int argc, char *argv[])
     {
       FILE *img = fopen(filename, "w");
 
-      
+      fwrite //untill a next file;
+
+
+
+
     }
 
 
