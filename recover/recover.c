@@ -6,7 +6,12 @@ int main(int argc, char *argv[])
     FILE *raw_pointer = fopen(argv[1], "r");
     char buffer[];
 
-    if ((buffer[0] == 0xff) && (buffer [1] == 0xd8) && buffer [2] == 0xff && ((buffer[3] & 0xf0) == 0xe0))
+    if ((buffer[0] == 0xff) && (buffer[1] == 0xd8) && buffer[2] == 0xff && ((buffer[3] & 0xf0) == 0xe0))
+    {
+      FILE *img = fopen(filename, "w");
+
+      
+    }
 
 
 
