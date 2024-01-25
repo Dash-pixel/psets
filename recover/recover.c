@@ -6,15 +6,15 @@ int main(int argc, char *argv[])
     FILE *raw_pointer = fopen(argv[1], "r");
     char buffer[];
 
-    while (fread (*buffer, sizeof(char), 512, raw_pointer) == 512){}
+    int i = 0;
 
-    for (i = 0; ((fread (*buffer, sizeof(char), 512, raw_pointer) == 512)); i++)
+    while(fread(*buffer[i], sizeof(char), 512, raw_pointer) == 512)
     {
       if ((buffer[0 + i] == 0xff) && (buffer[1 + i] == 0xd8) && buffer[2] == 0xff && ((buffer[3 + i] & 0xf0) == 0xe0))
       {
         FILE *img = fopen(filename, "w");
       }
-
+      
     }
 }
 
