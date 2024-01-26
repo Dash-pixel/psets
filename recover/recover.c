@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
       {
         if (i != 0)
         {
-          fclose(previous file);
+          fclose(filename);
         }
 
         i++;
