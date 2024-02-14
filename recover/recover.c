@@ -32,6 +32,6 @@ int main(int argc, char *argv[])
 
   }
   fclose(raw_pointer);
-  
+  free(filename);
 }
 
