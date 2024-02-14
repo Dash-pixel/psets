@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
   }
   fclose(img);
-  fclose(raw_pointer);
+  fclose(raw_pointer); // explain each one
   free(filename);
 }
 
