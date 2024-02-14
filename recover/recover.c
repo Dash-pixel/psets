@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     else if
     {
       //the case where we continue to write up the files
-
+      fwrite(*buffer, sizeof(char), 512, *img);
     }
     else
     {
