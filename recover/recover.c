@@ -15,10 +15,12 @@ int main(int argc, char *argv[])
     {
       //the case where we start a new jpeg
       FILE *img = fopen(filename, "w");
+      fwrite(*buffer, sizeof(char), 512, *img);
     }
     else if
     {
       //the case where we continue to write up the files
+      
     }
     else
     {
