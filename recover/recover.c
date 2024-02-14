@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
     {
       //the case where we start a new jpeg
       if (i != 0) //we need to first close the old jpeg, if it exists
-
         {
           fclose(filename);
         }
@@ -27,10 +26,6 @@ int main(int argc, char *argv[])
     {
       //the case where we continue to write up the files
       fwrite(*buffer, sizeof(char), 512, *img);
-    }
-    else
-    {
-      //the first case where we did not yet find a jpeg
     }
 
   }
