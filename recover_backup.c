@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
       else if(i > 0)
       {
-        fwrite(*buffer, sizeof(char), 512, filename);
+        fwrite(*buffer, sizeof(char), 512, *img);
       }
 
     }
