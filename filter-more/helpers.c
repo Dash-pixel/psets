@@ -45,11 +45,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i++) {
 
-        RGBTRIPLE temp;
-        int half_of_width = width / 2;
-        int lastpixel_index = width - 1;
-
-        for (int j = 0; j < half_of_width; j++) {
+        for (int j = 0; j < width; j++) {
 
             temp = image[i][j];
             image[i][j] = image[i][lastpixel_index - j];
