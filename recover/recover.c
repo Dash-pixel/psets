@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
   FILE *raw_pointer = fopen(argv[1], "r");
   char *filename = malloc(sizeof(char) * 8); // why this needed? NEED TO WRITE FILE NAME IN STRING
   char buffer[512]; // just declaring how many elements in buffer, fread utterates through by itself
-  int i = 0;
+  int i = 0; //likelly used for image names
 
 
   while(fread(buffer, sizeof(char), 512, raw_pointer) == 512)
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     else if
     {
       //the case where we continue to write up the files
-      
+
     }
     else
     {
