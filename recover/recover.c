@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
     }
 
   }
-  fclose()
+  fclose(raw_pointer);
+  
 }
 
