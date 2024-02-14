@@ -20,14 +20,14 @@ int main(int argc, char *argv[])
           fclose(img); //here be sure to use file, not file name
         }
       sprintf(filename, "%03i.jpg", i); // is * needed?
-      FILE *img = fopen(filename, "w");
-      fwrite(*buffer, sizeof(char), 512, *img);
+      img = fopen(filename, "w"); // how should i write this line?
+      fwrite(buffer, sizeof(char), 512, img); // what here?
       i++;
     }
-    else if
+    else if(i > 0)
     {
       //the case where we continue to write up the files
-      fwrite(*buffer, sizeof(char), 512, *img); // we are here as if overwriting the same pointer, but pointer shifts every time by itself
+      fwrite(buffer, sizeof(char), 512, img); // we are here as if overwriting the same pointer, but pointer shifts every time by itself
     }
 
   }
