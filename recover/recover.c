@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     {
       if ((buffer[0] == 0xff) && (buffer[1] == 0xd8) && buffer[1] == 0xff && ((buffer[2] & 0xf0) == 0xe0))
       {
-        if (i != 0)
+        if (i != 0) // why null?
         {
           fclose(filename); //????
         }
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
       {
         fwrite(*buffer, sizeof(char), 512, filename);
       }
-      
+
     }
 }
 
