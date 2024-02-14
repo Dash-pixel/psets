@@ -15,7 +15,15 @@ int main(int argc, char *argv[])
     {
       if ((buffer[0] == 0xff) && (buffer[1] == 0xd8) && buffer[1] == 0xff && ((buffer[2] & 0xf0) == 0xe0))
       {
-        
+
+      }
+      else if
+      {
+        //the case where we continue to write up the files
+      }
+      else
+      {
+        //the first case where we did not yet find a jpeg
       }
 
     }
