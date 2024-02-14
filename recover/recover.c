@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
   FILE *raw_pointer = fopen(argv[1], "r");
   char *filename = malloc(sizeof(char) * 8); // why this needed? NEED TO WRITE FILE NAME IN STRING
-  unsigned int buffer[512];
+  unsigned char buffer[512];
   // just declaring how many elements in buffer, fread iterates on its own
   int i = 0; //used for image names
   FILE *img; //just so that compiler does not bug with "undefined";
