@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
       //the case where we start a new jpeg
       if (i != 0) //we need to first close the old jpeg, if it exists
         {
-          fclose(*img); //here be sure to use file, not string with file name
+          fclose(img); //here be sure to use file, not string with file name
         }
       sprintf(*filename, "%03i.jpg", i);
       FILE *img = fopen(filename, "w");
