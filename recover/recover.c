@@ -25,10 +25,12 @@ int main(int argc, char *argv[])
         FILE *img = fopen(filename, "w");
         fwrite(*buffer, sizeof(char), 512, *img);
       }
+
       else if(i > 0)
       {
         fwrite(*buffer, sizeof(char), 512, filename);
       }
+      
     }
 }
 
