@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
     FILE *raw_pointer = fopen(argv[1], "r");
 
-    char buffer[512]; // why this?
+    char buffer[512];
     // just declaring how many elements in buffer, fread utterates through by itself
     int i = 0;
     char *filename = malloc(sizeof(char) * 8); // why this needed?
