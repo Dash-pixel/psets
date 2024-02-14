@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
         {
           fclose(filename);
         }
-      //now only need to finish the name AND THATS IT
       sprintf(*filename, "%03i.jpg", i);
       FILE *img = fopen(filename, "w");
       fwrite(*buffer, sizeof(char), 512, *img);
@@ -27,7 +26,7 @@ int main(int argc, char *argv[])
     else if
     {
       //the case where we continue to write up the files
-      fwrite(*buffer, sizeof(char), 512, *img);
+      fwrite(*buffer, sizeof(char), 512, *img); // we are here as if overwriting the same pointer, but pointer shifts every time by itself
     }
 
   }
