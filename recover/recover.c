@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
       //now only need to finish the name AND THATS IT
       FILE *img = fopen(filename, "w");
       fwrite(*buffer, sizeof(char), 512, *img);
+      i++;
     }
     else if
     {
