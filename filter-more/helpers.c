@@ -61,7 +61,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             unsigned int red = 0;
             unsigned int green = 0;
             unsigned blue = 0;
-            int TESTCOUNTER_9 = 0;
 
             for (int k = i - 1; (k <= i + 1) && (k < height); k++)
             {
@@ -75,7 +74,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                         blue += temp_image[k][l].rgbtBlue;
                         division_factor ++;
                     }
-                    TESTCOUNTER_9 ++;
                 }
             }
 
