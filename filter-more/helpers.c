@@ -79,9 +79,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 }
             }
 
-            image[i][j].rgbtRed = red/division_factor + 0.5;
-            image[i][j].rgbtGreen = green/division_factor + 0.5;
-            image[i][j].rgbtBlue = blue/division_factor + 0.5;
+            image[i][j].rgbtRed = (float) red/division_factor + 0.5;
+            image[i][j].rgbtGreen = (float) green/division_factor + 0.5;
+            image[i][j].rgbtBlue = (float) blue/division_factor + 0.5;
         }
     }
 
