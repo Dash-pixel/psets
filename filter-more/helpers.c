@@ -93,7 +93,11 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         for (j = 0; j < width; j++) {
 
             int Gx_red = 0;
-            int Gx_green
+            int Gx_green = 0;
+            int Gx_blue = 0;
+            int Gy_red = 0;
+            int Gy_green = 0;
+            int Gy_blue = 0;
 
             for (k = -1; k < 1; k++) {
                 for (l = -1; l < 1; l++) {
@@ -102,12 +106,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     //also learn about interrupting the cycle before finishing
                     if ((i + k > -1) && (j + l > -1) && (i + k < height) && (j + l < width))
                     {
-                        Gx += l * image[i + k][j + l]red * ((k = 0) ? 2 : 1);
+                        Gx_red += l * image[i + k][j + l].rgbtRed * ((k = 0) ? 2 : 1);
                     }
 
                     if ((i + l > -1) && (j + k > -1) && (i + l < height) && (j + k < width))
                     {
-                        Gy += l * image[i + l][j + k]red * ((k = 0) ? 2 : 1);
+                        Gy_red += l * image[i + l][j + k].rgbtRed * ((k = 0) ? 2 : 1);
                     }
 
                 }
