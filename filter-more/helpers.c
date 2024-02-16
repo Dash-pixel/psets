@@ -109,8 +109,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             int Gy_green = 0;
             int Gy_blue = 0;
 
-            for (int k = -1; k < 1; k++) {
-                for (int l = -1; l < 1; l++) {
+            for (int k = -1; k <= 1; k++) {
+                for (int l = -1; l <= 1; l++) {
 
                     int multiplyer = (k == 0) ? 2 : 1;
 
