@@ -95,7 +95,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             for (k = -1; k < 1; k++) {
                 for (l = -1; l < 1; l++) {
 
-                    
+                    multiplyer 
                     l * image[i + k][j + l]red
 
             // we need -1 0 1
