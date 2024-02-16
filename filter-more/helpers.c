@@ -128,7 +128,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 }
             }
 
-            double temp = sqrt((((double)Gx_red)^(2)) + (((double)Gy_red))^(2));
+            double temp = sqrt((double)(Gx_red * Gx_red) + ((double) Gy_red * Gy_red));
             image[i][j].rgbtRed = (int)((temp > 255) ? 255 : temp);
 
 
