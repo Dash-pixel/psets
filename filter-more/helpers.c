@@ -95,9 +95,10 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             for (k = -1; k < 1; k++) {
                 for (l = -1; l < 1; l++) {
 
-
-                    l * image[i + k][j + l]red * ((k = 0) ? 2 : 1);
-                    l * image[i + l][j + k]red * ((k = 0) ? 2 : 1);
+                    //need to also exclude if it goes out of the grid
+                    //also learn
+                    Gx += l * image[i + k][j + l]red * ((k = 0) ? 2 : 1);
+                    Gy += l * image[i + l][j + k]red * ((k = 0) ? 2 : 1);
 
 
                 }
