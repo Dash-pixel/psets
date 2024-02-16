@@ -127,7 +127,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 }
             }
 
-            Gx_red^2 + Gy_red^2
+            double temp = sqrt(Gx_red^2 + Gy_red^2);
+            temp = (if temp > 255) ? 255 : temp;
 
 
         }
