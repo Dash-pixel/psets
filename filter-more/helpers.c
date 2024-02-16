@@ -99,9 +99,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     l * image[i + k][j + l]red * ((k = 0) ? 2 : 1);
                     l * image[i + l][j + k]red * ((k = 0) ? 2 : 1);
 
-            // we need -1 0 1
-                    // -2 0 2
-                    // -1 0 1
 
                 }
             }
