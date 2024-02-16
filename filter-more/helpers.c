@@ -103,11 +103,11 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++) {
 
             int Gx_red = 0;
-            int Gx_green = 0;
-            int Gx_blue = 0;
+            //int Gx_green = 0;
+            //int Gx_blue = 0;
             int Gy_red = 0;
-            int Gy_green = 0;
-            int Gy_blue = 0;
+            //int Gy_green = 0;
+            //int Gy_blue = 0;
 
             for (int k = -1; k < 1; k++) {
                 for (int l = -1; l < 1; l++) {
@@ -115,15 +115,15 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     if ((i + k > -1) && (j + l > -1) && (i + k < height) && (j + l < width))
                     {
                         Gx_red += l * temp_image[i + k][j + l].rgbtRed * ((k = 0) ? 2 : 1);
-                        Gx_green += l * temp_image[i + k][j + l].rgbtGreen * ((k = 0) ? 2 : 1);
-                        Gx_blue += l * temp_image[i + k][j + l].rgbtBlue * ((k = 0) ? 2 : 1);
+                       // Gx_green += l * temp_image[i + k][j + l].rgbtGreen * ((k = 0) ? 2 : 1);
+                       // Gx_blue += l * temp_image[i + k][j + l].rgbtBlue * ((k = 0) ? 2 : 1);
                     }
 
                     if ((i + l > -1) && (j + k > -1) && (i + l < height) && (j + k < width))
                     {
                         Gy_red += l * temp_image[i + l][j + k].rgbtRed * ((k = 0) ? 2 : 1);
-                        Gy_green += l * temp_image[i + l][j + k].rgbtGreen * ((k = 0) ? 2 : 1);
-                        Gy_blue += l * temp_image[i + l][j + k].rgbtBlue * ((k = 0) ? 2 : 1);
+                        //Gy_green += l * temp_image[i + l][j + k].rgbtGreen * ((k = 0) ? 2 : 1);
+                        //Gy_blue += l * temp_image[i + l][j + k].rgbtBlue * ((k = 0) ? 2 : 1);
                     }
                 }
             }
