@@ -97,8 +97,10 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
                     //need to also exclude if it goes out of the grid
                     //also learn about interrupting the cycle before finishing
-                    if ((i + k > -1) && (j + l > -1) && (i + k < height) && (j + l < width){
+                    if ((i + k > -1) && (j + l > -1) && (i + k < height) && (j + l < width)){
                         Gx += l * image[i + k][j + l]red * ((k = 0) ? 2 : 1);
+                    }
+                    
                         Gy += l * image[i + l][j + k]red * ((k = 0) ? 2 : 1);
 
 
