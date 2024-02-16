@@ -112,8 +112,11 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             for (int k = -1; k < 1; k++) {
                 for (int l = -1; l < 1; l++) {
 
+                    
+
                     if ((i + k > -1) && (j + l > -1) && (i + k < height) && (j + l < width))
                     {
+
                         Gx_red += l * temp_image[i + k][j + l].rgbtRed * ((k == 0) ? 2 : 1);
                         Gx_green += l * temp_image[i + k][j + l].rgbtGreen * ((k == 0) ? 2 : 1);
                         Gx_blue += l * temp_image[i + k][j + l].rgbtBlue * ((k == 0) ? 2 : 1);
