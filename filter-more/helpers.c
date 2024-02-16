@@ -118,7 +118,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     {
 
                         Gx_red += l * temp_image[i + k][j + l].rgbtRed * ((k == 0) ? 2 : 1);
-                        Gx_green += l * temp_image[i + k][j + l].rgbtGreen * ((k == 0) ? 2 : 1);
+                        Gx_green += l * temp_image[i + k][j + l].rgbtGreen * multiplyer;
                         Gx_blue += l * temp_image[i + k][j + l].rgbtBlue * ((k == 0) ? 2 : 1);
                     }
 
