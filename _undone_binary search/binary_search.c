@@ -17,7 +17,6 @@ int main() {
     return 0;
 }
 
-// Implement the recursiveSearch function here
 int recursiveSearch(int arr[], int l, int r, int x) {
     // Your implementation goes here
 }
