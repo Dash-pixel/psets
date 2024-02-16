@@ -114,14 +114,14 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
                     if ((i + k > -1) && (j + l > -1) && (i + k < height) && (j + l < width))
                     {
-                        Gx_red += l * temp_image[i + k][j + l].rgbtRed * ((k = 0) ? 2 : 1);
+                        Gx_red += l * temp_image[i + k][j + l].rgbtRed * ((k == 0) ? 2 : 1);
                        // Gx_green += l * temp_image[i + k][j + l].rgbtGreen * ((k = 0) ? 2 : 1);
                        // Gx_blue += l * temp_image[i + k][j + l].rgbtBlue * ((k = 0) ? 2 : 1);
                     }
 
                     if ((i + l > -1) && (j + k > -1) && (i + l < height) && (j + k < width))
                     {
-                        Gy_red += l * temp_image[i + l][j + k].rgbtRed * ((k = 0) ? 2 : 1);
+                        Gy_red += l * temp_image[i + l][j + k].rgbtRed * ((k == 0) ? 2 : 1);
                         //Gy_green += l * temp_image[i + l][j + k].rgbtGreen * ((k = 0) ? 2 : 1);
                         //Gy_blue += l * temp_image[i + l][j + k].rgbtBlue * ((k = 0) ? 2 : 1);
                     }
