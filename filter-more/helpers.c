@@ -103,11 +103,11 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++) {
 
             int Gx_red = 0;
-            //int Gx_green = 0;
-            //int Gx_blue = 0;
+            int Gx_green = 0;
+            int Gx_blue = 0;
             int Gy_red = 0;
-            //int Gy_green = 0;
-            //int Gy_blue = 0;
+            int Gy_green = 0;
+            int Gy_blue = 0;
 
             for (int k = -1; k < 1; k++) {
                 for (int l = -1; l < 1; l++) {
@@ -130,6 +130,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
             double temp = sqrt((double)(Gx_red * Gx_red) + ((double) Gy_red * Gy_red));
             image[i][j].rgbtRed = (int)((temp > 255) ? 255 : temp);
+            
+            temp = sqrt((double)(Gx_green * Gx_green) + ((double) Gy_green * Gy_green));
+            image[i][j].rgbtGreen = (int)((temp > 255) ? 255 : temp);
+
+            temp = sqrt((double)(Gx_green * Gx_green) + ((double) Gy_green * Gy_green));
+            image[i][j].rgbtGreen = (int)((temp > 255) ? 255 : temp);
 
 
         }
