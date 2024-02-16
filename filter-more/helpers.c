@@ -102,20 +102,24 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             for (k = -1; k < 1; k++) {
                 for (l = -1; l < 1; l++) {
 
-                    //need to also exclude if it goes out of the grid
-                    //also learn about interrupting the cycle before finishing
                     if ((i + k > -1) && (j + l > -1) && (i + k < height) && (j + l < width))
                     {
                         Gx_red += l * image[i + k][j + l].rgbtRed * ((k = 0) ? 2 : 1);
+                        Gx_green += l * image[i + k][j + l].rgbtGreen * ((k = 0) ? 2 : 1);
+                        Gx_blue += l * image[i + k][j + l].rgbtBlue * ((k = 0) ? 2 : 1);
                     }
 
                     if ((i + l > -1) && (j + k > -1) && (i + l < height) && (j + k < width))
                     {
                         Gy_red += l * image[i + l][j + k].rgbtRed * ((k = 0) ? 2 : 1);
+                        Gy_green += l * image[i + l][j + k].rgbtGreen * ((k = 0) ? 2 : 1);
+                        Gy_blue += l * image[i + l][j + k].rgbtBlue * ((k = 0) ? 2 : 1);
                     }
-
                 }
             }
+
+            
+
         }
     }
     return;
