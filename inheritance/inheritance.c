@@ -8,7 +8,7 @@
 // Each person has two parents and two alleles
 typedef struct person
 {
-    struct person *parents[2];
+    struct person *parents[2]; ///ТАК А ЧТО ЭТО? ПОХОЖЕ НА РЕКУРСИВНОЕ ОПРЕДЕЛЕНИЕ
     char alleles[2];
 } person;
 
@@ -39,7 +39,7 @@ int main(void)
 person *create_family(int generations)
 {
     // TODO: Allocate memory for new person
-    person malloc(sizeof person); // к чему молокить память
+    person *ponter_to_person = malloc(sizeof person); // к чему молокить память, как назвать пойнтер
 
     // If there are still generations left to create
     if (generations > 1)
@@ -48,18 +48,25 @@ person *create_family(int generations)
         person *parent0 = create_family(generations - 1);
         person *parent1 = create_family(generations - 1);
 
-        // TODO: Set parent pointers for current person
+        // TODO: Set parent pointers for current person //  WHAT?????
+        // THIS PERSON'S PARENT ADRESS IN MEMORY
+        
+
 
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
+
     }
 
     // If there are no generations left to create
     else
     {
         // TODO: Set parent pointers to NULL
-        
+        person *parent0 = NULL;
+        person *parent1 = NULL;
 
         // TODO: Randomly assign alleles
+        person.alleles[0] = random_allele();
+        person.alleles[1] = random_allele();
     }
 
     // TODO: Return newly created person
