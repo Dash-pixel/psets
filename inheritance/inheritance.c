@@ -50,19 +50,13 @@ person *create_family(int generations)
         person *parent0 = create_family(generations - 1);
         person *parent1 = create_family(generations - 1);
 
-        // TODO: Set parent pointers for current person //  WHAT?????
-        // THIS PERSON'S PARENT ADRESS IN MEMORY
-        // SO WE HAVE PARENT0 AND PARENT1 POINTERS. MAYBE WE NEED TO ALSO ADD THEM HERE
-        // NEED TO DO SMTH ABOUT MALLOC BECAUSE HOW ARE WE CREATING PARENTS BEFORE MALLOKING THEM SPACE?
-        // BUT WE DONT THOUGH, WE CALL CREATE_FAMILY(GEN - 1) BEFORE CREATING A POINTER TO THEM
+        // TODO: Set parent pointers for current person
         person -> parents[0] = *parent0;
         person -> parents[1] = *parent1;
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
 
     }
-//-------------------------------------------------------------------------------------------------------------
-//-------------------------------------------------------------------------------------------------------------
-    // If there are no generations left to create
+ // If there are no generations left to create
     else
     {
         // TODO: Set parent pointers to NULL
@@ -75,9 +69,10 @@ person *create_family(int generations)
     }
 
     // TODO: Return newly created person
-    return NULL;
+    return *ponter_to_person;
 }
-
+//-------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------
 // Free `p` and all ancestors of `p`.
 void free_family(person *p)
 {
