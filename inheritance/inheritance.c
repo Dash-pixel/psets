@@ -67,12 +67,12 @@ person *create_family(int generations)
         person *parent1 = NULL;
 
         // TODO: Randomly assign alleles
-        this_person ->.alleles[0] = random_allele();
-        person.alleles[1] = random_allele();
+        this_person -> alleles[0] = random_allele();
+        this_person -> alleles[1] = random_allele();
     }
 
     // TODO: Return newly created person
-    return *this_person;
+    return this_person;
 }
 //-------------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------------
@@ -80,7 +80,7 @@ person *create_family(int generations)
 void free_family(person *p)
 {
     // TODO: Handle base case
-    if (*p = NULL)
+    if (p == NULL)
     {
         return;
     }
