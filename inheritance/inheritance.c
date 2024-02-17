@@ -50,7 +50,9 @@ person *create_family(int generations)
 
         // TODO: Set parent pointers for current person //  WHAT?????
         // THIS PERSON'S PARENT ADRESS IN MEMORY
-        
+        // SO WE HAVE PARENT0 AND PARENT1 POINTERS. MAYBE WE NEED TO ALSO ADD THEM HERE
+        // NEED TO DO SMTH ABOUT MALLOC BECAUSE HOW ARE WE CREATING PARENTS BEFORE MALLOKING THEM SPACE?
+        // BUT WE DONT THOUGH, WE CALL CREATE_FAMILY(GEN - 1) BEFORE CREATING A POINTER TO THEM
 
 
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
