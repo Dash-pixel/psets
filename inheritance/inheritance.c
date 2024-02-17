@@ -53,8 +53,7 @@ person *create_family(int generations)
         // SO WE HAVE PARENT0 AND PARENT1 POINTERS. MAYBE WE NEED TO ALSO ADD THEM HERE
         // NEED TO DO SMTH ABOUT MALLOC BECAUSE HOW ARE WE CREATING PARENTS BEFORE MALLOKING THEM SPACE?
         // BUT WE DONT THOUGH, WE CALL CREATE_FAMILY(GEN - 1) BEFORE CREATING A POINTER TO THEM
-
-
+        
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
 
     }
