@@ -20,6 +20,7 @@ void print_family(person *p, int generation);
 void free_family(person *p);
 char random_allele();
 
+
 int main(void)
 {
     // Seed random number generator
@@ -34,7 +35,8 @@ int main(void)
     // Free memory
     free_family(p);
 }
-
+//-------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------
 // Create a new individual with `generations`
 person *create_family(int generations)
 {
@@ -53,11 +55,13 @@ person *create_family(int generations)
         // SO WE HAVE PARENT0 AND PARENT1 POINTERS. MAYBE WE NEED TO ALSO ADD THEM HERE
         // NEED TO DO SMTH ABOUT MALLOC BECAUSE HOW ARE WE CREATING PARENTS BEFORE MALLOKING THEM SPACE?
         // BUT WE DONT THOUGH, WE CALL CREATE_FAMILY(GEN - 1) BEFORE CREATING A POINTER TO THEM
-        
+        person -> parents[0] = *parent0;
+        person -> parents[1] = *parent1;
         // TODO: Randomly assign current person's alleles based on the alleles of their parents
 
     }
-
+//-------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------
     // If there are no generations left to create
     else
     {
