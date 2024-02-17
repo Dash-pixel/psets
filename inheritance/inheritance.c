@@ -78,11 +78,12 @@ person *create_family(int generations)
 //-------------------------------------------------------------------------------------------------------------
 // Free `p` and all ancestors of `p`.
 void free_family(person *p)
+// this code freeing a family blood tree
+//results in memory loss. WHY?
 {
     // TODO: Handle base case
     if (p == NULL)
     {
-        free(p);
         return;
     }
 
@@ -90,7 +91,7 @@ void free_family(person *p)
      free_family(p -> parents[0]);
      free_family(p -> parents[1]);
 
-    // TODO: Free child
+    // TODO: Free child 
     free(p);
 }
 
