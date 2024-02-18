@@ -53,7 +53,7 @@ bool load(const char *dictionary)
             return false;
         }
         //copy word into node
-        char *strcpy(p, ); //<-- whats here
+        char *strcpy(p, word); //<-- whats here
 
 
     };
