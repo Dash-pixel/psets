@@ -45,9 +45,9 @@ bool load(const char *dictionary)
     // after opening we want to record the words and malloc for a node with the word
     char buffer;
 
-    while (fscanf(FILE *dic, %f, word) != EOF) //<-- whats  here
+    while (fscanf(FILE *dic, "%s", word) != EOF) //<-- whats  here
     {
-        malloc(node);
+        malloc(sizeof(node));
 
 
     };
