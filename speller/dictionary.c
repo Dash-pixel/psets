@@ -50,9 +50,9 @@ bool load(const char *dictionary)
         node *p = malloc(sizeof(node));
         if (*p == NULL)
         {
-
-            
+            return false;
         }
+        
 
 
     };
