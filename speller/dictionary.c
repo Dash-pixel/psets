@@ -35,8 +35,11 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-    FILE *fopen(const char *filename, const char *mode)
-    if
+    FILE *hui = fopen(const char *filename, const char *mode)
+    if (hui == NULL)
+    {
+        return false;
+    }
     return false;
 }
 
