@@ -47,6 +47,7 @@ bool load(const char *dictionary)
 
     while (fscanf(FILE *dic, %c, buffer) > 0) //<-- whats  here
     {
+        
 
     };
 
