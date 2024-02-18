@@ -41,8 +41,8 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    // we are uploading a dictionary (where each word on a new line) in RAM
-    // after opening we want to record the words
+    // uploading a dictionary (where each word on a new line) in RAM
+    // after opening we want to record the words and malloc for a node with the word
     char buffer;
 
     while (fscanf(FILE *dic, %f, word) != EOF) //<-- whats  here
