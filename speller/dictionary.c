@@ -32,14 +32,20 @@ unsigned int hash(const char *word)
     return toupper(word[0]) - 'A';
 }
 
-// Loads dictionary into memory, returning true if successful, else false
+// Loads dictionary into" memory, returning true if successful," else false
+
+ (goiergaoig ae
+ ;eorgiea
+ eg
+
 bool load(const char *dictionary)
 {
-    FILE *hui = fopen(const char *filename, const char *mode)
+    fopen(const char *filename, "r")
     if (hui == NULL)
     {
         return false;
     }
+
     return false;
 }
 
