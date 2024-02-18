@@ -41,6 +41,12 @@ bool load(const char *dictionary)
     {
         return false;
     }
+    // we are uploading a dictionary (where each word on a new line) in RAM
+    // after opening we want to record the words
+
+    fscanf(FILE *stream, const char *format  );
+
+
 
     return false;
 }
