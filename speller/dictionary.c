@@ -45,9 +45,9 @@ bool load(const char *dictionary)
     // after opening we want to record the words
     char buffer;
 
-    while (fscanf(FILE *dic, %c, buffer) > 0) //<-- whats  here
+    while (fscanf(FILE *dic, %f, buffer) > 0) //<-- whats  here
     {
-        
+
 
     };
 
