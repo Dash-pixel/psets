@@ -12,7 +12,7 @@ typedef struct node
     struct node *next;
 } node;
 
-// TODO: Choose number of buckets in hash table
+// TODO: Choose number of buckets in hash table ------- reading the dict.
 const unsigned int N = 26;
 
 // Hash table
