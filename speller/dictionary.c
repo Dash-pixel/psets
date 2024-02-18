@@ -48,6 +48,11 @@ bool load(const char *dictionary)
     while (fscanf(FILE *dic, "%s", word) != EOF) //<-- whats  here
     {
         node *p = malloc(sizeof(node));
+        if (*p == NULL)
+        {
+
+            
+        }
 
 
     };
