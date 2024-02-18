@@ -43,8 +43,12 @@ bool load(const char *dictionary)
     }
     // we are uploading a dictionary (where each word on a new line) in RAM
     // after opening we want to record the words
+    char buffer;
 
-    fscanf(FILE *dic %c);
+    while (fscanf(FILE *dic, %c, buffer) > 0) //<-- whats  here
+    {
+
+    };
 
 
 
