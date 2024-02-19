@@ -32,7 +32,7 @@ unsigned int hash(const char *word)
     return toupper(word[0]) - 'A';
 }
 
-// Loads dictionary into" memory, returning true if successful," else false
+// Loads dictionary into memory, returning true if successful, else false
 
 bool load(const char *dictionary)
 {
@@ -43,7 +43,8 @@ bool load(const char *dictionary)
     }
     // uploading a dictionary (where each word on a new line) in RAM
     // after opening we want to record the words and malloc for a node with the word
-    
+    char *word;
+
     while (fscanf(FILE *dic, "%s", word) != EOF) //<-- whats  here
     {
         node *p = malloc(sizeof(node));
