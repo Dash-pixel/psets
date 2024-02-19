@@ -43,8 +43,7 @@ bool load(const char *dictionary)
     }
     // uploading a dictionary (where each word on a new line) in RAM
     // after opening we want to record the words and malloc for a node with the word
-    char buffer;
-
+    
     while (fscanf(FILE *dic, "%s", word) != EOF) //<-- whats  here
     {
         node *p = malloc(sizeof(node));
