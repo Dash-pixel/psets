@@ -29,7 +29,7 @@ bool check(const char *word)
         word[i] = tolower(word[i]);
     }
 
-    table[hash(*word)]; // this is pointer to the start of the list
+    char *p = table[hash(*word)]; // this is pointer to the start of the list
     // compare two strings
     return false;
 }
