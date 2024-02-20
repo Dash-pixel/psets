@@ -45,11 +45,14 @@ unsigned int hash(const char *word)
     // word_summ % 2 == 0
     // that means from 0 to 14 (basically divided array)
 
-    
+
     // word_summ % 3 == 0
     // that means from 0 to 4
     // if word_summ % 3 == 1
     // that means from 5 to 9
+    // if word_summ % 3 == 2
+    // that means from 10 to 14
+    // 
 
     return;
 }
