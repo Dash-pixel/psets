@@ -26,13 +26,14 @@ bool check(const char *word)
     // TODO
     // return true if word in dict
     // IMPORTAINT TO LOWER CASE HERE
-    char
+    char word_lower[LENGTH + 1];
+
     for (int i = 0; word[i] != '\0'; i++)
     {
         word_lower[i] = tolower(word[i]);
     }
 
-    for (node *p = table[hash(*word_lower)]; p -> next != NULL; p = p -> next)
+    for (node *p = table[hash(word_lower)]; p -> next != NULL; p = p -> next)
     {
         if(strcmp(word_lower, p -> word) == 0)
         {
