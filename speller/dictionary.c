@@ -41,7 +41,7 @@ bool load(const char *dictionary)
     {
         return false;
     }
-    // uploading a dictionary (where each word on a new line) in RAM
+
     // after opening we want to record the words and malloc for a node with the word
     char *word;
 
@@ -52,12 +52,11 @@ bool load(const char *dictionary)
         {
             return false;
         }
+        // find word's first letter to allocate bucket
         //copy word into node
-        char *strcpy(p -> word, word); //<-- whats here
+        //char *strcpy(p -> word, word); //<-- whats here?
 
-        // wait a minute... why do i do this here?
-        // dont i need to make a hash table not a linked list???
-        // hash table = array of individual linked lists
+        //
 
 
     };
