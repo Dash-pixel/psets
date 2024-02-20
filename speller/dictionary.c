@@ -86,7 +86,8 @@ bool load(const char *dictionary)
             return false;
         }
 
-        strcpy(p -> word, word_from_dic); // here happened a segmentation fault
+        strcpy(p -> word, word_from_dic); // at string_copy happened a segmentation fault // why?
+        //If p->word is a fixed-size array, make sure word_from_dic does not exceed this size
 
         int n = hash(word_from_dic);
 
