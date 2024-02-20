@@ -85,6 +85,7 @@ bool load(const char *dictionary)
         // find the last element pointer in the bucket
         p -> next = table[n];
         table[n] = p;
+        
 
     };
 
