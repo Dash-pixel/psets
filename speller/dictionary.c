@@ -113,7 +113,7 @@ bool unload(void)
     for (i = 0; i < N; i++)
     {
 
-        for (node *p = table[i]; p -> next != 'NULL'; p = temp)
+        for (node *p = table[i]; p->next!=NULL; p = temp)
         {
             temp = p -> next;
             free(p);
