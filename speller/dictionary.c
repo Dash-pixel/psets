@@ -86,7 +86,7 @@ bool load(const char *dictionary)
             return false;
         }
 
-        strcpy(p -> word, word_from_dic);
+        strcpy(p -> word, word_from_dic); // here happened a segmentation fault
 
         int n = hash(word_from_dic);
 
