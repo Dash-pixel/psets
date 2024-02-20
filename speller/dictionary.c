@@ -23,6 +23,7 @@ bool check(const char *word)
 {
     // TODO
     // return true if word in dict
+    // IMPORTAINT TO UPPER CASE HERE
      = table[hash(*word)]; // this is pointer to the start of the list
 
     return false;
@@ -38,7 +39,7 @@ unsigned int hash(const char *word)
 
     for (int i = 0; word[i] != '\0'; i++)
     {
-        summ += toupper(word[i]);
+        summ += (word[i]);
     }
 
     int n = (105*(summ % 2) + 35*(summ % 3) + 7*(summ % 5) + (summ % 7));
