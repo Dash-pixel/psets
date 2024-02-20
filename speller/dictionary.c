@@ -23,7 +23,7 @@ bool check(const char *word)
 {
     // TODO
     // return true if word in dict
-    // IMPORTAINT TO UPPER CASE HERE
+    // IMPORTAINT TO LOWER CASE HERE
      = table[hash(*word)]; // this is pointer to the start of the list
 
     return false;
@@ -35,7 +35,7 @@ unsigned int hash(const char *word)
     // TODO: Improve this hash function
     // return toupper(word[0]) - 'A';
     // 2*3*5*7
-    int summ = 0;
+    unsigned int summ = 0;
 
     for (int i = 0; word[i] != '\0'; i++)
     {
