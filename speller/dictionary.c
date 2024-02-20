@@ -42,6 +42,7 @@ unsigned int hash(const char *word)
     // check out 2 x 3 x 5
     // 1 2 3
     // 4 5 6
+    // word_summ % 2 == 0
 
     return;
 }
