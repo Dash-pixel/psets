@@ -110,7 +110,8 @@ bool unload(void)
     // TODO
     for (i = 0; i < N; i++)
     {
-        char *c = table[i];
+        char *word = table[i];
+        char *temp = word -> 
 
     }
     return false;
