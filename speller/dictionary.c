@@ -31,6 +31,7 @@ bool check(const char *word)
 
     char *p = table[hash(*word)]; // this is pointer to the start of the list
     // compare two strings
+    if ()
     return false;
 }
 
