@@ -54,7 +54,7 @@ unsigned int hash(const char *word)
     // that means from 10 to 14
     //
 
-    n = (105*(summ % 2) + 35*(summ % 3) +)
+    n = (105*(summ % 2) + 35*(summ % 3) + )
 
     return;
 }
