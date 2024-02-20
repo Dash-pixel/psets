@@ -114,6 +114,11 @@ bool unload(void)
         node *temp = p -> next;
         free(p);
 
+        for (node *p = table[i]; p -> next != NULL; p = p -> next)
+        {
+
+        }
+
 
     }
     return false;
