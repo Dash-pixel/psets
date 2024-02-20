@@ -35,7 +35,7 @@ unsigned int hash(const char *word)
 
     for (int i = 0; word[i] != '\0'; i++)
     {
-        summ += word[i];
+        summ += toupper(word[i]);
     }
 
     int n = (105*(summ % 2) + 35*(summ % 3) + 7*(summ % 5) + (summ % 7));
