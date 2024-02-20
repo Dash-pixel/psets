@@ -42,36 +42,29 @@ bool load(const char *dictionary)
         return false;
     }
 
-    // after opening we want to record the words and malloc for a node with the word
-    // maybe we need to crete the
-    char *word;
+    char *word_from_dic;
 
-    while (fscanf(FILE *dic, "%s", word) != EOF) //<-- whats  here
+    while (fscanf(FILE *dic, "%s", word_from_dic) != EOF) //<-- whats  here
     {
         node *p = malloc(sizeof(node));
         if (*p == NULL)
         {
             return false;
         }
-        // lets imagine that we already have some nodes
-        char *strcpy(p -> word, word);
 
-        // find word's first letter to allocate bucket // in fact i should use "hash function"
-        int n = (p -> word[0]) - 'A';
+        char *strcpy(p -> word, word_from_dic);
+
+        int n = hash(word_from_dic);
 
         // find the last element pointer in the bucket
         p -> next = table[n];
         table[n] = p;
 
-        // how do i write up the first element?
-        // uh i think i just need to set all values in hash table to NULL from the start
-
-
     };
 
 
 
-    return false;
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
