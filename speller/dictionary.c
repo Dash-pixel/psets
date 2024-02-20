@@ -82,7 +82,7 @@ bool load(const char *dictionary)
             return false;
         }
 
-        char *strcpy(p -> word, word_from_dic);
+        strcpy(p -> word, word_from_dic);
 
         int n = hash(word_from_dic);
 
