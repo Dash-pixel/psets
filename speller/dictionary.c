@@ -63,7 +63,8 @@ bool load(const char *dictionary)
         p -> next = table[n];
         table[n] = p;
 
-        // how do i 
+        // how do i write up the first element?
+        // uh i think i just need to set all values in hash table to NULL from the start
 
 
     };
