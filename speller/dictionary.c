@@ -59,7 +59,7 @@ unsigned int hash(const char *word)
 
     for (int i = 0; word[i] != '\0'; i++)
     {
-        summ += word[i] + i;
+        summ += word[i]*i; //maybe multiply here?? but is there a point 
     }
 
     int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11));
