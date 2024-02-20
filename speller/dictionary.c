@@ -39,7 +39,7 @@ unsigned int hash(const char *word)
         word_summ += word[i];
     }
 
-    word_summ % 2
+    [word_summ % 2]
 
     return;
 }
