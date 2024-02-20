@@ -5,6 +5,10 @@
 
 #include "dictionary.h"
 
+#include <stdio.h>  // For FILE, fopen, fclose, fscanf, EOF
+#include <stdlib.h> // For malloc, free, NULL
+#include <string.h> // For strcmp, strcpy
+
 // counts number of dictiona
 
 // Represents a node in a hash table
