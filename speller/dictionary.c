@@ -32,11 +32,11 @@ unsigned int hash(const char *word)
     // return toupper(word[0]) - 'A';
     // 2*3*5*7
     // make a summ of letters in a word
-    int word_summ = 0;
+    int summ = 0;
 
     for (int i = 0; word[i] != \0; i++)
     {
-        word_summ += word[i];
+        summ += word[i];
     }
 
     // check out 2 x 3 x 5 = 30
@@ -52,7 +52,9 @@ unsigned int hash(const char *word)
     // that means from 5 to 9
     // if word_summ % 3 == 2
     // that means from 10 to 14
-    // 
+    //
+
+    n = ()
 
     return;
 }
