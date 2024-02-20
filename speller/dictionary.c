@@ -32,7 +32,16 @@ unsigned int hash(const char *word)
     // return toupper(word[0]) - 'A';
     // 2*3*5*7
     // make a summ of letters in a word
-    for (int i = 0, int word_summ = 0; word[i] != \0; )
+    int word_summ = 0;
+
+    for (int i = 0; word[i] != \0; i++)
+    {
+        word_summ += word[i];
+    }
+
+    word_summ % 2
+
+    return;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
