@@ -5,6 +5,8 @@
 
 #include "dictionary.h"
 
+// counts number of dictiona
+
 // Represents a node in a hash table
 typedef struct node
 {
@@ -85,7 +87,7 @@ bool load(const char *dictionary)
         // find the last element pointer in the bucket
         p -> next = table[n];
         table[n] = p;
-        
+
 
     };
 
