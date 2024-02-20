@@ -55,6 +55,9 @@ bool load(const char *dictionary)
         //copy word into node
         char *strcpy(p -> word, word); //<-- whats here
 
+        // wait a minute... why do i do this here?
+        // dont i need to make a hash table not a linked list???
+
 
     };
 
