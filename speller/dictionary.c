@@ -43,6 +43,7 @@ bool load(const char *dictionary)
     }
 
     // after opening we want to record the words and malloc for a node with the word
+    // maybe we need to crete the
     char *word;
 
     while (fscanf(FILE *dic, "%s", word) != EOF) //<-- whats  here
@@ -59,8 +60,8 @@ bool load(const char *dictionary)
         int n = (p -> word[0]) - 'A';
 
         // find the last element pointer in the bucket
-        p -> next = bucket[n];
-        bucket[n] = p;
+        p -> next = table[n];
+        table[n] = p;
 
 
     };
