@@ -23,7 +23,7 @@ bool check(const char *word)
 {
     // TODO
     // return true if word in dict
-    [hash(*word)];
+    table[hash(*word)];
     return false;
 }
 
