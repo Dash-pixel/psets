@@ -56,7 +56,7 @@ bool load(const char *dictionary)
         // lets imagine that we already have some nodes
         char *strcpy(p -> word, word);
 
-        // find word's first letter to allocate bucket
+        // find word's first letter to allocate bucket // in fact i should use "hash function"
         int n = (p -> word[0]) - 'A';
 
         // find the last element pointer in the bucket
