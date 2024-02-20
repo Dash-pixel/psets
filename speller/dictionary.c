@@ -110,8 +110,9 @@ bool unload(void)
     // TODO
     for (i = 0; i < N; i++)
     {
-        node *word = table[i];
-        node *temp = word -> next;
+        node *p = table[i];
+        node *temp = p -> next;
+        free(p);
 
 
     }
