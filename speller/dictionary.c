@@ -120,5 +120,5 @@ bool unload(void)
         }
 
     }
-    return false;
+    return true;
 }
