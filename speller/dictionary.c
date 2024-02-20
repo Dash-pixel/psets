@@ -23,7 +23,7 @@ bool check(const char *word)
 {
     // TODO
     // return true if word in dict
-    table[hash(*word)];
+    table[hash(*word)]; // this is pointer to the start of the list
     return false;
 }
 
