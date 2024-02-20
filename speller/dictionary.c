@@ -31,11 +31,16 @@ bool check(const char *word)
 
     char *p = table[hash(*word)]; // this is pointer to the start of the list
 
-    while (strcmp(word, p -> word) != 0)
+    for (char *p = table[hash(*word)]; p != NULL; p = p -> next)
     {
-        
+        if(strcmp(word, p -> word) == 0)
+        {
+            return true;
+        }
     }
+
     return false;
+
 }
 
 // Hashes word to a number
