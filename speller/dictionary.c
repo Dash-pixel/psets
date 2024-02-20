@@ -76,7 +76,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    char *word_from_dic;
+    char *word_from_dic = NULL;
 
     while (fscanf(dic, "%s", word_from_dic) != EOF) //<-- whats  here
     {
