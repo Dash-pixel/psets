@@ -22,7 +22,8 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    hash()
+    // return true if word in dict
+    [hash(*word)];
     return false;
 }
 
