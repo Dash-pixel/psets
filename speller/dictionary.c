@@ -82,6 +82,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
+    // пока что непонятно как -- я не могу делать глобальные вариаблы вроде как
     return 0;
 }
 
