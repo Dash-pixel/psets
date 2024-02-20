@@ -108,5 +108,9 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+    for (i = 0; i < N; i++)
+    {
+        table[i]
+    }
     return false;
 }
