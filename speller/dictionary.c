@@ -110,8 +110,8 @@ bool unload(void)
     // TODO
     for (i = 0; i < N; i++)
     {
-        int *tmp = table[i] ->;
-        tmp
+        char *c = table[i];
+
     }
     return false;
 }
