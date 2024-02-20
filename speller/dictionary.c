@@ -87,15 +87,13 @@ bool load(const char *dictionary)
         }
 
         strcpy(p -> word, word_from_dic); // at string_copy happened a segmentation fault // why?
-        //If p->word is a fixed-size array, make sure word_from_dic does not exceed this size
+        // p->word is a fixed-size array, make sure word_from_dic does not exceed this size
 
         int n = hash(word_from_dic);
 
         // find the last element pointer in the bucket
         p -> next = table[n];
         table[n] = p;
-
-
     };
     fclose(dic);
     return true;
