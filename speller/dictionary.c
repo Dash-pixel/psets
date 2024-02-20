@@ -31,32 +31,16 @@ unsigned int hash(const char *word)
     // TODO: Improve this hash function
     // return toupper(word[0]) - 'A';
     // 2*3*5*7
-    // make a summ of letters in a word
     int summ = 0;
 
-    for (int i = 0; word[i] != \0; i++)
+    for (int i = 0; word[i] != '\0'; i++)
     {
         summ += word[i];
     }
 
-    // check out 2 x 3 x 5 = 30
-    // 1 2 3
-    // 4 5 6
-    // word_summ % 2 == 0
-    // that means from 0 to 14 (basically divided array)
+    int n = (105*(summ % 2) + 35*(summ % 3) + 7*(summ % 5) + (summ % 7));
 
-
-    // word_summ % 3 == 0
-    // that means from 0 to 4
-    // if word_summ % 3 == 1
-    // that means from 5 to 9
-    // if word_summ % 3 == 2
-    // that means from 10 to 14
-    //
-
-    n = (105*(summ % 2) + 35*(summ % 3) + )
-
-    return;
+    return n;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
