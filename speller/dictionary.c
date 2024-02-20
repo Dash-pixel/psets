@@ -29,8 +29,6 @@ bool check(const char *word)
         word[i] = tolower(word[i]);
     }
 
-    char *p = table[hash(*word)]; // this is pointer to the start of the list
-
     for (char *p = table[hash(*word)]; p != NULL; p = p -> next)
     {
         if(strcmp(word, p -> word) == 0)
