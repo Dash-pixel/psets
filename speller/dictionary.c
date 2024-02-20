@@ -46,7 +46,7 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     // return toupper(word[0]) - 'A';
-    // 2*3*5*7
+    // 2*3*5*7*11
     unsigned int summ = 0;
 
     for (int i = 0; word[i] != '\0'; i++)
@@ -54,7 +54,7 @@ unsigned int hash(const char *word)
         summ += word[i];
     }
 
-    int n = (105*11*(summ % 2) + 35*11*(summ % 3) + 7*11*(summ % 5) + 11*(summ % 7) + (summ % 11));
+    int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11));
     return n;
 }
 
