@@ -63,6 +63,8 @@ bool load(const char *dictionary)
         p -> next = table[n];
         table[n] = p;
 
+        // how do i 
+
 
     };
 
