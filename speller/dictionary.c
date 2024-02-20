@@ -31,7 +31,7 @@ bool check(const char *word)
         word[i] = tolower(word[i]);
     }
 
-    for (char *p = table[hash(*word)]; p != NULL; p = p -> next)
+    for (node *p = table[hash(*word)]; p -> next != NULL; p = p -> next)
     {
         if(strcmp(word, p -> word) == 0)
         {
@@ -110,8 +110,9 @@ bool unload(void)
     // TODO
     for (i = 0; i < N; i++)
     {
-        char *word = table[i];
-        char *temp = word -> 
+        node *word = table[i];
+        node *temp = word -> next;
+
 
     }
     return false;
