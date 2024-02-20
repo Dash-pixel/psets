@@ -26,7 +26,7 @@ bool check(const char *word)
     // IMPORTAINT TO LOWER CASE HERE
     for (int i = 0; word[i] != '\0'; i++)
     {
-        word [i] = tolower(word[i]);
+        word[i] = tolower(word[i]);
     }
      table[hash(*word)]; // this is pointer to the start of the list
 
@@ -47,7 +47,6 @@ unsigned int hash(const char *word)
     }
 
     int n = (105*11*(summ % 2) + 35*11*(summ % 3) + 7*11*(summ % 5) + 11*(summ % 7) + (summ % 11));
-
     return n;
 }
 
