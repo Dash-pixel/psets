@@ -57,6 +57,7 @@ bool load(const char *dictionary)
 
         // wait a minute... why do i do this here?
         // dont i need to make a hash table not a linked list???
+        // hash table = array of individual linked lists
 
 
     };
