@@ -64,8 +64,8 @@ unsigned int hash(const char *word)
         ///
     }
 
-    int n =
-    return n;
+    //int n =
+    return summ; //n
 }
 
 // Loads dictionary into memory, returning true if successful, else false
