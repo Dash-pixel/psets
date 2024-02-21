@@ -70,9 +70,7 @@ unsigned int hash(const char *word)
         // how to make a trully unique identity??
     }
 
-    int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11));
-
-    return (n);
+    return (summ % N);
 }
 
 // Loads dictionary into memory, returning true if successful, else false
