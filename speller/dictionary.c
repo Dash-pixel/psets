@@ -112,7 +112,7 @@ unsigned int size(void)
 {
     // TODO
     // пока что непонятно как -- я не могу делать глобальные вариаблы вроде как
-    return 0;
+    return counter;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
