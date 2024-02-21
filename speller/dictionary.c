@@ -71,7 +71,7 @@ bool load(const char *dictionary)
         return false;
     }
 
-    char word_from_dic[LENGTH + 1]; // how to make sure that there is enough space
+    char word_from_dic[LENGTH + 1] = {0}; // how to make sure that there is enough space
 
     while (fscanf(dic, "%s", word_from_dic) != EOF) //<-- how do i read word one at a time so that no segment fault
     {
