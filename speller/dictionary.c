@@ -57,7 +57,7 @@ unsigned int hash(const char *word)
     // 2*3*5*7*11
     unsigned int summ = 0;
 
-    for (int i = 0; i; i++)
+    for (int i = 0; word[i] != '\0'; i++)
     {
         summ += word[i] * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
@@ -88,8 +88,8 @@ bool load(const char *dictionary)
             return false;
         }
 
-        strcpy(p -> word, word_from_dic); // at string_copy happened a segmentation fault // why?
-        // p->word is a fixed-size array, make sure word_from_dic does not exceed this size
+        strcpy(p -> word, word_from_dic);
+    
 
         int n = hash(word_from_dic);
 
