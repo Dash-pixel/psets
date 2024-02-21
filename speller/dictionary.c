@@ -56,7 +56,6 @@ unsigned int hash(const char *word)
     // return toupper(word[0]) - 'A';
     // 2*3*5*7*11
     unsigned int summ = 0;
-    char for_check;
 
     for (int i = 0; word[i] != '\0'; i++)
     {
@@ -68,7 +67,6 @@ unsigned int hash(const char *word)
     int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11)); //n
     return n;
 
-    printf("%c", for_check);
 }
 
 // Loads dictionary into memory, returning true if successful, else false
