@@ -19,7 +19,7 @@ typedef struct node
 } node;
 
 // TODO: Choose number of buckets in hash table ------- reading the dict.
-const unsigned int N = 2310; // 2*3*5*7*11
+const unsigned int N = 2310; //
 
 // Hash table
 node *table[N];
@@ -64,7 +64,7 @@ unsigned int hash(const char *word)
         ///
     }
 
-    int n = 
+    int n =
     return n;
 
     //why is this a shit idea?
