@@ -142,7 +142,7 @@ bool unload(void)
     {
         node *p = table[i];
 
-        while (p->next!=NULL)
+        while (p != NULL)
         {
             temp = p -> next;
             free(p);
