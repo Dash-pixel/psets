@@ -32,12 +32,13 @@ bool check(const char *word)
     // IMPORTAINT TO LOWER CASE HERE
     node *p = table[hash(word)];
 
-    for (node *p = table[hash(word)]; p -> next != NULL; p = p -> next)
+   while (p -> next != NULL)
     {
         if(strcmp(word, p -> word) == 0)
         {
             return true;
         }
+        p = p -> next;
     }
 
     return false;
