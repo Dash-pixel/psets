@@ -57,7 +57,7 @@ unsigned int hash(const char *word)
     // 2*3*5*7*11
     unsigned int summ = 0;
 
-    for (int i = 0; word[i] != '\0'; i++)
+    for (int i = 0; i; i++)
     {
         summ += word[i] * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
