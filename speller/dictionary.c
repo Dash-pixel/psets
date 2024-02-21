@@ -104,8 +104,9 @@ bool load(const char *dictionary)
 
     };
 /////////////////////////////////////////////////////////////////////////////
-  /*     for (int i = 0; i < N; i++) { // Iterate over each bucket
+       for (int i = 0; i < N; i++) { // Iterate over each bucket
         int count = 0; // Initialize node counter for the current bucket
+        double 
         node *cursor = table[i]; // Start with the first node in the bucket
 
         // Count nodes in the current linked list
@@ -116,7 +117,7 @@ bool load(const char *dictionary)
 
         printf("Bucket %d has %d nodes\n", i, count); // Print the count for this bucket
     }
-    */
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     fclose(dic);
