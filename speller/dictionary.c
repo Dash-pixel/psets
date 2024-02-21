@@ -54,11 +54,12 @@ unsigned int hash(const char *word)
     // return toupper(word[0]) - 'A';
     // 2*3*5*7*11
     unsigned int summ = 0;
+    int a = 0;
 
-    while (word[i])
+    while (word[a])
     {
-        word[i] = tolower(str[i]); // Convert each character to lowercase
-        i++; // Move to the next character
+        word[a] = tolower(word[a]); // Convert each character to lowercase
+        a++; // Move to the next character
     }
     for (int i = 0; word[i] != '\0'; i++)
     {
