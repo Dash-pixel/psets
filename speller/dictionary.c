@@ -33,7 +33,7 @@ bool check(const char *word)
 
     for (node *p = table[hash(word)]; p -> next != NULL; p = p -> next)
     {
-        if((strcmp(word, p -> word) == 0)
+        if(strcmp(word, p -> word) == 0)
         {
             return true;
         }
