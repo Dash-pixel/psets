@@ -31,9 +31,9 @@ bool check(const char *word)
     // return true if word in dict
     // IMPORTAINT TO LOWER CASE HERE
 
-    for (node *p = table[hash(tolower(word))]; p -> next != NULL; p = p -> next)
+    for (node *p = table[hash(word)]; p -> next != NULL; p = p -> next)
     {
-        if(strcmp((tolower(word)), p -> word) == 0)
+        if(strcmp(word), p -> word) == 0)
         {
             return true;
         }
@@ -53,7 +53,7 @@ unsigned int hash(const char *word)
 
     for (int i = 0; word[i] != '\0'; i++)
     {
-        summ += (word[i]) * (i + 1); //maybe multiply here?? but is there a point
+        summ += (tolower(word[i])) * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
     }
     return (summ % 2310);
