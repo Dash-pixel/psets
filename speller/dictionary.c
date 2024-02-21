@@ -103,6 +103,7 @@ bool load(const char *dictionary)
         counter++;
 
     };
+    
     fclose(dic);
     return true;
 }
