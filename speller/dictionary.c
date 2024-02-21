@@ -40,7 +40,7 @@ bool check(const char *word)
         }
         p = p -> next;
     }
-
+/// нужно переписать чтобы были маленькие буквы
     return false;
 
 }
