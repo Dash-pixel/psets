@@ -80,7 +80,7 @@ bool load(const char *dictionary)
 
     char *word_from_dic = NULL;
 
-    while (fscanf(dic, "%s", word_from_dic) != EOF) //<-- how do i read words one at a time?
+    while (fscanf(dic, "%s", word_from_dic) != EOF) //<-- how do i read word one at a time?
     {
         node *p = malloc(sizeof(node));
         if (p == NULL)
