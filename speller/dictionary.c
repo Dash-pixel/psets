@@ -30,6 +30,7 @@ bool check(const char *word)
     // TODO
     // return true if word in dict
     // IMPORTAINT TO LOWER CASE HERE
+    node *p = table[hash(word)]
 
     for (node *p = table[hash(word)]; p -> next != NULL; p = p -> next)
     {
