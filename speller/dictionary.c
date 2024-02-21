@@ -59,13 +59,10 @@ unsigned int hash(const char *word)
 
     for (int i = 0; word[i] != '\0'; i++)
     {
-        summ += (word[i]-'a') * (i + 1); //maybe multiply here?? but is there a point
+        summ += (word[i]) * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
-        ///
-        for_check = word[i];
     }
-    int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11)); //n
-    return n;
+    return summ;
 
 }
 
