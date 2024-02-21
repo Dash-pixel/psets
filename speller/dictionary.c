@@ -61,7 +61,6 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     // return toupper(word[0]) - 'A';
-    // 2*3*5*7*11
     unsigned int summ = 0;
 
     for (int i = 0; word[i] != '\0'; i++)
