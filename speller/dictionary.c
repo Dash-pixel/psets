@@ -56,7 +56,7 @@ unsigned int hash(const char *word)
         summ += (tolower(word[i])) * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
     }
-    return (summ % 2310);
+    return (summ);
 
 }
 
