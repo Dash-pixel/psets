@@ -59,7 +59,6 @@ unsigned int hash(const char *word)
         // how to make a trully unique identity??
     }
     return (summ%2);
-
 }
 
 // Loads dictionary into memory, returning true if successful, else false
