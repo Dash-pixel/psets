@@ -62,6 +62,7 @@ unsigned int hash(const char *word)
         summ += word[i] * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
         ///
+        printf("%c", word[i]);
     }
 
     int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11));
