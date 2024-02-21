@@ -31,6 +31,7 @@ bool check(const char *word)
     // return true if word in dict
     // IMPORTAINT TO LOWER CASE HERE
     node *p = table[hash(word)];
+    
 
    while (p != NULL)
     {
