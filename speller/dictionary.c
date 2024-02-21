@@ -66,9 +66,6 @@ unsigned int hash(const char *word)
 
     int n =
     return n;
-
-    //why is this a shit idea?
-    //because the summ is the same for words with the same letters and therefore will have the same remainders
 }
 
 // Loads dictionary into memory, returning true if successful, else false
