@@ -78,9 +78,9 @@ bool load(const char *dictionary)
         return false;
     }
 
-    char *word_from_dic = NULL;
+    char word_from_dic[]; // how to make sure
 
-    while (fscanf(dic, "%s", word_from_dic) != EOF) //<-- how do i read word one at a time?
+    while (fscanf(dic, "%s", word_from_dic) != EOF) //<-- how do i read word one at a time so that no segment fault
     {
         node *p = malloc(sizeof(node));
         if (p == NULL)
