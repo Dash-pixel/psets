@@ -32,7 +32,7 @@ bool check(const char *word)
     // IMPORTAINT TO LOWER CASE HERE
     node *p = table[hash(word)];
 
-    
+
 
    while (p != NULL)
     {
@@ -55,6 +55,11 @@ unsigned int hash(const char *word)
     // 2*3*5*7*11
     unsigned int summ = 0;
 
+    while (word[i])
+    {
+        word[i] = tolower(str[i]); // Convert each character to lowercase
+        i++; // Move to the next character
+    }
     for (int i = 0; word[i] != '\0'; i++)
     {
         summ += (tolower(word[i])) * (i + 1); //maybe multiply here?? but is there a point
