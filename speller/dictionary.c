@@ -64,7 +64,7 @@ unsigned int hash(const char *word)
         ///
     }
 
-    //int n =
+    int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11)
     return summ; //n
 }
 
