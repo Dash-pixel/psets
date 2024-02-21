@@ -10,6 +10,7 @@
 #include <string.h> // For strcmp, strcpy
 
 // counts number of dictiona
+int counter = 0;
 
 // Represents a node in a hash table
 typedef struct node
@@ -99,6 +100,8 @@ bool load(const char *dictionary)
         // find the last element pointer in the bucket
         p -> next = table[n];
         table[n] = p;
+        counter++;
+
     };
     fclose(dic);
     return true;
