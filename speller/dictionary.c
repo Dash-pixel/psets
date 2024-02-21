@@ -33,7 +33,7 @@ bool check(const char *word)
     node *p = table[hash(word)];
 
     int a = 0;
-    char word_to_lower
+    char word_to_lower[LENGTH + 1] = {0};
 
     while (word[a])
     {
@@ -44,7 +44,7 @@ bool check(const char *word)
 
    while (p != NULL)
     {
-        if(strcmp(word, p -> word) == 0)
+        if(strcmp(word_to_lower, p -> word) == 0)
         {
             return true;
         }
