@@ -20,7 +20,7 @@ typedef struct node
 } node;
 
 // TODO: Choose number of buckets in hash table ------- reading the dict.
-const unsigned int N = 2000; //
+const unsigned int N = 2310; //
 
 // Hash table
 node *table[N];
@@ -69,7 +69,10 @@ unsigned int hash(const char *word)
         summ += (tolower(word[i])) * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
     }
-    return (summ%N);
+
+    int n = (1155*(summ % 2) + 385*(summ % 3) + 77*(summ % 5) + 11*(summ % 7) + (summ % 11));
+
+    return (n);
 }
 
 // Loads dictionary into memory, returning true if successful, else false
