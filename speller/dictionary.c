@@ -37,7 +37,7 @@ bool check(const char *word)
 
     while (word[a])
     {
-        word[a] = tolower(word[a]); // Convert each character to lowercase
+        word_to_lower[a] = tolower(word[a]); // Convert each character to lowercase
         a++; // Move to the next character
     }
 
