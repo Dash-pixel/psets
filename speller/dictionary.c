@@ -33,6 +33,7 @@ bool check(const char *word)
     node *p = table[hash(word)];
 
     int a = 0;
+    char word_to_lower
 
     while (word[a])
     {
