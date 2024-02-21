@@ -30,7 +30,7 @@ bool check(const char *word)
     // TODO
     // return true if word in dict
     // IMPORTAINT TO LOWER CASE HERE
-    char word_lower[LENGTH + 1];
+    char word_lower[LENGTH + 1] = {0};
 
     for (int i = 0; word[i] != '\0'; i++)
     {
