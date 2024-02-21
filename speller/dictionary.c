@@ -60,7 +60,7 @@ unsigned int hash(const char *word)
 
     for (int i = 0; word[i] != '\0'; i++)
     {
-        summ += word[i] * (i + 1); //maybe multiply here?? but is there a point
+        summ += (word[i]-'a') * (i + 1); //maybe multiply here?? but is there a point
         // how to make a trully unique identity??
         ///
         for_check = word[i];
