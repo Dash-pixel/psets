@@ -20,7 +20,7 @@ typedef struct node
 } node;
 
 // TODO: Choose number of buckets in hash table ------- reading the dict.
-const unsigned int N = 2000; //
+const unsigned int N = 20000; //
 
 // Hash table
 node *table[N];
