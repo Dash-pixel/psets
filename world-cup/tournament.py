@@ -16,7 +16,7 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-    
+    10 writer = csv.DictWriter(file, fieldnames=["team", "rating"}])
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
