@@ -1,4 +1,7 @@
 // Implements a dictionary's functionality
+// YOU SHOULD MAKE 5 WORDS PER HASH!!!
+
+
 
 #include <ctype.h>
 #include <stdbool.h>
