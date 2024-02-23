@@ -25,6 +25,7 @@ def main():
         teams.append(reader[row])
         #is row a property of reader, but how do we write that row is a row of reader
         #we do not need that, we can access just the
+        reader[row][rating] --> row[rating]
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
