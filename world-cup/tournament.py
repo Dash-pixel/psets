@@ -17,7 +17,7 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
     f = open(sys.argv[1], 'r')
-    reader = csv.DictWriter(f, fieldnames=["team", "rating"}])
+    reader = csv.DictReader(f, fieldnames=["team", "rating"}])
     for row in reader:
         teams.append(row) #maybe i also need to explain what raws are
 
