@@ -60,8 +60,9 @@ def simulate_tournament(teams):
     # simulate round
     # take only the winning teams
     # so basically in a loop until len(list) > 1
+    #rewriting the list with redeclaring 
     while len(teams) > 1:
-        teams = 
+        teams = simulate_round(teams)
 
 
 if __name__ == "__main__":
