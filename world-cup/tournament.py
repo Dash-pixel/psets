@@ -17,7 +17,7 @@ def main():
     teams = [] # why is this a list. ---> we are creating a dictionary in each list, each dic has two keys and values
     # TODO: Read teams into memory from file
     f = open(sys.argv[1], 'r')
-    reader = csv.DictReader(f, fieldnames=["team", "rating"])
+    reader = csv.DictReader(f, fieldnames=["team", "rating"]) #it seems that maybe those are both keys, so we will have
 
     for row in reader:
         #how to referance rating to make int from string
