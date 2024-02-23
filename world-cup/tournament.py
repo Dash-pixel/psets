@@ -60,8 +60,8 @@ def simulate_tournament(teams):
     # simulate round
     # take only the winning teams
     # so basically in a loop until len(list) > 1
-
-    while 
+    while i > 1:
+        
 
 
 
