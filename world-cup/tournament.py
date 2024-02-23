@@ -59,6 +59,7 @@ def simulate_tournament(teams):
     # TODO
     # simulate round
     # take only the winning teams
+    
 
 
 if __name__ == "__main__":
