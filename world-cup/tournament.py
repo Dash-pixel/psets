@@ -20,11 +20,9 @@ def main():
     reader = csv.DictReader(f, fieldnames=["team", "rating"])
 
     for row in reader:
+        #how to referance rating to make int from string
         row[rating] = int(row[rating])
-        teams.append(reader[row])
-        #is row a property of reader, but how do we write that row is a row of reader
-        #we do not need that, we can access just the
-        reader[row][rating] --> row[rating]
+        teams.append(row)
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
