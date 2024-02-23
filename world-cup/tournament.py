@@ -18,8 +18,11 @@ def main():
     # TODO: Read teams into memory from file
     f = open(sys.argv[1], 'r')
     reader = csv.DictReader(f, fieldnames=["team", "rating"])
+
     for row in reader:
-        teams.append(row) #is row a property of reader
+        #how to referance rating to make int from string
+        reader[]
+        teams.append(reader[row]) #is row a property of reader, but how do we write that row is a row of reader
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
