@@ -28,7 +28,8 @@ def main():
     # TODO: Simulate N tournaments and keep track of win counts
     # seems that we have to populate the dictionary with countries
     # we can use our teams dictionary?
-
+    # need to create keys and values in counts
+    counts = teams #but only the names
 
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
