@@ -21,7 +21,7 @@ def main():
 
     for row in reader:
         #how to referance rating to make int from string
-        reader[]
+        reader[row][rating] = int(reader[row][rating])
         teams.append(reader[row]) #is row a property of reader, but how do we write that row is a row of reader
 
     counts = {}
