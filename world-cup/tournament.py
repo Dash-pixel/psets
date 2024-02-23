@@ -27,7 +27,7 @@ def main():
     counts = {"team":"counts"}
     # TODO: Simulate N tournaments and keep track of win counts
     # seems that we have to populate the dictionary with countries
-    # we can use our teams dictionary?
+    # we can use our teams list of dictionaries?
     # need to create keys and values in counts
     counts = teams #but only the names
     # simulate_tournament(teams):
