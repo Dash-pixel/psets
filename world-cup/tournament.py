@@ -21,7 +21,7 @@ def main():
 
     for row in reader:
         #how to referance rating to make int from string
-        row[rating] = int(row[rating])
+        row[rating] = int(row[rating])# this is incorrect, how to referance???  NameError: name 'rating' is not defined
         teams.append(row)
 
     counts = {}
