@@ -18,7 +18,7 @@ def main():
     # TODO: Read teams into memory from file
     f = open(sys.argv[1], 'r')
     reader = csv.DictReader(f, fieldnames=["team", "rating"}])
-    for team in reader:
+    for reader[team] in reader:
         teams.append(reader[team]) # maybe i also need to explain what teams are
 
     counts = {}
