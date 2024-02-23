@@ -24,7 +24,7 @@ def main():
         row[rating] = int(row[rating])# this is incorrect, how to referance???  NameError: name 'rating' is not defined
         teams.append(row)
 
-    counts = {}
+    counts = {"team":}
     # TODO: Simulate N tournaments and keep track of win counts
     # seems that we have to populate the dictionary with countries
     # we can use our teams dictionary?
