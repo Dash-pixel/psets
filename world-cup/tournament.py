@@ -30,7 +30,7 @@ def main():
     # we can use our teams dictionary?
     # need to create keys and values in counts
     counts = teams #but only the names
-    
+    #simulate_tournament(teams):
 
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
