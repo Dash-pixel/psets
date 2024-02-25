@@ -16,11 +16,11 @@ def main():
 
     teams = [] #this is a list of dictionaries
     # TODO: Read teams into memory from file
-    f = open(sys.argv[1], 'r')
-    reader = csv.DictReader(f)
-    for row in reader:
-        row["rating"] = int(row["rating"])
-        teams.append(row)
+    with open(sys.argv[1], 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            row["rating"] = int(row["rating"])
+            teams.append(row)
 
     counts = {} #this is the first key - value pair
     # TODO: Simulate N tournaments and keep track of win counts
