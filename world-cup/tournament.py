@@ -27,6 +27,7 @@ def main():
     # TODO: Simulate N tournaments and keep track of win counts
     # use simulate_tournament(teams)
     # using team names to dictionary
+    #будем честны - задача тривиальная
     for i in range(N):
         counts[simulate_tournament(teams)] += 1
 
