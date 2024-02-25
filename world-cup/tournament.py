@@ -17,7 +17,7 @@ def main():
     teams = [] #this is a list of dictionaries
     # TODO: Read teams into memory from file
     f = open(sys.argv[1], 'r')
-    reader = csv.DictReader(f, fieldnames=["team", "rating"])
+    reader = csv.DictReader(f)
     for row in reader:
         row["rating"] = int(row["rating"])
         teams.append(row)
