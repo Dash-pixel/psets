@@ -28,7 +28,7 @@ def main():
     for i in range(N):
         try:
             counts[simulate_tournament(teams)] += 1
-        except ValueError:
+        except KeyError:
             counts[simulate_tournament(teams)] = 1
 
     # Print each team's chances of winning, according to simulation
