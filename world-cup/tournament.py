@@ -23,12 +23,12 @@ def main():
         reader.get["rating"] = int(reader.get["rating"])
         teams.append(row)
 
-    counts = {"team":"counts"}
+    counts = {"team":"counts"} #both of those 
     # TODO: Simulate N tournaments and keep track of win counts
     # use simulate_tournament(teams)
     # using team names to dictionary
     simulate_tournament(teams)
-    
+
 
 
     # Print each team's chances of winning, according to simulation
