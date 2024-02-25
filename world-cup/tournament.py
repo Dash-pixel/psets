@@ -21,7 +21,7 @@ def main():
 
     for row in reader: # this goes over the list of dictionaries without row being a number
         #int the rating
-        r
+        reader.
         teams.append(row)
 
     counts = {"team":"counts"}
