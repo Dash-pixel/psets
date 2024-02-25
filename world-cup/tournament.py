@@ -63,10 +63,10 @@ def simulate_tournament(teams): #teams here is what? teams is a list of dictiona
     # TODO
 
     if len(teams) > 1:
-        teams = simulate_round(teams)
+        teams = simulate_round(teams) #list of dictionaries
         return teams
     else:
-        return teams[0] #teams is a list of dictionaries with one element in a list, but i need a string 
+        return teams[0]["team"] #teams is a list of dictionaries with one element in a list, but i need a string
 
 
 if __name__ == "__main__":
