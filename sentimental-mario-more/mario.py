@@ -13,3 +13,5 @@ while (True):
     try:
         height = int(input('Height:\n'))
     except ValueError
+    if height > 0 and height < 9:
+        break
