@@ -23,7 +23,7 @@ def main():
         reader.get["rating"] = int(reader.get["rating"])
         teams.append(row)
 
-    counts = {"team":"counts"} #both of those 
+    counts = {"team":"counts"} #this is the first key - value pair
     # TODO: Simulate N tournaments and keep track of win counts
     # use simulate_tournament(teams)
     # using team names to dictionary
