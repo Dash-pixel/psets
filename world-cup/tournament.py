@@ -20,7 +20,7 @@ def main():
     reader = csv.DictReader(f, fieldnames=["team", "rating"])
 
     for row in reader:
-        reader["rating"] = int(reader["rating"])
+        row["rating"["rating"])
         teams.append(row)
 
     counts = {"team":"counts"} #this is the first key - value pair
