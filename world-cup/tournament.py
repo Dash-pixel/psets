@@ -28,7 +28,7 @@ def main():
     for i in range(N):
         try:
             counts[simulate_tournament(teams)] += 1
-        else:
+        Error detected:
             counts[simulate_tournament(teams)] = 1
 
 
