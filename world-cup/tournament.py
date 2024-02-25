@@ -14,19 +14,19 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
-    teams = []
+    teams = [] #this is a list of dictionaries
     # TODO: Read teams into memory from file
     f = open(sys.argv[1], 'r')
     reader = csv.DictReader(f, fieldnames=["team", "rating"])
 
-    for row in reader: # this goes over the list of dictionaries without row being a number
+    for row in reader:
         reader.get["rating"] = int(reader.get["rating"])
         teams.append(row)
 
     counts = {"team":"counts"}
     # TODO: Simulate N tournaments and keep track of win counts
 
-    
+
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
