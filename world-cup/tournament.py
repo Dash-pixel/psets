@@ -63,7 +63,6 @@ def simulate_tournament(teams): #teams here is what? teams is a list of dictiona
 
     while len(teams) > 1:
         teams = simulate_round(teams)
-
     return teams[0]["team"] #teams is a list of dictionaries with one element in a list, but i need a string
 
 
