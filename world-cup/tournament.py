@@ -40,7 +40,7 @@ def simulate_game(team1, team2):
     return random.random() < probability
 
 
-def simulate_round(teams):
+def simulate_round(teams): #teams here is what? teams is a list of dictionaries
     """Simulate a round. Return a list of winning teams."""
     winners = []
 
@@ -54,13 +54,10 @@ def simulate_round(teams):
     return winners
 
 
-def simulate_tournament(teams):
+def simulate_tournament(teams): #teams here is what? teams is a list of dictionaries
     """Simulate a tournament. Return name of winning team."""
     # TODO
-    # simulate round
-    # take only the winning teams
-    # so basically in a loop until len(list) > 1
-    # rewriting the list with redeclaring
+    
     while len(teams) > 1:
         teams = simulate_round(teams)
     return teams
