@@ -11,5 +11,5 @@ and that there are no additional spaces after the last set of hashes on each row
 
 while (True):
     try:
-        height = input('Height:\n')
-    except
+        height = int(input('Height:\n'))
+    except ValueError
