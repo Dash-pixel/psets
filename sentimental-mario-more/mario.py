@@ -16,4 +16,4 @@ while (True):
         continue
     if height > 0 and height < 9:
         break
-for 
+
