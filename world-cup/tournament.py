@@ -25,10 +25,11 @@ def main():
     counts = {} #this is the first key - value pair
     # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N): #what is the problem?
+        some_stuff = simulate_tournament(teams)
         try:
-            counts[simulate_tournament(teams)] += 1
+            counts[some_stuff] += 1
         except KeyError:
-            counts[simulate_tournament(teams)] = 1
+            counts[some_stuff] = 1
 
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
