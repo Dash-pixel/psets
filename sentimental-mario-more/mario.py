@@ -10,4 +10,6 @@ and ensure that there are two spaces between the two pyramids,
 and that there are no additional spaces after the last set of hashes on each row.'''
 
 while (True):
-    height = input('Height:\n')
+    try:
+        height = input('Height:\n')
+    except
