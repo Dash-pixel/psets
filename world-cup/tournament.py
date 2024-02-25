@@ -62,7 +62,7 @@ def simulate_tournament(teams): #teams here is what? teams is a list of dictiona
     """Simulate a tournament. Return name of winning team."""
     # TODO
 
-    while len(teams) > 1:
+    if len(teams) > 1:
         teams = simulate_round(teams)
         return teams
     else:
