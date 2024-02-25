@@ -20,7 +20,8 @@ def main():
     reader = csv.DictReader(f, fieldnames=["team", "rating"])
 
     for row in reader: # this goes over the list of dictionaries without row being a number
-        row[rating] = int(row[rating]) # ok, so both colomb names are
+        #int the rating
+        r
         teams.append(row)
 
     counts = {"team":"counts"}
