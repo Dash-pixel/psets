@@ -27,8 +27,10 @@ def main():
     # TODO: Simulate N tournaments and keep track of win counts
     # do i need to recreate the dictionary from teams, or can i use just the winning values?
     for i in range(N):
-        if counts[simulate_tournament(teams)] !
-        counts[simulate_tournament(teams)] += 1
+        if counts[simulate_tournament(teams)] >= 1:
+            counts[simulate_tournament(teams)] += 1
+        else:
+            counts[simulate_tournament(teams)] = 1
 
 
     # Print each team's chances of winning, according to simulation
