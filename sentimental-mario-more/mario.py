@@ -12,6 +12,6 @@ and that there are no additional spaces after the last set of hashes on each row
 while (True):
     try:
         height = int(input('Height:\n'))
-    except ValueError
+    except ValueError:
     if height > 0 and height < 9:
         break
