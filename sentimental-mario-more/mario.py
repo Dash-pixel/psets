@@ -8,3 +8,6 @@ Then, generate (with the help of print and one or more loops) the desired half-p
 Take care to align the bottom-left corner of your pyramid with the left-hand edge of your terminal window,
 and ensure that there are two spaces between the two pyramids,
 and that there are no additional spaces after the last set of hashes on each row.'''
+
+while (True):
+    height = input('Height:\n')
