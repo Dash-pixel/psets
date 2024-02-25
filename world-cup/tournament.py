@@ -24,7 +24,7 @@ def main():
 
     counts = {} #this is the first key - value pair
     # TODO: Simulate N tournaments and keep track of win counts
-    for i in range(N):
+    for i in range(N): #what is the problem?
         try:
             counts[simulate_tournament(teams)] += 1
         except KeyError:
