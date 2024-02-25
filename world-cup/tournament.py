@@ -66,7 +66,7 @@ def simulate_tournament(teams): #teams here is what? teams is a list of dictiona
         teams = simulate_round(teams)
         return teams
     else:
-        return teams["team"]
+        return teams[0] #teams is a list of dictionaries with one element in a list, but i need a string 
 
 
 if __name__ == "__main__":
