@@ -60,7 +60,9 @@ def simulate_tournament(teams): #teams here is what? teams is a list of dictiona
 
     while len(teams) > 1:
         teams = simulate_round(teams)
-    return teams #here we are returning a dictionary of the winning team
+        return teams
+    else:
+        return teams["team"]
 
 
 if __name__ == "__main__":
