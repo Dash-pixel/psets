@@ -22,7 +22,7 @@ def main():
         row["rating"] = int(row["rating"])
         teams.append(row)
 
-    counts = {"team":"counts"} #this is the first key - value pair
+    counts = {} #this is the first key - value pair
     # TODO: Simulate N tournaments and keep track of win counts
     for i in range(N):
         try:
