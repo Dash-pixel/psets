@@ -14,14 +14,13 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
-    teams = [] # why is this a list. ---> we are creating a dictionary in each list, each dic has two keys and values
+    teams = []
     # TODO: Read teams into memory from file
     f = open(sys.argv[1], 'r')
-    reader = csv.DictReader(f, fieldnames=["team", "rating"]) #it seems that maybe those are both keys, so we will have
+    reader = csv.DictReader(f, fieldnames=["team", "rating"])
 
-    for row in reader:
-        #how to referance rating to make int from string
-        row[rating] = int(row[rating]) #this is incorrect, how to referance???  NameError: name 'rating' is not defined
+    for row in reader: # this goes over the list of dictionaries without row being a number
+        row[rating] = int(row[rating]) # ok, so both colomb names are
         teams.append(row)
 
     counts = {"team":"counts"}
