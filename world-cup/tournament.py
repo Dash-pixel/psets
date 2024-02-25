@@ -25,11 +25,9 @@ def main():
 
     counts = {"team":"counts"} #this is the first key - value pair
     # TODO: Simulate N tournaments and keep track of win counts
-    # use simulate_tournament(teams)
-    # using team names to dictionary
-    # будем честны - задача тривиальная
+    # do i need to recreate the dictionary from teams, or can i use just the winning values?
     for i in range(N):
-        if counts[simulate_tournament(teams) is not
+        if counts[simulate_tournament(teams)] 
         counts[simulate_tournament(teams)] += 1
 
 
