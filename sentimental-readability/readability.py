@@ -1,11 +1,14 @@
 import cs50
 
 text = cs50.get_string("Text: ")
+
+
 L = 0
 S = 0
 letters = 0
 sentences = 0
 words = 1
+
 
 for i in text:
     if text[i].isalplha:
@@ -15,11 +18,10 @@ for i in text:
     elif text[i] == " ":
         words += 1
 
+
 l = letters / (100 * words)
-S = sentences /
+s = sentences / (100 * words)
 
-
-index = 0.0588 * Letters - 0.296 * S(Sentances/100 words) - 15.8
-(words are spaces)
+index = 0.0588 * l - 0.296 * s - 15.8
 
 print("Grade {}".format(index))
