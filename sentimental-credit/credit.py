@@ -22,7 +22,7 @@ else:
 
 for i in range(digits):
     k = digits - i
-    if [k] % 2:
+    if k % 2:
         j = int(number[k])*2
         if j > 9:
             j = j - 10 + 1
