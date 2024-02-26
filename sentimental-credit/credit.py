@@ -23,7 +23,7 @@ else:
 for i in range(digits):
     if i % 2:
         square_sum += int(number[i])**2
-    else
+    else:
         check_sum += int(number[i])
 
 check_sum += square_sum
