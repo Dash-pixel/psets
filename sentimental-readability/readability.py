@@ -24,4 +24,6 @@ s = 100 * sentences / words
 
 index = round((0.0588 * l) - (0.296 * s) - 15.8)
 
+index = 
+
 print("Grade {}".format(index))
