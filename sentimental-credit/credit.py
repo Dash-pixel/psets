@@ -21,7 +21,7 @@ else:
 
 
 for i in range(digits):
-    index = digits - i
+    index = digits - i - 1
     if i % 2:
         j = int(number[index])*2
         if j > 9:
