@@ -9,7 +9,7 @@ while (True):
 
 digits = len(number)
 square_sum = 0
-check_sum = 0 #5555555555554444
+check_sum = 0 #4062901840
 
 if digits == 15 and number[0] == "3" and (number[1] == "4" or number[1] == "7"):
     card_type = "AMEX"
