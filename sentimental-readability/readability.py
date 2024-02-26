@@ -19,8 +19,8 @@ for i in text: # you can only iterate over a string (not a range) <-hide
         words += 1
 
 
-l = letters / (100 * words)
-s = sentences / (100 * words)
+l = 100 * letters / words
+s = 100 * sentences / words
 
 index = (0.0588 * l) - (0.296 * s) - 15.8
 
