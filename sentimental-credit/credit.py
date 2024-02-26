@@ -22,14 +22,16 @@ else:
 
 for i in range(digits):
     if i % 2:
-        j = int(number[i])*2
+        j = int(number[digits - i])*2
         if j > 9:
             j = j - 10 + 1
         square_sum += j
     else:
-        check_sum += int(number[i])
+        check_sum += int(number[digits - i])
 
 check_sum += square_sum
 
 if check_sum % 10 == 0:
     print(card_type)
+else:
+    print("Invalid3")
