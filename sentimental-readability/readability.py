@@ -22,6 +22,6 @@ for i in text: # you can only iterate over a string (not a range) <-hide
 l = letters / (100 * words)
 s = sentences / (100 * words)
 
-index = 0.0588 * l - 0.296 * s - 15.8
+index = (0.0588 * l) - (0.296 * s) - 15.8
 
 print("Grade {}".format(index))
