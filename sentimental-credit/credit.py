@@ -6,8 +6,6 @@ while (True):
         print("Invalid")
         continue
 
-def digit_count():
-    digits = len(str(number))
-    return digits
 
-print(' ' + digits)
+digits = len(str(number))
+
