@@ -1,6 +1,6 @@
 while (True):
     try:
-        number = int(input('Number: '))
+        number = str(int(input('Number: ')))
         break
     except ValueError:
         print("Invalid")
