@@ -10,7 +10,7 @@ sentences = 0
 words = 1
 
 
-for i in text: # you can use just the 
+for i in text: # you can only iterate over a string (not a range) <-hide
     if i.isalplha():
         letters += 1
     elif (i == ".") or (i== ".") or (i == "?"):
