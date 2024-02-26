@@ -23,7 +23,9 @@ else:
 for i in range(digits):
     if i % 2:
         j = int(number[i])*2
-        
+        if j > 9:
+            j = j - 10 + 1
+        square_sum += j
     else:
         check_sum += int(number[i])
 
