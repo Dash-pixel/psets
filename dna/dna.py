@@ -5,7 +5,7 @@ import sys
 def main(sys.argv):
 
     # TODO: Check for command-line usage
-    # sys.argv[2] - dna sequence 
+    # sys.argv[2] - dna sequence
 
     # TODO: Read database file into a variable
     with open(sys.argv[1], 'r') as f:
@@ -15,6 +15,11 @@ def main(sys.argv):
             teams.append(row)
 
     # TODO: Read DNA sequence file into a variable
+    with open(sys.argv[2], 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            row["rating"] = int(row["rating"])
+            teams.append(row)
 
     # TODO: Find longest match of each STR in DNA sequence
 
