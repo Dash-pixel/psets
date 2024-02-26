@@ -25,6 +25,7 @@ def main(sys.argv):
     for i in dna:
     aagatc
     dna[i] dna[i+1] dna[i+2]...
+    cutting strings with the new s[i:j]
 
 
 
