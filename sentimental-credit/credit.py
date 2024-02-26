@@ -7,7 +7,7 @@ while (True):
         continue
 
 def digit_count():
-    number = str(number)
-    digits = len(number)
+    digits = len(str(number))
+    return digits
 
 print(' ' + digits)
