@@ -10,6 +10,8 @@ digits = len(number)
 square_sum = 0
 check_sum = 0
 
+if
+
 for i in range(digits):
     if i % 2:
         square_sum += int(number[i])**2
