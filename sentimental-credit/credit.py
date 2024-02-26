@@ -1,4 +1,4 @@
-from sys import exit()
+from sys import exit
 while (True):
     try:
         number = str(int(input('Number: ')))
