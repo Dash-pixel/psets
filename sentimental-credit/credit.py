@@ -5,3 +5,5 @@ while (True):
         break
     except ValueError:
         continue
+
+def check_summ in range
