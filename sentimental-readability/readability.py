@@ -15,7 +15,8 @@ for i in text:
     elif text[i] == " ":
         words += 1
 
-
+l = letters / (100 * words)
+S = sentences /
 
 
 index = 0.0588 * Letters - 0.296 * S(Sentances/100 words) - 15.8
