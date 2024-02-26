@@ -10,7 +10,7 @@ sentences = 0
 words = 1
 
 
-for i in len(text):
+for i in range(len(text)):
     if text[i].isalplha:
         letters += 1
     elif (text[i] == ".") or (text[i] == ".") or (text[i] == "?"):
