@@ -21,15 +21,17 @@ def main(sys.argv):
               dna = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
+
     # name,AGATC,TTTTTTCT,AATG,TCTAG,GATA,TATC,GAAA,TCTG
-    for i in dna:
+    #for i in dna:
     # aagatcagatc
     # cutting strings with the new s[i:j]
     # cutting the string untill it matches one of the STR
     # if matches multiply the string and compare
     # what if it just doesn't match anything
     # '32408209823'
-    
+    # use function in the bottom
+
 
 
 
