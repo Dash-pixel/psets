@@ -28,6 +28,7 @@ def main(sys.argv):
     # cutting the string untill it matches one of the STR
     # if matches multiply the string and compare
     # what if it just doesn't match anything
+    # '32408209823'
 
 
 
