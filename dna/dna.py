@@ -8,11 +8,11 @@ def main(sys.argv):
     # sys.argv[2] - dna sequence
 
     # TODO: Read database file into a variable
+    people = {}
     with open(sys.argv[1], 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
-            row["rating"] = int(row["rating"])
-            teams.append(row)
+            teams.append(people)
 
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2], 'r') as f:
