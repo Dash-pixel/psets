@@ -11,7 +11,7 @@ words = 1
 
 
 for i in range(len(text)):
-    if text[i].isalplha:
+    if text[i].isalplha():
         letters += 1
     elif (text[i] == ".") or (text[i] == ".") or (text[i] == "?"):
         sentences += 1
