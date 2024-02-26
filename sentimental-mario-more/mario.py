@@ -16,4 +16,5 @@ while (True):
         continue
     if height > 0 and height < 9:
         break
-
+for i in height:
+    print(" "*(height-i) + "#" * i + "  " + "#" * i)
