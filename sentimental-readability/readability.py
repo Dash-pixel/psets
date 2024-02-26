@@ -7,7 +7,7 @@ S = 0
 for i in text:
     if text[i].isalplha:
         L +=1
-    elif 
+    elif (text[i] == ".") or (text[i] == ".")
 
 
 
