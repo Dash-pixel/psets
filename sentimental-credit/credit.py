@@ -16,5 +16,7 @@ for i in range(digits):
     else
         check_sum += int(number[i])
 
-
 check_sum += square_sum
+
+if check_sum % 10 == 0:
+    print("Invalid")
