@@ -10,12 +10,12 @@ sentences = 0
 words = 1
 
 
-for i in text:
-    if i.isalplha:
+for i in len(text):
+    if text[i].isalplha:
         letters += 1
-    elif (i == ".") or (i == ".") or (i == "?"):
+    elif (text[i] == ".") or (text[i] == ".") or (text[i] == "?"):
         sentences += 1
-    elif i == " ":
+    elif text[i] == " ":
         words += 1
 
 
