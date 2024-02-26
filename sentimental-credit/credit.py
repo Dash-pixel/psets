@@ -4,7 +4,7 @@ while (True):
         number = str(int(input('Number: ')))
         break
     except ValueError:
-        print("INVALID")
+        print("INVALID1")
         continue
 
 digits = len(number)
@@ -18,7 +18,7 @@ elif digits == 16 and number[0] == "5" and (number[1] in str(range(1, 6))):
 elif (digits == 13 or 16) and (number[0] == "4"):
     card_type = "VISA"
 else:
-    print("INVALID")
+    print("INVALID2")
     exit()
 
 
@@ -37,4 +37,4 @@ check_sum += square_sum
 if check_sum % 10 == 0:
     print(card_type)
 else:
-    print("INVALID")
+    print("INVALID3")
