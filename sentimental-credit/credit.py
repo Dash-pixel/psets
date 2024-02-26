@@ -19,4 +19,4 @@ for i in range(digits):
 check_sum += square_sum
 
 if check_sum % 10 == 0:
-    print("Invalid")
+    print(card_type)
