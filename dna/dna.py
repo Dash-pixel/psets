@@ -15,6 +15,7 @@ def main(sys.argv):
             teams.append(people)
 
     # TODO: Read DNA sequence file into a variable
+    #here i think we can just use a string
     with open(sys.argv[2], 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
