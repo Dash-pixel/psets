@@ -8,5 +8,5 @@ while (True):
 
 digits = len(number)
 
-for i in range(digits)
-
+for i in range(digits):
+    
