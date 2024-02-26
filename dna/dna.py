@@ -23,9 +23,10 @@ def main(sys.argv):
     # TODO: Find longest match of each STR in DNA sequence
     # name,AGATC,TTTTTTCT,AATG,TCTAG,GATA,TATC,GAAA,TCTG
     for i in dna:
-    aagatc
+    aagatcagatc
     dna[i] dna[i+1] dna[i+2]...
     cutting strings with the new s[i:j]
+
 
 
 
