@@ -20,15 +20,17 @@ else:
     print("Invalid2")
 
 
-for i in range(digits):
-    k = digits - i
-    if k % 2:
-        j = int(number[k])*2
+for i in range(digits): # итак, мы хотим начать не с первого а с последнего числа
+# [0, 1, 2, 3] - length is 4
+# i = 4 --> length - i
+    index = digits - length
+    if i % 2:
+        j = int(number[i])*2
         if j > 9:
             j = j - 10 + 1
         square_sum += j
     else:
-        check_sum += int(number[k])
+        check_sum += int(number[i])
 
 check_sum += square_sum
 
