@@ -16,11 +16,10 @@ def main(sys.argv):
 
     # TODO: Read DNA sequence file into a variable
     #here i think we can just use a string
-    with open(sys.argv[2], 'r') as f:
-        reader = csv.Reader(f)
-        for row in reader:
-            row["rating"] = int(row["rating"])
-            teams.append(row)
+    #but i need to open multiple files?
+
+    with open('sys.argv[2], mode='r', encoding='utf-8') as file:
+              dna = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
 
