@@ -1,11 +1,7 @@
-# TODO
+import cs50
 
-while (True):
-    try:
-        number = input('text: ')))
-        break
-    except ValueError:
-        print("INVALID")
+text = get_string("Text: ")
+
 
 
 
