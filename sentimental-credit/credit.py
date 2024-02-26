@@ -6,6 +6,7 @@ while (True):
         print("Invalid")
         continue
 
-digits = len(str(number))
+digits = len(number)
 
 for i in range(digits)
+
