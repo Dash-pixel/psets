@@ -11,7 +11,7 @@ words = 1
 
 
 for i in text: # you can only iterate over a string (not a range) <-hide
-    if i.isalplha():
+    if i.isalpha():
         letters += 1
     elif (i == ".") or (i== ".") or (i == "?"):
         sentences += 1
