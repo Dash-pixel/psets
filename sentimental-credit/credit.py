@@ -21,13 +21,14 @@ else:
 
 
 for i in range(digits):
-    if i % 2:
-        j = int(number[digits - i])*2
+    k = digits - i
+    if [k] % 2:
+        j = int(number[k])*2
         if j > 9:
             j = j - 10 + 1
         square_sum += j
     else:
-        check_sum += int(number[digits - i])
+        check_sum += int(number[k])
 
 check_sum += square_sum
 
