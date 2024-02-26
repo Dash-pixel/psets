@@ -24,7 +24,9 @@ def main(sys.argv):
     # TODO: Find longest match of each STR in DNA sequence
     # name,AGATC,TTTTTTCT,AATG,TCTAG,GATA,TATC,GAAA,TCTG
     for i in dna:
-    gagagagagagatc
+    aagatc
+    dna[i] dna[i+1] dna[i+2]...
+    
 
 
     # TODO: Check database for matching profiles
