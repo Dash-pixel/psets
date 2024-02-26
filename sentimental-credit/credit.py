@@ -29,8 +29,7 @@ for i in range(digits):
         check_sum += j
     else:
         check_sum += int(number[index])
-
-check_sum += square_sum
+        
 
 if check_sum % 10 == 0:
     print(card_type)
