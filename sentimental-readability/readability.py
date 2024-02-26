@@ -3,11 +3,18 @@ import cs50
 text = cs50.get_string("Text: ")
 L = 0
 S = 0
+letters = 0
+sentences = 0
+words = 1
 
 for i in text:
     if text[i].isalplha:
-        L +=1
-    elif (text[i] == ".") or (text[i] == ".")
+        letters += 1
+    elif (text[i] == ".") or (text[i] == ".") or (text[i] == "?"):
+        sentences += 1
+    elif text[i] == " ":
+        words += 1
+
 
 
 
