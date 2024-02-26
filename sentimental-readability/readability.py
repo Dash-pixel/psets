@@ -11,6 +11,7 @@ words = 1
 
 
 for i in range(len(text)):
+    char = text[i]
     if text[i].isalplha():
         letters += 1
     elif (text[i] == ".") or (text[i] == ".") or (text[i] == "?"):
