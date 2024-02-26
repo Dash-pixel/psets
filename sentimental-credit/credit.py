@@ -7,8 +7,6 @@ while (True):
         print("INVALID")
 
 digits = len(number)
-square_sum = 0
-check_sum = 0 #4062901840
 
 if digits == 15 and number[0] == "3" and (number[1] == "4" or number[1] == "7"):
     card_type = "AMEX"
@@ -21,13 +19,14 @@ else:
     exit()
 
 
+check_sum = 0
 for i in range(digits):
     index = digits - i - 1
     if i % 2:
         j = int(number[index])*2
         if j > 9:
-            j = j - 10 + 1
-        square_sum += j
+            j = j - 9
+        check_sum += j
     else:
         check_sum += int(number[index])
 
