@@ -9,4 +9,7 @@ while (True):
 digits = len(number)
 
 for i in range(digits):
-    if
+    if i % 2:
+        number[i]
+
+    else
