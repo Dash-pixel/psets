@@ -5,7 +5,6 @@ while (True):
         break
     except ValueError:
         print("INVALID")
-        continue
 
 digits = len(number)
 square_sum = 0
