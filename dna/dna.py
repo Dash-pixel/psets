@@ -24,9 +24,11 @@ def main(sys.argv):
     # name,AGATC,TTTTTTCT,AATG,TCTAG,GATA,TATC,GAAA,TCTG
     for i in dna:
     aagatcagatc
-    dna[i] dna[i+1] dna[i+2]...
     cutting strings with the new s[i:j]
-    #
+    # cutting the string untill it matches one of the STR
+    # if matches multiply the string and compare
+    # what if it just doesn't match anything
+    
 
 
 
