@@ -1,3 +1,4 @@
+from sys import exit()
 while (True):
     try:
         number = str(int(input('Number: ')))
@@ -18,6 +19,7 @@ elif (digits == 13 or 16) and (number[0] == "4"):
     card_type = "VISA"
 else:
     print("INVALID")
+    exit()
 
 
 for i in range(digits):
