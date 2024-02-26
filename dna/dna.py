@@ -15,7 +15,6 @@ def main(sys.argv):
             teams.append(people)
 
     # TODO: Read DNA sequence file into a variable
-    #here i think we can just use a string
     #but i need to open multiple files?
 
     with open('sys.argv[2], mode='r', encoding='utf-8') as file:
@@ -26,7 +25,7 @@ def main(sys.argv):
     for i in dna:
     aagatc
     dna[i] dna[i+1] dna[i+2]...
-    
+
 
 
     # TODO: Check database for matching profiles
