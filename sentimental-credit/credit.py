@@ -7,9 +7,14 @@ while (True):
         continue
 
 digits = len(number)
+square_sum = 0
+check_sum = 0
 
 for i in range(digits):
     if i % 2:
-        number[i]
-
+        square_sum += int(number[i])**2
     else
+        check_sum += int(number[i])
+
+
+check_sum += square_sum
