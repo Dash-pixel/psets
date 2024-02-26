@@ -10,13 +10,12 @@ sentences = 0
 words = 1
 
 
-for i in range(len(text)):
-    char = text[i]
-    if text[i].isalplha():
+for i in text: # you can use just the 
+    if i.isalplha():
         letters += 1
-    elif (text[i] == ".") or (text[i] == ".") or (text[i] == "?"):
+    elif (i == ".") or (i== ".") or (i == "?"):
         sentences += 1
-    elif text[i] == " ":
+    elif i == " ":
         words += 1
 
 
