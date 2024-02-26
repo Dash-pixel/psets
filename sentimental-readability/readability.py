@@ -5,7 +5,8 @@ L = 0
 S = 0
 
 for i in text:
-    if text[i].isalplha
+    if text[i].isalplha:
+        
 
 
 
