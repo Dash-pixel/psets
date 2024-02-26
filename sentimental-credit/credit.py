@@ -23,7 +23,7 @@ else:
 for i in range(digits): # итак, мы хотим начать не с первого а с последнего числа
 # [0, 1, 2, 3] - length is 4
 # i = 4 --> length - i
-    index = digits - length
+    index = digits - i
     if i % 2:
         j = int(number[i])*2
         if j > 9:
