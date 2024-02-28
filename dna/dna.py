@@ -30,8 +30,8 @@ def main(sys.argv):
 
     # TODO: Check database for matching profiles
     for i in people:
-        for j in str_types:
-            people[i][str_types]
+        for j in str_types[1:]:
+            people[i][str_types] == 
 
     return
 
