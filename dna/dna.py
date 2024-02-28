@@ -25,11 +25,12 @@ def main(sys.argv):
     # use function in the bottom
     # make dictionary
         unknown_profile ={}
-        for i in STR_types:
+        for i in STR_types[1:]:
             unknown_profile[STR_types] = longest_match(dna, STR_types)
 
     # TODO: Check database for matching profiles
-    for i in people
+    for i in people:
+        
 
     return
 
