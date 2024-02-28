@@ -33,8 +33,8 @@ def main(sys.argv):
         for j in str_types[1:]
             if people[i][j] != unknown_profile[j]:
                 break
-            else
-                continue
+
+        
 
 # мне нужно
 #print(people[i][Name])///str_types[1:]
