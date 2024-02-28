@@ -2,7 +2,7 @@ import csv
 import sys
 
 
-def main(argv[1], argv[2]):
+def main(argv):
 
     # TODO: Check for command-line usage
     if sys.argv.length != 2:
