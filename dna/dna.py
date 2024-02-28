@@ -16,6 +16,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
         for row in reader:
             people.append(row)
     str_types = list(people[0].keys())
+    print(type(str_types))
 
     # TODO: Read DNA sequence file into a variable
     #but i need to open multiple files?
