@@ -13,7 +13,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
     people = [] # list of dicts?
     with open(sys.argv[1], 'r') as f:
         reader = csv.DictReader(f)
-        for row in reader.items():
+        for row in reader:
             people.append(row)
     str_types = tuple(people[0].keys())
 
@@ -29,14 +29,14 @@ def main():  #<- how to use command-line args in python? 2 arguments
 
     # TODO: Check database for matching profiles
     for i in people:
-        next_person = false
+        next_person = False
 
         for j in str_types[1:]:
             if people[i][j] != unknown_profile[j]:
-                next_person = true
+                next_person = True
                 break
 
-        if next_person == true:
+        if next_person == True:
             continue
         print(people[i][name])
 
