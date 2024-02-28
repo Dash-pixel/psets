@@ -32,16 +32,11 @@ def main(sys.argv):
 
     for i in people:
         for j in str_types[1:]:
-            if people[i][j] == unknown_profile[j]:
-                continue
-            else:
+            if people[i][j] != unknown_profile[j]:
+            this person is stupid = true
                 break
-
-    for j in str_types[1:]:
-        if people[i][j] != unknown_profile[j]:
-            break
-    
-
+        if person is not stupid:
+            person is the winne
 
 
 # мне нужно
