@@ -5,7 +5,9 @@ import sys
 def main(sys.argv):
 
     # TODO: Check for command-line usage
-    # sys.argv[2] - dna sequence
+    if sys.argv.length != 2:
+        print('shit')
+        return
 
     # TODO: Read database file into a variable
     people = [] # list of dicts?
