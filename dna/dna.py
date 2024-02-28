@@ -40,9 +40,9 @@ def main():  #<- how to use command-line args in python? 2 arguments
         if next_person == True:
             continue
         print(i['name'])
-
+        return
+    print('No match')
     return
-
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
