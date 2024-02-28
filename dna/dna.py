@@ -8,12 +8,12 @@ def main(sys.argv):
     # sys.argv[2] - dna sequence
 
     # TODO: Read database file into a variable
-    people = []
-    STR_types = []
+    people = [] # list of dicts?
     with open(sys.argv[1], 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
             people.append(row)
+    STR_types = people[0].keys
 
     # TODO: Read DNA sequence file into a variable
     #but i need to open multiple files?
