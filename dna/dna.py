@@ -34,7 +34,8 @@ def main(sys.argv):
             if (people[i][str_types] != unknown_profile[str_types]):
                 continue
             else:
-                
+                print(people[i][Name])
+                break
 
     return
 
