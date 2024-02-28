@@ -21,15 +21,11 @@ def main(sys.argv):
         dna = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
-    # name, AGATC, TTTTTTCT, AATG, TCTAG, GATA, TATC, GAAA, TCTG
-    # use function in the bottom
-    # make dictionary
         unknown_profile ={}
         for i in str_types[1:]:
             unknown_profile[str_types] = longest_match(dna, str_types)
 
     # TODO: Check database for matching profiles
-
     for i in people:
         next_person = false
 
@@ -40,16 +36,7 @@ def main(sys.argv):
 
         if next_person == true:
             continue
-        print(people[i][na])
-
-
-
-# мне нужно
-#print(people[i][Name])///str_types[1:]
-#people[i][str_types] == unknown_profile[str_types]):
-#ok, continue loop if people[i][str_types] == unknown_profile[str_types]
-# else go to next person
-# if went through the loop -- we found the person
+        print(people[i][name])
 
 
     return
