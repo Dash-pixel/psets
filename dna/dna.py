@@ -31,13 +31,17 @@ def main(sys.argv):
     # TODO: Check database for matching profiles
 
     for i in people:
-    
+        next_person = false
+
         for j in str_types[1:]:
             if people[i][j] != unknown_profile[j]:
-            this person is stupid = true
+                next_person = true
                 break
-        if person is not stupid:
-            person is the winne
+
+        if next_person == true:
+            continue
+        print(people)
+
 
 
 # мне нужно
