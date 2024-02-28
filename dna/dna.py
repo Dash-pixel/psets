@@ -39,7 +39,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
 
         if next_person == True:
             continue
-        print(people[i][name])
+        print(i[name])
 
     return
 
