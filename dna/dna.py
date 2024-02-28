@@ -13,7 +13,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
     people = [] # list of dicts?
     with open(sys.argv[1], 'r') as f:
         reader = csv.DictReader(f)
-        for row in reader:
+        for row in reader.items():
             people.append(row)
     str_types = list(people[0].keys())
 
