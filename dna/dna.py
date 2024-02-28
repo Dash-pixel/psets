@@ -16,14 +16,13 @@ def main(sys.argv):
 
     # TODO: Read DNA sequence file into a variable
     #but i need to open multiple files?
-
     with open('sys.argv[2], mode='r', encoding='utf-8') as file:
               dna = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
-
     # name,AGATC,TTTTTTCT,AATG,TCTAG,GATA,TATC,GAAA,TCTG
     # use function in the bottom
+    
 
 
 
