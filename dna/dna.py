@@ -30,8 +30,8 @@ def main(sys.argv):
 
     # TODO: Check database for matching profiles
 
-    for i in people:
-        for j in str_types[1:]
+    for i in people ():
+        for j in str_types[1:]:
             if people[i][j] != unknown_profile[j]:
                 break
         break
