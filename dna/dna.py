@@ -23,9 +23,9 @@ def main(sys.argv):
     # name, AGATC, TTTTTTCT, AATG, TCTAG, GATA, TATC, GAAA, TCTG
     # use function in the bottom
     # make dictionary
-    
+    myau ={}
     for i in STR_types[AGATC, TTTTTTCT, AATG, TCTAG, GATA, TATC, GAAA, TCTG]:
-        longest_match(dna, STR_types)
+        myau[STR_types] = longest_match(dna, STR_types)
 
     # TODO: Check database for matching profiles
 
