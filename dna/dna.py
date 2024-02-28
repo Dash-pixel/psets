@@ -30,12 +30,14 @@ def main(sys.argv):
 
     # TODO: Check database for matching profiles
     for i in people:
-        for j in str_types[1:]:
-            if (people[i][str_types] != unknown_profile[str_types]):
-                continue
-            else:
-                print(people[i][Name])
-                break
+
+# мне нужно
+#print(people[i][Name])///str_types[1:]
+#people[i][str_types] == unknown_profile[str_types]):
+#ok, continue loop if people[i][str_types] == unknown_profile[str_types]
+# else go to next person
+# if went through the loop -- we found the person
+
 
     return
 
