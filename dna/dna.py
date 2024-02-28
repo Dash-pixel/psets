@@ -2,10 +2,10 @@ import csv
 import sys
 
 
-def main():  #<- how to use command-line args in python?
+def main():  #<- how to use command-line args in python? 2 arguments
 
     # TODO: Check for command-line usage
-    if sys.argv.length != 2:
+    if len(sys.argv) != 3: # here what?
         print('shit')
         return
 
