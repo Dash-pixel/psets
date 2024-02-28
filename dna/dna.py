@@ -36,7 +36,12 @@ def main(sys.argv):
                 continue
             else:
                 break
-            
+
+    for j in str_types[1:]:
+        if people[i][j] == unknown_profile[j]:
+            continue
+        else:
+            break
 
 
 # мне нужно
