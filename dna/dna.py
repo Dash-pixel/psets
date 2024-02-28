@@ -34,8 +34,8 @@ def main(sys.argv):
         for j in str_types[1:]
             if people[i][j] != unknown_profile[j]:
                 break continue
-
         print(winner)
+
 # мне нужно
 #print(people[i][Name])///str_types[1:]
 #people[i][str_types] == unknown_profile[str_types]):
