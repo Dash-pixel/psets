@@ -40,7 +40,7 @@ def main(sys.argv):
 
         if next_person == true:
             continue
-        print(people)
+        print(people[i][na])
 
 
 
