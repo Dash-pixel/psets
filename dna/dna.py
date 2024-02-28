@@ -13,7 +13,7 @@ def main(sys.argv):
         reader = csv.DictReader(f)
         for row in reader:
             people.append(row)
-    STR_types = people[0].keys
+    str_types = people[0].keys
 
     # TODO: Read DNA sequence file into a variable
     #but i need to open multiple files?
@@ -25,12 +25,13 @@ def main(sys.argv):
     # use function in the bottom
     # make dictionary
         unknown_profile ={}
-        for i in STR_types[1:]:
-            unknown_profile[STR_types] = longest_match(dna, STR_types)
+        for i in str_types[1:]:
+            unknown_profile[str_types] = longest_match(dna, str_types)
 
     # TODO: Check database for matching profiles
     for i in people:
-        
+        for j in str_types[1:]:
+            people[i][str_types] == unknown_profile[str_types]
 
     return
 
