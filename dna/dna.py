@@ -17,7 +17,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
             people.append(row)
     str_types = list(people[0].keys())
     print(type(str_types))
-
+'''
     # TODO: Read DNA sequence file into a variable
     #but i need to open multiple files?
     with open(sys.argv[2], mode='r', encoding='utf-8') as file:
@@ -40,8 +40,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
         if next_person == true:
             continue
         print(people[i][name])
-
-
+'''
     return
 
 
