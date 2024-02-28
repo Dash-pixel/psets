@@ -9,6 +9,7 @@ def main(sys.argv):
 
     # TODO: Read database file into a variable
     people = []
+    STR_types = []
     with open(sys.argv[1], 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -24,7 +25,7 @@ def main(sys.argv):
     # use function in the bottom
     # make dictionary
         unknown_profile ={}
-        for i in STR_types[AGATC, TTTTTTCT, AATG, TCTAG, GATA, TATC, GAAA, TCTG]:
+        for i in STR_types:
             unknown_profile[STR_types] = longest_match(dna, STR_types)
 
     # TODO: Check database for matching profiles
