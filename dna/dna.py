@@ -26,7 +26,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
     # this function does not work correctly
     unknown_profile ={}
     for i in str_types[1:]:
-        unknown_profile[i] = longest_match(dna, i)
+        unknown_profile[i] = str(longest_match(dna, i))
 
     # TODO: Check database for matching profiles
     for i in people:
