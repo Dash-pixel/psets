@@ -8,7 +8,7 @@ def main(sys.argv):
     # sys.argv[2] - dna sequence
 
     # TODO: Read database file into a variable
-    people = {}
+    people = []
     with open(sys.argv[1], 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -28,7 +28,7 @@ def main(sys.argv):
             unknown_profile[STR_types] = longest_match(dna, STR_types)
 
     # TODO: Check database for matching profiles
-
+    for i in people
 
     return
 
