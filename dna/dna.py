@@ -33,7 +33,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
         next_person = False
 
         for j in str_types[1:]:
-            if people[i][j] != unknown_profile[j]:
+            if i[j] != unknown_profile[j]:
                 next_person = True
                 break
 
