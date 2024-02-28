@@ -29,16 +29,12 @@ def main(sys.argv):
             unknown_profile[str_types] = longest_match(dna, str_types)
 
     # TODO: Check database for matching profiles
-    for i in str_types[1:]
-        for j in people:
-            if people[j][i] != unknown_profile[i]:
-                break
-            
 
     for i in people:
         for j in str_types[1:]
             if people[i][j] != unknown_profile[j]:
                 break
+            
 
 
 # мне нужно
