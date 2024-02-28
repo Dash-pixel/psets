@@ -23,6 +23,7 @@ def main(sys.argv):
     # name, AGATC, TTTTTTCT, AATG, TCTAG, GATA, TATC, GAAA, TCTG
     # use function in the bottom
     # make dictionary
+    
     for i in STR_types[AGATC, TTTTTTCT, AATG, TCTAG, GATA, TATC, GAAA, TCTG]:
         longest_match(dna, STR_types)
 
