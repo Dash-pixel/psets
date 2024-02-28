@@ -15,7 +15,7 @@ def main():  #<- how to use command-line args in python? 2 arguments
         reader = csv.DictReader(f)
         for row in reader.items():
             people.append(row)
-    str_types = list(people[0].keys())
+    str_types = tuple(people[0].keys())
 
     # TODO: Read DNA sequence file into a variable
     #but i need to open multiple files?
