@@ -41,7 +41,6 @@ def main(sys.argv):
                 break continue
             else:
                 continue
-        print winner
 
 # мне нужно
 #print(people[i][Name])///str_types[1:]
