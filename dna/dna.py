@@ -23,9 +23,9 @@ def main(sys.argv):
         dna = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
-        unknown_profile ={}
-        for i in str_types[1:]:
-            unknown_profile[str_types] = longest_match(dna, str_types)
+    unknown_profile ={}
+    for i in str_types[1:]:
+        unknown_profile[str_types] = longest_match(dna, str_types)
 
     # TODO: Check database for matching profiles
     for i in people:
