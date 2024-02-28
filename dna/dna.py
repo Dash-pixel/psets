@@ -2,7 +2,7 @@ import csv
 import sys
 
 
-def main(sys.argv):
+def main(argv[1], argv[2]):
 
     # TODO: Check for command-line usage
     if sys.argv.length != 2:
@@ -82,4 +82,4 @@ def longest_match(sequence, subsequence):
     return longest_run
 
 
-main()
+main(sys.argv[1], sys.argv[2])
