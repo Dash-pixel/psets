@@ -6,7 +6,11 @@ i dont know whether it is in fact more outgoing than average
 
 Hypothesize about why the way you’ve calculated this aura might
 not be very representative of the listener.
-maybe people listen to music
+maybe people listen to music individually and the charecter of a person is more about
+how they are in social sittuations, which may be independent of the music taste
+listening to popular music does correlate with being more extraverted tho
 
 
 What better ways of calculating this aura would you propose?
+i think maybe building some mulidimentional scale od strongest predictors
+of simmilar music taste and assigning them color? idk
