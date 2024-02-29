@@ -1,1 +1,1 @@
-SELECT COUNT(energy) FROM songs;
+SELECT SUM(energy)/COUNT(energy) FROM songs;
