@@ -1,3 +1,1 @@
-/// SELECT 
-
-COUNT(*) FROM songs ORDER BY duration_ms DESC LIMIT 5;
+/// SELECT COUNT(*) FROM songs ORDER BY duration_ms DESC LIMIT 5;
