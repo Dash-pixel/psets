@@ -4,7 +4,7 @@ Kevin Bacon himself should not be included in the resulting list.
 
 SELECT people
 FROM stars JOIN people ON stars.person_id = people.id
-WHERE stars.movie_id =
+WHERE stars.movie_id = 
 
 
 
