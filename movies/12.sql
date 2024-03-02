@@ -6,4 +6,4 @@ SELECT id FROM people WHERE name = 'Jennifer Lawrence'
 
 FROM stars WHERE person_id IN (..)
 
-SELECT 
+SELECT title FROM movies WHERE
