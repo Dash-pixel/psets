@@ -7,5 +7,5 @@ WHERE stars.person_id IN (SELECT id FROM people WHERE name = 'Bradley Cooper');
 SELECT title
 FROM movies
 WHERE id IN
-(SELECT movie_id FROM stars JOIN people ON stars.person_id = person.id WHERE name = 'Bradley Cooper')
-AND (SELECT movie_id FROM stars JOIN people ON stars.person_id = person.id WHERE name = 'Jennifer Lawrence');
+(SELECT movie_id FROM stars JOIN people ON stars.person_id = people.id WHERE name = 'Bradley Cooper')
+AND (SELECT movie_id FROM stars JOIN people ON stars.person_id = people.id WHERE name = 'Jennifer Lawrence');
