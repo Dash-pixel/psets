@@ -1,11 +1,13 @@
 list the titles of all movies in which both Bradley Cooper and Jennifer Lawrence starred
-SELECT names FROM movies WHERE // is person-id1 AND person-id2
-
-SELECT id FROM people WHERE name = 'Bradley Cooper'
-SELECT id FROM people WHERE name = 'Jennifer Lawrence'
-
-FROM stars WHERE person_id IN (..)
 
 SELECT title
 FROM movies JOIN stars ON movies.id = stars.movie_id
 WHERE stars.person_id IN (SELECT id FROM people WHERE name = 'Bradley Cooper');
+//
+SELECT title
+FROM movies
+WHERE id IN
+(SELECT movie_id FROM stars JOIN people ON
+
+WHERE name = 'Bradley Cooper');
+(SELECT id FROM people WHERE name = 'Bradley Cooper');
