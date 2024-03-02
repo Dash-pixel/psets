@@ -2,3 +2,6 @@ In 11.sql, write a SQL query to list the titles of the five highest rated movies
 Your query should output a table with a single column for the title of each movie.
 You may assume that there is only one person in the database with the name Chadwick Boseman.
 
+SELECT DISTINCT name FROM people
+WHERE id IN (SELECT person_id FROM directors
+WHERE movie_id IN (SELECT movie_id FROM ratings WHERE rating >= 9.0));
