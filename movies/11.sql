@@ -3,5 +3,4 @@ Your query should output a table with a single column for the title of each movi
 You may assume that there is only one person in the database with the name Chadwick Boseman.
 
 SELECT title FROM movie
-WHERE id IN (SELECT person_id FROM stars
-WHERE movie_id IN (SELECT movie_id FROM ratings WHERE rating >= 9.0));
+WHERE id IN (SELECT title FROM movie WHERE id IN);
