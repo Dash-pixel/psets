@@ -4,3 +4,4 @@ SELECT names FROM movies WHERE
 SELECT id FROM people WHERE name = 'Bradley Cooper'
 SELECT id FROM people WHERE name = 'Jennifer Lawrence'
 
+FROM stars WHERE person_id IN (..)
