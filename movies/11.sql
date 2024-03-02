@@ -3,4 +3,4 @@ You may assume that there is only one person in the database with the name Chadw
 
 SELECT title FROM movies
 WHERE id IN (SELECT movie_id FROM stars WHERE person_id IN
-(SELECT id FROM people WHERE name = 'Chadwick Boseman'));
+(SELECT id FROM people WHERE name = 'Chadwick Boseman')) ORDER BY id;
