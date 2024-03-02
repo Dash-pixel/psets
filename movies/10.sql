@@ -6,5 +6,5 @@ they should only appear in your results once.
 
 SELECT DISTINCT name FROM people
 WHERE id IN (SELECT person_id FROM directors
-WHERE movie_id IN (SELECT id FROM movies WHERE year = 2004))
-ORDER BY birth;
+WHERE movie_id IN (SELECT movie_id FROM ratings WHERE year = 2004))
+
