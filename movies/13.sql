@@ -3,4 +3,7 @@ Be sure to only select the Kevin Bacon born in 1958.
 Kevin Bacon himself should not be included in the resulting list.
 SELECT name
 FROM people
-WHERE person_i
+WHERE
+
+
+birth = 1958
