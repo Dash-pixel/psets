@@ -169,7 +169,7 @@ Leggett Street
     amount INTEGER,
     PRIMARY KEY(id)
 );
-SELECT activity, license_plate, id, minute
+SELECT id, account_number, transaction_type, amount
 FROM atm_transactions
 WHERE month = 7 AND day = 28
-AND year = 2021;
+AND year = 2021 AND atm_location = 'Leggett Street';
