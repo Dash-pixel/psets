@@ -124,7 +124,7 @@ AND hour = 10;
 | entrance | V47T75I       | 271 |
 +----------+---------------+-----+
 
-SELECT activity, license_plate, id
-FROM bakery_security_logs
+SELECT id, name, transcript
+FROM interviews
 WHERE month = 7 AND day = 28
-AND hour = 10;
+AND year = 2021;
