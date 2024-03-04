@@ -257,7 +257,7 @@ ORDER BY duration;
 this is the criminal
 
 SELECT name, phone_number, passport_number, license_plate
-FROM people JOIN
+FROM people 
 WHERE
 phone_number IN
 (SELECT caller
