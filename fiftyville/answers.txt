@@ -190,4 +190,10 @@ As the thief was leaving the bakery, they called someone who talked to them for 
     FOREIGN KEY(origin_airport_id) REFERENCES airports(id),
     FOREIGN KEY(destination_airport_id) REFERENCES airports(id)
 );
-
+ airports (
+    id INTEGER,
+    abbreviation TEXT,
+    full_name TEXT,
+    city TEXT,
+    PRIMARY KEY(id)
+);
