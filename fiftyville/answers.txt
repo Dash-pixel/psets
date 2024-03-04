@@ -170,6 +170,6 @@ Leggett Street
     PRIMARY KEY(id)
 );
 SELECT activity, license_plate, id, minute
-FROM bakery_security_logs
+FROM atm_transactions
 WHERE month = 7 AND day = 28
-AND hour = 10 AND minute > 15 AND minute <26 AND activity ='exit';
+AND year = 2021;
