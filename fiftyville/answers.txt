@@ -142,4 +142,17 @@ AND year = 2021;
 SELECT activity, license_plate, id, minute
 FROM bakery_security_logs
 WHERE month = 7 AND day = 28
-AND hour = 10;
+AND hour = 10 AND minute > 15 AND minute <26 AND activity ='exit';
+
++----------+---------------+-----+--------+
+| activity | license_plate | id  | minute |
++----------+---------------+-----+--------+
+| exit     | 5P2BI95       | 260 | 16     |
+| exit     | 94KL13X       | 261 | 18     |
+| exit     | 6P58WS2       | 262 | 18     |
+| exit     | 4328GD8       | 263 | 19     |
+| exit     | G412CB7       | 264 | 20     |
+| exit     | L93JTIZ       | 265 | 21     |
+| exit     | 322W7JE       | 266 | 23     |
+| exit     | 0NTHK55       | 267 | 23     |
++----------+---------------+-----+--------+
