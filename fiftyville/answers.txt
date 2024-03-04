@@ -299,3 +299,9 @@ AND passport_number IN
 (SELECT passport_number
 FROM passengers
 WHERE flight_id = 36);
+
++-------+----------------+-----------------+---------------+
+| name  |  phone_number  | passport_number | license_plate |
++-------+----------------+-----------------+---------------+
+| Doris | (066) 555-9701 | 7214083635      | M51FA04       |
++-------+----------------+-----------------+---------------+
