@@ -105,3 +105,22 @@ SELECT activity, license_plate, id, year
 FROM bakery_security_logs
 WHERE month = 7 AND day = 28
 AND hour = 10;
+
++----------+---------------+-----+------+
+| activity | license_plate | id  | year |
++----------+---------------+-----+------+
+| entrance | R3G7486       | 258 | 2021 |
+| entrance | 13FNH73       | 259 | 2021 |
+| exit     | 5P2BI95       | 260 | 2021 |
+| exit     | 94KL13X       | 261 | 2021 |
+| exit     | 6P58WS2       | 262 | 2021 |
+| exit     | 4328GD8       | 263 | 2021 |
+| exit     | G412CB7       | 264 | 2021 |
+| exit     | L93JTIZ       | 265 | 2021 |
+| exit     | 322W7JE       | 266 | 2021 |
+| exit     | 0NTHK55       | 267 | 2021 |
+| exit     | 1106N58       | 268 | 2021 |
+| entrance | NRYN856       | 269 | 2021 |
+| entrance | WD5M8I6       | 270 | 2021 |
+| entrance | V47T75I       | 271 | 2021 |
++----------+---------------+-----+------+
