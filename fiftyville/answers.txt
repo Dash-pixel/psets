@@ -197,3 +197,8 @@ As the thief was leaving the bakery, they called someone who talked to them for 
     city TEXT,
     PRIMARY KEY(id)
 );
+
+SELECT id, abbreviation, full_name
+FROM airports
+WHERE city =
+AND year = 2021 AND atm_location = 'Leggett Street' AND transaction_type = 'withdraw';
