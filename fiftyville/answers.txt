@@ -102,6 +102,6 @@ bank_accounts (
 );
 
 SELECT description
-FROM crime_scene_reports
+FROM bakery_security_logs
 WHERE month = 7 AND day = 28
-AND street = 'Humphrey Street';
+AND hour = 10;
