@@ -156,3 +156,15 @@ AND hour = 10 AND minute > 15 AND minute <26 AND activity ='exit';
 | exit     | 322W7JE       | 266 | 23     |
 | exit     | 0NTHK55       | 267 | 23     |
 +----------+---------------+-----+--------+
+
+ atm_transactions (
+    id INTEGER,
+    account_number INTEGER,
+    year INTEGER,
+    month INTEGER,
+    day INTEGER,
+    atm_location TEXT,
+    transaction_type TEXT,
+    amount INTEGER,
+    PRIMARY KEY(id)
+);
