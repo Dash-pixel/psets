@@ -175,6 +175,5 @@ AND year = 2021 AND atm_location = 'Leggett Street' AND transaction_type = 'with
 | 336 | 26013199       | withdraw         | 35     |
 +-----+----------------+------------------+--------+
 
-
 the earliest flight out of Fiftyville tomorrow
 As the thief was leaving the bakery, they called someone who talked to them for less than a minute.
