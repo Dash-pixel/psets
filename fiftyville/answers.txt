@@ -10,7 +10,7 @@ AND street = 'Humphrey Street';
 Bakery at Humphrey Street - 10:15
 another incident - littering
 
-CREATE TABLE crime_scene_reports (
+crime_scene_reports (
     id INTEGER,
     year INTEGER,
     month INTEGER,
@@ -19,7 +19,7 @@ CREATE TABLE crime_scene_reports (
     description TEXT,
     PRIMARY KEY(id)
 );
-CREATE TABLE interviews (
+interviews (
     id INTEGER,
     name TEXT,
     year INTEGER,
@@ -28,7 +28,7 @@ CREATE TABLE interviews (
     transcript TEXT,
     PRIMARY KEY(id)
 );
-CREATE TABLE atm_transactions (
+ atm_transactions (
     id INTEGER,
     account_number INTEGER,
     year INTEGER,
@@ -39,7 +39,7 @@ CREATE TABLE atm_transactions (
     amount INTEGER,
     PRIMARY KEY(id)
 );
-CREATE TABLE bank_accounts (
+bank_accounts (
     account_number INTEGER,
     person_id INTEGER,
     creation_year INTEGER,
