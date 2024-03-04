@@ -7,7 +7,7 @@ FROM crime_scene_reports
 WHERE month = 7 AND day = 28
 AND street = 'Humphrey Street';
 
-Bakery at Humphrey Street
+Bakery at Humphrey Street - 10:15
 another incident - littering
 
 CREATE TABLE crime_scene_reports (
