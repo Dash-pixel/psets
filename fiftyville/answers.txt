@@ -177,3 +177,17 @@ AND year = 2021 AND atm_location = 'Leggett Street' AND transaction_type = 'with
 
 the earliest flight out of Fiftyville tomorrow
 As the thief was leaving the bakery, they called someone who talked to them for less than a minute.
+ flights (
+    id INTEGER,
+    origin_airport_id INTEGER,
+    destination_airport_id INTEGER,
+    year INTEGER,
+    month INTEGER,
+    day INTEGER,
+    hour INTEGER,
+    minute INTEGER,
+    PRIMARY KEY(id),
+    FOREIGN KEY(origin_airport_id) REFERENCES airports(id),
+    FOREIGN KEY(destination_airport_id) REFERENCES airports(id)
+);
+
