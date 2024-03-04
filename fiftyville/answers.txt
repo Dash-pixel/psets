@@ -243,16 +243,6 @@ ORDER BY duration;
 | 279 | (826) 555-1652 | (066) 555-9701 | 55       |
 +-----+----------------+----------------+----------+
 
-
- people (
-    id INTEGER,
-    name TEXT,
-    phone_number TEXT,
-    passport_number INTEGER,
-    license_plate TEXT,
-    PRIMARY KEY(id)
-);
-
 --------------------------------------------
 this is the criminal
 
@@ -297,3 +287,20 @@ WHERE id = 4;
 +-------------------+
 | LaGuardia Airport |
 +-------------------+
+
+ people (
+    id INTEGER,
+    name TEXT,
+    phone_number TEXT,
+    passport_number INTEGER,
+    license_plate TEXT,
+    PRIMARY KEY(id)
+);]
+SELECT name
+FROM people
+WHERE phone_number = '(375) 555-8161';
++-------+
+| name  |
++-------+
+| Robin |
++-------+
