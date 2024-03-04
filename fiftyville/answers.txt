@@ -196,4 +196,26 @@ ORDER BY hour;
 | 18 | 6                      | 16   |
 +----+------------------------+------+
 
+ passengers (
+    flight_id INTEGER,
+    passport_number INTEGER,
+    seat TEXT,
+    FOREIGN KEY(flight_id) REFERENCES flights(id)
+);
+SELECT passport_number, seat
+FROM passengers
+WHERE flight_id = 36;
++-----------------+------+
+| passport_number | seat |
++-----------------+------+
+| 7214083635      | 2A   |
+| 1695452385      | 3B   |
+| 5773159633      | 4A   |
+| 1540955065      | 5C   |
+| 8294398571      | 6C   |
+| 1988161715      | 6D   |
+| 9878712108      | 7A   |
+| 8496433585      | 7B   |
++-----------------+------+
+
 As the thief was leaving the bakery, they called someone who talked to them for less than a minute.
