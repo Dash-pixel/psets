@@ -175,7 +175,13 @@ AND year = 2021 AND atm_location = 'Leggett Street' AND transaction_type = 'with
 | 336 | 26013199       | withdraw         | 35     |
 +-----+----------------+------------------+--------+
 
-the earliest flight out of Fiftyville tomorrow
+bank_accounts (
+    account_number INTEGER,
+    person_id INTEGER,
+    creation_year INTEGER,
+    FOREIGN KEY(person_id) REFERENCES people(id)
+);
+
 
 SELECT id, destination_airport_id, hour
 FROM flights
