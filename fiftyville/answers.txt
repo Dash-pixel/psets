@@ -291,11 +291,11 @@ SELECT name, phone_number, passport_number, license_plate
 FROM people
 WHERE
 phone_number IN
-(SELECT caller
+(SELECT receiver
 FROM phone_calls
 WHERE month = 7 AND day = 28 AND year = 2021 AND duration < 60)
 
 AND passport_number IN
 (SELECT passport_number
 FROM passengers
-WHERE flight_id = 36)
+WHERE flight_id = 36);
