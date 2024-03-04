@@ -253,6 +253,9 @@ ORDER BY duration;
     PRIMARY KEY(id)
 );
 
+--------------------------------------------
+this is the criminal
+
 SELECT name, phone_number, passport_number, license_plate
 FROM people
 WHERE
@@ -279,3 +282,8 @@ AND hour = 10 AND minute > 15 AND minute <26 AND activity ='exit');
 | Kelsey | (499) 555-9472 | 8294398571      | 0NTHK55       |
 | Bruce  | (367) 555-5533 | 5773159633      | 94KL13X       |
 +--------+----------------+-----------------+---------------+
+
+
+
+----
+cooperator
