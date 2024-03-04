@@ -191,12 +191,6 @@ As the thief was leaving the bakery, they called someone who talked to them for 
     FOREIGN KEY(destination_airport_id) REFERENCES airports(id)
 );
 
-+----+--------------+-----------------------------+
-| id | abbreviation |          full_name          |
-+----+--------------+-----------------------------+
-| 8  | CSF          | Fiftyville Regional Airport |
-+----+--------------+-----------------------------+
-
 SELECT id, destination_airport_id, hour
 FROM flights
 WHERE origin_airport_id =
@@ -205,3 +199,13 @@ AND year = 2021
 AND month = 7
 AND day = 29
 ORDER BY hour;
+
++----+------------------------+------+
+| id | destination_airport_id | hour |
++----+------------------------+------+
+| 36 | 4                      | 8    |
+| 43 | 1                      | 9    |
+| 23 | 11                     | 12   |
+| 53 | 9                      | 15   |
+| 18 | 6                      | 16   |
++----+------------------------+------+
