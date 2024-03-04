@@ -242,3 +242,13 @@ ORDER BY duration;
 | 281 | (338) 555-6650 | (704) 555-2131 | 54       |
 | 279 | (826) 555-1652 | (066) 555-9701 | 55       |
 +-----+----------------+----------------+----------+
+
+
+ people (
+    id INTEGER,
+    name TEXT,
+    phone_number TEXT,
+    passport_number INTEGER,
+    license_plate TEXT,
+    PRIMARY KEY(id)
+);
