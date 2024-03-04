@@ -1,7 +1,4 @@
 -- Keep a log of any SQL queries you execute as you solve the mystery.
-The THIEF is: Bruce
-The city the thief ESCAPED TO: New York City
-The ACCOMPLICE is: Robin
 
 crime_scene_reports (
     id INTEGER,
