@@ -45,14 +45,14 @@ bank_accounts (
     creation_year INTEGER,
     FOREIGN KEY(person_id) REFERENCES people(id)
 );
-CREATE TABLE airports (
+ airports (
     id INTEGER,
     abbreviation TEXT,
     full_name TEXT,
     city TEXT,
     PRIMARY KEY(id)
 );
-CREATE TABLE flights (
+ flights (
     id INTEGER,
     origin_airport_id INTEGER,
     destination_airport_id INTEGER,
@@ -65,13 +65,13 @@ CREATE TABLE flights (
     FOREIGN KEY(origin_airport_id) REFERENCES airports(id),
     FOREIGN KEY(destination_airport_id) REFERENCES airports(id)
 );
-CREATE TABLE passengers (
+ passengers (
     flight_id INTEGER,
     passport_number INTEGER,
     seat TEXT,
     FOREIGN KEY(flight_id) REFERENCES flights(id)
 );
-CREATE TABLE phone_calls (
+ phone_calls (
     id INTEGER,
     caller TEXT,
     receiver TEXT,
@@ -81,7 +81,7 @@ CREATE TABLE phone_calls (
     duration INTEGER,
     PRIMARY KEY(id)
 );
-CREATE TABLE people (
+ people (
     id INTEGER,
     name TEXT,
     phone_number TEXT,
@@ -89,7 +89,7 @@ CREATE TABLE people (
     license_plate TEXT,
     PRIMARY KEY(id)
 );
-CREATE TABLE bakery_security_logs (
+ bakery_security_logs (
     id INTEGER,
     year INTEGER,
     month INTEGER,
