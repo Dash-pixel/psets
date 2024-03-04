@@ -190,15 +190,12 @@ As the thief was leaving the bakery, they called someone who talked to them for 
     FOREIGN KEY(origin_airport_id) REFERENCES airports(id),
     FOREIGN KEY(destination_airport_id) REFERENCES airports(id)
 );
- airports (
-    id INTEGER,
-    abbreviation TEXT,
-    full_name TEXT,
-    city TEXT,
-    PRIMARY KEY(id)
-);
 
 SELECT id, abbreviation, full_name
 FROM airports
-WHERE city =
-AND year = 2021 AND atm_location = 'Leggett Street' AND transaction_type = 'withdraw';
+WHERE city = 'Fiftyville';
++----+--------------+-----------------------------+
+| id | abbreviation |          full_name          |
++----+--------------+-----------------------------+
+| 8  | CSF          | Fiftyville Regional Airport |
++----+--------------+-----------------------------+
