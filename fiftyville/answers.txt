@@ -231,6 +231,5 @@ within 10 minutes...
     PRIMARY KEY(id)
 );
 SELECT id, caller, receiver
-FROM bakery_security_logs
-WHERE month = 7 AND day = 28
-AND hour = 10 AND minute > 15 AND minute <26 AND duration < 1;
+FROM phone_calls
+WHERE month = 7 AND day = 28 AND year = 2021;
