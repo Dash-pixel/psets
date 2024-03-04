@@ -191,16 +191,13 @@ As the thief was leaving the bakery, they called someone who talked to them for 
     FOREIGN KEY(destination_airport_id) REFERENCES airports(id)
 );
 
-SELECT id, abbreviation, full_name
-FROM airports
-WHERE city = 'Fiftyville';
 +----+--------------+-----------------------------+
 | id | abbreviation |          full_name          |
 +----+--------------+-----------------------------+
 | 8  | CSF          | Fiftyville Regional Airport |
 +----+--------------+-----------------------------+
 
-SELECT id, destination_airport_id, full_name, hour
+SELECT id, destination_airport_id, hour
 FROM flights
 WHERE origin_airport_id =
 (SELECT id FROM airports WHERE city = 'Fiftyville')
