@@ -106,7 +106,7 @@ FROM crime_scene_reports
 WHERE month = 7 AND day = 28
 AND street = 'Humphrey Street';
 
-SELECT activity, license_plate, id
+SELECT activity, license_plate, id, minute
 FROM bakery_security_logs
 WHERE month = 7 AND day = 28
 AND hour = 10;
