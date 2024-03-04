@@ -218,18 +218,6 @@ WHERE flight_id = 36;
 | 8496433585      | 7B   |
 +-----------------+------+
 
-As the thief was leaving the bakery, they called someone who talked to them for less than a minute.
-within 10 minutes...
- phone_calls (
-    id INTEGER,
-    caller TEXT,
-    receiver TEXT,
-    year INTEGER,
-    month INTEGER,
-    day INTEGER,
-    duration INTEGER,
-    PRIMARY KEY(id)
-);
 SELECT id, caller, receiver, duration
 FROM phone_calls
 WHERE month = 7 AND day = 28 AND year = 2021 AND duration < 60
