@@ -173,3 +173,17 @@ SELECT id, account_number, transaction_type, amount
 FROM atm_transactions
 WHERE month = 7 AND day = 28
 AND year = 2021 AND atm_location = 'Leggett Street';
+
++-----+----------------+------------------+--------+
+| id  | account_number | transaction_type | amount |
++-----+----------------+------------------+--------+
+| 246 | 28500762       | withdraw         | 48     |
+| 264 | 28296815       | withdraw         | 20     |
+| 266 | 76054385       | withdraw         | 60     |
+| 267 | 49610011       | withdraw         | 50     |
+| 269 | 16153065       | withdraw         | 80     |
+| 275 | 86363979       | deposit          | 10     |
+| 288 | 25506511       | withdraw         | 20     |
+| 313 | 81061156       | withdraw         | 30     |
+| 336 | 26013199       | withdraw         | 35     |
++-----+----------------+------------------+--------+
