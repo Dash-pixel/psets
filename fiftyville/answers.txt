@@ -2,11 +2,6 @@ The THIEF is:
 The city the thief ESCAPED TO:
 The ACCOMPLICE is:
 
-SELECT description
-FROM crime_scene_reports
-WHERE month = 7 AND day = 28
-AND street = 'Humphrey Street';
-
 Bakery at Humphrey Street - 10:15, 2021
 another incident - littering
 
@@ -100,6 +95,11 @@ bank_accounts (
     license_plate TEXT,
     PRIMARY KEY(id)
 );
+
+SELECT description
+FROM crime_scene_reports
+WHERE month = 7 AND day = 28
+AND street = 'Humphrey Street';
 
 SELECT activity, license_plate, id
 FROM bakery_security_logs
