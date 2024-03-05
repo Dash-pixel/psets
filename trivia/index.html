@@ -26,7 +26,7 @@
                 };
             // User submits form
                 document.querySelector('form').addEventListener('submit', function(event) {
-                    let userAnswer = document.querySelector('userAnswer')
+                    let userAnswer = document.querySelector('#userAnswer')
                     if (userAnswer == 'yes')
                     {
                         document.querySelector('#answer').innerHTML = 'INCORRECT' + userAnswer;
