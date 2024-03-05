@@ -154,3 +154,16 @@ bool unload(void)
     }
     return true;
 }
+
+
+
+    for (int i = 0; i < N; i++)
+    {
+        while (table[i] != NULL)
+        {
+            node *nextNode = table[i]->next;
+            free(table[i]);
+            table[i] = nextNode;
+        }
+    }
+    return true;
