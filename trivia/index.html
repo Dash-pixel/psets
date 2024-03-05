@@ -26,14 +26,14 @@
                 };
             // User submits form
                 document.querySelector('form').addEventListener('submit', function(event) {
-                    let userAnswer = document.querySelector('#userAnswer')
+                    let userAnswer = document.querySelector('#userAnswer').value
                     if (userAnswer == 'yes')
                     {
-                        document.querySelector('#answer').innerHTML = 'CORRECT' + userAnswer;
+                        document.querySelector('#answer').innerHTML = 'CORRECT';
                     }
                     else
                     {
-                        document.querySelector('#answer').innerHTML = 'INCORRECT' + userAnswer;
+                        document.querySelector('#answer').innerHTML = 'INCORRECT';
                     }
                     // Prevent the form from submitting
                     event.preventDefault();
@@ -55,7 +55,7 @@
                 <h3>Is Alexandr gay?</h3>
                 <button class='wrong'>HE IS STRAIGHT!! tverdo i chotko</button>
                 <button class='wrong'>he is not gay</button>
-                <button id='right'>He is femboy sussy slut :3</button>
+                <button id='right'>He is femboy sussy baka :3</button>
                 <button class='wrong'>he is VERY musculine</button>
                 <p id='conclusion'>NOTHIN</p>
             </div>
