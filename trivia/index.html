@@ -9,10 +9,10 @@
             // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function() {
                 // Select all elements with the class 'wrong'
-                const buttons = document.querySelectorAll('.wrong');
-
+                const wrong = document.querySelectorAll('.wrong');
+                const right = document.querySelectorAll('.right');
                 // Loop through all the buttons
-                buttons.forEach(function(button) {
+                wrong.forEach(function(button) {
                     // Add an onclick event listener to each button
                     button.onclick = function() {
                         // Change the background color of the clicked button
@@ -37,7 +37,7 @@
                 <button class='wrong'>he is not gay</button>
                 <button class='right'>He is femboy sussy slut :3</button>
                 <button class='wrong'>he is VERY musculine</button>
-                <
+                <p id='conclusion'></p>
             </div>
 
             <div class="section">
