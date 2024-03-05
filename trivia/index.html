@@ -12,11 +12,12 @@
                 const wrong = document.querySelectorAll('.wrong');
                 const right = document.querySelectorAll('.right');
                 // Loop through all the buttons
-                wrong.forEach(function(button) {
+                wrong.forEach(function(wrong) {
                     // Add an onclick event listener to each button
-                    button.onclick = function() {
+                    wrong.onclick = function() {
                         // Change the background color of the clicked button
                         this.style.backgroundColor = 'red';
+                        querySelector('#conclusion').innerHTML = 'YOU ARE WRONG';
                     };
                 });
             });
