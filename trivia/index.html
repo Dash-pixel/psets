@@ -7,12 +7,19 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
-            document.addEventListener('DOMContentLoaded', function(){
-                document.querySelector('.wrong').onclick = function(){
-                    this.style.backgroundColor = 'red'
-                }
+            document.addEventListener('DOMContentLoaded', function() {
+                // Select all elements with the class 'wrong'
+                const buttons = document.querySelectorAll('.wrong');
 
-            })
+                // Loop through all the buttons
+                buttons.forEach(function(button) {
+                    // Add an onclick event listener to each button
+                    button.onclick = function() {
+                        // Change the background color of the clicked button
+                        this.style.backgroundColor = 'red';
+                    };
+                });
+            });
         </script>
     </head>
     <body>
