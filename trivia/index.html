@@ -29,11 +29,11 @@
                     let userAnswer = document.querySelector('userAnswer')
                     if (userAnswer == 'yes')
                     {
-                        document.querySelector('#answer').innerHTML = 'INCORRECT';
+                        document.querySelector('#answer').innerHTML = 'INCORRECT' + userAnswer;
                     }
                     else
                     {
-                        document.querySelector('#answer').innerHTML = 'CORRECT';
+                        document.querySelector('#answer').innerHTML = 'CORRECT' + userAnswer;
                     }
                     // Prevent the form from submitting
                     event.preventDefault();
