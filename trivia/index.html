@@ -10,7 +10,7 @@
             document.addEventListener('DOMContentLoaded', function() {
                 // Select all elements with the class 'wrong'
                 const wrong = document.querySelectorAll('.wrong');
-                const right = document.querySelectorAll('.right');
+                const right = document.querySelector('#right');
                 // Loop through all the buttons
                 wrong.forEach(function(wrong) {
                     // Add an onclick event listener to each button
@@ -19,8 +19,12 @@
                         this.style.backgroundColor = 'red';
                         document.querySelector('#conclusion').innerHTML = 'YOU ARE WRONG';
                     };
+                right.onclick = function() {
+                    this.style.backgroundColor = 'green';
+                    document.querySelector('#conclusion').innerHTML = 'YOU ARE RIGHT, WELL DONE';
+                    };
                 });
-                
+
             });
         </script>
     </head>
@@ -37,7 +41,7 @@
                 <h3>Is Alexandr gay?</h3>
                 <button class='wrong'>HE IS STRAIGHT!! tverdo i chotko</button>
                 <button class='wrong'>he is not gay</button>
-                <button class='right'>He is femboy sussy slut :3</button>
+                <button id='right'>He is femboy sussy slut :3</button>
                 <button class='wrong'>he is VERY musculine</button>
                 <p id='conclusion'>NOTHIN</p>
             </div>
