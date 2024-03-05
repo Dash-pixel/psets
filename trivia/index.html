@@ -6,28 +6,32 @@
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
         <script>
-            // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function() {
                 // Select all elements with the class 'wrong'
                 const wrong = document.querySelectorAll('.wrong');
                 const right = document.querySelector('#right');
-                // Loop through all the buttons
-                wrong.forEach(function(wrong) {
-                    // Add an onclick event listener to each button
-                    wrong.onclick = function() {
+                // Loop through all the 'wrong' buttons
+                wrong.forEach(function(wrongButton) {
+                    // Add an onclick event listener to each 'wrong' button
+                    wrongButton.onclick = function() {
                         // Change the background color of the clicked button
                         this.style.backgroundColor = 'red';
                         document.querySelector('#conclusion').innerHTML = 'INCORRECT';
                     };
+                });
+                // Add an onclick event listener to the 'right' button
                 right.onclick = function() {
                     this.style.backgroundColor = 'green';
                     document.querySelector('#conclusion').innerHTML = 'CORRECT!';
-                    };
-                //user submits form
-                document.addEventListener('submit', function(event) {
-                    
-                });
+                };
             });
+            // User submits form
+            document.addEventListener('submit', function(event) {
+                // Prevent the form from submitting
+                event.preventDefault();
+                // Additional code for handling form submission can go here
+            });
+
         </script>
     </head>
     <body>
