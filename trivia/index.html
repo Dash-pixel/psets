@@ -24,21 +24,20 @@
                     this.style.backgroundColor = 'green';
                     document.querySelector('#conclusion').innerHTML = 'CORRECT!';
                 };
-            });
             // User submits form
-            document.querySelector('#answer').innerHTML = 'fuck';
-            document.querySelector('form').addEventListener('submit', function(event) {
-                let userAnswer = document.querySelector('userAnswer')
-                if (userAnswer != 'yes')
-                {
-                    document.querySelector('#answer').innerHTML = 'INCORRECT';
-                }
-                else
-                {
-                    document.querySelector('#answer').innerHTML = 'CORRECT';
-                }
-                // Prevent the form from submitting
-                event.preventDefault();
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    let userAnswer = document.querySelector('userAnswer')
+                    if (userAnswer != 'yes')
+                    {
+                        document.querySelector('#answer').innerHTML = 'INCORRECT';
+                    }
+                    else
+                    {
+                        document.querySelector('#answer').innerHTML = 'CORRECT';
+                    }
+                    // Prevent the form from submitting
+                    event.preventDefault();
+                });
             });
 
         </script>
