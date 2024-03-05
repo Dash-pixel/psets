@@ -8,8 +8,9 @@
         <script>
             // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function(){
-                document.querySelector('.wrong').addEventListener('click', function(){
-                    event.taget.style.backgroundColor = 'red'
+                document.querySelector('.wrong').addEventListener('click', function(event){
+                    triggered = event.taget
+                    triggered.style.backgroundColor = 'red'
                 })
             })
         </script>
