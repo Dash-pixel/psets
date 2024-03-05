@@ -26,8 +26,8 @@
                 };
             });
             // User submits form
-            document.addEventListener('submit', function(event) {
-                let userAnswer = document.querySelector('#conclusion')
+            document.querySelector('form').addEventListener('submit', function(event) {
+                let userAnswer = document.querySelector('userAnswer')
                 // Prevent the form from submitting
                 event.preventDefault();
                 // Additional code for handling form submission can go here
