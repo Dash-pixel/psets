@@ -137,25 +137,6 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // TODO
-    node *temp;
-
-    for (int i = 0; i < N; i++)
-    {
-        node *p = table[i];
-
-        while (p != NULL)
-        {
-            temp = p -> next;
-            free(p);
-            p = temp;
-        }
-
-    }
-    return true;
-}
-
-
 
     for (int i = 0; i < N; i++)
     {
@@ -166,7 +147,8 @@ bool unload(void)
             table[i] = nextNode;
         }
     }
-    
+
     return true;
 
+}
 
