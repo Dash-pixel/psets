@@ -61,6 +61,3 @@ input[type="text"]:hover {
     transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-.center{
-    text-align: center;
-}
