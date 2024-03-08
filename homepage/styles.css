@@ -19,5 +19,14 @@
 }
 
 @font-face{
-    src: url('/fonts/Catchy-Mager-Regular') format('ttf')
+    font-family:'unnormal'
+    src: url('/fonts/Catchy-Mager-Regular') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'unnormal'
+    src: url('/fonts/Catchy-Mager-Regular') format('truetype');
+    font-weight:normal;
+    font-style:normal;
 }
