@@ -19,14 +19,21 @@
 }
 
 @font-face{
-    font-family:'unnormal'
+    font-family:'Mager'
     src: url('/fonts/Catchy-Mager-Regular.ttf') format('truetype');
     font-weight:normal;
     font-style:normal;
 }
 @font-face{
-    font-family:'unnormal'
+    font-family:'Coco'
     src: url('/fonts/CocoGothic-UntraLight_trial.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'OpenSauce'
+    src: url('/fonts/.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
