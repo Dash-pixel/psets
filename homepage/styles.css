@@ -33,7 +33,21 @@
 
 @font-face{
     font-family:'OpenSauce';
-    src: url('/fonts/OpenSauceOne.ttf') format('truetype');
+    src: url('/fonts/OpenSauceOne-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'OpenSauce';
+    src: url('/fonts/OpenSauceOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'OpenSauce';
+    src: url('/fonts/OpenSauceOne-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
