@@ -18,6 +18,9 @@
     color:#8B3DFF
 }
 
+.primary-white{
+    color:#F4F4F4
+}
 @font-face{
     font-family:'Mager';
     src: url('/fonts/Catchy-Mager-Regular.ttf') format('truetype');
