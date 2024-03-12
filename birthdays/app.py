@@ -26,6 +26,7 @@ def after_request(response):
 def index():
     if request.method == "POST":
         name = request.form.get('name')
+        month = 
 
         # TODO: Add the user's entry into the database
 
