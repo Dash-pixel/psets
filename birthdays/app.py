@@ -31,6 +31,7 @@ def index():
         # how to add to sql???
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
         # TODO: Add the user's entry into the database
+        # do i need to give an id to my inserted or is it given
 
         return redirect("/")
 
