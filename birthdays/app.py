@@ -26,8 +26,9 @@ def after_request(response):
 def index():
     if request.method == "POST":
         name = request.form.get('name')
-        month = 
-
+        month = request.form.get('month')
+        day = request.form.get('day')
+        # how to add to sql???
         # TODO: Add the user's entry into the database
 
         return redirect("/")
