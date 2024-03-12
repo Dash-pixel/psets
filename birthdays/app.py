@@ -36,6 +36,7 @@ def index():
     else:
 
         # TODO: Display the entries in the database on index.html
+        # you should query into database
 
         return render_template("index.html")
 
