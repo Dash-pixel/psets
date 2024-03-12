@@ -29,7 +29,7 @@ def index():
         month = request.form.get('month')
         day = request.form.get('day')
         # how to add to sql???
-        db(ADD SOMETHING AND SOMETHING)
+        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
         # TODO: Add the user's entry into the database
 
         return redirect("/")
@@ -38,6 +38,11 @@ def index():
 
         # TODO: Display the entries in the database on index.html
         # you should query into database
+        # id INTEGER,
+        # name TEXT,
+        # month INTEGER,
+        # day INTEGER,
+        # PRIMARY KEY(id)
 
         return render_template("index.html")
 
