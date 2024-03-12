@@ -25,7 +25,7 @@ def after_request(response):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        request.
+        name = request.args('name')
         # TODO: Add the user's entry into the database
 
         return redirect("/")
