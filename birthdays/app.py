@@ -29,9 +29,9 @@ def index():
         month = request.form.get('month')
         day = request.form.get('day')
 
-        if (not day in range(1, 32)) or (not month in range(1, 13)):
+        if ((day in range(0, 32)) AND (month in range(0, 13))):
             return redirect('/')
-        name =
+
 
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?);", name, month, day)
         # i need to check whether the data fits what i want in my database
