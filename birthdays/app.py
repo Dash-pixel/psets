@@ -43,6 +43,8 @@ def index():
         # month INTEGER,
         # day INTEGER,
         # PRIMARY KEY(id)
+        #db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
+        # how do i extract this data
 
         return render_template("index.html")
 
