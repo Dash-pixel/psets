@@ -32,7 +32,7 @@ def index():
         if (not day in range(1, 32)) or (not month in range(1, 13)):
             return redirect('/')
 
-        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", '"'+ name +'"', month, day)
+        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?);", '"'+ name +'"', month, day)
         # i need to check whether the data fits what i want in my database
         return redirect("/")
 
