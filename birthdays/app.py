@@ -40,7 +40,7 @@ def index():
     else:
 
         # TODO: Display the entries in the database on index.html
-        birthday_data = db.execute("SELECT name, month, day FROM birthdays")
+        birthday_data = db.execute("SELECT * FROM birthdays")
         #should change to 1 argument
         return render_template("index.html", birthday_data=birthday_data)
 
