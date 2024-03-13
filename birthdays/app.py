@@ -39,17 +39,7 @@ def index():
     else:
 
         # TODO: Display the entries in the database on index.html
-        # you should query into database
-        # id INTEGER,
-        # name TEXT,
-        # month INTEGER,
-        # day INTEGER,
-        # PRIMARY KEY(id)
-        #db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
-        # how do i extract data from sql
-        # probably need to convert it to json
-
-        db.execute("SELECT * FROM birthdays")
+        db.execute("SELECT name, month, day FROM birthdays")
         #i want to create object in json format
         return render_template("index.html")
 
