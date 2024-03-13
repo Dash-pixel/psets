@@ -39,8 +39,7 @@ def index():
     else:
 
         # TODO: Display the entries in the database on index.html
-        db.execute("SELECT name, month, day FROM birthdays")
+        birthday_data = db.execute("SELECT name, month, day FROM birthdays")
         #i want to create object in json format
-        return render_template("index.html")
-
+        return render_template("index.html", birthday_data)
 
