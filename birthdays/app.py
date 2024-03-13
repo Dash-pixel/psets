@@ -28,6 +28,8 @@ def index():
         name = request.form.get('name')
         month = request.form.get('month')
         day = request.form.get('day')
+
+        if day is not in range(1, 32)
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
         # do i need to give an id to my inserted or is it given
         # i need to check whether the data fits what i want in my database
