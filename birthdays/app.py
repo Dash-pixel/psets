@@ -34,12 +34,12 @@ def index():
 
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
         # i need to check whether the data fits what i want in my database
-        return redirect("/")
+        return redirect("/", birthday_data)
 
     else:
 
         # TODO: Display the entries in the database on index.html
         birthday_data = db.execute("SELECT name, month, day FROM birthdays")
-        #i want to create object in json format
-        return render_template("index.html", birthday_data)
+        #should change to 1 argument
+        return render_template("index.html")
 
