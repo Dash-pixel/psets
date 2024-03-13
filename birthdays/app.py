@@ -26,10 +26,10 @@ def after_request(response):
 def index():
     if request.method == "POST":
         name = request.form.get('name')
-        month = request.form.get('month')
-        day = request.form.get('day')
+        month = int(request.form.get('month'))
+        day = int(request.form.get('day'))
 
-        if ((day in range(0, 32)) AND (month in range(0, 13))):
+        if ((day in range(1, 32)) or (month in range(1, 13))):
             return redirect('/')
 
 
