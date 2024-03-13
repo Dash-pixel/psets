@@ -30,7 +30,7 @@ def index():
         day = request.form.get('day')
 
         if (not day in range(1, 32)) or (not month in range(1, 13)):
-            return
+            return redirect('/')
 
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
         # do i need to give an id to my inserted or is it given
