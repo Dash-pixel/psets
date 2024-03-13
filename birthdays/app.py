@@ -49,7 +49,7 @@ def index():
         # how do i extract data from sql
         # probably need to convert it to json
 
-        db.execute("SELECT FROM birthdays *")
+        db.execute("SELECT * FROM birthdays")
         #i want to create object in json format
         return render_template("index.html")
 
