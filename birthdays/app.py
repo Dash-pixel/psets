@@ -29,7 +29,7 @@ def index():
         month = int(request.form.get('month'))
         day = int(request.form.get('day'))
 
-        if ((day in range(1, 32)) or (month in range(1, 13))):
+        if ((not day in range(1, 32)) or (not month in range(1, 13))):
             return redirect('/')
 
 
