@@ -44,7 +44,9 @@ def index():
         # day INTEGER,
         # PRIMARY KEY(id)
         #db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
-        # how do i extract this data
+        # how do i extract data from sql
+        # probably need to convert it to json
+       db.execute("SELECT FROM birthdays *")
 
         return render_template("index.html")
 
