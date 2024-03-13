@@ -33,9 +33,7 @@ def index():
             return redirect('/')
 
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
-        # do i need to give an id to my inserted or is it given
         # i need to check whether the data fits what i want in my database
-        # i need to make sure things are safe with server down???
         return redirect("/")
 
     else:
