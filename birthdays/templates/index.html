@@ -35,10 +35,11 @@
                     </thead>
                     <tbody>
                         <!-- TODO: Loop through the database entries to display them in this table -->
-                        {% for loop %}
-                         where should i write javascript magic?
-                         so here we make requests to the database and after join in some html tags that look like table in bootstrap
-                        {%end for loop}
+                        {% for id in items %}
+                        <p>{{ item.name }}</p>
+                        {% endfor}
+                        maybe javascript would be a better fit?
+
                     </tbody>
                 </table>
             </div>
