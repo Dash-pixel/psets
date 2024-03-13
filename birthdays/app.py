@@ -25,14 +25,14 @@ def after_request(response):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        name = (request.form.get('name'))
+        name = request.form.get('name')
         month = request.form.get('month')
         day = request.form.get('day')
 
         if (not day in range(1, 32)) or (not month in range(1, 13)):
             return redirect('/')
 
-        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", "'"+name+"'", month, day)
+        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
         # i need to check whether the data fits what i want in my database
         return redirect("/")
 
