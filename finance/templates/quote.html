@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Registration
+    Quote
 {% endblock %}
 
 {% block main %}
     <form action="/quote" method="">
         <div class="mb-3">
-            <input autocomplete="on" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+            <input autocomplete="on" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="stock" type="text">
         </div>
-        <button class="btn btn-primary" type="submit">Register</button>
+        <button class="btn btn-primary" type="submit">Find stock</button>
     </form>
 {% endblock %}
