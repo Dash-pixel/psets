@@ -104,7 +104,11 @@ def logout():
 def quote():
     """Get stock quote."""
     if request.method == 'GET':
+        redirect ('/quote')
+
+    else:
         
+
     return apology("TODO")
 
 
