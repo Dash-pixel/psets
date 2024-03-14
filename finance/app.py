@@ -54,10 +54,7 @@ def buy():
         if stock_info == None:
             return apology("TODO")
 
-        #how to get user id from session number
-        session
-
-        rows = db.execute("SELECT * FROM users WHERE id = ?", session)
+        rows = db.execute("SELECT  FROM users WHERE id = ?", session.get('user_id'))
         #now find the person's money in sql
          session["user_id"] = rows[0]["id"]
 
