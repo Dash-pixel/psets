@@ -42,7 +42,6 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
-    #get request to buy stock
     if request.method == 'GET':
         return render_template("buy.html")
 
@@ -56,8 +55,10 @@ def buy():
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))
 
-        hashed symbol
-        return apology("TODO")
+        to_pay = stock_info.price * quantity
+
+        if to_pay > cash:
+            return apology("TODO")
 
 
 @app.route("/history")
