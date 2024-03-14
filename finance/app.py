@@ -112,9 +112,9 @@ def register():
     if request.method['POST']: #need to change this request
         username = request.form.get('username')
         password = request.form.get('password')
-        password_again = request.form.get('password_again')
+        confirmation = request.form.get('confirmation')
 
-        if (password) or (password_again != password):
+        if (password) or (confirmation != password):
             return apology("TODO")
 
         for row in rows:
