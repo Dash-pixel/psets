@@ -108,8 +108,8 @@ def quote():
 
     else:
         symbol = request.form.get("symbol")
-        lookup(symbol)
-        render ('/quoted', )
+        stock_info = lookup(symbol)
+        render ('/quoted', stock_info)
 
     return apology("TODO")
 
