@@ -114,13 +114,13 @@ def register():
         password = request.form.get('password')
         confirmation = request.form.get('confirmation')
 
-        if (password) or (confirmation != password):
+        if (password) or (confirmation != password) or (username):
             return apology("TODO")
 
         for row in rows:
             if row.name == username:
                 return apology("TODO")
-            
+
         generate_password_hash(request.post.get('password'))
     return apology("TODO")
 
