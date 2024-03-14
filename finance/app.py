@@ -127,6 +127,9 @@ def register():
         user_id = db.execute('SELECT id WHERE username == ?', username)
 
         session['user_id'] = user_id
+        
+    else:
+        return apology("TODO")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
