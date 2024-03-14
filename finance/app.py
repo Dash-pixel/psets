@@ -51,12 +51,12 @@ def buy():
         quantity = request.form.get("quantity")
 
         stock_info = lookup(symbol)
-
         if stock_info == None:
             return apology("TODO")
 
+        rows = db.execute("SELECT * FROM users WHERE id = ?", session)
         #now find the person's money in sql
-        
+
         hashed symbol
         return apology("TODO")
 
