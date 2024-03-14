@@ -42,6 +42,8 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
+    #get request to buy stock
+    #return the
     return apology("TODO")
 
 
