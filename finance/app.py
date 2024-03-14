@@ -55,7 +55,6 @@ def buy():
             return apology("TODO")
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))
-        session["user_id"] = rows[0]["id"]
 
         hashed symbol
         return apology("TODO")
