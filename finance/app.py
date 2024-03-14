@@ -107,7 +107,9 @@ def quote():
         redirect ('/quote')
 
     else:
-        request.form.get("symbol")
+        symbol = request.form.get("symbol")
+        lookup(symbol)
+        render ('/quoted', )
 
     return apology("TODO")
 
