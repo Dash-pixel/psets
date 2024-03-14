@@ -109,7 +109,7 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    if request.method['POST']: #need to change this request
+    if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
         confirmation = request.form.get('confirmation')
@@ -126,9 +126,9 @@ def register():
         db.execute('INSERT INTO users (username, hash) VALUES(?, ?)', username, hash)
         user_id = db.execute('SELECT id WHERE username == ?', username)
 
-        session['user_id'] = user_id
-        
-    else:
+        session['user_id'] = user_id['id']
+
+    else: # what can GET mean in this setting?
         return apology("TODO")
 
 @app.route("/sell", methods=["GET", "POST"])
