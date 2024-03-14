@@ -54,9 +54,8 @@ def buy():
         if stock_info == None:
             return apology("TODO")
 
-        rows = db.execute("SELECT  FROM users WHERE id = ?", session.get('user_id'))
-        #now find the person's money in sql
-         session["user_id"] = rows[0]["id"]
+        cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))
+    session["user_id"] = rows[0]["id"]
 
         hashed symbol
         return apology("TODO")
