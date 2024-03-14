@@ -125,6 +125,8 @@ def register():
 
         db.execute('INSERT INTO users (username, hash) VALUES(?, ?)', username, hash)
 
+        session['user_id'] = 
+
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
 def sell():
