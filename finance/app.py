@@ -113,9 +113,10 @@ def register():
         username = request.form.get('username')
         password = request.form.get('password')
         password_again = request.form.get('password_again')
+        
         if (password) or (password_again != password):
             return apology("TODO")
-        
+
         if username == rows[]
 
 
