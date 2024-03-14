@@ -109,7 +109,16 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    if request.method['POST']:
+    if request.method['POST']: #need to change this request
+        username = request.form.get('username')
+        password = request.form.get('password')
+        password_again = request.form.get('password_again')
+        if (password) or (password_again != password):
+            return apology("TODO")
+        
+        if username == rows[]
+
+
         generate_password_hash(request.post.get('password'))
     return apology("TODO")
 
