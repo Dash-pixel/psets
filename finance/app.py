@@ -118,9 +118,9 @@ def register():
             return apology("TODO")
 
         for row in rows:
-            if rows[row].name == username:
+            if row.name == username:
                 return apology("TODO")
-
+            
         generate_password_hash(request.post.get('password'))
     return apology("TODO")
 
