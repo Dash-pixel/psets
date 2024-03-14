@@ -53,7 +53,9 @@ def buy():
         stock_info = lookup(symbol)
         if stock_info == None:
             return apology("TODO")
-        
+
+        session
+
         rows = db.execute("SELECT * FROM users WHERE id = ?", session)
         #now find the person's money in sql
          session["user_id"] = rows[0]["id"]
