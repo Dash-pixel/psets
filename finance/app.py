@@ -107,7 +107,7 @@ def quote():
         redirect ('/quote')
 
     else:
-        request.form.get("password")
+        request.form.get("stock")
 
     return apology("TODO")
 
