@@ -124,7 +124,7 @@ def register():
         hash = generate_password_hash(password)
 
         db.execute('INSERT INTO users (username, hash) VALUES(?, ?)', username, hash)
-        db.execute('SELECT id (username, hash) VALUES(?, ?)', username, hash)
+        db.execute('SELECT id WHERE username == ?', username)
 
         session['user_id'] =
 
