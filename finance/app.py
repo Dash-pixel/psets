@@ -123,7 +123,7 @@ def register():
 
         hash = generate_password_hash(password)
 
-        db.execute(INSERT INTO users )
+        db.execute('INSERT INTO users (username, hash) VALUE (?, ?)', username, hash)
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
