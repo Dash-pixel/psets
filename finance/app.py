@@ -124,8 +124,9 @@ def register():
         hash = generate_password_hash(password)
 
         db.execute('INSERT INTO users (username, hash) VALUES(?, ?)', username, hash)
+        db.execute('SELECT INTO users (username, hash) VALUES(?, ?)', username, hash)
 
-        session['user_id'] = 
+        session['user_id'] =
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
