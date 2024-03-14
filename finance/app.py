@@ -48,10 +48,12 @@ def buy():
 
     else:
         symbol = request.form.get("symbol")
-        
+        quantity = request.form.get("quantity")
+        #now find the person's money in sql
         stock_info = lookup(symbol)
 
-    return apology("TODO")
+        hashed symbol
+        return apology("TODO")
 
 
 @app.route("/history")
