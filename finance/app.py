@@ -110,7 +110,7 @@ def quote():
 def register():
     """Register user"""
     if request.method['POST']:
-        
+        generate_password_hash(request.post.get('password'))
     return apology("TODO")
 
 
