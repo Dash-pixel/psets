@@ -56,6 +56,7 @@ def buy():
 
         rows = db.execute("SELECT * FROM users WHERE id = ?", session)
         #now find the person's money in sql
+         session["user_id"] = rows[0]["id"]
 
         hashed symbol
         return apology("TODO")
