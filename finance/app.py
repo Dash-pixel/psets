@@ -44,8 +44,10 @@ def buy():
     """Buy shares of stock"""
     #get request to buy stock
     if request.method == 'GET':
+        return render_template("buy.html")
+
+    else:
         
-    #return the
     return apology("TODO")
 
 
