@@ -117,7 +117,7 @@ def register():
         if (password) or (password_again != password):
             return apology("TODO")
 
-        if username = rows[]
+        if username = rows[]:
 
 
         generate_password_hash(request.post.get('password'))
