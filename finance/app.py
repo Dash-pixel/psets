@@ -118,11 +118,10 @@ def register():
             return apology("TODO")
 
         for row in rows:
-            if row.name == username:
+            if row['username'] == username:
                 return apology("TODO")
 
         generate_password_hash(request.post.get('password'))
-    return apology("TODO")
 
 
 @app.route("/sell", methods=["GET", "POST"])
