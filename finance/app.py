@@ -109,10 +109,11 @@ def quote():
     else:
         symbol = request.form.get("symbol")
         stock_info = lookup(symbol)
-        if stock_info == None:
-            render('/quoted', stock_info)
 
-        return apology("TODO")
+        if stock_info == None:
+            return apology("TODO")
+
+        render('/quoted', stock_info)
 
 
 @app.route("/register", methods=["GET", "POST"])
