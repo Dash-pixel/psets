@@ -121,8 +121,9 @@ def register():
             if row['username'] == username:
                 return apology("TODO")
 
-        generate_password_hash(request.post.get('password'))
+        hash = generate_password_hash(password)
 
+        db.execute(INSERT INTO users )
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
