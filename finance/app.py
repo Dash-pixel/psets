@@ -60,6 +60,7 @@ def buy():
         if to_pay > cash:
             return apology("TODO")
 
+        
 
 
 @app.route("/history")
