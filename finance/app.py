@@ -62,7 +62,7 @@ def buy():
         else:
             new_cash = cash - to_pay
 
-            db.execute("UPDATE cash FROM users WHERE id = ?", session.get('user_id'), cash)
+            db.execute("UPDATE users SET cash = ? WHERE id = ?", session.get('user_id'), cash)
 
 
 @app.route("/history")
