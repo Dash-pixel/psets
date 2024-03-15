@@ -63,7 +63,7 @@ def buy():
             new_cash = cash - to_pay
             db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, session.get('user_id'))
             # i need to add shares of stock
-            
+            db.execute(""SELECT cash FROM users WHERE id = ?"", new_cash, session.get('user_id'))
 
 @app.route("/history")
 @login_required
