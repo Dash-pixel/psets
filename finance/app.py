@@ -70,7 +70,8 @@ def buy():
         # update this (determined above) stock number
         # try updating an existing stock
         # except no stock found, then create stock
-        db.execute("UPDATE bought SET bought WHERE user_id = ?", new_cash, session.get('user_id'))
+        try:
+            db.execute("UPDATE bought SET bought WHERE user_id = ?", new_cash, session.get('user_id'))
 
 @app.route("/history")
 @login_required
