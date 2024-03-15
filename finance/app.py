@@ -64,7 +64,13 @@ def buy():
         db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, session.get('user_id'))
         # i need to add shares of stock
         # does this user already have this stock? sq = 50
-        # select 50 entries from 
+        # select 50 entries from
+        # find stock of a particular user with a particular name
+        # if not found create a new stock for the user
+        # update this (determined above) stock number
+        # or
+        # add stock to the list
+        # select this amont of stock and delete
         db.execute("UPDATE bought SET bought WHERE user_id = ?", new_cash, session.get('user_id'))
 
 @app.route("/history")
