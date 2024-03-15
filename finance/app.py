@@ -59,8 +59,10 @@ def buy():
 
         if to_pay > cash:
             return apology("TODO")
+        else:
+            new_cash = cash - to_pay
 
-        
+            db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'), cash)
 
 
 @app.route("/history")
