@@ -68,9 +68,8 @@ def buy():
         # find stock of a particular user with a particular name
         # if not found create a new stock for the user
         # update this (determined above) stock number
-        # or
-        # add stock to the list
-        # select this amont of stock and delete
+        # try updating an existing stock
+        # except no stock found, then create stock
         db.execute("UPDATE bought SET bought WHERE user_id = ?", new_cash, session.get('user_id'))
 
 @app.route("/history")
