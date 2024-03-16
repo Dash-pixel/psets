@@ -38,7 +38,7 @@ def index():
     stock_rows = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?', session.get('user_id'))
     for row in stock_rows:
         row['current_price'] = lookup(row.symbol)
-        
+
     return render_template('index.html', stock_rows)
     #return apology("TODO")
 
