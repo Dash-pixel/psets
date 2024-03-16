@@ -158,7 +158,7 @@ def register():
         if (password) or (confirmation != password) or (username):
             return apology("TODO")
 
-        rows = db.execute('SELECT username FROM username == ?', username)
+        rows = db.execute('SELECT 1 FROM users WHERE username == ?', username)
         for row in rows:
             if row['username'] == username:
                 return apology("TODO")
