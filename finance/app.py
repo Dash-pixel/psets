@@ -42,7 +42,9 @@ def index():
         i['full_price']= int(i['current_price']) * int(i['quantity'])
         portfolio_sum += i['full_price']
 
-    return render_template('index.html', stock_rows = stock_list, portfolio_sum = portfolio_sum)
+    cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash']
+
+    return render_template('index.html', stock_rows = stock_list, portfolio_sum = portfolio_sum, cash=cash)
     #return apology("TODO")
 
 
