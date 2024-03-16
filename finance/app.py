@@ -58,7 +58,7 @@ def buy():
         if stock_info == None:
             return apology("TODO")
 
-        to_pay = stock_info.price * quantity
+        to_pay = stock_info['price'] * quantity
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id')) #what?
 
