@@ -7,12 +7,10 @@
 {% block main %}
     <form action="/sell" method="post">
         <div class="mb-3">
-            <label for="capital">What is the capital of France?</label>
             <select id="capital" name="capital">
-                <option value="paris">Paris</option>
-                <option value="lyon">Lyon</option>
-                <option value="marseille">Marseille</option>
-                <option value="toulouse">Toulouse</option>
+                {% for row in stock_rows %}
+                <option value="{{row.symbol}}">{{row.symbol}}</option>
+                {% endfor %}
             </select>
         </div>
         <div class="mb-3">
