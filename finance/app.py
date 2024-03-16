@@ -37,7 +37,7 @@ def index():
     """Show portfolio of stocks"""
     stock_list = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?', session.get('user_id'))
     for list_item in stock_list:
-        row['current_price'] = lookup(list_item.symbol)
+        list_item['current_price'] = lookup(list_item.symbol)
         print("abcd")
 
     return render_template('index.html', stock_rows = stock_rows)
