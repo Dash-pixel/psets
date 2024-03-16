@@ -160,7 +160,7 @@ def register():
 
         exists = db.execute('SELECT 1 FROM users WHERE username == ? LIMIT 1', username)
 
-        if exists == None:
+        if exists != None:
             return apology("TODO")
 
         hash = generate_password_hash(password)
@@ -170,7 +170,7 @@ def register():
 
         session['user_id'] = user_id['id']
 
-    else: # what can GET mean in this setting?
+    else:
         return render_template("registration")
 
 @app.route("/sell", methods=["GET", "POST"])
