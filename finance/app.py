@@ -145,7 +145,7 @@ def quote():
         stock_info = lookup(symbol)
 
         if stock_info == None:
-            return apology("TODO")
+            return apology("stock doesnt exist")
 
         return render_template('quoted.html', stock_info = stock_info)
 
