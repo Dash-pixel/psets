@@ -11,17 +11,13 @@
             <th>quantity</th>
             <th>total current value</th>
         </tr>
-        {% for row in stock_rows%}
+        {% for row in stock_rows %}
         <tr>
             <td>John Doe</td>
             <td>30</td>
             <td>New York</td>
         </tr>
-        <tr>
-            <td>Jane Doe</td>
-            <td>28</td>
-            <td>Los Angeles</td>
-        </tr>
+        {% endfor %}
     </table>
 {% endblock %}
 
