@@ -43,7 +43,7 @@ def index():
 # or can i somehow dynamically ask from the index how much
 # using ajax
 
-    return render_template('index.html', stock_rows, row['current_price'])
+    return render_template('index.html', stock_rows)
     #return apology("TODO")
 
 
