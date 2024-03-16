@@ -72,9 +72,9 @@ def buy():
         new_cash = cash - to_pay
         db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, session.get('user_id'))
 
-        affected_rows = db.execute("UPDATE bought SET quantity = quantity + ? WHERE user_id = ? AND symbol = ?", quantity, session.get('user_id'), stock_symbol)
+        affected_rows = db.execute("UPDATE bought SET quantity = quantity + ? WHERE user_id = ? AND symbol = ?", quantity, session.get('user_id'), symbol)
         if affected_rows == 0:
-            db.execute("INSERT INTO bought (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), stock_symbol, quantity)
+            db.execute("INSERT INTO bought (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), symbol, quantity)
 
 @app.route("/history")
 @login_required
