@@ -7,7 +7,13 @@
 {% block main %}
     <form action="/sell" method="post">
         <div class="mb-3">
-            <input autocomplete="on" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="symbol" type="text">
+            <label for="capital">What is the capital of France?</label>
+            <select id="capital" name="capital">
+                <option value="paris">Paris</option>
+                <option value="lyon">Lyon</option>
+                <option value="marseille">Marseille</option>
+                <option value="toulouse">Toulouse</option>
+            </select>
         </div>
         <div class="mb-3">
             <input autocomplete="on" class="form-control mx-auto w-auto" name="quantity" placeholder="number of stocks" type="number">
