@@ -65,7 +65,6 @@ def buy():
 
         # find stock of a particular user with a particular name
         # if not found create a new stock for the user
-        # update this (determined above) stock number
         # try updating an existing stock
         # except no stock found, then create stock
 
