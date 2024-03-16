@@ -68,9 +68,10 @@ def buy():
         # update this (determined above) stock number
         # try updating an existing stock
         # except no stock found, then create stock
-        db.execute("SELECT bought SET quantity = quantity + ? WHERE user_id = ?", quantity, session.get('user_id'))
 
-        db.execute("UPDATE bought SET quantity = quantity + ? WHERE user_id = ?", quantity, session.get('user_id'))
+        affected_rows = db.execute("UPDATE bought SET quantity = quantity + ? WHERE user_id = ? AND symbol = ?", quantity, session.get('user_id'), stock_symbol)
+        if affected_rows == 0:
+            db.execute("INSERT INTO bought (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), stock_symbol, quantity)
 
 
 @app.route("/history")
