@@ -17,7 +17,7 @@
             <td>{{row.symbol}}</td>
             <td>{{row.quantity}}</td>
             <td>{{row.current_price}}</td>
-            <td>{{row.quantity * row.current_price}}</td>
+            <td>{{int(row.quantity) * int(row.current_price)}}</td>
         </tr>
         {% endfor %}
     </table>
