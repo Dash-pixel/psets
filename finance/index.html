@@ -13,16 +13,14 @@
         </tr>
         {% for row in stock_rows %}
         <tr>
-            <td>John Doe</td>
-            <td>30</td>
-            <td>New York</td>
+            <td>{{row.symbol}}</td>
+            <td>{{row.quantity}}</td>
+            <td>{{row.quantity * current_price}}</td>
         </tr>
         {% endfor %}
     </table>
 {% endblock %}
 
-should be a list of dictionaries - stock_rows
-with dict names symbol, quantity
 
 
 • Display the user's current cash balance

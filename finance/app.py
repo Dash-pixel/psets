@@ -36,7 +36,7 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     stock_rows = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?", session.get('user_id'))
-    render_template('index.html', stock_rows)
+    render_template('index.html', stock_rows, current_price)
     #return apology("TODO")
 
 
