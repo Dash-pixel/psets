@@ -171,7 +171,7 @@ def register():
         session['user_id'] = user_id['id']
 
     else:
-        return render_template("registration")
+        return render_template("registration.html")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
