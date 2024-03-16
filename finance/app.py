@@ -168,7 +168,7 @@ def register():
         db.execute('INSERT INTO users (username, hash) VALUES(?, ?)', username, hash)
         user_id = db.execute('SELECT id FROM users WHERE username == ?', username)
 
-        session['user_id'] = user_id['id']
+        session['user_id'] = user_id[0]['id']
 
     else:
         return render_template("registration.html")
