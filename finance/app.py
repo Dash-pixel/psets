@@ -35,7 +35,7 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    stock_rows = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?", session.get('user_id'))
+    stock_rows = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?', session.get('user_id'))
     for row in stock_rows:
         lookup(row.symbol)
 # how to do look up?
@@ -177,5 +177,8 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == 'GET':
-        
-    return apology("TODO")
+        render_template('sell.html')
+    else:
+        symbol = request.form.get("symbol")
+        quantity = request.form.get("quantity")
+        return apology("TODO")
