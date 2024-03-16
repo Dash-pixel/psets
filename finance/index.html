@@ -1,12 +1,29 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Registration
+    Home
 {% endblock %}
 
 {% block main %}
-
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Doe</td>
+            <td>28</td>
+            <td>Los Angeles</td>
+        </tr>
+    </table>
 {% endblock %}
+
 should be a list of dictionaries - stock_rows
 with dict names symbol, quantity
 
