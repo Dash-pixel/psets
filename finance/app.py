@@ -160,7 +160,7 @@ def register():
 
         rows = db.execute('SELECT 1 FROM users WHERE username == ?', username)
         for row in rows:
-            if row['username'] == username:
+            if row['usern
                 return apology("TODO")
 
         hash = generate_password_hash(password)
