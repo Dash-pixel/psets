@@ -39,7 +39,7 @@ def index():
     for row in stock_rows:
         row['current_price'] = lookup(row.symbol)
 
-    return render_template('index.html', stock_rows)
+    return render_template('index.html', stock_rows = stock_rows)
     #return apology("TODO")
 
 
