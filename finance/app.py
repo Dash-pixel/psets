@@ -60,7 +60,7 @@ def buy():
 
         to_pay = stock_info['price'] * quantity
 
-        cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id')) #what?
+        cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash'] #what?
 
         if to_pay > cash:
             return apology("TODO")
@@ -71,6 +71,8 @@ def buy():
         affected_rows = db.execute("UPDATE bought SET quantity = quantity + ? WHERE user_id = ? AND symbol = ?", quantity, session.get('user_id'), symbol)
         if affected_rows == 0:
             db.execute("INSERT INTO bought (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), symbol, quantity)
+
+        return redirect('/')
 
 @app.route("/history")
 @login_required
