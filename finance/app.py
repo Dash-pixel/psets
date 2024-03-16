@@ -58,6 +58,10 @@ def buy():
         if stock_info == None:
             return apology("No such stock")
 
+        if quantity <= 0:
+            return apology("do not play tricks, u r a fkng looser and will never become a hacker")
+
+
         to_pay = stock_info['price'] * quantity
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash'] #what?
