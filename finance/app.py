@@ -158,10 +158,10 @@ def register():
         if (password) or (confirmation != password) or (username):
             return apology("TODO")
 
-        rows = db.execute('SELECT 1 FROM users WHERE username == ?', username)
-        for row in rows:
-            if row['usern
-                return apology("TODO")
+        exists = db.execute('SELECT 1 FROM users WHERE username == ? LIMIT 1', username)
+
+        if exists != 0:
+            return apology("TODO")
 
         hash = generate_password_hash(password)
 
