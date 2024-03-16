@@ -158,7 +158,7 @@ def register():
         if (password) or (confirmation != password) or (username):
             return apology("TODO")
 
-        rows = db.execute('SELECT id WHERE username == ?', username)
+        rows = db.execute('SELECT * WHERE username == ?', username)
         for row in rows:
             if row['username'] == username:
                 return apology("TODO")
@@ -166,7 +166,7 @@ def register():
         hash = generate_password_hash(password)
 
         db.execute('INSERT INTO users (username, hash) VALUES(?, ?)', username, hash)
-        user_id = db.execute('SELECT id WHERE username == ?', username)
+        user_id = db.execute('SELECT id FROM users WHERE username == ?', username)
 
         session['user_id'] = user_id['id']
 
