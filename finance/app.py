@@ -36,11 +36,13 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     stock_list = db.execute('SELECT symbol, quantity FROM bought WHERE user_id = ?', session.get('user_id'))
+    portfolio_sum = 0
     for i in stock_list:
         i['current_price'] = lookup(i['symbol'])['price']
         i['full_price']= int(i['current_price']) * int(i['quantity'])
+        portfolio_sum += i['full_price']
 
-    return render_template('index.html', stock_rows = stock_list)
+    return render_template('index.html', stock_rows = stock_list, portfolio_sum = portfolio_sum)
     #return apology("TODO")
 
 
