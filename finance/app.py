@@ -35,7 +35,9 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    return apology("TODO")
+    stock_rows = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?", session.get('user_id'))
+    render_template('index.html', stock_rows)
+    #return apology("TODO")
 
 
 @app.route("/buy", methods=["GET", "POST"])
@@ -63,15 +65,9 @@ def buy():
         new_cash = cash - to_pay
         db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, session.get('user_id'))
 
-        # find stock of a particular user with a particular name
-        # if not found create a new stock for the user
-        # try updating an existing stock
-        # except no stock found, then create stock
-
         affected_rows = db.execute("UPDATE bought SET quantity = quantity + ? WHERE user_id = ? AND symbol = ?", quantity, session.get('user_id'), stock_symbol)
         if affected_rows == 0:
             db.execute("INSERT INTO bought (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), stock_symbol, quantity)
-        elif
 
 @app.route("/history")
 @login_required
