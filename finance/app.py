@@ -43,7 +43,7 @@ def index():
 # or can i somehow dynamically ask from the index how much
 # using ajax
 
-    render_template('index.html', stock_rows, row['current_price'])
+    return render_template('index.html', stock_rows, row['current_price'])
     #return apology("TODO")
 
 
@@ -170,14 +170,14 @@ def register():
         session['user_id'] = user_id['id']
 
     else: # what can GET mean in this setting?
-        return apology("TODO")
+        return render_template("registration")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
 def sell():
     """Sell shares of stock"""
     if request.method == 'GET':
-        render_template('sell.html')
+        return render_template('sell.html')
     else:
         symbol = request.form.get("symbol")
         quantity = request.form.get("quantity")
