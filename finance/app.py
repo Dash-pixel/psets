@@ -158,7 +158,7 @@ def register():
         if ((confirmation != password) or (username == '') or (password == '')):
             return apology("something with the detailes")
 
-        exists = db.execute('SELECT 1 FROM users WHERE username == ? LIMIT 1', username)
+        exists = db.execute('SELECT username FROM users WHERE username == ? LIMIT 1', username)
 
         if exists != None:
             return apology("the username's taken")
