@@ -155,7 +155,7 @@ def register():
         password = request.form.get('password')
         confirmation = request.form.get('confirmation')
 
-        if ((confirmation != password) or !((username) or (password))):
+        if ((confirmation != password) or !((username)*(password))):
             return apology("something with the detailes")
 
         exists = db.execute('SELECT 1 FROM users WHERE username == ? LIMIT 1', username)
