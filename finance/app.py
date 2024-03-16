@@ -51,12 +51,12 @@ def buy():
         return render_template("buy.html")
 
     else:
-        symbol = request.form.get("symbol")
-        quantity = request.form.get("quantity")
+        symbol = (request.form.get("symbol")).upper()
+        quantity = int(request.form.get("quantity"))
 
         stock_info = lookup(symbol)
         if stock_info == None:
-            return apology("TODO")
+            return apology("No such stock")
 
         to_pay = stock_info['price'] * quantity
 
