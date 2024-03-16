@@ -14,7 +14,7 @@
         </tr>
         {% for row in stock_rows %}
         <tr>
-            <td>{{row.symbol}}</td>
+            <td>{{stock_rows[0].symbol}}</td>
             <td>{{row.quantity}}</td>
             <td>{{row.current_price}}</td>
             <td>{{row.quantity * row.current_price}}</td>
