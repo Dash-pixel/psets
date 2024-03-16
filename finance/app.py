@@ -147,7 +147,7 @@ def quote():
         if stock_info == None:
             return apology("TODO")
 
-        return render_template('quoted.html', stock_info)
+        return render_template('quoted.html', stock_info = stock_info)
 
 
 @app.route("/register", methods=["GET", "POST"])
