@@ -36,7 +36,8 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     stock_rows = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?", session.get('user_id'))
-    lookup(symbol)
+    for row in stock_rows:
+        lookup(row.symbol)
 #how to do look up?
 #should i add price of stock to rows
 #or can i somehow dynamically ask from the index how much
