@@ -38,9 +38,9 @@ def index():
     stock_rows = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?", session.get('user_id'))
     for row in stock_rows:
         lookup(row.symbol)
-#how to do look up?
-#should i add price of stock to rows
-#or can i somehow dynamically ask from the index how much
+# how to do look up?
+# should i add price of stock to rows
+# or can i somehow dynamically ask from the index how much
 # using ajax
 
     render_template('index.html', stock_rows, current_price)
@@ -176,4 +176,6 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
+    if request.method == 'GET':
+        
     return apology("TODO")
