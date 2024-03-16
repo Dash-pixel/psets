@@ -36,11 +36,11 @@ def after_request(response):
 def index():
     """Show portfolio of stocks"""
     stock_list = db.execute('SELECT symbol, quantity FROM bought WHERE id = ?', session.get('user_id'))
-    for list_item in stock_list:
-        list_item['current_price'] = lookup(list_item.symbol)
+    for i in stock_list:
+        stock_list[i]['current_price'] = lookup(stock_list[i].symbol)
         print("abcd")
 
-    return render_template('index.html', stock_rows = stock_rows)
+    return render_template('index.html', stock_rows = stock_list)
     #return apology("TODO")
 
 
