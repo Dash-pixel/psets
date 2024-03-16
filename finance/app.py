@@ -63,7 +63,7 @@ def buy():
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash'] #what?
 
         if to_pay > cash:
-            return apology("TODO")
+            return apology("NO MONEY")
 
         new_cash = cash - to_pay
         db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, session.get('user_id'))
