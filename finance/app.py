@@ -160,7 +160,7 @@ def register():
 
         exists = db.execute('SELECT username FROM users WHERE username == ? LIMIT 1', username)
 
-        if exists.username != None:
+        if NOT exists['username']:
             return apology("the username's taken")
 
         hash = generate_password_hash(password)
