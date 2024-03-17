@@ -197,3 +197,4 @@ def sell():
             return apology("DO NOT FIDDLE")
 
         if quantity > stock_to_sell (we need to find out the row).symbol #do we need to ask database again?
+        # do we need to write select database with this symbol?
