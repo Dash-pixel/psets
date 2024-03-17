@@ -196,4 +196,4 @@ def sell():
         if symbol is not in stock_to_sell: # this has to be redone
             return apology("DO NOT FIDDLE")
 
-        if quantity > stock_to_sell
+        if quantity > stock_to_sell (we need to find out the row).symbol #do we need to ask database again?
