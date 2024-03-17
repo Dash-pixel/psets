@@ -67,7 +67,8 @@ def buy():
             return apology("do not play tricks, u r a fkng looser and will never become a hacker")
 
 
-        to_pay = stock_info['price'] * quantity #being a hacker can i get over this statement 
+        to_pay = stock_info['price'] * quantity #being a hacker can i get over this statement
+        # is stock_info.price an int??? i thought its a string
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash'] #what?
 
