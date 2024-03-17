@@ -189,7 +189,7 @@ def sell():
     stock_to_sell = db.execute('SELECT symbol, quantity FROM bought WHERE user_id = ?', session.get('user_id'))
 
     if request.method == 'GET':
-        return render_template('sell.html')
+        return render_template('sell.html', stock_rows = stock_to_sell)
     else:
         symbol = request.form.get("symbol")
         quantity = request.form.get("quantity")
