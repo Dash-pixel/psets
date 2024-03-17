@@ -195,11 +195,11 @@ def sell():
         symbol = request.form.get("symbol")
         quantity = request.form.get("quantity")
         exists = False
-        
+
         for i in stock_to_sell: # this has to be redone
             if i['symbol'] == symbol:
                 exists = True
-                #get this stock_to_sell id
+                stock_id = i['id']#get this stock_to_sell id
                 break
 
             return apology("DO NOT FIDDLE")
