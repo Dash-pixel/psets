@@ -200,8 +200,8 @@ def sell():
                 if quantity > int(i['quantity']):
                     return apology('YOU DO NOT HAVE ENOUGH CASH')
                 stock_id = i['id'] # get this stock_to_sell id
+                
                 break
-        
 
 
             return apology("DO NOT FIDDLE")
