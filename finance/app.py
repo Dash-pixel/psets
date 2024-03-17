@@ -208,6 +208,7 @@ def sell():
                 stock_id = i['id'] # get this stock_to_sell id
                 new_quantity = int(i['quantity']) - quantity
                 exists = True
+                to_pay = new_quantity *
                 break
 
         if (exists == True) and (not delete_table):
