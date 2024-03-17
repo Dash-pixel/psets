@@ -193,13 +193,14 @@ def sell():
         return render_template('sell.html', stock_rows = stock_to_sell)
     else:
         symbol = request.form.get("symbol")
-        quantity = request.form.get("quantity")
+        quantity = int(request.form.get("quantity"))
         exists = False
 
         for i in stock_to_sell: # this has to be redone
             if i['symbol'] == symbol:
                 exists = True
                 stock_id = i['id'] # get this stock_to_sell id
+
                 break
 
             return apology("DO NOT FIDDLE")
