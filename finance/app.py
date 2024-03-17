@@ -198,15 +198,20 @@ def sell():
 
         for i in stock_to_sell: # this has to be redone
             if i['symbol'] == symbol:
+
                 if quantity > int(i['quantity']):
                     return apology('YOU DO NOT HAVE ENOUGH CASH')
+                elif quantity == int(i['quantity']):
+                    
                 stock_id = i['id'] # get this stock_to_sell id
                 new_quantity = int(i['quantity']) - quantity
                 exists = True
                 break
 
+
+
         if exists = True:
-            db.execute('UPDATE bought SET quantity = ? WHERE user_id = ? AND symbol = ?', new_quantity, session.get('user_id'), symbol')
+            db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
         else:
             return apology("sorry, mate u are a shit hacker")
 
