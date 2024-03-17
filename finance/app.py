@@ -193,5 +193,7 @@ def sell():
     else:
         symbol = request.form.get("symbol")
         quantity = request.form.get("quantity")
-        if symbol istock_to_sell
-        return apology("TODO")
+        if symbol is not in stock_to_sell: # this has to be redone
+            return apology("DO NOT FIDDLE")
+
+        if quantity > stock_to_sell
