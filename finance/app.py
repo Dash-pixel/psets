@@ -67,7 +67,7 @@ def buy():
             return apology("do not play tricks, u r a fkng looser and will never become a hacker")
 
 
-        to_pay = stock_info['price'] * quantity
+        to_pay = stock_info['price'] * quantity #being a hacker can i get over this statement 
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash'] #what?
 
