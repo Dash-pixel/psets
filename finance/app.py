@@ -201,7 +201,7 @@ def sell():
             if i['symbol'] == symbol:
 
                 if quantity > int(i['quantity']):
-                    return apology('YOU DO NOT HAVE ENOUGH CASH')
+                    return apology('YOU DO NOT HAVE SO MANY SHARES')
                 elif quantity == int(i['quantity']):
                     delete_table = True
                 stock_id = i['id'] # get this stock_to_sell id
