@@ -39,7 +39,7 @@ def index():
     portfolio_sum = 0
     for i in stock_list:
         i['current_price'] = lookup(i['symbol'])['price']
-        i['full_price']= int(i['current_price']) * int(i['quantity'])
+        i['full_price']= float(i['current_price']) * float(i['quantity'])
         portfolio_sum += i['full_price']
 
     cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash']
