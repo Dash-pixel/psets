@@ -193,4 +193,5 @@ def sell():
     else:
         symbol = request.form.get("symbol")
         quantity = request.form.get("quantity")
+        if symbol istock_to_sell
         return apology("TODO")
