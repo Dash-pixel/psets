@@ -205,7 +205,7 @@ def sell():
                 exists = True
                 break
 
-        
+        db.execute()
 
 
             return apology("DO NOT FIDDLE")
