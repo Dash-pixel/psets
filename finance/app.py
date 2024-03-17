@@ -204,6 +204,7 @@ def sell():
                     return apology('YOU DO NOT HAVE SO MANY SHARES')
                 elif quantity == int(i['quantity']):
                     delete_table = True
+                    
                 stock_id = i['id'] # get this stock_to_sell id
                 new_quantity = int(i['quantity']) - quantity
                 exists = True
@@ -218,5 +219,4 @@ def sell():
         else:
             return apology("sorry, mate u are a shit hacker")
 
-        #if quantity > stock_to_sell (we need to find out the row).symbol #do we need to ask database again?
-        # do we need to write select database with this symbol?
+
