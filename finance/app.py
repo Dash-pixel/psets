@@ -187,7 +187,7 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    stock_to_sell = db.execute('SELECT symbol, quantity FROM bought WHERE user_id = ?', session.get('user_id'))
+    stock_to_sell = db.execute('SELECT * FROM bought WHERE user_id = ?', session.get('user_id'))
 
     if request.method == 'GET':
         return render_template('sell.html', stock_rows = stock_to_sell)
@@ -211,8 +211,10 @@ def sell():
 
         if (exists == True) and (not delete_table):
             db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
+            return redirect('/')
         elif exists == True:
             db.execute('DELETE FROM bought WHERE id = ?', stock_id)
+            return redirect('/')
         else:
             return apology("sorry, mate u are a shit hacker")
 
