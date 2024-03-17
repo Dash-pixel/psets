@@ -195,6 +195,7 @@ def sell():
         symbol = request.form.get("symbol")
         quantity = int(request.form.get("quantity"))
         exists = False
+        delete_table = False
 
         for i in stock_to_sell: # this has to be redone
             if i['symbol'] == symbol:
@@ -202,7 +203,7 @@ def sell():
                 if quantity > int(i['quantity']):
                     return apology('YOU DO NOT HAVE ENOUGH CASH')
                 elif quantity == int(i['quantity']):
-                    
+                    delete_table = True
                 stock_id = i['id'] # get this stock_to_sell id
                 new_quantity = int(i['quantity']) - quantity
                 exists = True
@@ -210,8 +211,10 @@ def sell():
 
 
 
-        if exists = True:
+        if exists = True and (not delete_table):
             db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
+        elif exists = True:
+            
         else:
             return apology("sorry, mate u are a shit hacker")
 
