@@ -205,10 +205,10 @@ def sell():
                 exists = True
                 break
 
-        db.execute()
-
-
-            return apology("DO NOT FIDDLE")
+        if exists = True:
+            db.execute('UPDATE bought SET quantity = quantity + ? WHERE user_id = ? AND symbol = ?", quantity, session.get('user_id'), symbol')
+        else:
+            return apology("")
 
         #if quantity > stock_to_sell (we need to find out the row).symbol #do we need to ask database again?
         # do we need to write select database with this symbol?
