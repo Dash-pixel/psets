@@ -194,6 +194,7 @@ def sell():
     else:
         symbol = request.form.get("symbol")
         quantity = int(request.form.get("quantity"))
+        exists = False
 
         for i in stock_to_sell: # this has to be redone
             if i['symbol'] == symbol:
@@ -201,7 +202,10 @@ def sell():
                     return apology('YOU DO NOT HAVE ENOUGH CASH')
                 stock_id = i['id'] # get this stock_to_sell id
                 new_quantity = int(i['quantity']) - quantity
+                exists = True
                 break
+
+        
 
 
             return apology("DO NOT FIDDLE")
