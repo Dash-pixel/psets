@@ -209,12 +209,10 @@ def sell():
                 exists = True
                 break
 
-
-
         if exists = True and (not delete_table):
             db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
         elif exists = True:
-            
+            db.execute('DELETE FROM bought WHERE id = ?', stock_id)
         else:
             return apology("sorry, mate u are a shit hacker")
 
