@@ -195,6 +195,7 @@ def sell():
         symbol = request.form.get("symbol")
         quantity = request.form.get("quantity")
         for i in stock_to_sell: # this has to be redone
+            if i['symbol'] ==
             return apology("DO NOT FIDDLE")
 
         #if quantity > stock_to_sell (we need to find out the row).symbol #do we need to ask database again?
