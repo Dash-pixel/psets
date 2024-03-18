@@ -40,9 +40,9 @@ def index():
     for i in stock_list:
         i['current_price'] = lookup(i['symbol'])['price']
         i['full_price']= float(i['current_price']) * float(i['shares'])
-        portfolio_sum += float(i['full_price'])
+        portfolio_sum += (i['full_price'])
 
-    cash = float(db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash'])
+    cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash']
 
     return render_template('index.html', stock_rows = stock_list, portfolio_sum = round(portfolio_sum, 2), cash = round(cash, 2))
     #return apology("TODO")
