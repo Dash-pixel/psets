@@ -82,7 +82,7 @@ def buy():
         if affected_rows == 0:
             db.execute("INSERT INTO bought (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), symbol, quantity)
 
-        db.execute("INSERT INTO history (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), symbol, quantity)
+        db.execute("INSERT INTO history (user_id, symbol, quantity, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, quantity)
         return redirect('/')
 
 @app.route("/history")
