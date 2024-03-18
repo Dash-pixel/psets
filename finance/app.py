@@ -57,7 +57,11 @@ def buy():
 
     else:
         symbol = (request.form.get("symbol")).upper()
-        quantity = int(request.form.get("quantity"))
+        try:
+            quantity = int(request.form.get("quantity"))
+        except:
+            return apology("should be int")
+
 
         stock_info = lookup(symbol)
         if stock_info == None:
