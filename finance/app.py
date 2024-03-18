@@ -214,7 +214,7 @@ def sell():
                 break
 
         if (exists == True) and (not delete_table):
-            db.execute("INSERT INTO history (user_id, symbol, quantity, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, -quantity, stock_info['price'])
+            db.execute("INSERT INTO history (user_id, symbol, quantity, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, (0 - quantity), stock_info['price'])
             db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
             db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", to_pay, session.get('user_id'))
             return redirect('/')
