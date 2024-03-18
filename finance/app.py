@@ -208,16 +208,16 @@ def sell():
                 stock_id = i['id'] # get this stock_to_sell id
                 new_quantity = int(i['quantity']) - quantity
                 exists = True
-                to_pay = new_quantity * int(lookup(symbol)['price'])
+                to_pay = new_quantity * int(lookup(symbol)['price']) 
                 break
 
         if (exists == True) and (not delete_table):
             db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
-            db.execute("UPDATE users SET cash = ? WHERE id = ?", 100000, session.get('user_id'))
+            db.execute("UPDATE users SET ? WHERE id = ?", 4.24, session.get('user_id'))
             return redirect('/')
         elif exists == True:
             db.execute('DELETE FROM bought WHERE id = ?', stock_id)
-            db.execute("UPDATE users SET cash = ? WHERE id = ?", 1000000, session.get('user_id'))
+            db.execute("UPDATE users SET ? WHERE id = ?", 4.24, session.get('user_id'))
             return redirect('/')
         else:
             return apology("sorry, mate u are a shit hacker")
