@@ -44,7 +44,7 @@ def index():
 
     cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash']
 
-    return render_template('index.html', stock_rows = stock_list, portfolio_sum = round(portfolio_sum), cash = round(cash))
+    return render_template('index.html', stock_rows = stock_list, portfolio_sum = round(portfolio_sum, 2), cash = round(cash, 2))
     #return apology("TODO")
 
 
