@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+    <table class="table">
+        <tr>
+            <th>symbol</th>
+            <th>quantity</th>
+            <th>current price</th>
+            <th>total current value</th>
+        </tr>
+        {% for row in stock_rows %}
+        <tr>
+            <td>{{row.symbol}}</td>
+            <td>{{row.quantity}}</td>
+            <td>{{row.current_price}}</td>
+            <td>{{row.full_price}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    PORTFOLIO SUM = {{portfolio_sum}}<br>
+    TOTAL CASH = {{cash}}<br>
+    TOTAL = {{cash+portfolio_sum}}
+</div>
+{% endblock %}
