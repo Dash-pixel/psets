@@ -198,7 +198,10 @@ def sell():
         return render_template('sell.html', stock_rows = stock_to_sell)
     else:
         symbol = request.form.get("symbol")
-        quantity = int(request.form.get("quantity"))
+        try:
+            quantity = int(request.form.get("quantity"))
+        except:
+            return apology("should be int")
         exists = False
         delete_table = False
 
