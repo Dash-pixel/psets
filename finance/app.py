@@ -221,4 +221,4 @@ def sell():
             db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", to_pay, session.get('user_id'))
             return redirect('/')
         else:
-            return apology("sorry, mate u are a shit hacker")
+            return apology("sorry, mate u are a bad hacker")
