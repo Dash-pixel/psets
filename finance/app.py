@@ -208,7 +208,7 @@ def sell():
                 stock_id = i['id'] # get this stock_to_sell id
                 new_quantity = int(i['quantity']) - quantity
                 exists = True
-                to_pay = new_quantity * int(lookup(symbol)['price'])
+                to_pay = quantity * int(lookup(symbol)['price'])
                 print('to_pay is' + str(to_pay))
                 break
 
