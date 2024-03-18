@@ -9,14 +9,14 @@
     <table class="table">
         <tr>
             <th>symbol</th>
-            <th>quantity</th>
+            <th>shares</th>
             <th>current price</th>
             <th>total current value</th>
         </tr>
         {% for row in stock_rows %}
         <tr>
             <td>{{row.symbol}}</td>
-            <td>{{row.quantity}}</td>
+            <td>{{row.shares}}</td>
             <td>{{row.current_price}}</td>
             <td>{{row.full_price}}</td>
         </tr>

@@ -9,14 +9,14 @@
     <table class="table">
         <tr>
             <th>symbol</th>
-            <th>quantity</th>
+            <th>shares</th>
             <th>timestamp price</th>
             <th>timestamp</th>
         </tr>
         {% for row in history_rows %}
         <tr>
             <td>{{row.symbol}}</td>
-            <td>{{row.quantity}}</td>
+            <td>{{row.shares}}</td>
             <td>${{row.timestamp_price}}</td>
             <td>{{row.timestamp}}</td>
         </tr>
