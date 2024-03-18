@@ -209,7 +209,7 @@ def sell():
                 new_quantity = int(i['quantity']) - quantity
                 exists = True
                 to_pay = new_quantity * int(lookup(symbol)['price'])
-                print('to_pay is' + to_pay)
+                print('to_pay is' + str(to_pay))
                 break
 
         if (exists == True) and (not delete_table):
