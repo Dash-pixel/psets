@@ -17,13 +17,13 @@
         <tr>
             <td>{{row.symbol}}</td>
             <td>{{row.shares}}</td>
-            <td>{{row.current_price}}</td>
-            <td>{{row.full_price}}</td>
+            <td>{{row.current_price | usd }}</td>
+            <td>{{row.full_price | usd }}</td>
         </tr>
         {% endfor %}
     </table>
-    PORTFOLIO SUM = {{portfolio_sum}}<br>
-    TOTAL CASH = {{cash}}<br>
-    TOTAL = {{cash+portfolio_sum}}
+    PORTFOLIO SUM = {{portfolio_sum | usd }}<br>
+    TOTAL CASH = {{cash | usd }}<br>
+    TOTAL = {{cash+portfolio_sum | usd }}
 </div>
 {% endblock %}
