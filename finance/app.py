@@ -226,3 +226,4 @@ def sell():
             return redirect('/')
         else:
             return apology("sorry, mate u are a bad hacker")
+#the entire code is written in chinese. i know how to make it more effective, but im lazy
