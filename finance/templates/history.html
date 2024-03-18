@@ -10,10 +10,10 @@
         <tr>
             <th>symbol</th>
             <th>quantity</th>
-            <th>current price</th>
-            <th>total current value</th>
+            <th>timestamp price</th>
+            <th>timestamp</th>
         </tr>
-        {% for row in stock_rows %}
+        {% for row in history_rows %}
         <tr>
             <td>{{row.symbol}}</td>
             <td>{{row.quantity}}</td>
