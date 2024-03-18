@@ -35,11 +35,11 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
-    stock_list = db.execute('SELECT symbol, quantity FROM bought WHERE user_id = ?', session.get('user_id'))
+    stock_list = db.execute('SELECT symbol, shares FROM bought WHERE user_id = ?', session.get('user_id'))
     portfolio_sum = 0
     for i in stock_list:
         i['current_price'] = lookup(i['symbol'])['price']
-        i['full_price']= float(i['current_price']) * float(i['quantity'])
+        i['full_price']= float(i['current_price']) * float(i['shares'])
         portfolio_sum += i['full_price']
 
     cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash']
@@ -58,7 +58,7 @@ def buy():
     else:
         symbol = (request.form.get("symbol")).upper()
         try:
-            quantity = int(request.form.get("quantity"))
+            shares = int(request.form.get("shares"))
         except:
             return apology("should be int")
 
@@ -67,11 +67,11 @@ def buy():
         if stock_info == None:
             return apology("No such stock")
 
-        if quantity <= 0:
+        if shares <= 0:
             return apology("do not play tricks, u r a fkng looser and will never become a hacker")
 
 
-        to_pay = stock_info['price'] * quantity #being a hacker can i get over this statement
+        to_pay = stock_info['price'] * shares #being a hacker can i get over this statement
         # is stock_info.price an int??? i thought its a string
 
         cash = db.execute("SELECT cash FROM users WHERE id = ?", session.get('user_id'))[0]['cash'] #what?
@@ -82,11 +82,11 @@ def buy():
         new_cash = cash - to_pay
         db.execute("UPDATE users SET cash = ? WHERE id = ?", new_cash, session.get('user_id'))
 
-        affected_rows = db.execute("UPDATE bought SET quantity = quantity + ? WHERE user_id = ? AND symbol = ?", quantity, session.get('user_id'), symbol)
+        affected_rows = db.execute("UPDATE bought SET shares = shares + ? WHERE user_id = ? AND symbol = ?", shares, session.get('user_id'), symbol)
         if affected_rows == 0:
-            db.execute("INSERT INTO bought (user_id, symbol, quantity) VALUES (?, ?, ?)", session.get('user_id'), symbol, quantity)
+            db.execute("INSERT INTO bought (user_id, symbol, shares) VALUES (?, ?, ?)", session.get('user_id'), symbol, shares)
 
-        db.execute("INSERT INTO history (user_id, symbol, quantity, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, quantity, stock_info['price'])
+        db.execute("INSERT INTO history (user_id, symbol, shares, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, shares, stock_info['price'])
         return redirect('/')
 
 @app.route("/history")
@@ -199,7 +199,7 @@ def sell():
     else:
         symbol = request.form.get("symbol")
         try:
-            quantity = int(request.form.get("quantity"))
+            shares = int(request.form.get("shares"))
         except:
             return apology("should be int")
         exists = False
@@ -208,25 +208,25 @@ def sell():
         for i in stock_to_sell: # this has to be redone
             if i['symbol'] == symbol:
 
-                if quantity > int(i['quantity']):
+                if shares > int(i['shares']):
                     return apology('YOU DO NOT HAVE SO MANY SHARES')
-                elif quantity == int(i['quantity']):
+                elif shares == int(i['shares']):
                     delete_table = True
 
                 stock_id = i['id'] # get this stock_to_sell id
-                new_quantity = int(i['quantity']) - quantity
+                new_shares = int(i['shares']) - shares
                 exists = True
                 timestamp_price = float(lookup(symbol)['price'])
-                to_pay = float(quantity) * timestamp_price
+                to_pay = float(shares) * timestamp_price
                 break
 
         if (exists == True) and (not delete_table):
-            db.execute("INSERT INTO history (user_id, symbol, quantity, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, (0 - quantity), timestamp_price)
-            db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
+            db.execute("INSERT INTO history (user_id, symbol, shares, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, (0 - shares), timestamp_price)
+            db.execute('UPDATE bought SET shares = ? WHERE id = ?', new_shares, stock_id)
             db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", to_pay, session.get('user_id'))
             return redirect('/')
         elif exists == True:
-            db.execute("INSERT INTO history (user_id, symbol, quantity, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, (0 - quantity), timestamp_price)
+            db.execute("INSERT INTO history (user_id, symbol, shares, timestamp_price) VALUES (?, ?, ?, ?)", session.get('user_id'), symbol, (0 - shares), timestamp_price)
             db.execute('DELETE FROM bought WHERE id = ?', stock_id)
             db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", to_pay, session.get('user_id'))
             return redirect('/')
