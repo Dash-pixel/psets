@@ -218,7 +218,6 @@ def sell():
                 exists = True
                 timestamp_price = float(lookup(symbol)['price'])
                 to_pay = float(quantity) * timestamp_price
-                print('to_pay is' + str(to_pay))
                 break
 
         if (exists == True) and (not delete_table):
