@@ -222,4 +222,3 @@ def sell():
             return redirect('/')
         else:
             return apology("sorry, mate u are a shit hacker")
-#for some reason money doesnt update in the database -- find the misstake
