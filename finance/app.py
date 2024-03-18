@@ -152,7 +152,7 @@ def quote():
 
     else:
         symbol = request.form.get("symbol")
-        stock_info = lookup(symbol)
+        stock_info = float(lookup(symbol))
 
         if stock_info == None:
             return apology("stock doesnt exist")
