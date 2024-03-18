@@ -214,11 +214,11 @@ def sell():
 
         if (exists == True) and (not delete_table):
             db.execute('UPDATE bought SET quantity = ? WHERE id = ?', new_quantity, stock_id)
-            db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", to_pay, session.get('user_id'))
+            db.execute("UPDATE users SET cash = ? WHERE id = ?", to_pay, session.get('user_id'))
             return redirect('/')
         elif exists == True:
             db.execute('DELETE FROM bought WHERE id = ?', stock_id)
-            db.execute("UPDATE users SET cash = cash + ? WHERE id = ?", to_pay, session.get('user_id'))
+            db.execute("UPDATE users SET cash = ? WHERE id = ?", to_pay, session.get('user_id'))
             return redirect('/')
         else:
             return apology("sorry, mate u are a shit hacker")
