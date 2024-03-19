@@ -42,3 +42,5 @@ def RecursiveSearch(arr, x):
         counter +=1
 
 
+def fibonacci(n):
+    1 + 1 + 2 + 4 + 
