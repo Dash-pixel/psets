@@ -2,10 +2,13 @@
 arr =[6, 7, 10, 15, 19, 25, 40, 41, 45, 54, 65, 80, 93, 94, 98]
 x = 65
 
-def RecursiveSearch(arr, x):
+def RecursiveSearch(arr, x, cursor):
 
     if cursor == x:
         return
     elif cursor > x:
-        cursor + (0.5 * cursor)
+        new_cursor = cursor + (0.5 * cursor)
+    elif cursor < x:
+        new_cursor = cursor - (0.5 * cursor)
 
+    RecursiveSearch(arr, )
