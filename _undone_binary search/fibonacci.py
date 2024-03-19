@@ -8,8 +8,8 @@ def fibonacci(n):
         print(number)
         return number
     else:
+        number = fibonacci(n-1)
         print(number)
-        number = fibonacci(n-1) + fibonacci(n-2)
-        return number
+        return number + fibonacci(n-2)
 
 fibonacci(3)
