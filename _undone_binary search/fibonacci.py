@@ -4,6 +4,7 @@ def fibonacci(n):
     elif n == 1:
         return 1
     else:
+        print(n)
         return fibonacci(n-1) + fibonacci(n-2)
 
-fibonacci(3)
+fibonacci(10)
