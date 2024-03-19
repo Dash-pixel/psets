@@ -51,4 +51,13 @@ fibonacci(2):
     return 1
 
 fibonacci(3):
-    return 
+    return fibonacci(1) + fibonacci(2)
+
+fibonacci(4):
+    return fibonacci (3) + fibonacci(2)
+
+def fibonacci(n):
+    if n = 1:
+        return 1
+    else:
+        
