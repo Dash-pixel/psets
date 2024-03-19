@@ -4,10 +4,15 @@ x = 65
 
 def RecursiveSearch(arr, x):
 
-    if arr[arr.length / 2]  == x:
-        return
-    elif arr[arr.length / 2] > x:
-        
-    elif arr[arr.length / 2] < x:
+    cursor = arr.length
 
-    RecursiveSearch(arr, x)
+    if arr[cursor]  == x:
+        return
+    
+    elif arr[cursor] > x:
+        new_cursor = round(0.5 * cursor)
+        RecursiveSearch(arr, x)
+
+    elif arr[cursor] < x:
+        new_cursor = round(1.5 * cursor)
+        RecursiveSearch(arr, x)
