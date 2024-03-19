@@ -18,3 +18,4 @@ def RecursiveSearch(cursor):
 
     RecursiveSearch(cursor)
 
+print(RecursiveSearch(len(arr)-1))
