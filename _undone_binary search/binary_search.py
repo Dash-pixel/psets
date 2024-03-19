@@ -4,7 +4,7 @@ x = 65
 
 
 
-def RecursiveSearch(arr, x, cursor):
+def RecursiveSearch(cursor):
     #find the middle of the array
 
     if arr[cursor] == x:
@@ -16,7 +16,7 @@ def RecursiveSearch(arr, x, cursor):
     else:
         cursor = round(1.5 * cursor)
 
-    RecursiveSearch(arr, x, cursor)
+    RecursiveSearch(cursor)
 
 
 
