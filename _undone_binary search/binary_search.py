@@ -34,10 +34,10 @@ def RecursiveSearch(arr, x):
     elif arr[cursor] > x:
         cursor = round(0.5 * cursor)
         counter = 0.5 * array
-        RecursiveSearch(arr, x, cursor)
+        RecursiveSearch(arr, x)
     else:
         cursor = round(1.5 * cursor)
-        RecursiveSearch(arr, x, cursor)
+        RecursiveSearch(arr, x)
 
         counter +=1
 
