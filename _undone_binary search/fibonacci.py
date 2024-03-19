@@ -4,6 +4,8 @@ def fibonacci(n):
     elif n == 1:
         return 1
     else:
-        return fibonacci(n-1) + fibonacci(n-2)
+        number = fibonacci(n-1) + fibonacci(n-2)
+        print (number)
+        return number
 
 fibonacci(10)
