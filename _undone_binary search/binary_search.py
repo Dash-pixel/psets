@@ -11,10 +11,10 @@ def RecursiveSearch(cursor):
         return cursor
 
     elif arr[cursor] > x:
-        cursor = int(0.5 * cursor)
+        cursor = cursor - 0.5 * cursor
 
     else:
-        cursor = int(1.5 * cursor)
+        cursor = cursor + 0.5 * cursor
 
     RecursiveSearch(cursor)
 
