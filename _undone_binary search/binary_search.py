@@ -21,17 +21,22 @@ def RecursiveSearch(arr, x, cursor):
 RecursiveSearch(arr, x, (arr.length()/2))
 
 
+# функция должна возвращать индекс
+# maybe use some dumb counter
 
 def RecursiveSearch(arr, x):
-    #find the middle of the array
 
-    if arr[cursor] == x:
-        return cursor
+    counter = 0
+
+    if arr[arr.length] == x:
+        break
 
     elif arr[cursor] > x:
         cursor = round(0.5 * cursor)
-
+         RecursiveSearch(arr, x, cursor)
     else:
         cursor = round(1.5 * cursor)
+        RecursiveSearch(arr, x, cursor)
 
-    RecursiveSearch(arr, x, cursor)
+        counter +=1
+
