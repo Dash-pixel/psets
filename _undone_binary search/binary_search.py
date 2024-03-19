@@ -4,5 +4,10 @@ x = 65
 
 def RecursiveSearch(arr, x):
     #find the middle of the array
-    arr.length / 2
-    
+    cursor= arr.length / 2
+
+    if arr[cursor] == x:
+        return cursor
+
+    elif arr[cursor] > x:
+        RecursiveSearch(arr)
