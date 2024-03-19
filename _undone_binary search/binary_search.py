@@ -29,10 +29,11 @@ def RecursiveSearch(arr, x):
     counter = 0
 
     if arr[arr.length] == x:
-        break
+        return counter
 
     elif arr[cursor] > x:
         cursor = round(0.5 * cursor)
+        counter = 0.5 * array
          RecursiveSearch(arr, x, cursor)
     else:
         cursor = round(1.5 * cursor)
