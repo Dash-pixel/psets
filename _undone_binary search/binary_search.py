@@ -42,9 +42,13 @@ def RecursiveSearch(arr, x):
         counter +=1
 
 
-# fibonacci should return 
-def fibonacci(n):
+# fibonacci should take in index and return the fibonacci number
 
-fibonacci (3):
- return 2
+fibonacci(1):
+ return 1
 
+fibonacci(2):
+    return 1
+
+fibonacci(3):
+    return 
