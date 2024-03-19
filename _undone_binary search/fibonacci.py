@@ -1,15 +1,9 @@
 def fibonacci(n):
     if n == 0:
-        number = 1
-        print(number)
-        return number
+        return 1
     elif n == 1:
-        number = 1
-        print(number)
-        return number
+        return 1
     else:
-        number = fibonacci(n-1)
-        print(number)
-        return number + fibonacci(n-2)
+        return fibonacci(n-1) + fibonacci(n-2)
 
 fibonacci(3)
