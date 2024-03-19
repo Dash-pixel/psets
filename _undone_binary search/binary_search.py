@@ -42,7 +42,13 @@ def RecursiveSearch(arr, x):
         counter +=1
 
 
-
+# we should go 0 to n
 def fibonacci(n):
-    1 1 2 3 5 8 
-    return n
+
+    if counter == n:
+        return number
+
+
+fibonacci (3):
+ return 2
+
