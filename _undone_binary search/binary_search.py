@@ -12,4 +12,6 @@ def RecursiveSearch(arr, x, cursor):
         cursor = round(0.5 * cursor)
 
     else:
-        new_cursor = round(0.5 * cursor)
+        cursor = round(1.5 * cursor)
+
+    RecursiveSearch(arr, x, cursor)
