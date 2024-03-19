@@ -10,5 +10,4 @@ def RecursiveSearch(arr, x):
         
     elif arr[arr.length / 2] < x:
 
-
     RecursiveSearch(arr, x)
