@@ -3,16 +3,6 @@ arr =[6, 7, 10, 15, 19, 25, 40, 41, 45, 54, 65, 80, 93, 94, 98]
 x = 65
 
 def RecursiveSearch(arr, x):
-
-    cursor = arr.length
-
-    if arr[cursor]  == x:
-        return
+    #find the middle of the array
+    arr.length / 2
     
-    elif arr[cursor] > x:
-        new_cursor = round(0.5 * cursor)
-        RecursiveSearch(arr, x)
-
-    elif arr[cursor] < x:
-        new_cursor = round(1.5 * cursor)
-        RecursiveSearch(arr, x)
