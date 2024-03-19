@@ -42,12 +42,8 @@ def RecursiveSearch(arr, x):
         counter +=1
 
 
-# we should go 0 to n
+# fibonacci should return 
 def fibonacci(n):
-
-    if counter == n:
-        return number
-
 
 fibonacci (3):
  return 2
