@@ -4,11 +4,11 @@ x = 65
 
 def RecursiveSearch(arr, x, cursor):
 
-    if cursor == x:
+    if arr[cursor] == x:
         return
-    elif cursor > x:
+    elif arr[cursor] > x:
         new_cursor = cursor + (0.5 * cursor)
-    elif cursor < x:
+    elif arr[cursor] < x:
         new_cursor = cursor - (0.5 * cursor)
 
     RecursiveSearch(arr, x, new_cursor)
