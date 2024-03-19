@@ -11,4 +11,4 @@ def RecursiveSearch(arr, x, cursor):
     elif cursor < x:
         new_cursor = cursor - (0.5 * cursor)
 
-    RecursiveSearch(arr, )
+    RecursiveSearch(arr, x, new_cursor)
