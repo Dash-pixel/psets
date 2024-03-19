@@ -10,4 +10,4 @@ def RecursiveSearch(arr, x):
         return cursor
 
     elif arr[cursor] > x:
-        RecursiveSearch(arr)
+        RecursiveSearch(arr/2, x)
