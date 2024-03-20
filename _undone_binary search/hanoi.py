@@ -12,3 +12,5 @@ def sorting():
 #but with 4 on the closesed
 # because odd and even - we want to finish on the futherest away
 # in 1 .. 1 move to C
+# in 2 .. 1 move to B -- 2 move to C
+# in 3 .. 1 move to C -- 2 move to B -- 1 move to C
