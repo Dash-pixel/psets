@@ -8,9 +8,9 @@ def sorting(n):
 """
      move n-1 to non-target rod -- here we should call the function recursivelly
      move the n'th rod to target rod
-     move n-1 rod to target rod
-     we need to think where is it recursivelly called
+     move n-1 rod to target rod -- here we should also call the function recursivelly
 
+     need to write a way to move to rod_b or rod_c
      rod_c.append(rod_a[-1])
      rod_a = rod_a[:-1]
 """
