@@ -4,7 +4,7 @@ rod_a = list(range(n, 0, -1))
 rod_b = []
 rod_c = []
 
-def sorting(n):
+def sorting(n, start, target):
 """
      move n-1 to non-target rod -- here we should call the function recursivelly
      move the n'th rod to target rod
