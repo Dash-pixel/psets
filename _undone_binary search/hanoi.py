@@ -5,7 +5,8 @@ rod_b = []
 rod_c = []
 
 def sorting(n):
-
+     rod_c.append(rod_a[-1])
+     rod_a = rod_a[:-1]
      return
 
 
