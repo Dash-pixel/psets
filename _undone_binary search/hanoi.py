@@ -1,3 +1,4 @@
 rod_a = range(5)
 
-print(rod_a)
+for i in rod_a:
+    print(rod_a[i])
