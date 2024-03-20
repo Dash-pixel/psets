@@ -5,17 +5,17 @@ rod_b = []
 rod_c = []
 
 def sorting(n):
-     move n-1 to another rod
-     move the n'th rod to 
-     rod_a = rod_a[:-1]
-     return
 
+"""     move n-1 to non-target rod
+     move the n'th rod to target rod
+     move n-1 rod to target rod
+     we need to think where is it recursivelly called
 
 
 
      rod_c.append(rod_a[-1])
      rod_a = rod_a[:-1]
-
+"""
 
 
 #quite importaint that with tower of hanoi of 3 we want to place the first bagel on the futherest rod
