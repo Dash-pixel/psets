@@ -4,10 +4,15 @@ rod_a = list(range(n, 0, -1))
 rod_b = []
 rod_c = []
 
-def sorting(n, start, target):
+#start and target are lists (rods)
+def sorting(n, start, target, other):
     # base case
     if n == 1:
-        
+        start = start[:-1]
+        target.append(n)
+        return
+     else:
+        sorting(n-1, )
 
 """
      move n-1 to non-target rod -- here we should call the function recursivelly
