@@ -11,3 +11,4 @@ def sorting():
 #quite importaint that with tower of hanoi of 3 we want to place the first bagel on the futherest rod
 #but with 4 on the closesed
 # because odd and even - we want to finish on the futherest away
+# we want the 
