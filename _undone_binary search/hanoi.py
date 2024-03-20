@@ -5,6 +5,7 @@ rod_b = []
 rod_c = []
 
 def sorting(n, start, target):
+    
 """
      move n-1 to non-target rod -- here we should call the function recursivelly
      move the n'th rod to target rod
