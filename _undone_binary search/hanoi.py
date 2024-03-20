@@ -5,4 +5,4 @@ rod_b = []
 rod_c = []
 
 def sorting():
-    rod_a[-1]
+      = rod_a[-1]
