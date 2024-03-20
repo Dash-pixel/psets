@@ -4,4 +4,5 @@ rod_a = list(range(n, 0, -1))
 rod_b = []
 rod_c = []
 
-sorting()
+def sorting():
+    rod_a[-1]
