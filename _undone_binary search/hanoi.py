@@ -12,7 +12,8 @@ def sorting(n, start, target, other):
         target.append(n)
         return
      else:
-        sorting(n-1, )
+        sorting(n-1, start, other)
+        
 
 """
      move n-1 to non-target rod -- here we should call the function recursivelly
