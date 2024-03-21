@@ -13,7 +13,7 @@ def sorting(n, start, target, other):
         return
     else:
         sorting(n-1, start, other)
-
+        
 
 """
      move n-1 to non-target rod -- here we should call the function recursivelly
