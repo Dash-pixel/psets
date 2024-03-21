@@ -126,7 +126,10 @@ queue = QueueFrontier()
 def shortest_path(source, target):
         neighbors = neighbors_for_person(source)
         queue.add(neighbors) #adding tuples
-        queue.
+        if queue.empty:
+            print('no route')
+            return
+        
     # we need to save the history of nodes - each node stores its parents
     # need to store the previous nodes to then do as list in C (to trace back the method)
     # need to keep trak of explored (prevents loops)
