@@ -3,7 +3,7 @@ class Node():
         self.state = state
         self.parent = parent
         self.action = action
-
+#state - посещенный, не посещенный
 
 class StackFrontier():
     def __init__(self):
