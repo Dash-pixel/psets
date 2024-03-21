@@ -1,6 +1,8 @@
 def fibonacci(n):
     if n == 0:
+        dict.append[1]
         return 1
+    elif n in dict
     elif n == 1:
         return 1
     else:
