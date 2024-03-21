@@ -86,9 +86,10 @@ def main():
 queue = QueueFrontier()
 def shortest_path(source, target):
     neighbors = neighbors_for_person(source)
-    if neighbors in target:
-        
-    queue.add() #adding tuples
+    if target in neighbors:
+        return target
+
+    queue.add(neighbors) #adding tuples
 
 
 
