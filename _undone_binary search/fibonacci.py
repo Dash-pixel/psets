@@ -15,5 +15,5 @@ fibonacci(10)
 
 """
 how can we use dictionaries:
-we can create
+so we can just record the values, no?
 """
