@@ -95,6 +95,7 @@ def shortest_path(source, target):
     # i have to also remember the path how i got here
 
     """
+    you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
 so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
 
