@@ -85,6 +85,8 @@ def main():
 
 
 def shortest_path(source, target):
+    neighbors_for_person(source) #add to queue
+
     """
 so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
 
@@ -94,7 +96,9 @@ need to use recursion
 PLAN:
 first find the neighbour 1
 check if its the target
-if not add its neighbours to the list -- 
+if not add its neighbours to the list --
+but use first in first out
+check the second neighbour..
     """
 
     # TODO
