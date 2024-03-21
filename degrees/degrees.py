@@ -86,14 +86,9 @@ def main():
 
 queue = QueueFrontier()
 def shortest_path(source, target):
-    neighbors = neighbors_for_person(source)
-    if target in neighbors:
-        return target # here think more about making long lists rather then short
-    else:
         queue.add(neighbors) #adding tuples
-        shortest_path(queue.remove(), target) #тут логика хуй target??
     # i have to also remember the path how i got here
-    # we need to save the history of nodes
+    # we need to save the history of nodes - each node stores its parents
     """
     you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
