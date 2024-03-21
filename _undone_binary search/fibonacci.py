@@ -31,5 +31,7 @@ def fib(n):
         fib_dict[str(n)] = fib_num
         return fib_num
 
-for i in range(1000):
+for i in range(100):
     print(fib(i))
+for j in range(100):
+    print(fibonacci(j))
