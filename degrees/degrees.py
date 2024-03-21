@@ -89,6 +89,8 @@ def shortest_path(source, target):
         queue.add(neighbors) #adding tuples
     # i have to also remember the path how i got here
     # we need to save the history of nodes - each node stores its parents
+    # need to store the previous nodes to then do as list in C (to trace back the method)
+    # need to track the length of steps to finish to find the shortest path
     """
     you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
