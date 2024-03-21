@@ -93,7 +93,7 @@ def shortest_path(source, target):
         queue.add(neighbors) #adding tuples
         shortest_path(queue.remove(), target) #тут логика хуй target??
     # i have to also remember the path how i got here
-
+    # we need to save the history of nodes
     """
     you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
