@@ -124,13 +124,15 @@ def main():
 
 queue = QueueFrontier()
 def shortest_path(source, target):
+        neighbors = neighbors_for_person(source)
         queue.add(neighbors) #adding tuples
+        queue.
     # we need to save the history of nodes - each node stores its parents
     # need to store the previous nodes to then do as list in C (to trace back the method)
     # need to keep trak of explored (prevents loops)
     # need to track the length of steps to finish to find the shortest path
     # then we also need to find OPTIMAL PATH, not just any path
-    """
+        """
     you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
 so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
