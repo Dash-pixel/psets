@@ -83,11 +83,12 @@ def main():
             movie = movies[path[i + 1][0]]["title"]
             print(f"{i + 1}: {person1} and {person2} starred in {movie}")
 
-
+queue = QueueFrontier()
 def shortest_path(source, target):
-    queue = QueueFrontier()
-    queue.add(neighbors_for_person(source)) #adding tuples
-    
+    neighbors = neighbors_for_person(source)
+    if neighbors in target
+    queue.add() #adding tuples
+
 
 
     """
