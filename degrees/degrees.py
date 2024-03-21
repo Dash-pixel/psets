@@ -85,6 +85,7 @@ def main():
 
 
 def shortest_path(source, target):
+    stack = StackFrontier()
     neighbors_for_person(source) #add to queue
 
     """
