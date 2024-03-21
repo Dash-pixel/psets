@@ -131,13 +131,17 @@ def shortest_path(source, target):
             print('no route')
             return
 
-    #how do we make the tuples into nodes??
+        #how do we make the tuples into nodes??
 
-    # we need to save the history of nodes - each node stores its parents
-    # need to store the previous nodes to then do as list in C (to trace back the method)
-    # need to keep trak of explored (prevents loops)
-    # need to track the length of steps to finish to find the shortest path
-    # then we also need to find OPTIMAL PATH, not just any path
+        #source is id of a person - can make a node with the id!
+        #practically maybe we do not even need to consider movies?
+        #try writing without movies for a start, maybe change deff of a node later
+
+        # we need to save the history of nodes - each node stores its parents
+        # need to store the previous nodes to then do as list in C (to trace back the method)
+        # need to keep trak of explored (prevents loops)
+        # need to track the length of steps to finish to find the shortest path
+        # then we also need to find OPTIMAL PATH, not just any path
         """
     you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
