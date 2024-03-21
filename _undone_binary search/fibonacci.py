@@ -1,8 +1,6 @@
 def fibonacci(n):
     if n == 0:
-        dict.append[1]
         return 1
-    elif n in dict
     elif n == 1:
         return 1
     else:
@@ -11,12 +9,10 @@ def fibonacci(n):
 
 fibonacci(10)
 
-
-#solve without calling twice using dictionaries
+#solve without calling twice
 # so fibonacci(n-1) contains fibonacci(n-2)
 
 """
-how can we use dictionaries:
-so we can just record the values, no?
-how can we improve with dictionaries?
+how can we use dictionaries?
+we can check whether the value already exists in a dictionary
 """
