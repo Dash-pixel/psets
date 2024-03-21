@@ -86,12 +86,14 @@ def main():
 queue = QueueFrontier()
 def shortest_path(source, target):
     neighbors = neighbors_for_person(source)
-    if neighbors in target
+    if neighbors in target:
+        
     queue.add() #adding tuples
 
 
 
     """
+    shortest_path returns format --> [(1, 2), (3, 4)]
 so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
 
 If no possible path, returns None.
