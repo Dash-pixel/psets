@@ -11,6 +11,8 @@ people = {}
 
 # Maps movie_ids to a dictionary of: title, year, stars (a set of person_ids)
 movies = {}
+
+
 class Node():
     def __init__(self, state, parent, action):
         self.state = state
