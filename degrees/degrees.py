@@ -131,7 +131,7 @@ def shortest_path(source, target):
             print('no route')
             return
 
-
+    #how do we make the tuples into nodes??
 
     # we need to save the history of nodes - each node stores its parents
     # need to store the previous nodes to then do as list in C (to trace back the method)
