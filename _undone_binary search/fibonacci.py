@@ -8,3 +8,6 @@ def fibonacci(n):
         return number
 
 fibonacci(10)
+
+
+#solve without calling twice using dictionaries
