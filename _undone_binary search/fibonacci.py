@@ -13,3 +13,7 @@ fibonacci(10)
 #solve without calling twice using dictionaries
 # so fibonacci(n-1) contains fibonacci(n-2)
 
+"""
+how can we use dictionaries:
+we can create
+"""
