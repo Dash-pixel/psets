@@ -4,6 +4,8 @@ class Node():
         self.parent = parent
         self.action = action
 #state - посещенный, не посещенный
+#parent - node before
+# what is action? available routes?
 
 class StackFrontier():
     def __init__(self):
