@@ -85,16 +85,12 @@ def main():
 
 
 def shortest_path(source, target):
+    
 
     """
-call  neighbors_for_person function, which accepts a person’s id as input, and
-returns a set of (movie_id, person_id) pairs for all people who starred in a movie with a given person.
+so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
 
-so neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2)]
-    Returns the shortest list of (movie_id, person_id) pairs
-    that connect the source to the target.
-
-    If no possible path, returns None.
+If no possible path, returns None.
     """
 
     # TODO
