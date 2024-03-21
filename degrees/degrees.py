@@ -88,10 +88,10 @@ def shortest_path(source, target):
     neighbors = neighbors_for_person(source)
     if target in neighbors:
         return target # here think more about making long lists rather then short
+    else:
+        queue.add(neighbors) #adding tuples
 
-    queue.add(neighbors) #adding tuples
-
-
+    # i have to also remember the path how i got here
 
     """
     shortest_path returns format --> [(1, 2), (3, 4)]
