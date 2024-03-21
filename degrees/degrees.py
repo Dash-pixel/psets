@@ -85,8 +85,9 @@ def main():
 
 
 def shortest_path(source, target):
-    stack = StackFrontier()
-    neighbors_for_person(source) #add to queue
+    queue = QueueFrontier()
+    queue.add(neighbors_for_person(source))
+    
 
     """
 so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
