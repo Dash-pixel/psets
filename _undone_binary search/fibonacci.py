@@ -18,6 +18,8 @@ we can check whether the value already exists in a dictionary
 """
 
 def fibonacci(n):
+    #check for number in dictionary
+    if n is
     if n == 0:
         return 1
     elif n == 1:
