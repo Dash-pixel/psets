@@ -85,12 +85,12 @@ def main():
 
 
 def shortest_path(source, target):
-    
-
     """
 so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
 
 If no possible path, returns None.
+need to implement breadth-first search
+need to use recursion?
     """
 
     # TODO
