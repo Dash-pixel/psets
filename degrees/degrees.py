@@ -86,8 +86,9 @@ def main():
 
 def shortest_path(source, target):
     queue = QueueFrontier()
-    queue.add(neighbors_for_person(source))
+    queue.add(neighbors_for_person(source)) #adding tuples
     
+
 
     """
 so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
