@@ -7,8 +7,6 @@ def fibonacci(n):
         number = fibonacci(n-1) + fibonacci(n-2)
         return number
 
-fibonacci(10)
-
 #solve without calling twice
 # so fibonacci(n-1) contains fibonacci(n-2)
 
@@ -20,11 +18,17 @@ fib_dict = {}
 def fib(n):
     #check for number in dictionary
     #n is the oder/index in fibonacci
-    if n in fib_dict:
-        return fib_dict[n]
+    if str(n) in fib_dict:
+        return fib_dict[str(n)]
     elif n == 0:
+        fib_dict[str(n)] = 1
         return 1
     elif n == 1:
+        fib_dict[str(n)] = 1
         return 1
     else:
-        return fib(n-1) + fib(n-2)
+        fib_num = fib(n-1) + fib(n-2)
+        fib_dict[str(n)] = fib_num
+        return fib_num
+
+print(fib(5))
