@@ -90,7 +90,11 @@ so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_
 
 If no possible path, returns None.
 need to implement breadth-first search
-need to use recursion?
+need to use recursion
+PLAN:
+first find the neighbour 1
+check if its the target
+if not add its neighbours to the list -- 
     """
 
     # TODO
