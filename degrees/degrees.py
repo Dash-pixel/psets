@@ -90,7 +90,7 @@ def shortest_path(source, target):
         return target # here think more about making long lists rather then short
     else:
         queue.add(neighbors) #adding tuples
-        
+        queue.remove()
     # i have to also remember the path how i got here
 
     """
