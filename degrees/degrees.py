@@ -92,7 +92,7 @@ def shortest_path(source, target):
     # need to store the previous nodes to then do as list in C (to trace back the method)
     # need to keep trak of explored (prevents loops)
     # need to track the length of steps to finish to find the shortest path
-    # but then we also need to find OPTIMAL PATH, not just any path
+    # then we also need to find OPTIMAL PATH, not just any path
     """
     you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
