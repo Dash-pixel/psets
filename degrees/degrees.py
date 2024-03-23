@@ -91,7 +91,7 @@ def shortest_path(source, target):
         while True: # not queue.empty()
             if person.action[1] == target:
                 break
-            explored_set += person.action
+            explored_set.add(person.action)
             neighbors = neighbors_for_person(person)
             for i in neighbors:
                 if i in explored_set:
