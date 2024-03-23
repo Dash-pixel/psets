@@ -85,18 +85,20 @@ def main():
 
 queue = QueueFrontier()
 def shortest_path(source, target):
-        person = Node('expl', None, (None, source)) #tuple movie id, actor id
+        person = Node('expl', None, (None, source))
         trip_len = 0
         if person.action[1] == target:
             return
         while True: # not queue.empty():
             neighbors = neighbors_for_person(person)
-            for i in neighbors: #adding each one to queue
-                node = Node('unexpl', person, i) # neighbors is list of tuples (movie_id, actor_id)
+            for i in neighbors:
+                node = Node('unexpl', person, i)
                 queue.add(node)
 
-            person = queue.remove()
             trip_len += 1
+
+            person = queue.remove()
+
             if person.action[1] == target:
                 break
 
