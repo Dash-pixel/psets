@@ -125,24 +125,15 @@ def main():
 queue = QueueFrontier()
 # make each tuple into a node?
 def shortest_path(source, target):
-        #while queue not empty
-        #add neighbors to node
         person = source
         while not queue.empty():
             neighbors = neighbors_for_person(person)
-            for i in neighbors:
-                #person is not a node data type
-                node = Node('unexprored', person, i)
+            for i in neighbors: #adding each one to queue
+                node = Node('unexpl', person, i)
                 queue.add(node)
-            #check if the first in queue is the target
-            #remove method returns the node itself
-            if target == queue.remove():
-            # if we found correct path we should count back using the node's parents
-
-        # where and how should i put parrents into nodes?
-
-
-
+            #so do i need the explored list, if i can just have the property of a node?
+            #problem here is that tuples are not nodes so i cannot check whether they've been
+            queue.remove()
 
 
 
