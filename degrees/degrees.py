@@ -107,6 +107,7 @@ def shortest_path(source, target):
             person = person.parent
         return parent_list.reverse()
 # current approach does not allow many pathways
+# -- maybe check that it is impossible in (a b c) to get from each other point to another
 # need to keep trak of explored (prevents loops)
 def person_id_for_name(name):
     """
