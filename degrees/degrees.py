@@ -92,7 +92,7 @@ def shortest_path(source, target):
             if person.action[1] == target:
                 break
             explored_set.add(person.action)
-            neighbors = neighbors_for_person(person)
+            neighbors = neighbors_for_person(person.action[1])
             for i in neighbors:
                 if i in explored_set:
                     continue
