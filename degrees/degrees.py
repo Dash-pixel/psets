@@ -93,10 +93,10 @@ def shortest_path(source, target):
 
             neighbors = neighbors_for_person(person)
             for i in neighbors: #adding each one to queue
-                node = Node('unexpl', person, i)
+                node = Node('unexpl', person, i) #
                 queue.add(node)
 
-            person = queue.remove() #this returns whole node, but we need
+            person = queue.remove()
 
             if person.action[1] == target:
                 return
