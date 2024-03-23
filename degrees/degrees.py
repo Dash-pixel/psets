@@ -89,7 +89,7 @@ def shortest_path(source, target):
         trip_len = 0
         if person.action[1] == target:
             return
-        while true: #(not queue.empty())
+        while True: # not queue.empty():
             neighbors = neighbors_for_person(person)
             for i in neighbors: #adding each one to queue
                 node = Node('unexpl', person, i) # neighbors is list of tuples (movie_id, actor_id)
@@ -100,10 +100,8 @@ def shortest_path(source, target):
             if person.action[1] == target:
                 break
 
-        
-        #implementing count back
-        #while not empty must be changed
-        #need to select a new person
+
+        #implementing count back - current approach does not allow many pathways
 
 
 
