@@ -106,6 +106,7 @@ def shortest_path(source, target):
             parent_list.append(person.action)
             person = person.parent
         print(parent_list.reverse())
+        print('above is null')
         return parent_list.reverse()
 
 # current approach does not allow many pathways
