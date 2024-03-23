@@ -94,7 +94,8 @@ def shortest_path(source, target):
                 queue.add(node)
             #so do i need the explored list, if i can just have the property of a node?
             #problem here is that tuples are not nodes so i cannot check whether they've been
-            = queue.remove()
+            person = queue.remove()
+            if person ==
 
 
 
