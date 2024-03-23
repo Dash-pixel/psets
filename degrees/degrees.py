@@ -93,7 +93,7 @@ def shortest_path(source, target):
 
             neighbors = neighbors_for_person(person)
             for i in neighbors: #adding each one to queue
-                node = Node('unexpl', person, i) #
+                node = Node('unexpl', person, i) # neighbors is list of tuples (movie_id, actor_id)
                 queue.add(node)
 
             person = queue.remove()
