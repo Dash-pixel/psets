@@ -85,7 +85,7 @@ def main():
 
 queue = QueueFrontier()
 def shortest_path(source, target):
-        person = Node('expl', None, ) #tuple movie id, actor id
+        person = Node('expl', None, (None, )) #tuple movie id, actor id
         if person.action[1] == target:
             return
 
