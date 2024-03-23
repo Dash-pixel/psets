@@ -103,6 +103,7 @@ def shortest_path(source, target):
 
         #implementing count back
         #while not empty must be changed
+        #need to select a new person
 
 
 
