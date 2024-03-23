@@ -131,7 +131,7 @@ def shortest_path(source, target):
         #check if the first in queue is the target
         #remove method returns the node itself
         if target == queue.remove():
-            
+            # if we found correct path we should
 
 
 
