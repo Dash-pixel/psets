@@ -86,7 +86,7 @@ def main():
 queue = QueueFrontier()
 def shortest_path(source, target):
         person = Node('expl', None, (None, source))
-        trip_len = 0
+
         if person.action[1] == target:
             return
         while True: # not queue.empty():
@@ -95,12 +95,13 @@ def shortest_path(source, target):
                 node = Node('unexpl', person, i)
                 queue.add(node)
 
-            trip_len += 1
-
             person = queue.remove()
 
             if person.action[1] == target:
                 break
+        # here restoring parents
+        while True:
+            
 
 
         #implementing count back - current approach does not allow many pathways
