@@ -98,8 +98,8 @@ def shortest_path(source, target):
                 queue.add(node)
 
             person = queue.remove()
-            
-            if person == target:
+
+            if person.action[1] == target:
                 return
 
 
