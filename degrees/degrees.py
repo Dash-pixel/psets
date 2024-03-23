@@ -92,7 +92,7 @@ def shortest_path(source, target):
 
         while not queue.empty():
 
-            neighbors = neighbors_for_person(person)
+            neighbors = neighbors_for_person(person) #this has to be rewritten - general case when we have movie
             for i in neighbors: #adding each one to queue
                 node = Node('unexpl', person, i)
                 queue.add(node)
