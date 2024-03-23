@@ -125,11 +125,13 @@ def main():
 queue = QueueFrontier()
 # make each tuple into a node?
 def shortest_path(source, target):
+        #while queue not empty
         #add neighbors to node
         neighbors = neighbors_for_person(source)
         queue.add(neighbors)
         #check if the first in queue is the target
-        
+        #remove method returns the node itself
+        if target == queue.remove():
 
 
         #how do we make the tuples into nodes??
