@@ -96,7 +96,7 @@ def shortest_path(source, target):
             for i in neighbors:
                 if i in explored_set:
                     continue
-                queue.add(Node(person, i))
+                queue.add(Node(i, person))
 
             person = queue.remove()
         parent_list = []
