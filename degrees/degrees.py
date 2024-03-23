@@ -88,16 +88,15 @@ def shortest_path(source, target):
         person = Node(None, (None, source))
         explored_set = {}
 
-        while True: # not queue.empty():
+        while True: # not queue.empty()
             if person.action[1] == target:
                 break
-
+            explored_set += person.action
             neighbors = neighbors_for_person(person)
-            # maybe use set for storing explored
             for i in neighbors:
                 if i in explored_set:
                     continue
-                queue.add(Node(person, i)) #need to remove explored loops
+                queue.add(Node(person, i))
 
             person = queue.remove()
 
@@ -109,7 +108,7 @@ def shortest_path(source, target):
             parent_list.append(person.action)
             person = person.parent
 
-
+       return parent_list.reverse()
 
         # current approach does not allow many pathways
         # need to keep trak of explored (prevents loops)
