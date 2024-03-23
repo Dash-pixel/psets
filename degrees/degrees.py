@@ -85,7 +85,7 @@ def main():
 
 queue = QueueFrontier()
 def shortest_path(source, target):
-        person = Node(action = None, parent(None, source))
+        person = Node(action = None, parent = (None, source))
         explored_set = {}
 
         while True: # not queue.empty()
