@@ -85,7 +85,7 @@ def main():
 
 queue = QueueFrontier()
 def shortest_path(source, target):
-        person = Node('expl', None, (None, source))
+        person = Node(None, (None, source))
 
         while True: # not queue.empty():
             if person.action[1] == target:
@@ -94,7 +94,7 @@ def shortest_path(source, target):
             neighbors = neighbors_for_person(person)
 
             for i in neighbors:
-                queue.add(Node('unexpl', person, i)) #need to remove explored loops
+                queue.add(Node(person, i)) #need to remove explored loops
 
             person = queue.remove()
 
