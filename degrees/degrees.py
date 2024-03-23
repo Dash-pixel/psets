@@ -84,20 +84,19 @@ def main():
 
 
 queue = QueueFrontier()
-# make each tuple into a node?
 def shortest_path(source, target):
-        person = source
-        if person == target:
+        person = Node('expl', None, ) #tuple movie id, actor id
+        if person.action[1] == target:
             return
 
         while not queue.empty():
 
-            neighbors = neighbors_for_person(person) #this has to be rewritten - general case when we have movie
+            neighbors = neighbors_for_person(person)
             for i in neighbors: #adding each one to queue
                 node = Node('unexpl', person, i)
                 queue.add(node)
 
-            person = queue.remove()
+            person = queue.remove() #this returns whole node, but we need
 
             if person.action[1] == target:
                 return
