@@ -89,7 +89,7 @@ def shortest_path(source, target):
         trip_len = 0
         if person.action[1] == target:
             return
-        while not queue.empty():
+        while true: #(not queue.empty())
 
             neighbors = neighbors_for_person(person)
             for i in neighbors: #adding each one to queue
@@ -99,9 +99,10 @@ def shortest_path(source, target):
             person = queue.remove()
             trip_len += 1
             if person.action[1] == target:
+                break
 
         #implementing count back
-        #while not 
+        #while not empty must be changed
 
 
 
