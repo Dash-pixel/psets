@@ -86,7 +86,8 @@ def main():
 queue = QueueFrontier()
 def shortest_path(source, target):
         person = Node(None, (None, source))
-        explored_set = 
+        explored_set = {}
+
         while True: # not queue.empty():
             if person.action[1] == target:
                 break
