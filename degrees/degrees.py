@@ -101,31 +101,20 @@ def shortest_path(source, target):
         # here restoring parents
         parent_list = []
         while True:
-            person.parent
+            if parent == None:
+                break
+            parent_list.append(person.action)
+            parent = person.parent
 
 
 
-        #implementing count back - current approach does not allow many pathways
-
+        # current approach does not allow many pathways
         # need to keep trak of explored (prevents loops)
-    
-        """
-    you do not have to do it recursivelly
-    shortest_path returns format --> [(1, 2), (3, 4)]
-so calling neighbors_for_person ==> [(movie_id, person_id), (movie_id_2, person_id_2), ....]
-
+"""
 If no possible path, returns None.
 need to implement breadth-first search
 need to use recursion
-PLAN:
-first find the neighbour 1
-check if its the target
-if not add its neighbours to the list --
-but use first in first out
-check the second neighbour..
     """
-    # TODO
-    #raise NotImplementedError
 
 def person_id_for_name(name):
     """
