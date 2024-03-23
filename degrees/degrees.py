@@ -127,11 +127,13 @@ queue = QueueFrontier()
 def shortest_path(source, target):
         #while queue not empty
         #add neighbors to node
-        neighbors = neighbors_for_person(source)
+        person = source
+        while queue.empty()
+        neighbors = neighbors_for_person(person)
         for i in neighbors:
             #person is not a node data type
-            person = Node('unexprored', source, i)
-            queue.add(person)
+            node = Node('unexprored', person, i)
+            queue.add(node)
         #check if the first in queue is the target
         #remove method returns the node itself
         if target == queue.remove():
