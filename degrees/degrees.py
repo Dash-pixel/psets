@@ -99,25 +99,15 @@ def shortest_path(source, target):
                 queue.add(Node(person, i))
 
             person = queue.remove()
-
-        # here restoring parents
         parent_list = []
         while True:
             if person == None:
                 break
             parent_list.append(person.action)
             person = person.parent
-
-       return parent_list.reverse()
-
-        # current approach does not allow many pathways
-        # need to keep trak of explored (prevents loops)
-"""
-If no possible path, returns None.
-need to implement breadth-first search
-need to use recursion
-    """
-
+        return parent_list.reverse()
+# current approach does not allow many pathways
+# need to keep trak of explored (prevents loops)
 def person_id_for_name(name):
     """
     Returns the IMDB id for a person's name,
