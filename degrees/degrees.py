@@ -97,7 +97,7 @@ def shortest_path(source, target):
                 queue.add(Node('unexpl', person, i)) #need to remove explored loops
 
             person = queue.remove()
-            
+
         # here restoring parents
         parent_list = []
         while True:
