@@ -89,47 +89,26 @@ def shortest_path(source, target):
 
         while True: # not queue.empty():
             if person.action[1] == target:
-                
                 break
 
             neighbors = neighbors_for_person(person)
+
             for i in neighbors:
-                node = Node('unexpl', person, i)
-                queue.add(node)
+                queue.add(Node('unexpl', person, i))
 
             person = queue.remove()
 
         # here restoring parents
+        parent_list = []
         while True:
+            person.parent
 
 
 
         #implementing count back - current approach does not allow many pathways
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #how do we make the tuples into nodes??
-
-        #source is id of a person - can make a node with the id!
-        #practically maybe we do not even need to consider movies?
-        #try writing without movies for a start, maybe change deff of a node later
-
-        # we need to save the history of nodes - each node stores its parents
-        # need to store the previous nodes to then do as list in C (to trace back the method)
         # need to keep trak of explored (prevents loops)
-        # need to track the length of steps to finish to find the shortest path
-        # then we also need to find OPTIMAL PATH, not just any path
+    
         """
     you do not have to do it recursivelly
     shortest_path returns format --> [(1, 2), (3, 4)]
