@@ -94,6 +94,7 @@ def shortest_path(source, target):
             neighbors = neighbors_for_person(person)
             # maybe use set for storing explored
             for i in neighbors:
+                if i in
                 queue.add(Node(person, i)) #need to remove explored loops
 
             person = queue.remove()
