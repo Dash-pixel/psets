@@ -129,6 +129,7 @@ def shortest_path(source, target):
         #add neighbors to node
         neighbors = neighbors_for_person(source)
         for person in neighbors:
+            person
             queue.add(person)
         #check if the first in queue is the target
         #remove method returns the node itself
