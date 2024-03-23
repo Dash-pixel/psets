@@ -131,8 +131,9 @@ def shortest_path(source, target):
         #check if the first in queue is the target
         #remove method returns the node itself
         if target == queue.remove():
-            # if we found correct path we should
+            # if we found correct path we should count back using the node's parents
 
+        # i think i should eddit the node data structure to contain a tuple
 
 
         #how do we make the tuples into nodes??
