@@ -89,6 +89,7 @@ def shortest_path(source, target):
 
         while True: # not queue.empty():
             if person.action[1] == target:
+                
                 break
 
             neighbors = neighbors_for_person(person)
