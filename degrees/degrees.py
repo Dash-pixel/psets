@@ -133,7 +133,19 @@ def shortest_path(source, target):
         if target == queue.remove():
             # if we found correct path we should count back using the node's parents
 
-        # i think i should eddit the node data structure to contain a tuple
+        # where and how should i put parrents into nodes?
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         #how do we make the tuples into nodes??
