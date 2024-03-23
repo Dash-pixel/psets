@@ -101,10 +101,10 @@ def shortest_path(source, target):
         # here restoring parents
         parent_list = []
         while True:
-            if parent == None:
+            if person == None:
                 break
             parent_list.append(person.action)
-            parent = person.parent
+            person = person.parent
 
 
 
