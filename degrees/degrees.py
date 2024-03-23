@@ -87,9 +87,10 @@ queue = QueueFrontier()
 def shortest_path(source, target):
         person = Node('expl', None, (None, source))
 
-        if person.action[1] == target:
-            return
         while True: # not queue.empty():
+            if person.action[1] == target:
+                break
+
             neighbors = neighbors_for_person(person)
             for i in neighbors:
                 node = Node('unexpl', person, i)
@@ -97,11 +98,9 @@ def shortest_path(source, target):
 
             person = queue.remove()
 
-            if person.action[1] == target:
-                break
         # here restoring parents
         while True:
-            
+
 
 
         #implementing count back - current approach does not allow many pathways
