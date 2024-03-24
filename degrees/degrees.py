@@ -102,7 +102,7 @@ def shortest_path(source, target):
 
         parent_list = []
         while True:
-            if person == None:
+            if person.parent == None:
                 break
             parent_list.append(person.action)
             person = person.parent #so basically mistake is assigning tuple here
