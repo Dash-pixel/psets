@@ -104,7 +104,7 @@ def shortest_path(source, target):
             if person == None:
                 break
             parent_list.append(person.action)
-            person = person.parent
+            person = person.parent #so basically mistake is assigning 
         print(parent_list.reverse())
         print('above is null')
         return parent_list.reverse()
