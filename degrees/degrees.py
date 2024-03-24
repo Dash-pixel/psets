@@ -99,6 +99,7 @@ def shortest_path(source, target):
                 queue.add(Node(action = i, parent = person.action))
 
             person = queue.remove()
+        
         parent_list = []
         while True:
             if person == None:
