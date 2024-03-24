@@ -106,7 +106,8 @@ def shortest_path(source, target):
                 break
             parent_list.append(person.action)
             person = person.parent #so basically mistake is assigning tuple here
-        return parent_list.reverse()
+        parent_list.reverse()
+        return parent_list
 
 # current approach does not allow many pathways
 # -- maybe check that it is impossible in (a b c) to get from each other point to another
