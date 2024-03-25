@@ -1,6 +1,6 @@
-board = [[EMPTY, EMPTY, EMPTY],
-[EMPTY, EMPTY, EMPTY],
-[EMPTY, EMPTY, EMPTY]]
+board = [[None, None, None],
+[None, None, None],
+[None, None, None]]
 
 def winner(board):
     """
