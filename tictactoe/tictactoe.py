@@ -69,7 +69,7 @@ def winner(board):
     While this solution looks not very efficient --> i know i could return earlier without sets
     i decided to write it this way because it treats every possible win in the same way
     which might be more consistent logically, although not very pretty
-    but fairly understandable
+    it is fairly understandable
     """
     set_of_lines = set()
     diog = []
