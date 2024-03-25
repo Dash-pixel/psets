@@ -134,6 +134,6 @@ def minimax(board):
     for move in possible_moves:
         new_board = result(board, possible_moves)
         winner(new_board)
-        # but if no winner
+        # but if no winner - 
 
 
