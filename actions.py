@@ -1,6 +1,10 @@
+X = "X"
+O = "O"
+
 board = [[None, None, None],
-[None, None, None],
-[None, None, None]]
+[None, X, None],
+[None, None, X]]
+
 
 def winner(board):
     """
@@ -23,10 +27,12 @@ def winner(board):
     set_of_lines.add(tuple(diog2))
 
     if (X, X, X) in set_of_lines:
+        print('X')
         return X
     elif (O, O, O) in set_of_lines:
         return O
     else:
+        print('no value found')
         return None
 
 
