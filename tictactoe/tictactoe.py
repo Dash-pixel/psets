@@ -126,4 +126,6 @@ def minimax(board):
     """
     if terminal(board):
         return None
+    #breaking the problem into smaller pieces
     
+
