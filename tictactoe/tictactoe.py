@@ -82,6 +82,13 @@ def winner(board):
     set_of_lines.add(tuple(diog))
     set_of_lines.add(tuple(diog2))
 
+    if (X, X, X) in set_of_lines:
+        return X
+    elif (O, O, O) in set_of_lines:
+        return O
+    else:
+        return None
+
     raise NotImplementedError
 
 
