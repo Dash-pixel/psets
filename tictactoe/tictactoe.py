@@ -132,8 +132,8 @@ def minimax(board):
     possible_moves = actions(board)
     # if i make the first move who winns?
     for move in possible_moves:
-        result(board, possible_moves)
-
+        new_board = result(board, possible_moves)
+        
 
 
 
