@@ -9,10 +9,10 @@ def winner(board):
     set_of_lines = set()
     diog = []
     diog2 = []
-    for i in board:
+    for i in range(3):
         vert = []
         horiz = []
-        for j in i:
+        for j in range(3):
             vert.append(board[i][j])
             horiz.append(board[j][i])
         set_of_lines.add(tuple(vert))
