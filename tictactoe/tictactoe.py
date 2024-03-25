@@ -65,10 +65,11 @@ def result(board, action):
 def winner(board):
     """
     Returns the winner of the game, if there is one.
-    """
-def winner(board):
-    """
-    Returns the winner of the game, if there is one.
+
+    While this solution looks not very efficient --> i know i could return earlier without sets
+    i decided to write it this way because it treats every possible win in the same way
+    which might be more consistent logically, although not very pretty
+    but fairly understandable
     """
     set_of_lines = set()
     diog = []
@@ -94,9 +95,6 @@ def winner(board):
     else:
         print('no value found')
         return None
-
-    #raise NotImplementedError
-
 
 def terminal(board):
     """
