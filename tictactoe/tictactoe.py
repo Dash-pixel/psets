@@ -22,7 +22,6 @@ def player(board):
     """
     Returns player who has the next turn on a board.
     """
-    global
     # i have problems with implementing an easy peasy function because
     # i want it to be the most efficient version of it...
     raise NotImplementedError
