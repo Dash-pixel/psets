@@ -54,7 +54,7 @@ def result(board, action):
     Returns the board that results from making move (i, j) on the board.
     """
     new_board = board #aha here we need to call the player function -- to see whose move we take
-
+    new_board[i][j] = 
 
 
 def winner(board):
