@@ -89,7 +89,7 @@ def winner(board):
     else:
         return None
 
-    raise NotImplementedError
+    #raise NotImplementedError
 
 
 def terminal(board):
