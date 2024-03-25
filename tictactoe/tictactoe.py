@@ -136,7 +136,7 @@ def minimax(board):
     for move in possible_moves:
         new_board = result(board, possible_moves)
         minimax(newboard)
-
+# give values to XO
 
 
 
