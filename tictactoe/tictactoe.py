@@ -68,11 +68,12 @@ def winner(board):
     """
     set_of_lists = set()
     for i in board:
-        tuple_vert = ()
-        tuple_horiz = ()
+        tuple_vert = []
+        tuple_horiz = []
         for j in i:
             list_vert.append(board[i][j])
             list_horiz.append(board[j][i])
+        
         board[i][i]
         board[i][-i-1]
 
