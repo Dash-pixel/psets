@@ -111,7 +111,7 @@ def utility(board):
     """
     Returns 1 if X has won the game, -1 if O has won, 0 otherwise.
     """
-    i = winner(board)
+    i = winner(board) # a little bit strange here
     if i == X:
         return 1
     elif i == O:
@@ -126,6 +126,8 @@ def minimax(board):
     """
     if terminal(board):
         return None
-    #breaking the problem into smaller pieces
-    
+    # select the possible moves
+    # i need to also understand whose turn it is to move
+    # test whether any of them are winning moves
+    # if not
 
