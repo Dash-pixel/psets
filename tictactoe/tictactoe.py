@@ -102,9 +102,8 @@ def terminal(board):
     if winner(board):
         return True
     for i in board:
-        for j in i:
-            if j == EMPTY:
-                return False
+        if EMPTY in i:
+            return False
     return True
 
 
