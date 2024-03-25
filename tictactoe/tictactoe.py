@@ -68,7 +68,7 @@ def winner(board):
     """
     set_of_lists = set()
     diog = []
-    
+    diog2 = []
     for i in board:
         vert = []
         horiz = []
@@ -77,7 +77,7 @@ def winner(board):
             horiz.append(board[j][i])
         tuple(vert)
         tuple(horiz)
-        board[i][i]
+        diog.append(board[i][i])
         board[i][-i-1]
 
     raise NotImplementedError
