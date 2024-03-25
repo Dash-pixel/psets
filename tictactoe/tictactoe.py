@@ -72,7 +72,7 @@ def winner(board):
             board[i][j]
             board[j][i]
         board[i][i]
-        board[i][-i]
+        board[i][-i-1]
 
     raise NotImplementedError
 
