@@ -103,6 +103,7 @@ def terminal(board):
     """
     if winner(board):
         return True
+    elif
 
     raise NotImplementedError
 
