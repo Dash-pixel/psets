@@ -67,13 +67,16 @@ def winner(board):
     Returns the winner of the game, if there is one.
     """
     set_of_lists = set()
+    diog = []
+    
     for i in board:
-        tuple_vert = []
-        tuple_horiz = []
+        vert = []
+        horiz = []
         for j in i:
-            list_vert.append(board[i][j])
-            list_horiz.append(board[j][i])
-        
+            vert.append(board[i][j])
+            horiz.append(board[j][i])
+        tuple(vert)
+        tuple(horiz)
         board[i][i]
         board[i][-i-1]
 
