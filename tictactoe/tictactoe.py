@@ -3,6 +3,7 @@ Tic Tac Toe Player
 """
 
 import math
+import copy
 
 X = "X"
 O = "O"
@@ -100,6 +101,7 @@ def terminal(board):
     """
     Returns True if game is over, False otherwise.
     """
+    if winner(board)
     raise NotImplementedError
 
 
