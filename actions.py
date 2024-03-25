@@ -1,4 +1,6 @@
-
+board = [[EMPTY, EMPTY, EMPTY],
+[EMPTY, EMPTY, EMPTY],
+[EMPTY, EMPTY, EMPTY]]
 
 def winner(board):
     """
@@ -26,3 +28,6 @@ def winner(board):
         return O
     else:
         return None
+
+
+winner(board)
