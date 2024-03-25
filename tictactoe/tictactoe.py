@@ -56,8 +56,11 @@ def result(board, action):
     new_board = board
     i = action[0]
     j = action[1]
-    new_board[i][j] = player(board)
-    return new_board
+    if new_board[i][j] == EMPTY:
+        new_board[i][j] = player(board)
+        return new_board
+    else:
+        raise NotImplementedError
 
 def winner(board):
     """
