@@ -129,9 +129,9 @@ def minimax(board):
         return None"""
     # let us start with the base case
     # returns winner
-    if terminal(board):
-        utility(board)
-
+    if terminal(board): # base case
+        return utility(board)
+    
 
 
 
