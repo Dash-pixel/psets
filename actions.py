@@ -1,9 +1,9 @@
 X = "X"
 O = "O"
 
-board = [[None, None, None],
+board = [[None, X, None],
 [None, X, None],
-[None, None, X]]
+[X, X, None]]
 
 
 def winner(board):
