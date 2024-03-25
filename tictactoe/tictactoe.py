@@ -83,8 +83,6 @@ def winner(board):
             horiz.append(board[j][i])
         set_of_lines.add(tuple(vert))
         set_of_lines.add(tuple(horiz))
-        if (X, X, X) or (O, O, O) in set_of_lines:
-            break
         diog.append(board[i][i])
         diog2.append(board[i][-i-1])
     set_of_lines.add(tuple(diog))
