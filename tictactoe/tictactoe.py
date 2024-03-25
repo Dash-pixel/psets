@@ -71,8 +71,8 @@ def winner(board):
         list_vert = []
         list_horiz = []
         for j in i:
-            board[i][j]
-            board[j][i]
+            list_vert.append(board[i][j])
+            list_horiz.append(board[j][i])
         board[i][i]
         board[i][-i-1]
 
