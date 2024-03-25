@@ -101,9 +101,11 @@ def terminal(board):
     """
     if winner(board):
         return True
-    elif 
-
-    raise NotImplementedError
+    for i in board:
+        for j in i:
+            if j == EMPTY:
+                return False
+    return True
 
 
 def utility(board):
