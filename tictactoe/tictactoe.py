@@ -66,6 +66,13 @@ def winner(board):
     """
     Returns the winner of the game, if there is one.
     """
+    for i in board:
+        if i = [X, X, X]:
+            return X
+        if i = [O, O, O]:
+            return O
+        for j in i:
+            
     raise NotImplementedError
 
 
