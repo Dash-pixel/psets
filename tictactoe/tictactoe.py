@@ -131,7 +131,8 @@ def minimax(board):
     turn = player(board)
     possible_moves = actions(board)
     # if i make the first move who winns?
-    while True:
+    for move in possible_moves:
+        result(board, possible_moves)
 
 
 
