@@ -105,6 +105,7 @@ def terminal(board):
         if EMPTY in i:
             return False
     return True
+    # so the question is why do we check for whether there is a winner
 
 
 def utility(board):
@@ -126,6 +127,7 @@ def minimax(board):
     """
     if terminal(board):
         return None
+    
     # select the possible moves
     # i need to also understand whose turn it is to move
     # test whether any of them are winning moves
