@@ -89,12 +89,10 @@ def winner(board):
     set_of_lines.add(tuple(diog2))
 
     if (X, X, X) in set_of_lines:
-        print('X')
         return X
     elif (O, O, O) in set_of_lines:
         return O
     else:
-        print('no value found')
         return None
 
 def terminal(board):
@@ -103,7 +101,7 @@ def terminal(board):
     """
     if winner(board):
         return True
-    elif
+    elif 
 
     raise NotImplementedError
 
