@@ -127,9 +127,9 @@ def minimax(board):
     """
     if terminal(board):
         return None
-    
-    possible_moves =
-    # select the possible moves
+
+    player(board)
+    possible_moves = actions(board)
     # i need to also understand whose turn it is to move
     # test whether any of them are winning moves
     # if not
