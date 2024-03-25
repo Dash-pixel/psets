@@ -66,7 +66,7 @@ def winner(board):
     """
     Returns the winner of the game, if there is one.
     """
-    set_of_lists = set()
+    set_of_lines = set()
     diog = []
     diog2 = []
     for i in board:
@@ -75,11 +75,12 @@ def winner(board):
         for j in i:
             vert.append(board[i][j])
             horiz.append(board[j][i])
-        tuple(vert)
-        tuple(horiz)
+        set_of_lines.add(tuple(vert))
+        set_of_lines.add(tuple(horiz))
         diog.append(board[i][i])
         diog2.append(board[i][-i-1])
-    
+    set_of_lines.add(tuple(diog))
+    set_of_lines.add(tuple(diog2))
 
     raise NotImplementedError
 
