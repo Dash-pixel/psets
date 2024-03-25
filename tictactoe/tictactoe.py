@@ -134,5 +134,6 @@ def minimax(board):
     for move in possible_moves:
         new_board = result(board, possible_moves)
         winner(new_board)
+        
 
 
