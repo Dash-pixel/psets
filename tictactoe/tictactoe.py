@@ -40,9 +40,14 @@ def player(board):
 def actions(board):
     """
     Returns set of all possible actions (i, j) available on the board.
+    return set of (i, j) (coordinates where something can be placed)
     """
-    raise NotImplementedError
-
+    set_moves = set()
+    for i in board:
+        for j in i:
+            if j == EMPTY:
+                set.add((i, j))
+    return set_moves
 
 def result(board, action):
     """
