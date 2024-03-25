@@ -129,7 +129,8 @@ def minimax(board):
         return None"""
     # let us start with the base case
     # returns winner
-    turn = player(board)
+    if terminal(board):
+        utility(board)
 
 
 
