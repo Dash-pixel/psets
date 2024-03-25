@@ -29,10 +29,12 @@ def player(board):
         for j in i:
             if j == X:
                 X_count += 1
-            if j == O
+            if j == O:
                 O_count += 1
-
-    raise NotImplementedError
+    if X_count > O_count:
+        return O
+    else:
+        return X
 
 
 def actions(board):
