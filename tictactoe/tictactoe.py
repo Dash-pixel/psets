@@ -136,7 +136,8 @@ def minimax(board):
     for move in possible_moves:
         new_board = result(board, possible_moves)
         utility(new_board)
-        
+        1 if turn == X else 
+
 
 
 
