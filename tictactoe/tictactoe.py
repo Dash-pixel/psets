@@ -53,7 +53,7 @@ def result(board, action):
     """
     Returns the board that results from making move (i, j) on the board.
     """
-    new_board = board
+    new_board = copy.deepcopy(board)
     i = action[0]
     j = action[1]
     if new_board[i][j] == EMPTY:
