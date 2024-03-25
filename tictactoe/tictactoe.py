@@ -125,13 +125,14 @@ def minimax(board):
     """
     Returns the optimal action for the current player on the board.
     """
-    if terminal(board): #i want to recurse :(
-        return None
+   """ if terminal(board): #i want to recurse :(
+        return None"""
 
     turn = player(board)
     possible_moves = actions(board)
     # if i make the first move who winns?
     while True:
-        
+
+
 
 
