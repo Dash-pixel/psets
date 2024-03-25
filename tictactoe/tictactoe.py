@@ -127,13 +127,23 @@ def minimax(board):
     """
    """ if terminal(board): #i want to recurse :(
         return None"""
-
+    # let us start with the base case
+    # returns winner
     turn = player(board)
+
+
+
+
+
+
+
+
+ """   turn = player(board)
     possible_moves = actions(board)
     # if i make the first move who winns?
     for move in possible_moves:
         new_board = result(board, possible_moves)
         utility(new_board)
-        # but if no winner -
-
+        # but if no winner - so
+"""
 
