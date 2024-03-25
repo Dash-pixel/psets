@@ -46,7 +46,7 @@ def actions(board):
     for i in board:
         for j in i:
             if j == EMPTY:
-                set.add((i, j))
+                set_moves.add((i, j))
     return set_moves
 
 def result(board, action):
