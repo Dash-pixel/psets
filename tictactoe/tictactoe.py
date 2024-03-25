@@ -68,6 +68,8 @@ def winner(board):
     """
     set_of_lists = set()
     for i in board:
+        list_vert = []
+        list_horiz = []
         for j in i:
             board[i][j]
             board[j][i]
