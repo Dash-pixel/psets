@@ -131,7 +131,8 @@ def minimax(board):
     # returns winner
     if terminal(board): # base case
         return utility(board)
-    
+    turn = player(board)
+    possible_moves = actions(board)
 
 
 
