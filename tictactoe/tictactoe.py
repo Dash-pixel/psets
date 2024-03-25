@@ -79,6 +79,7 @@ def winner(board):
         tuple(horiz)
         diog.append(board[i][i])
         diog2.append(board[i][-i-1])
+    
 
     raise NotImplementedError
 
