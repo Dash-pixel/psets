@@ -131,16 +131,16 @@ def minimax(board):
         """
 
     possible_moves = actions(board)
-    move_util_list = []
+    move_util_set = set()
 
     for move in possible_moves:
-        new_board = result(board, possible_moves)
-        utility(new_board)
+        new_board = result(board, move)
+        move_util_set.add((move), (utility(new_board)))
 
     if turn == X:
-        return max(scores) #какое же говно блять
+        return  #какое же говно блять
     if turn == O:
-        return min(scores)
+        return #
 
 
 
