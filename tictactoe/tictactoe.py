@@ -131,6 +131,22 @@ def minimax(board):
     # returns winner
     if terminal(board): # base case
         return utility(board)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+
     turn = player(board)
     possible_moves = actions(board)
     scores = []
@@ -142,7 +158,7 @@ def minimax(board):
     if turn == X:
         return max(scores)
     if turn == O:
-        return min(scores)
+        return min(scores)"""
 
         #if mini.. is what we want, we can break the loop
 # give values to XO
