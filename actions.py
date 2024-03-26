@@ -20,7 +20,7 @@ def minimax(board):
         new_board = [[X, X, O],
                     [X, X, O],
                     [O, O, X]]
-        if terminal(new_board):
+        if 1:
             score = 1
         else:
             score = minimax(new_board) #this is bs it returns the score.
@@ -32,3 +32,6 @@ def minimax(board):
     if turn == O:
         bestmove = min(move_util_set, key=lambda x: x[1])
         return bestmove[1]
+
+print(minimax(board))
+print(board)
