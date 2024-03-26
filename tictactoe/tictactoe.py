@@ -139,7 +139,8 @@ def minimax(board):
         else:
             score = minimax(new_board)
         score_set.add(score)
-        if score_set
+        if score_set == {-1, 0, 1}:#very bad improvement
+            return
         move_util_set.add((move), score))
 
     if turn == X:
