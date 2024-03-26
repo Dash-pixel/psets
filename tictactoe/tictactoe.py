@@ -138,7 +138,8 @@ def minimax(board):
         move_util_set.add(((move), (utility(new_board))))
 
     if turn == X:
-        return max(move_util_set, key=lambda x: x[1])
+        bestmove = max(move_util_set, key=lambda x: x[1])
+        return
     if turn == O:
         return min(move_util_set, key=lambda x: x[1])
 
