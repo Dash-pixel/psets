@@ -12,9 +12,9 @@ def actions(board):
     return set of (i, j) (coordinates where something can be placed)
     """
     set_moves = set()
-    for i in board:
-        for j in i:
-            if j == EMPTY:
+    for i in range(3):
+        for j in range(3):
+            if board[i][j] == EMPTY:
                 set_moves.add((i, j))
     return set_moves
 
