@@ -1,3 +1,6 @@
+X = "X"
+O = "O"
+EMPTY = None
 
 board = [[EMPTY, EMPTY, EMPTY],
             [EMPTY, EMPTY, EMPTY],
@@ -14,3 +17,5 @@ def actions(board):
             if j == EMPTY:
                 set_moves.add((i, j))
     return set_moves
+
+actions(board)
