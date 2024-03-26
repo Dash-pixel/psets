@@ -139,7 +139,7 @@ def minimax(board):
         if terminal(new_board):
             score = utility(new_board)
         else:
-            score = minimax(new_board) #this is bs - returns the score. but by design function shoud return best move
+            score = minimax(new_board)[1] #this is bs - returns the score. but by design function shoud return best move
         move_util_set.add((move, score))
 
     if turn == X:
