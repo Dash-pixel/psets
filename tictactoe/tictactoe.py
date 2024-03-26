@@ -125,17 +125,15 @@ def minimax(board):
     """
     Returns the optimal action for the current player on the board.
     """
-   """ if terminal(board): #i want to recurse :(
-        return
-
-        """
+    if terminal(board): # base case
+        return utility(board)
     turn = player(board)
     possible_moves = actions(board)
     move_util_set = set()
 
     for move in possible_moves:
         new_board = result(board, move)
-        move_util_set.add(((move), (utility(new_board))))
+        move_util_set.add(((move), (minimax(new_board))))
 
     if turn == X:
         bestmove = max(move_util_set, key=lambda x: x[1])
@@ -168,17 +166,9 @@ def minimax(board):
     if turn == X:
         return max(scores)
     if turn == O:
-        return min(scores)"""
+        return min(scores)
 
-        #if mini.. is what we want, we can break the loop
-# give values to XO
-
-
-
-
-
-
- """   turn = player(board)
+              turn = player(board)
     possible_moves = actions(board)
     # if i make the first move who winns?
     for move in possible_moves:
