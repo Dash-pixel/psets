@@ -139,48 +139,13 @@ def minimax(board):
         if terminal(new_board):
             score = utility(new_board)
         else:
-            score = minimax(new_board) #this is bs it returns the score.
-        move_util_set.add(((move), score))
+            score = minimax(new_board) #this is bs - returns the score. but by design function shoud return best move
+        move_util_set.add((move, score))
 
     if turn == X:
         bestmove = max(move_util_set, key=lambda x: x[1])
-        return bestmove[1]
+        return bestmove
     if turn == O:
         bestmove = min(move_util_set, key=lambda x: x[1])
-        return bestmove[1]
-
-
-# so now what?
-
-
-
-
-
-
-
-"""
-    if terminal(board): # base case
-        return utility(board)
-
-    turn = player(board)
-    possible_moves = actions(board)
-    scores = []
-    for move in possible_moves:
-        new_board = result(board, possible_moves)
-        score = utility(new_board)
-        scores.append(score)
-
-    if turn == X:
-        return max(scores)
-    if turn == O:
-        return min(scores)
-
-              turn = player(board)
-    possible_moves = actions(board)
-    # if i make the first move who winns?
-    for move in possible_moves:
-        new_board = result(board, possible_moves)
-        utility(new_board)
-        # but if no winner - so
-"""
+        return bestmove
 
