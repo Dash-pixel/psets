@@ -131,6 +131,7 @@ def minimax(board):
         """
 
     possible_moves = actions(board)
+    move_until_list =
 
     for move in possible_moves:
         new_board = result(board, possible_moves)
