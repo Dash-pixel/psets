@@ -129,7 +129,7 @@ def minimax(board):
         return
 
         """
-
+    turn = player(board)
     possible_moves = actions(board)
     move_util_set = set()
 
@@ -138,7 +138,7 @@ def minimax(board):
         move_util_set.add((move), (utility(new_board)))
 
     if turn == X:
-        return  #какое же говно блять
+        return
     if turn == O:
         return #
 
