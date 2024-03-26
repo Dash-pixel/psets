@@ -129,7 +129,8 @@ def minimax(board):
     #case before last, but im doing utility in the wrong place and not calling terminal board
     turn = player(board)
     possible_moves = actions(board)
-    move_util_set = set()
+    move_util_set = set() #also use set to ignore all the other results
+    
 
     for move in possible_moves:
         new_board = result(board, move)
