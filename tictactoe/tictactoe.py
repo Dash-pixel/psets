@@ -127,16 +127,17 @@ def minimax(board):
     """
    """ if terminal(board): #i want to recurse :(
         return None"""
-    # let us start with the base case
-    # returns winner
-    if terminal(board): # base case
-        return utility(board)
+
     possible_moves = actions(board)
 
     for move in possible_moves:
         new_board = result(board, possible_moves)
-        score = minimax(new_board)
-        
+        score = utility(new_board)
+    #we need to select most min max action
+    if turn == X:
+        return max(scores)
+    if turn == O:
+        return min(scores)
 
 
 
@@ -150,6 +151,8 @@ def minimax(board):
 
 
 """
+    if terminal(board): # base case
+        return utility(board)
 
     turn = player(board)
     possible_moves = actions(board)
