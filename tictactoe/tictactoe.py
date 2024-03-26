@@ -127,11 +127,11 @@ def minimax(board):
     """
    """ if terminal(board): #i want to recurse :(
         return
-        
+
         """
 
     possible_moves = actions(board)
-
+    
     for move in possible_moves:
         new_board = result(board, possible_moves)
         score = utility(new_board)
