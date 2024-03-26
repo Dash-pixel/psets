@@ -131,8 +131,12 @@ def minimax(board):
     # returns winner
     if terminal(board): # base case
         return utility(board)
-    
+    possible_moves = actions(board)
 
+    for move in possible_moves:
+        new_board = result(board, possible_moves)
+        score = minimax(new_board)
+        
 
 
 
