@@ -134,6 +134,8 @@ def minimax(board):
 
     def recursion(board):
         turn = player(board)
+        if turn == X:
+            
         possible_moves = actions(board)
         move_util_set = set() #also use set to ignore all the other results
 
