@@ -125,15 +125,19 @@ def minimax(board):
     """
     Returns the optimal action for the current player on the board.
     """
-    if terminal(board): # base case
-        return utility(board)
+    #base case
+    if terminal(board):
+        return
+
+    #case before last, but im doing utility in the wrong place and not calling terminal board
     turn = player(board)
     possible_moves = actions(board)
     move_util_set = set()
 
     for move in possible_moves:
         new_board = result(board, move)
-        move_util_set.add(((move), (minimax(new_board))))
+        if 
+        move_util_set.add(((move), (utility(new_board))))
 
     if turn == X:
         bestmove = max(move_util_set, key=lambda x: x[1])
@@ -143,7 +147,7 @@ def minimax(board):
         return bestmove[1]
 
 
-
+# so now what?
 
 
 
