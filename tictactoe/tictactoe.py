@@ -133,8 +133,10 @@ def minimax(board):
 
     for move in possible_moves:
         new_board = result(board, move)
-        if terminal(newboard)
-        move_util_set.add(((move), (utility(new_board))))
+        if terminal(new_board):
+            move_util_set.add(((move), (utility(new_board))))
+        else:
+            
 
     if turn == X:
         bestmove = max(move_util_set, key=lambda x: x[1])
