@@ -138,7 +138,7 @@ def minimax(board):
         move_util_set.add((move), (utility(new_board)))
 
     if turn == X:
-        return
+        return 
     if turn == O:
         return #
 
