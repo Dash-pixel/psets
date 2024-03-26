@@ -130,18 +130,14 @@ def minimax(board):
     turn = player(board)
     possible_moves = actions(board)
     move_util_set = set() #also use set to ignore all the other results
-    score_set = set()
 
     for move in possible_moves:
         new_board = result(board, move)
         if terminal(new_board):
-            score = utility(new_board))
+            score = utility(new_board)
         else:
-            score = minimax(new_board)
-        score_set.add(score)
-        if score_set == {-1, 0, 1}:#very bad improvement
-            return
-        move_util_set.add((move), score))
+            score = minimax(new_board) #this is bs it returns the score.
+        move_util_set.add((move), score)
 
     if turn == X:
         bestmove = max(move_util_set, key=lambda x: x[1])
