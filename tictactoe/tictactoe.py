@@ -131,11 +131,11 @@ def minimax(board):
         """
 
     possible_moves = actions(board)
-    
+
     for move in possible_moves:
         new_board = result(board, possible_moves)
         score = utility(new_board)
-    #we need to select most min max action
+
     if turn == X:
         return max(scores)
     if turn == O:
