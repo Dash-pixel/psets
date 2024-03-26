@@ -131,14 +131,14 @@ def minimax(board):
         """
 
     possible_moves = actions(board)
-    move_until_list = []
+    move_util_list = []
 
     for move in possible_moves:
         new_board = result(board, possible_moves)
         utility(new_board)
 
     if turn == X:
-        return max(scores)
+        return max(scores) #какое же говно блять
     if turn == O:
         return min(scores)
 
