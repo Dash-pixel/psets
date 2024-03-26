@@ -127,7 +127,7 @@ def minimax(board):
     """
    """ if terminal(board): #i want to recurse :(
         return
-
+        
         """
 
     possible_moves = actions(board)
