@@ -34,4 +34,3 @@ def minimax(board):
         return bestmove[1]
 
 print(minimax(board))
-print(board)
