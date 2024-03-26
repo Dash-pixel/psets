@@ -136,7 +136,9 @@ def minimax(board):
     scores = []
     for move in possible_moves:
         new_board = result(board, possible_moves)
-        score = minimax(new_board)
+        score = utility(new_board)
+        scores.append(score)
+        
     if turn == X:
         return max score
     if turn == O:
