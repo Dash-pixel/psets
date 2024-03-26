@@ -136,7 +136,7 @@ def minimax(board):
         if terminal(new_board):
             move_util_set.add(((move), (utility(new_board))))
         else:
-            
+            move_util_set.add((move), minimax(new_board))
 
     if turn == X:
         bestmove = max(move_util_set, key=lambda x: x[1])
