@@ -134,8 +134,6 @@ def minimax(board):
 
     def recursion(board):
         turn = player(board)
-        if turn == X:
-            
         possible_moves = actions(board)
         move_util_set = set() #also use set to ignore all the other results
 
@@ -146,6 +144,10 @@ def minimax(board):
             else:
                 score = recursion(new_board)[1] #this is bs - returns the score. but by design function shoud return best move
             move_util_set.add((move, score))
+            if turn == X and score == 1:
+                break
+            if turn == O and score == -1:
+                break
 
         if turn == X:
             bestmove = max(move_util_set, key=lambda x: x[1])
