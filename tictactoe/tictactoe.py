@@ -133,9 +133,15 @@ def minimax(board):
         return utility(board)
     turn = player(board)
     possible_moves = actions(board)
+    scores = []
     for move in possible_moves:
         new_board = result(board, possible_moves)
-        minimax(new_board)
+        score = minimax(new_board)
+    if turn == X:
+        return max score
+    if turn == O:
+        return min score in the list??? of scores
+
         #if mini.. is what we want, we can break the loop
 # give values to XO
 
