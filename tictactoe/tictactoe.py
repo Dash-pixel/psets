@@ -127,25 +127,29 @@ def utility(board):
 def minimax(board):
     """
     Returns the optimal action for the current player on the board.
+    THIS CODE IS AWFUL =)
     """
+    if terminal(board):
+        return None
 
-    #case before last, but im doing utility in the wrong place and not calling terminal board
-    turn = player(board)
-    possible_moves = actions(board)
-    move_util_set = set() #also use set to ignore all the other results
+    def recursion(board):
+        turn = player(board)
+        possible_moves = actions(board)
+        move_util_set = set() #also use set to ignore all the other results
 
-    for move in possible_moves:
-        new_board = result(board, move)
-        if terminal(new_board):
-            score = utility(new_board)
-        else:
-            score = minimax(new_board)[1] #this is bs - returns the score. but by design function shoud return best move
-        move_util_set.add((move, score))
+        for move in possible_moves:
+            new_board = result(board, move)
+            if terminal(new_board):
+                score = utility(new_board)
+            else:
+                score = recursion(new_board)[1] #this is bs - returns the score. but by design function shoud return best move
+            move_util_set.add((move, score))
 
-    if turn == X:
-        bestmove = max(move_util_set, key=lambda x: x[1])
-        return bestmove
-    if turn == O:
-        bestmove = min(move_util_set, key=lambda x: x[1])
-        return bestmove
+        if turn == X:
+            bestmove = max(move_util_set, key=lambda x: x[1])
+            return bestmove
+        if turn == O:
+            bestmove = min(move_util_set, key=lambda x: x[1])
+            return bestmove
 
+    return recursion(board)[0]
