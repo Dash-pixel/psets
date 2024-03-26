@@ -24,7 +24,7 @@ def minimax(board):
             score = 1
         else:
             score = minimax(new_board) #this is bs it returns the score.
-        move_util_set.add((move), score)
+        move_util_set.add(((move), score))
 
     if turn == X:
         bestmove = max(move_util_set, key=lambda x: x[1])
