@@ -26,7 +26,8 @@ knowledge1 = And(
     Biconditional(AKnight, Not(AKnave)),
     Biconditional(BKnight, Not(BKnave)),
     Implication(Not(And(AKnight, BKnight)), AKnave),
-    
+    Implication(Not(And(AKnight, BKnight)), AKnave),
+
 )
 
 # Puzzle 2
