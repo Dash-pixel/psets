@@ -34,7 +34,7 @@ knowledge1 = And(
 knowledge2 = And(
     Biconditional(AKnight, Not(AKnave)),
     Biconditional(BKnight, Not(BKnave)),
-    #Biconditional(AKnight),
+    Implication(And(AKnight, BKnight),
 )
 
 # Puzzle 3
