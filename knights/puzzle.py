@@ -24,6 +24,8 @@ knowledge0 = And(
 # B says nothing.
 knowledge1 = And(
     Biconditional(AKnight, Not(AKnave)),
+    Biconditional(BKnight, Not(BKnave)),
+    Implication(Not(And(AKnight, BKnight)), AKnave),
     
 )
 
