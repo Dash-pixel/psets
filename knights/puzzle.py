@@ -14,7 +14,7 @@ CKnave = Symbol("C is a Knave")
 knowledge0 = And(
     # TODO
     Implication(AKnight, Not(AKnave)),
-    
+    And(AKnight, AKnave)
 )
 
 # Puzzle 1
