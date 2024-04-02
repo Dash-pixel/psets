@@ -13,9 +13,9 @@ CKnave = Symbol("C is a Knave")
 # A says "I am both a knight and a knave."
 knowledge0 = And(
     # TODO
-    Not(AKnight)
-    #And(Or(AKnight, AKnave), (Not(And(AKnight, AKnave)))),
-    #And(AKnight, AKnave)
+    And(Or(AKnight, AKnave), (Not(And(AKnight, AKnave)))),
+    And(AKnight, AKnave)
+    #if what he says is false, then knave?
 )
 
 # Puzzle 1
