@@ -23,9 +23,9 @@ knowledge0 = And(
 # A says "We are both knaves."
 # B says nothing.
 knowledge1 = And(
-  """  Biconditional(AKnight, Not(AKnave)),
-    Biconditional(BKnight, Not(BKnave)),
-    Implication((And(AKnave, BKnave)), AKnight)"""
+    Biconditional(AKnight, Not(AKnave)),
+    #Biconditional(BKnight, Not(BKnave)),
+    #Implication((And(AKnave, BKnave)), AKnight)"""
 )
 
 # Puzzle 2
