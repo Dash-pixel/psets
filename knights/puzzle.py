@@ -33,7 +33,9 @@ knowledge2 = And(
     Biconditional(AKnight, Not(AKnave)),
     Biconditional(BKnight, Not(BKnave)),
     Implication(Or(And(AKnight, BKnight), And(AKnave, BKnave)), AKnight),
-    Implication(Or(And(AKnight, BKnave), And(AKnave, BKnight)), BKnight)
+    Implication(Or(And(AKnight, BKnave), And(AKnave, BKnight)), BKnight),
+    Biconditional(AKnave, Not(AKnight)),
+    Biconditional(BKnave, Not(BKnight))
 )
 
 # Puzzle 3
