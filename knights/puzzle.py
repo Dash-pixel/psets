@@ -29,7 +29,9 @@ knowledge1 = And(
 # Puzzle 2
 # A says "We are the same kind."
 # B says "We are of different kinds."
-knowledge2 = And(And(Biconditional(AKnight, Not(AKnave)), Biconditional(BKnight, Not(BKnave))), And(Implication(Or(And(AKnight, BKnight)), And(AKnave, BKnave)), AKnight), (Implication(Or(And(AKnight, BKnave)), And(AKnave, BKnight)), BKnight))
+knowledge2 = And(And(Biconditional(AKnight, Not(AKnave)), Biconditional(BKnight, Not(BKnave))),
+                 And(Implication(Or(And(AKnight, BKnight)), And(AKnave, BKnave)), AKnight),
+                    (Implication(Or(And(AKnight, BKnave)), And(AKnave, BKnight)), BKnight))
 
 # Puzzle 3
 # A says something (either "I am a knight." or "I am a knave.", but you don't know which)
