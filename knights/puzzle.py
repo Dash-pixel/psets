@@ -34,8 +34,8 @@ knowledge1 = And(
 knowledge2 = And(
     Biconditional(AKnight, Not(AKnave)),
     Biconditional(BKnight, Not(BKnave)),
-    Implication(Or(And(AKnight, BKnight)), (And(AKnave, BKnave)), AKnight),
-    Implication(Or(And(AKnight, BKnave)), (And(AKnave, BKnight)), BKnight)
+    #Implication(Or(And(AKnight, BKnight)), (And(AKnave, BKnave)), AKnight),
+    #Implication(Or(And(AKnight, BKnave)), (And(AKnave, BKnight)), BKnight)
 )
 
 # Puzzle 3
@@ -45,7 +45,7 @@ knowledge2 = And(
 # C says "A is a knight."
 knowledge3 = And(
     # TODO
-    
+
 )
 
 
