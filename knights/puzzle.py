@@ -32,7 +32,7 @@ knowledge1 = And(
 # A says "We are the same kind."
 # B says "We are of different kinds."
 knowledge2 = And(
-    """Biconditional(AKnight, Not(AKnave)),
+    Biconditional(AKnight, Not(AKnave)),
     Biconditional(BKnight, Not(BKnave)),
     Implication((Or
                     (And(AKnight, BKnight)),
@@ -41,7 +41,8 @@ knowledge2 = And(
     Implication((Or
                     (And(AKnight, BKnave)),
                     (And(AKnave, BKnight))),
-                BKnight)"""
+                BKnight)
+
 )
 
 # Puzzle 3
