@@ -15,7 +15,6 @@ knowledge0 = And(
     # TODO
     #And(Or(AKnight, AKnave), (Not(And(AKnight, AKnave)))),
     Biconditional(AKnight, Not(AKnave)),
-
     Implication(Not(And(AKnight, AKnave)), AKnave) #if this is true, then knight?
 )
 
@@ -23,10 +22,8 @@ knowledge0 = And(
 # A says "We are both knaves."
 # B says nothing.
 knowledge1 = And(
-    Biconditional(AKnight, Not(AKnave)),
-    Biconditional(BKnight, Not(BKnave)),
-    Implication(And(AKnave, BKnave), AKnight),
-    Implication(Not(And(AKnave, BKnave)), AKnave)
+    And(Biconditional(AKnight, Not(AKnave)), Biconditional(BKnight, Not(BKnave))),
+    And(Implication(And(AKnave, BKnave), AKnight), Implication(Not(And(AKnave, BKnave)), AKnave))
 )
 
 # Puzzle 2
