@@ -24,8 +24,8 @@ knowledge0 = And(
 # B says nothing.
 knowledge1 = And(
     Biconditional(AKnight, Not(AKnave)),
-    #Biconditional(BKnight, Not(BKnave)),
-    #Implication((And(AKnave, BKnave)), AKnight)"""
+    Biconditional(BKnight, Not(BKnave)),
+    Implication((And(AKnave, BKnave)), AKnight)
 )
 
 # Puzzle 2
@@ -34,14 +34,14 @@ knowledge1 = And(
 knowledge2 = And(
     Biconditional(AKnight, Not(AKnave)),
     Biconditional(BKnight, Not(BKnave)),
-    """Implication((Or
+    Implication((Or
                     (And(AKnight, BKnight)),
                     (And(AKnave, BKnave))),
                 AKnight),
     Implication((Or
                     (And(AKnight, BKnave)),
                     (And(AKnave, BKnight))),
-                BKnight)"""
+                BKnight)
                 )
 
 # Puzzle 3
