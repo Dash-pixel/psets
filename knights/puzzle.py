@@ -30,10 +30,10 @@ knowledge1 = And(
 # A says "We are the same kind."
 # B says "We are of different kinds."
 knowledge2 = And(
-    Biconditional(AKnight, Not(AKnave)),  # A is a knight if and only if A is not a knave
-    Biconditional(BKnight, Not(BKnave)),  # B is a knight if and only if B is not a knave
-    Implication(Or(And(AKnight, BKnight), And(AKnave, BKnave)), AKnight),  # If A and B are the same, then A is a knight
-    Implication(Or(And(AKnight, BKnave), And(AKnave, BKnight)), BKnight)   # If A and B are different, then B is a knight
+    Biconditional(AKnight, Not(AKnave)),
+    Biconditional(BKnight, Not(BKnave)),
+    Implication(Or(And(AKnight, BKnight), And(AKnave, BKnave)), AKnight),
+    Implication(Or(And(AKnight, BKnave), And(AKnave, BKnight)), BKnight)
 )
 
 # Puzzle 3
