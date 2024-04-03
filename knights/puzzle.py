@@ -50,7 +50,7 @@ knowledge3 = And(
     Biconditional(BKnight, Not(BKnave)),
     Biconditional(CKnight, Not(CKnave)),
     #B says "A said 'I am a knave'."
-    Implication(Implication(AKnave, AKnight), BKnight),
+    Biconditional(Biconditional(AKnave, AKnight), BKnight),
     Biconditional(CKnave, BKnight),
 )
 
