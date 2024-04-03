@@ -32,11 +32,11 @@ knowledge1 = And(
 knowledge2 = And(
     Biconditional(AKnight, Not(AKnave)),
     Biconditional(BKnight, Not(BKnave)),
-    Implication(Or(And(AKnight, BKnight), And(AKnave, BKnave)), AKnight),
-    Implication(Or(And(AKnight, BKnave), And(AKnave, BKnight)), BKnight),
+    Biconditional(Or(And(AKnight, BKnight), And(AKnave, BKnave)), AKnight),
+    Biconditional(Or(And(AKnight, BKnave), And(AKnave, BKnight)), BKnight),
 
-    Implication(Not(Or(And(AKnight, BKnight), And(AKnave, BKnave))), AKnave),
-    Implication(Not(Or(And(AKnight, BKnave), And(AKnave, BKnight))), BKnave)
+    #Implication(Not(Or(And(AKnight, BKnight), And(AKnave, BKnave))), AKnave),
+    #Implication(Not(Or(And(AKnight, BKnave), And(AKnave, BKnight))), BKnave)
 )
 
 # Puzzle 3
@@ -52,6 +52,7 @@ knowledge3 = And(
     #B says "A said 'I am a knave'."
     Biconditional(Biconditional(AKnave, AKnight), BKnight),
     Biconditional(CKnave, BKnight),
+    Biconditional(AKnight, CKnight)
 )
 
 
