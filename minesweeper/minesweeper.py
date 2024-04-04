@@ -105,7 +105,7 @@ class Sentence():
         """
         Returns the set of all cells in self.cells known to be mines.
         """
-        self.cells
+        len(self.cells)
 
 
         raise NotImplementedError
