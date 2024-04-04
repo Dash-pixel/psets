@@ -105,7 +105,7 @@ class Sentence():
         """
         Returns the set of all cells in self.cells known to be mines.
         """
-        # use mark_mine on adjasent places
+        # this is about a sentance
         for cell in self.cells:
             if cell #has a property of being a mine
 
