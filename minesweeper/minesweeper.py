@@ -48,8 +48,8 @@ class Minesweeper():
             print("|")
         print("--" * self.width + "-")
 
-    def is_mine(self, cell):
-        i, j = cell
+    def is_mine(self, cell): #so it seems that cell has two things in it x and y
+        i, j = cell         #but how does it know to select
         return self.board[i][j]
 
     def nearby_mines(self, cell):
@@ -107,7 +107,7 @@ class Sentence():
         """
         # use mark_mine on adjasent places
         for cells in self.cells:
-            
+
 
 
         raise NotImplementedError
