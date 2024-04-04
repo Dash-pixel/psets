@@ -105,7 +105,7 @@ class Sentence():
         """
         Returns the set of all cells in self.cells known to be mines.
         """
-        len(self.cells)
+        # use mark_mine on adjasent places
 
 
         raise NotImplementedError
