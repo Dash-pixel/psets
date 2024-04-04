@@ -11,21 +11,20 @@
     <body class="body">
         <div class="navbar-container">
             <nav class='navbar navbar-light justify-content-end'>
-                <a href="image_search.html" class="btn">Image Search</a>
-                <a href="advanced_search.html" class="btn">Advanced Search</a>
+                <a href="index.html" class="btn">Main</a>
             </nav>  
         </div>
         <div class="search">
             <div id='google-logo'>
                 <img src="https://www.google.lv/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
             </div>
-            <form action="https://google.com/search">
+            <form action="https://www.google.com/search?tbm=isch&">
+                <input type="hidden" name="tbm" value="isch">
                 <input type="search" name="q" class='form-control rounded-pill search-bar'>
-                <div class='buttons'>
-                    <input type="submit" value="Google Search" class='btn justify-content-center search-button'>
-                    <input type="submit" value="I'm feeling lucky" class='btn justify-content-center search-button' name="btnI">
+                <div class='buttons'> 
+                    <input type="submit" value="Image Search" class='btn justify-content-center search-button'>
                 </div>
-            </form>
+          </form>
         </div>
     </body>
 </html>
