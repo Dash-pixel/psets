@@ -107,7 +107,7 @@ class Sentence():
         """
         # use mark_mine on adjasent places
         for cell in self.cells:
-            if cell
+            if cell #has a property of being a mine
 
 
 
