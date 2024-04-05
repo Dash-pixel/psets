@@ -195,7 +195,8 @@ class MinesweeperAI():
             5) add any new sentences to the AI's knowledge base
                if they can be inferred from existing knowledge
         """
-        cell.
+        cell.moved = True
+        
 
     def make_safe_move(self):
         """
