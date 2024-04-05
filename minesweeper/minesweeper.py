@@ -197,7 +197,7 @@ class MinesweeperAI():
         """
         cell.checked = True
         self.mark_safe(cell)
-        knowledge_base.add
+        #find neighbors
 
 
     def make_safe_move(self):
