@@ -200,7 +200,7 @@ class MinesweeperAI():
         self.safes.add(cell)
         #find neighbors
         sentence = None
-        sentence.cells =
+        sentence.cells = list()
         for i in range(cell[0] - 1, cell[0] + 2):
             for j in range(cell[1] - 1, cell[1] + 2):
 
@@ -208,15 +208,13 @@ class MinesweeperAI():
                 if (i, j) == cell:
                     continue
 
-                # Update count if cell in bounds and is mine
                 if 0 <= i < self.height and 0 <= j < self.width:
-                    Minesweeper.board[i][j]
-
+                    sentence.cells.append = (i, j)
 
         sentence.count = Minesweeper.nearby_mines(cell)
 
         # List of sentences about the game known to be true
-        self.knowledge = [] # add sentence here
+        self.knowledge.append(sentence)
 
 
     def make_safe_move(self):
