@@ -218,7 +218,7 @@ class MinesweeperAI():
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
 
-        for sentences in self.knowledge: #how to implete
+        for sentences in self.knowledge: #how to impletement logic here?
 
 
 
