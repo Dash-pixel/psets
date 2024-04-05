@@ -225,7 +225,7 @@ class MinesweeperAI():
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
 
-        for sentences in self.knowledge: #how to impletement logic here?
+        for old_sentence in self.knowledge: #how to impletement logic here?
             
 
     def make_safe_move(self):
