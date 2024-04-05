@@ -227,11 +227,11 @@ class MinesweeperAI():
             # List of sentences about the game known to be true
             self.knowledge.append(sentence)
 
-        for old_sentence in self.knowledge: #how to impletement logic here?
+        for known_sentence in self.knowledge: #how to impletement logic here?
             #we have to find the common part of the sentance
             # we find the same in both
             #
-            for element in old_sentence.cells
+            
 
 
     def make_safe_move(self):
