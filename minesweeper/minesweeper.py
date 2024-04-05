@@ -185,9 +185,9 @@ class MinesweeperAI():
         safe cell, how many neighboring cells have mines in them.
 
         This function should:
-            1) mark the cell as a move that has been made
-            2) mark the cell as safe
-            3) add a new sentence to the AI's knowledge base
+            #1) mark the cell as a move that has been made
+            #2) mark the cell as safe
+            #3) add a new sentence to the AI's knowledge base
                based on the value of `cell` and `count`
             4) mark any additional cells as safe or as mines
                if it can be concluded based on the AI's knowledge base
@@ -212,8 +212,9 @@ class MinesweeperAI():
                     if not (i, j) in known_safes():
                         sentence.cells.add(i, j)
         sentence.count = Minesweeper.nearby_mines(cell)
-        if len(sentence.cells) == sentence.count:
-            
+        #if len(sentence.cells) == sentence.count:
+            #sentence.cells ----- mark as bombs
+
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
 
