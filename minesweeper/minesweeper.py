@@ -226,6 +226,7 @@ class MinesweeperAI():
         self.knowledge.append(sentence)
 
         for sentences in self.knowledge: #how to impletement logic here?
+            
 
 
 
