@@ -199,11 +199,12 @@ class MinesweeperAI():
         self.moves_made.add(cell)
         self.safe.add(cell)
         #find neighbors
+        sentence = None
         sentence.cells =
         sentence.count = Minesweeper.nearby_mines(cell)
 
         # List of sentences about the game known to be true
-        self.knowledge = []
+        self.knowledge = [] # add sentence here
 
 
     def make_safe_move(self):
