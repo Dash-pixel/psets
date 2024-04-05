@@ -220,6 +220,8 @@ class MinesweeperAI():
         self.knowledge.
 
 
+
+
     def make_safe_move(self):
         """
         Returns a safe cell to choose on the Minesweeper board.
