@@ -213,10 +213,11 @@ class MinesweeperAI():
                         sentence.cells.add(i, j)
         sentence.count = Minesweeper.nearby_mines(cell)
         #if len(sentence.cells) == sentence.count:
-            sentence.cells #----- mark as bombs -- add to bomb set
+            #sentence.cells #----- mark as bombs -- add to bomb set
 
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
+        
 
 
     def make_safe_move(self):
