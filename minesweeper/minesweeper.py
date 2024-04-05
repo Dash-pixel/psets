@@ -197,7 +197,7 @@ class MinesweeperAI():
 
         # Keep track of which cells have been clicked on
         self.moves_made.add(cell)
-        self.safe.add(cell)
+        self.safes.add(cell)
         #find neighbors
         sentence = None
         sentence.cells =
@@ -210,9 +210,8 @@ class MinesweeperAI():
 
                 # Update count if cell in bounds and is mine
                 if 0 <= i < self.height and 0 <= j < self.width:
-                    if Minesweeper.board[i][j]:
-                        #add cell
-                        
+                    Minesweeper.board[i][j]
+
 
         sentence.count = Minesweeper.nearby_mines(cell)
 
