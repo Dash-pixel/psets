@@ -217,7 +217,8 @@ class MinesweeperAI():
 
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
-        self.knowledge.
+
+        self.knowledge
 
 
 
