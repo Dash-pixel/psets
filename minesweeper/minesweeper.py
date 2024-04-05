@@ -231,7 +231,7 @@ class MinesweeperAI():
             #we have to find the common part of the sentance
             # we find the same in both
             #
-            for  in old_sentence
+            for element in old_sentence.cells
 
 
     def make_safe_move(self):
