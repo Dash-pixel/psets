@@ -107,7 +107,7 @@ class Sentence():
         """
         # this is about a sentance
         for cell in self.cells:
-            if cell #has a property of being a mine
+            if cell.mine #has a property of being a mine
 
 
 
