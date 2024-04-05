@@ -108,8 +108,8 @@ class Sentence():
         # this is about a sentance
         mines_set = set()
         for cell in self.cells:
-            if cell.mine #has a property of being a mine
-            mines_set = add(cell)
+            if cell.mine: #has a property of being a min
+                mines_set.add(cell)
 
         return mines_set
 
@@ -120,8 +120,8 @@ class Sentence():
         """
         safe_set = set()
         for cell in self.cells:
-            if cell.safe #has a property of being a mine
-            safe_set = add(cell)
+            if cell.safe: #has a property of being a mine
+                safe_set.add(cell)
 
         return safe_set
 
@@ -130,7 +130,7 @@ class Sentence():
         Updates internal knowledge representation given the fact that
         a cell is known to be a mine.
         """
-        cell.mine = true
+        cell.mine = True
 
 
     def mark_safe(self, cell):
@@ -138,7 +138,7 @@ class Sentence():
         Updates internal knowledge representation given the fact that
         a cell is known to be safe.
         """
-        cell.safe = true
+        cell.safe = True
 
 
 class MinesweeperAI():
