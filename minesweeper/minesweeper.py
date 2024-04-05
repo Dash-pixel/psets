@@ -201,6 +201,9 @@ class MinesweeperAI():
         #find neighbors
         sentence = None
         sentence.cells =
+        for i in range(cell[0] - 1, cell[0] + 2):
+            for j in range(cell[1] - 1, cell[1] + 2):
+                
         sentence.count = Minesweeper.nearby_mines(cell)
 
         # List of sentences about the game known to be true
