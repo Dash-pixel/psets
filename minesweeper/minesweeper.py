@@ -227,7 +227,8 @@ class MinesweeperAI():
 
         for old_sentence in self.knowledge: #how to impletement logic here?
             #we have to find the common part of the sentance
-            #
+            
+
 
     def make_safe_move(self):
         """
