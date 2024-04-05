@@ -196,7 +196,7 @@ class MinesweeperAI():
                if they can be inferred from existing knowledge
         """
         cell.moved = True
-        
+        cell.
 
     def make_safe_move(self):
         """
