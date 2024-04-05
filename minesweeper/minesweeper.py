@@ -106,25 +106,32 @@ class Sentence():
         Returns the set of all cells in self.cells known to be mines.
         """
         # this is about a sentance
+        mines_set = set()
         for cell in self.cells:
             if cell.mine #has a property of being a mine
-        
+            mines_set = add(cell.mine)
 
+        return mines_set
 
-        raise NotImplementedError
 
     def known_safes(self):
         """
         Returns the set of all cells in self.cells known to be safe.
         """
-        raise NotImplementedError
+        safe_set = set()
+        for cell in self.cells:
+            if cell.mine #has a property of being a mine
+            safe_set = add(cell.mine)
+
+        return safe_set
 
     def mark_mine(self, cell):
         """
         Updates internal knowledge representation given the fact that
         a cell is known to be a mine.
         """
-        raise NotImplementedError
+
+        
 
     def mark_safe(self, cell):
         """
