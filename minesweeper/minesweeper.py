@@ -212,7 +212,8 @@ class MinesweeperAI():
                     if not (i, j) in known_safes():
                         sentence.cells.add(i, j)
         sentence.count = Minesweeper.nearby_mines(cell)
-        
+        if len(sentence.cells) == sentence.count:
+            
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
 
