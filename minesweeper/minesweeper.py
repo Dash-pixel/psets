@@ -110,10 +110,9 @@ class Sentence():
         for cell in self.cells:
             if cell.mine: #has a property of being a min
                 mines_set.add(cell)
-
         return mines_set
-
-
+#########################################################################################
+#########################################################################################
     def known_safes(self):
         """
         Returns the set of all cells in self.cells known to be safe.
@@ -122,8 +121,8 @@ class Sentence():
         for cell in self.cells:
             if cell.safe: #has a property of being a mine
                 safe_set.add(cell)
-
         return safe_set
+#########################################################################################
 
     def mark_mine(self, cell):
         """
@@ -131,16 +130,16 @@ class Sentence():
         a cell is known to be a mine.
         """
         cell.mine = True
-
-
+#########################################################################################
+#########################################################################################
     def mark_safe(self, cell):
         """
         Updates internal knowledge representation given the fact that
         a cell is known to be safe.
         """
         cell.safe = True
-
-
+#########################################################################################
+#########################################################################################
 class MinesweeperAI():
     """
     Minesweeper game player
@@ -195,11 +194,16 @@ class MinesweeperAI():
             5) add any new sentences to the AI's knowledge base
                if they can be inferred from existing knowledge
         """
-        cell.checked = True
-        self.mark_safe(cell)
+
+        # Keep track of which cells have been clicked on
+        self.moves_made.add(cell)
+        self.safe.add(cell)
         #find neighbors
-        sentence
-         = Minesweeper.nearby_mines(cell)
+        sentence.cells =
+        sentence.count = Minesweeper.nearby_mines(cell)
+
+        # List of sentences about the game known to be true
+        self.knowledge = []
 
 
     def make_safe_move(self):
