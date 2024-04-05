@@ -203,7 +203,7 @@ class MinesweeperAI():
         sentence.count = Minesweeper.nearby_mines(cell)
         for i in range(cell[0] - 1, cell[0] + 2):
             for j in range(cell[1] - 1, cell[1] + 2):
-
+                
                 # Ignore the cell itself
                 # we also need to ignore safe cells
                 if (i, j) == cell:
@@ -221,7 +221,7 @@ class MinesweeperAI():
 
         if len(sentence.cells) == sentence.count:
             for sur_cells in sentence.cells:
-                
+
                 #EXPLORED
                 # in bomb set
                           #----- mark as bombs -- add to bomb set
