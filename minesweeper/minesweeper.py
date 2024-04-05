@@ -210,8 +210,8 @@ class MinesweeperAI():
 
                 # Update count if cell in bounds and is mine
                 if 0 <= i < self.height and 0 <= j < self.width:
-                    if self.board[i][j]:
-                        
+                    if Minesweeper.board[i][j]:
+                        self.board[i][j]: Minesweeper
 
         sentence.count = Minesweeper.nearby_mines(cell)
 
