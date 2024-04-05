@@ -138,7 +138,7 @@ class Sentence():
         Updates internal knowledge representation given the fact that
         a cell is known to be safe.
         """
-        cell.
+        cell.safe = true
 
 
 class MinesweeperAI():
