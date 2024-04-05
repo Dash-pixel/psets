@@ -200,6 +200,7 @@ class MinesweeperAI():
         self.safes.add(cell)
         #find neighbors
         sentence = Sentence()
+        sentence.count = Minesweeper.nearby_mines(cell)
         for i in range(cell[0] - 1, cell[0] + 2):
             for j in range(cell[1] - 1, cell[1] + 2):
 
@@ -209,9 +210,15 @@ class MinesweeperAI():
                     continue
 
                 if 0 <= i < self.height and 0 <= j < self.width:
-                    if not (i, j) in known_safes():
-                        sentence.cells.add(i, j)
-        sentence.count = Minesweeper.nearby_mines(cell)
+                    if (i, j) in known_safes():
+                        continue
+                    if (i, j) in known_mines():
+                        sentence.count += -1
+                        continue
+
+                    sentence.cells.add(i, j)
+
+
         #if len(sentence.cells) == sentence.count:
             #sentence.cells #----- mark as bombs -- add to bomb set
 
