@@ -198,6 +198,7 @@ class MinesweeperAI():
         cell.checked = True
         self.mark_safe(cell)
         #find neighbors
+        sentence
          = Minesweeper.nearby_mines(cell)
 
 
