@@ -203,7 +203,16 @@ class MinesweeperAI():
         sentence.cells =
         for i in range(cell[0] - 1, cell[0] + 2):
             for j in range(cell[1] - 1, cell[1] + 2):
-                
+
+                # Ignore the cell itself
+                if (i, j) == cell:
+                    continue
+
+                # Update count if cell in bounds and is mine
+                if 0 <= i < self.height and 0 <= j < self.width:
+                    if self.board[i][j]:
+                        count += 1
+
         sentence.count = Minesweeper.nearby_mines(cell)
 
         # List of sentences about the game known to be true
