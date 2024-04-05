@@ -223,8 +223,9 @@ class MinesweeperAI():
             for sur_cells in sentence.cells:
                 self.mines.add(sur_cells)
 
-        # List of sentences about the game known to be true
-        self.knowledge.append(sentence)
+        else:
+            # List of sentences about the game known to be true
+            self.knowledge.append(sentence)
 
         for old_sentence in self.knowledge: #how to impletement logic here?
             #we have to find the common part of the sentance
