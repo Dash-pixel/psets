@@ -210,9 +210,9 @@ class MinesweeperAI():
                     continue
 
                 if 0 <= i < self.height and 0 <= j < self.width:
-                    if (i, j) in known_safes():
+                    if (i, j) in self.safes:
                         continue
-                    if (i, j) in known_mines():
+                    if (i, j) in self.mines:
                         sentence.count += -1
                         continue
 
@@ -227,10 +227,6 @@ class MinesweeperAI():
 
         for sentences in self.knowledge: #how to impletement logic here?
             
-
-
-
-
 
     def make_safe_move(self):
         """
