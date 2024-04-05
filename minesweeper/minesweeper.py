@@ -211,9 +211,8 @@ class MinesweeperAI():
                 if 0 <= i < self.height and 0 <= j < self.width:
                     if not (i, j) in known_safes():
                         sentence.cells.add(i, j)
-
         sentence.count = Minesweeper.nearby_mines(cell)
-
+        
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
 
