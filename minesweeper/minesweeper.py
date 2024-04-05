@@ -196,8 +196,8 @@ class MinesweeperAI():
                if they can be inferred from existing knowledge
         """
         cell.checked = True
-        mark_safe(cell)
-        
+        self.mark_safe(cell)
+        knowledge_base.add
 
 
     def make_safe_move(self):
