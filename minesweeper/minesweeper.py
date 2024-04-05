@@ -220,7 +220,9 @@ class MinesweeperAI():
 
 
         if len(sentence.cells) == sentence.count:
-            for surcells in             #----- mark as bombs -- add to bomb set
+            for sur_cells in sentence.cell:
+
+                          #----- mark as bombs -- add to bomb set
 
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
