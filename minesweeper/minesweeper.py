@@ -219,15 +219,16 @@ class MinesweeperAI():
                     sentence.cells.add(i, j)
 
 
-        #if len(sentence.cells) == sentence.count:
-            #sentence.cells #----- mark as bombs -- add to bomb set
+        if len(sentence.cells) == sentence.count:
+            for sentence             #----- mark as bombs -- add to bomb set
 
         # List of sentences about the game known to be true
         self.knowledge.append(sentence)
 
         for old_sentence in self.knowledge: #how to impletement logic here?
             #we have to find the common part of the sentance
-            # we find the same in both 
+            # we find the same in both
+            for old_sentence in
 
 
     def make_safe_move(self):
