@@ -1,0 +1,3 @@
+# Search
+
+A search engine is a software system that provides hyperlinks to web pages and other relevant information on the Web in response to a user's query. The user inputs a query within a web browser or a mobile app, and the search results are often a list of hyperlinks, accompanied by textual summaries and images. Users also have the option of limiting the search to a specific type of results, such as images, videos, or news.
