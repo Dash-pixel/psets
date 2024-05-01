@@ -1,3 +1,124 @@
 body {
     padding: 10px;
 }
+/* Container surrounding the comments */
+.container {
+    max-width: 800px; /* Adjust the max width as per your layout needs */
+    margin-top: 20px;
+}
+
+/* Header of the comments section */
+h2 {
+    color: #343a40; /* Dark gray color */
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Individual comment block */
+.list-group-item {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #dee2e6; /* Slightly darker gray border */
+    border-radius: 0.25rem;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #e2e6ea; /* Slightly darker on hover */
+}
+
+/* Title and metadata of the comment */
+.mb-1 {
+    color: #495057; /* Darker gray for text */
+}
+
+/* Small text for metadata like the date and posted by */
+.small {
+    display: block;
+    font-size: 80%;
+    color: #6c757d;
+}
+
+/* Enhance spacing and visual separation between comments */
+.list-group-item + .list-group-item {
+    margin-top: 10px;
+}
+
+/* Enhance visibility of active or clicked items */
+.list-group-item-action.active {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #343a40;
+    padding-top: 20px;
+}
+
+ul.nav {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+.nav-item {
+    margin: 5px;
+}
+
+.nav-link {
+    color: #007bff; /* Bootstrap primary color for links */
+    transition: color 0.15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #0056b3; /* Slightly darker blue on hover */
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Adding a sign-in status bar at the top */
+div {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+/* Calm Button Styles */
+.btn-fancy {
+    background-color: #b1c5d6; /* Softer gray */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px; /* Rounded borders */
+    border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 6px rgba(168, 182, 194, 0.3);
+    cursor: pointer;
+}
+
+.btn-fancy:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.5);
+}
+
+.btn-fancy:focus {
+    outline: none;
+    background-color: #545b62; /* Even darker gray for focus */
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.5);
+}
+
+.btn-fancy:active {
+    background-color: #fdfeff; /* Deep gray when pressed */
+    box-shadow: 0 5px 10px rgba(108, 117, 125, 0.6) inset;
+}

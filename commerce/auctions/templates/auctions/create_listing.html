@@ -1,0 +1,26 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2>Create Listing</h2>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="mb-3">
+                <label class="form-label">{{field.label}}</label>
+                <br>
+                {{field}}
+            </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-fancy">Submit</button>
+    </form>
+
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Add category</label>
+                <input type="text" name="category">
+            </div>
+        <button type="submit" name="action" value="add_category" class="btn btn-fancy">Submit</button>
+    </form>
+{% endblock %}

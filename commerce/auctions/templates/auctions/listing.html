@@ -1,0 +1,81 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <div class="container">
+        <h2>{{ listing.title }}</h2>
+        <div class="card my-3">
+            <img src="{{ listing.imageUrl }}" class="card-img-top" style="max-width: 200px; height: auto;" alt="">
+            <div class="card-body">
+                <p class="card-text">{{ listing.description }}</p>
+                <p class="card-text">Starting Bid: {{ listing.starting_price }}</p>
+                <p class="card-text">Current Bid: {{ current_bid }}</p>
+                <p class="card-text">Category: 
+                    {% for category in categories %} {{category}} {% endfor %} </p>
+                {% if listing_admin == False %}
+                    {% if listing.closed == False %}
+                    <form method="POST" name="make_bid">
+                        {% csrf_token %}
+                        {{make_bid.bid}}
+                        <button class="btn btn-fancy" type="submit" name="action" value="make_bid">Make a bid</button>
+                    </form>
+                    <form method="POST" name="add">
+                        {% csrf_token %}
+                        <button class="btn btn-fancy" type="submit" name="action" value="add_to_watch">Add to Watchlist</button>
+                    </form>
+                    {% else %}
+                        {% if winner == True %}
+                            <div class="container mt-5">
+                                <div class="alert alert-success" role="alert">
+                                    <strong>Congratulations!</strong> You've won.
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="container mt-5">
+                                <div class="alert alert-warning" role="alert">
+                                    <strong>Sorry, this auction is closed.</strong>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+                <br>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="commentField" class="form-label">Your Comment</label>
+                        <textarea class="form-control" id="commentField" name="comment" rows="3" placeholder="Write your comment here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-fancy">Post Comment</button>
+                </form>
+                <br>
+                <br>
+                {% if listing_admin == True %}
+                    <form method="POST" name="add">
+                        {% csrf_token %}
+                        <button class="btn btn-fancy" type="submit" name="action" value="close">Close auction</button>
+                    </form>
+                {% endif%}
+                
+            </div>
+        </div>
+        <div class="container mt-5">
+            <h2>Comments</h2>
+            <div class="list-group">
+                {% for comment in comments %}
+                <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{comment.user}}</h5>
+                    </div>
+                    <p class="mb-1">{{ comment.comment }}</p>  <!-- Ensure your comment model's text field is named 'comment' -->
+                    <small class="text-muted">this user is baka</small>  <!-- Static text; replace with user info if available -->
+                </div>
+                {% empty %}
+                <div class="list-group-item">
+                    No comments to display.
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>    
+      
+{% endblock %}
