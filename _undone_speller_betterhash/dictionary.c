@@ -23,7 +23,7 @@ typedef struct node
 } node;
 
 // TODO: Choose number of buckets in hash table ------- reading the dict.
-const unsigned int N = 20000; //
+const unsigned int N = 20001; //
 
 // Hash table
 node *table[N];
@@ -106,7 +106,7 @@ bool load(const char *dictionary)
         counter++;
 
     }
-    
+
        for (int i = 0; i < N; i++) { // Iterate over each bucket
         int count = 0; // Initialize node counter for the current bucket
         node *cursor = table[i]; // Start with the first node in the bucket
