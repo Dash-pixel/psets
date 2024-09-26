@@ -33,6 +33,7 @@ class Minesweeper():
         # At first, player has found no mines
         self.mines_found = set()
 
+
     def print(self):
         """
         Prints a text-based representation
@@ -100,7 +101,7 @@ class Sentence():
 
     def __str__(self):
         return f"{self.cells} = {self.count}"
-    
+
 
     def known_mines(self):
         """
@@ -151,6 +152,15 @@ class MinesweeperAI():
 
         self.moves = set(self.create_moves())
 
+    def __str__(self):
+        string = "Knowledge ["
+        for sentence in self.knowledge:
+            string += str(sentence) + ", "
+
+        # Remove the last comma and space, then close the bracket
+        string = string.rstrip(", ") + "]"
+        return string if self.knowledge else ""
+
     def create_moves(self):
         return {(row, col) for row in range(self.height) for col in range(self.width)}
 
@@ -161,7 +171,6 @@ class MinesweeperAI():
         """
 
         self.mines.add(cell)
-
         for sentence in self.knowledge:
             sentence.mark_mine(cell)
 
@@ -170,40 +179,63 @@ class MinesweeperAI():
         Marks a cell as safe, and updates all knowledge
         to mark that cell as safe as well.
         """
-
         self.safes.add(cell)
         for sentence in self.knowledge:
             sentence.mark_safe(cell)
 
-    def checking(self, new_sentence=None):
-        for sentence in self.knowledge:
-            if len(sentence.cells) == 0:
-                continue
+    def resolve_check(self):
+        flag = False
 
+        for sentence in self.knowledge.copy():
             if sentence.count == 0:
                 cells_copy = set(sentence.cells)
                 for cell in cells_copy:
                     self.mark_safe(cell)
-                sentence.cells = set()
-                self.checking(None)
-            
-            if sentence.count == len(sentence.cells):
+                    flag = True
+
+            elif sentence.count == len(sentence.cells):
                 cells_copy = set(sentence.cells)
                 for cell in cells_copy:
                     self.mark_mine(cell)
-                sentence.cells = set()
-                self.checking(None)
-            
-            if new_sentence:
+                    flag = True
+
+        # if my sentence will be equal to len == 0 am i going to update it or not?
+
+        return flag
+
+    def sub_check(self, new_sentence):
+        flag = False
+
+        if not new_sentence.cells:
+            return flag
+
+        for sentence in self.knowledge:
+
+            if sentence != new_sentence and sentence.cells:
                 if new_sentence.cells.issubset(sentence.cells):
                     sentence.cells = sentence.cells - new_sentence.cells
                     sentence.count = sentence.count - new_sentence.count
-                    self.checking(sentence)
+                    flag = True
+                    break
 
                 if sentence.cells.issubset(new_sentence.cells):
                     new_sentence.cells = new_sentence.cells - sentence.cells
                     new_sentence.count = new_sentence.count - sentence.count
-                    self.checking(new_sentence)
+
+                    flag = True
+                    break
+        return flag
+
+    def checking(self, sentence):
+        while self.resolve_check() or self.sub_check(sentence):
+            new_know = []
+            for i in self.knowledge:
+                if i.cells:
+                    new_know.append(i)
+            self.knowledge = new_know
+
+        # why sentances that have mines or have safes not updated straight away
+        # how are there still sentances that have 0 count?
 
     def add_knowledge(self, cell, count):
         """
@@ -225,11 +257,16 @@ class MinesweeperAI():
             if 0 <= x + i < self.width:
                 for j in range(-1, 2):
                     if 0 <= y + j < self.height:
+                        if (i+x, j+y) in self.mines:
+                            sentence.count -= 1
                         if (i+x, j+y) not in self.safes and (i+x, j+y) not in self.mines:
                             sentence.cells.add((i+x, j+y))
-        self.knowledge.append(sentence)
 
-        self.checking(sentence)
+        # bug found -- im not minusing the mines from the count, but im skipping them!!!
+
+        if sentence.cells:
+            self.knowledge.append(sentence)
+            self.checking(sentence)
 
     def make_safe_move(self):
         """
@@ -241,12 +278,17 @@ class MinesweeperAI():
         and self.moves_made, but should not modify any of those values.
         """
 
+
+
         q = self.safes - self.moves_made
+
+
         if q:
+
             return random.choice(list(q))
         else:
             return None
-        
+
     def make_random_move(self):
         """
         Returns a move to make on the Minesweeper board.
@@ -254,23 +296,20 @@ class MinesweeperAI():
             1) have not already been chosen, and
             2) are not known to be mines
         """
-        
+
 
         """
         ratio = 1
         if len(self.knowledge) > 4:
             for sentence in self.knowledge:
-         
+
                 if sentence.cells and sentence.count/len(sentence.cells) < ratio:
                     ratio = sentence.count/len(sentence.cells)
                     safest = sentence
 
             return random.choice(list(safest.cells))
-        
+
         else:"""
-
-        return random.choice(list((self.moves - self.mines) - self.moves_made))
-
-
-        #return random.choise(list(self.moves - self.moves_made - self.mines))
-#jkkjhk
+        moves = list((self.moves - self.mines) - self.moves_made)
+        if moves:
+            return random.choice(moves)
