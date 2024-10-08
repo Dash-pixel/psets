@@ -72,10 +72,10 @@ def transition_model(corpus, page, damping_factor):
         output[i] = common_prob + ((link_prob) if (i in corpus[page]) else 0)
         #but output sums up to 1 so how does this work ?
         prob_sum += output[i]
-    
+
 
     for key, value in output.items():
-        output[key] = float(value)/float(prob_sum) # ok value is string 
+        output[key] = float(value)/float(prob_sum) # ok value is string
 
     return output
 
@@ -132,7 +132,7 @@ def iterate_pagerank(corpus, damping_factor):
     while True:
         previous_ranks = copy.deepcopy(page_ranks)
 
-        for page in corpus.keys(): 
+        for page in corpus.keys():
 
             sum_prob = 0
             for other_page in corpus.keys():
@@ -147,11 +147,11 @@ def iterate_pagerank(corpus, damping_factor):
 
             page_ranks[page] = common_prob + damping_factor * (sum_prob)
 
-        if all(abs(page_ranks[key] - previous_ranks[key]) <= 0.001 for key in page_ranks):
+        if all(abs(page_ranks[key] - previous_ranks[key]) <= 0.00001 for key in page_ranks):
             break
 
-    return page_ranks    
-    
+    return page_ranks
+
 
 if __name__ == "__main__":
     main()
