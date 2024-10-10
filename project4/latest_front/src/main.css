@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply bg-dark-bg text-dark-txt font-outfit;
+    }
+    a {
+      @apply no-underline text-inherit;
+    }
+    a:hover {
+      @apply no-underline text-inherit;
+        color: rgb(43, 226, 218);
+    }
+  }
