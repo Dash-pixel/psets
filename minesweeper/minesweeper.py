@@ -101,7 +101,7 @@ class Sentence():
 
     def __str__(self):
         return f"{self.cells} = {self.count}"
-    
+
 
     def known_mines(self):
         """
@@ -162,7 +162,7 @@ class MinesweeperAI():
         # Remove the last comma and space, then close the bracket
         string = string.rstrip(", ") + "]"
         return string if self.knowledge else ""
-    
+
     def to_set(self):
         tuple_set = set()
         for sentence in self.knowledge:
@@ -181,7 +181,7 @@ class MinesweeperAI():
         self.mines.add(cell)
         for sentence in self.knowledge:
             sentence.mark_mine(cell)
-            
+
     def mark_safe(self, cell):
         """
         Marks a cell as safe, and updates all knowledge
@@ -199,16 +199,16 @@ class MinesweeperAI():
                 for cell in sentence.cells.copy():
                     self.mark_safe(cell)
                     flag = True
-            
+
             elif sentence.count == len(sentence.cells):
                 for cell in sentence.cells.copy():
                     self.mark_mine(cell)
                     flag = True
-        
+
         # if my sentence will be equal to len == 0 am i going to update it or not?
 
         return flag
-         
+
     def sub_check(self):
 
         flag = False
@@ -221,14 +221,13 @@ class MinesweeperAI():
 
             #is this logical condition though?
 
-            if ((tuple(created_sentence.cells), created_sentence.count)) not in self.duplicate_knowledge:
-                
-                self.duplicate_knowledge.add((tuple(created_sentence.cells), created_sentence.count))
-                self.knowledge.append(created_sentence)
-                to_check.append(created_sentence)
-                return True
-            else:
-                False
+            #if ((tuple(created_sentence.cells), created_sentence.count)) not in self.duplicate_knowledge:
+
+                #self.duplicate_knowledge.add((tuple(created_sentence.cells), created_sentence.count))
+            self.knowledge.append(created_sentence)
+            to_check.append(created_sentence)
+            return True
+
 
 
         while to_check:
@@ -247,7 +246,7 @@ class MinesweeperAI():
                 if sentence.cells.issubset(new_sentence.cells):
                     if add_to_check(sentence, new_sentence):
                         flag = True
-        
+
         return flag
 
     def checking(self):
@@ -281,13 +280,13 @@ class MinesweeperAI():
                             sentence.count -= 1
                         if (i+x, j+y) not in self.safes and (i+x, j+y) not in self.mines:
                             sentence.cells.add((i+x, j+y))
-        
+
         # bug found -- im not minusing the mines from the count, but im skipping them!!!
 
-        if sentence.cells and ((tuple(sentence.cells), sentence.count) not in self.duplicate_knowledge):
-            self.duplicate_knowledge.add(tuple(sentence.cells))
-            self.knowledge.append(sentence)
-            self.checking()    
+        #if sentence.cells and ((tuple(sentence.cells), sentence.count) not in self.duplicate_knowledge):
+        #self.duplicate_knowledge.add(tuple(sentence.cells))
+        self.knowledge.append(sentence)
+        self.checking()
 
     def make_safe_move(self):
         """
@@ -299,14 +298,14 @@ class MinesweeperAI():
         and self.moves_made, but should not modify any of those values.
         """
 
-        q = self.safes - self.moves_made  
+        q = self.safes - self.moves_made
 
         if q:
 
             return random.choice(list(q))
         else:
             return None
-        
+
     def make_random_move(self):
         """
         Returns a move to make on the Minesweeper board.
@@ -314,21 +313,20 @@ class MinesweeperAI():
             1) have not already been chosen, and
             2) are not known to be mines
         """
-        
+
 
         """
         ratio = 1
         if len(self.knowledge) > 4:
             for sentence in self.knowledge:
-         
+
                 if sentence.cells and sentence.count/len(sentence.cells) < ratio:
                     ratio = sentence.count/len(sentence.cells)
                     safest = sentence
 
             return random.choice(list(safest.cells))
-        
+
         else:"""
         moves = list((self.moves - self.mines) - self.moves_made)
         if moves:
             return random.choice(moves)
-       
