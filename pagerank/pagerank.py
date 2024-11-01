@@ -140,29 +140,51 @@ def iterate_pagerank(corpus, damping_factor):
     for page in corpus:
         page_ranks[page] = 1/len(corpus)
 
+
+
+
+
+
+
     while True:
         previous_ranks = copy.deepcopy(page_ranks)
 
+
+
+
+
+        #corpus is a dict of sets page: set of pages
         for page in corpus.keys(): 
+            #going over each page summing up the chanse of going to another page
 
             sum_prob = 0
-            for other_page in corpus.keys():
+            for other_page in corpus.keys(): 
+
+                if not corpus[other_page]: # if other_page has no links
+                    sum_prob += previous_ranks[other_page]/len(corpus)
+                    print(previous_ranks[other_page]/len(corpus))
+                    #using no 
+                
                 if other_page == page:
                     continue
-
-                if not corpus[other_page]:
-                    sum_prob += previous_ranks[other_page]/len(corpus)
 
                 if page in corpus[other_page]:
                     sum_prob += previous_ranks[other_page]/len(corpus[other_page])
 
             page_ranks[page] = common_prob + damping_factor * (sum_prob)
 
+
+
+
+
+
         if all(abs(page_ranks[key] - previous_ranks[key]) <= 0.001 for key in page_ranks):
             break
 
+    print(page_ranks)
     return page_ranks    
     
 
 if __name__ == "__main__":
+    #iterate_pagerank({'1': {'2'}, '2': {'3', '1'}, '3': {'5', '4', '2'}, '4': {'1', '2'}, '5': set()}, 0.85)
     main()
