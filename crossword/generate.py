@@ -144,6 +144,8 @@ class CrosswordCreator():
         # i feel ac3 should have been used with custom arcs passed in as an argument
         # self.crossword.overlaps[x][y] 
         # returns tuple with index where
+        # need to handle multiple rounds of updates
+        # returns False if no solution possible
 
 
         if arcs is None:
@@ -151,17 +153,17 @@ class CrosswordCreator():
                     for x, y in self.crossword.overlaps.keys() 
                     if self.crossword.overlaps[x, y]
                     ]
-            #wrong code
+            #those arcs are both ways, right?
         
         while arcs:
             x, y = arcs.pop()
-            if self.revise(x, y):
+            if self.revise(x, y): #if revision was made, that means that some value was removed from x's domain
                 if self.domains[x] == 0:
                     return False
                 else:
                     for i in self.crossword.variables:
-                        if i != x and self.crossword.overlaps[x, i]:
-                            arcs.append((x, i))
+                        if i != x and self.crossword.overlaps[i, x]:
+                            arcs.append((i, x))
 
                     #add to arcs all the arcs that intersect with x
         
@@ -198,6 +200,9 @@ class CrosswordCreator():
         """
         # assignment[variable] = 'word'
         # Check if All Assigned Words are Distinct: -- also check whether there is a word with no variable?
+        # :( consistent identifies when assignment doesn't meet unary constraints
+        # expected "False", not "True"
+
         word_set = set()
         for word in assignment.values():
             if word in word_set:
