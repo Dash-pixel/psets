@@ -25,7 +25,7 @@ class CrosswordCreator():
             for _ in range(self.crossword.height)
         ]
 
-        
+
         for variable, word in assignment.items():
             direction = variable.direction
             for k in range(len(word)):
@@ -142,23 +142,23 @@ class CrosswordCreator():
         return False if one or more domains end up empty.
         """
         # i feel ac3 should have been used with custom arcs passed in as an argument
-        # self.crossword.overlaps[x][y] 
+        # self.crossword.overlaps[x][y]
         # returns tuple with index where
         # need to handle multiple rounds of updates
         # returns False if no solution possible
 
 
         if arcs is None:
-            arcs = [(x, y) 
-                    for x, y in self.crossword.overlaps.keys() 
+            arcs = [(x, y)
+                    for x, y in self.crossword.overlaps.keys()
                     if self.crossword.overlaps[x, y]
                     ]
             #those arcs are both ways, right?
-        
+
         while arcs:
             x, y = arcs.pop()
             if self.revise(x, y): #if revision was made, that means that some value was removed from x's domain
-                if self.domains[x] == 0:
+                if self.domains[x] == 0 or self.domains[y]:
                     return False
                 else:
                     for i in self.crossword.variables:
@@ -166,7 +166,7 @@ class CrosswordCreator():
                             arcs.append((i, x))
 
                     #add to arcs all the arcs that intersect with x
-        
+
         return True
 
     def assignment_complete(self, assignment):
@@ -175,13 +175,13 @@ class CrosswordCreator():
         crossword variable); return False otherwise.
         """
         # THIS IS INCORRECT - ASSIGNMENT IS dict
-        # go over each variable and check whether there is a value 
+        # go over each variable and check whether there is a value
         for variable in self.crossword.variables:
             #value is a dict isnt it?
             if variable not in assignment:
                 return False
-        
-        return True 
+
+        return True
 
     def consistent(self, assignment):
         """
@@ -193,8 +193,8 @@ class CrosswordCreator():
 
         An assignment is a dictionary where the keys are Variable objects and the values are strings representing the words those variables will take on.
         Note that the assignment may not be complete: not all variables will necessarily be present in the assignment.
-        An assignment is consistent if it satisfies all of the constraints of the problem: 
-        all values are distinct, every value is the correct length, 
+        An assignment is consistent if it satisfies all of the constraints of the problem:
+        all values are distinct, every value is the correct length,
         and there are no conflicts between neighboring variables.
         The function should return True if the assignment is consistent and return False otherwise.
         """
@@ -211,8 +211,8 @@ class CrosswordCreator():
                 word_set.add(word)
 
 
-        # Ensure that for every pair of assigned variables that overlap 
-        # (i.e., share a position in the crossword), 
+        # Ensure that for every pair of assigned variables that overlap
+        # (i.e., share a position in the crossword),
         # the letters in the overlapping positions must match.
         #word_set - self.crossword.neighbors(word)
         for x in assignment.keys():
@@ -221,8 +221,8 @@ class CrosswordCreator():
                     (i, j) = self.crossword.overlaps[x, y]
                     if assignment[x][i] is not assignment[y][j]:
                         return False
-        return True 
-            
+        return True
+
     def order_domain_values(self, var, assignment):
         """
         Return a list of values in the domain of `var`, in order by
@@ -244,12 +244,12 @@ class CrosswordCreator():
                 neighbor_words = self.domains[neighbor]
                 letter_counter = Counter()
                 for word in neighbor_words:
-                    #counts number of each letter 
+                    #counts number of each letter
                     letter_counter[word[j]] += 1
-                
+
                 for word in this_words:
                     exclusion_counter[word] += (len(neighbor_words) - letter_counter[word[i]])
-                
+
         return [x[0] for x in sorted(exclusion_counter.items(), key= lambda x:x[1])]
 
     def select_unassigned_variable(self, assignment):
@@ -259,12 +259,12 @@ class CrosswordCreator():
         in its domain.
 
         If there is a tie, choose the variable with the highest
-        degree. 
-        
+        degree.
+
         If there is a tie, any of the tied variables are acceptable
         return values.
         """
-        # could do a tiny class to structure, 
+        # could do a tiny class to structure,
         # but im just making the length the first value in a list
 
         choise = None
@@ -282,10 +282,10 @@ class CrosswordCreator():
 
             elif len(values) == choise[0]:
                 choise.append(key)
-            
+
         if len(choise) > 2:
             degree_choise = None
-            assignment_set = set(assignment.keys()) 
+            assignment_set = set(assignment.keys())
 
             for variable in choise[1::]:
                 degrees = len(self.crossword.neighbors(variable) - assignment_set)
@@ -297,7 +297,7 @@ class CrosswordCreator():
         elif len(choise) == 2:
             return choise[1]
 
-        return None 
+        return None
 
     def backtrack(self, assignment):
         """
@@ -310,7 +310,7 @@ class CrosswordCreator():
         """
         if self.assignment_complete(assignment):
             return assignment
-        
+
         var = self.select_unassigned_variable(assignment)
 
         for value in self.order_domain_values(var, assignment):
