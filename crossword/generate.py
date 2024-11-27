@@ -158,7 +158,7 @@ class CrosswordCreator():
         while arcs:
             x, y = arcs.pop()
             if self.revise(x, y): #if revision was made, that means that some value was removed from x's domain
-                if self.domains[x] == 0:
+                if len(self.domains[x]) == 0:
                     return False
                 else:
                     for i in self.crossword.variables:
