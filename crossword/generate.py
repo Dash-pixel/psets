@@ -203,6 +203,11 @@ class CrosswordCreator():
         # :( consistent identifies when assignment doesn't meet unary constraints
         # expected "False", not "True"
 
+        for v in self.domains.keys():
+            for x in self.domains[v].copy():
+                if len(x) != v.length: # here need to find the amount of spaces for variable v
+                    return False
+
         word_set = set()
         for word in assignment.values():
             if word in word_set:
