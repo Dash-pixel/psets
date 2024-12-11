@@ -1,0 +1,38 @@
+# Python files
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+
+# Test files
+tests/
+test_*.py
+
+# Build files
+build/
+dist/
+*.egg-info
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Logs and other non-code files
+*.log
+*.out
+*.err
+*.pid
+*.tmp
+*.bak
+
+# Virtual environment
+venv/
+env/
+
+# Package files
+*.egg-info
+.dist-info
+
+# macOS
+.DS_Store
