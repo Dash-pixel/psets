@@ -106,8 +106,8 @@ class NimAI():
 
         [(0, 0, 0, 2), (3, 2)] --> tuple of (situation, (possible)action)
         """
-        if self.q[state, action]:
-            return self.q[state, action]
+        if self.q[(state, action)]:
+            return self.q[(state, action)]
 
         else:
             # might need to also add the key pair to the q?
@@ -132,7 +132,7 @@ class NimAI():
         # so are the state and action passed in only to select the correct thing in the q dictionary
         # it makes no sense bc we have already recieved old_q passed in, why not just get old_q from the dictionary
         new_q = old_q + self.alpha * (future_rewards + reward - old_q)
-        self.q[state, action] = new_q
+        self.q[(state, action)] = new_q
 
     def best_future_reward(self, state):
         """
