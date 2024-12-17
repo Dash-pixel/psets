@@ -1,6 +1,7 @@
 import math
 import random
 import time
+import sys
 
 
 class Nim():
@@ -106,8 +107,9 @@ class NimAI():
 
         [(0, 0, 0, 2), (3, 2)] --> tuple of (situation, (possible)action)
         """
-        if self.q[(state, action)]:
-            return self.q[(state, action)]
+
+        if (tuple(state), action) in self.q:
+            return self.q[(tuple(state), action)]
 
         else:
             # might need to also add the key pair to the q?
@@ -132,7 +134,11 @@ class NimAI():
         # so are the state and action passed in only to select the correct thing in the q dictionary
         # it makes no sense bc we have already recieved old_q passed in, why not just get old_q from the dictionary
         new_q = old_q + self.alpha * (future_rewards + reward - old_q)
-        self.q[(state, action)] = new_q
+
+        # print(self.q)
+        # print(type(self.q))
+
+        self.q[tuple( state ), action] = new_q
 
     def best_future_reward(self, state):
         """
@@ -189,7 +195,7 @@ class NimAI():
         
             action_value_tuple = [(action, self.get_q_value(state, action)) for action in actions]
 
-            best_action_, max_value = max(action_value_tuple, lambda x: x[1])
+            best_action_, max_value = max(action_value_tuple, key=lambda x: x[1])
 
             return best_action_
 
