@@ -7,14 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        'active-blue': 'rgb(43,226,218)',
-        'dark-bg': 'rgb(12,19,34)',
-        'light-bg': 'rgb(17,28,48)',
-        'light-txt': 'rgb(251,255,253)',
-        'dark-txt': 'rgb(107,127,159)',
-        'my-red': 'rgb(236,47,110)',
-        'my-orange': 'rgb(252,146,120)',
-        'my-blue': 'rgb(6,49,104)',
+        colors: {
+          'light-gray': '#BDBDBD',
+          'dark-gray': '#333',
+          'medium-gray': '#ACACAC',
+          'black': '#000',
+          'off-white': '#ECE1D9',
+          'brown': '#423838',
+          'dark-red': '#581622',
+          'white': '#fff',
+          'deep-red': '#7A002B',
+          'deep-burgundy': '#491E1E',
+          'rose-red': '#B73947',
+          'charcoal': '#363940',
+          'light-black': '#666',
+          'medium-black': '#555',
+          'light-rose': '#ad003d',
+          'red-contrast': '#9F1C36',
+          'gray': '#999'
+        }
       },
       fontFamily: {
         'outfit': ['Outfit', 'sans-serif'], //
