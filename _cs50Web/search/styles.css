@@ -1,0 +1,96 @@
+.body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.search form {
+  display: flex;
+  width: 584px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-button {
+  background-color: #f8f9fa;
+  color: #333;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#google-logo { /* if screen is smaller then 600 decrease the image size */
+  width: 100%;
+  text-align: center;
+  height: 92px;
+}
+#google-logo img {
+  width: 272px;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0px; /* Distance from the top of the viewport */
+  width: 100%;
+  padding: auto;
+}
+
+.buttons {
+  height: 92px;
+}
+
+.advanced-title {
+  height: auto;
+  color: rgb(217, 48, 37);
+  margin: 30px;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr minmax(100px, 5fr) 1.5fr;
+  grid-template-rows: repeat(5, auto);
+  width: 80vw;
+  text-align: left;
+  grid-gap: 30px;
+}
+
+.operator-descr {
+  padding: 10px;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+}
+
+.examples {
+  padding: 10px;
+  font-size: 11px;
+  font-family: arial, sans-serif;
+}
+
+.advanced-box {
+  display: grid;
+  place-items: center;
+}
+
+/*
+@media screen and (min-width: 425px)
+.home_minimalSearchWrap__DMXiI {
+    width: 80%;
+}
+*/
+
+/*# sourceMappingURL=styles.css.map */

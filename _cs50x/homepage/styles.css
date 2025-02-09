@@ -1,0 +1,57 @@
+.background-yellow{
+    background-color:#F5BE49
+}
+
+.background-brown{
+    background-color:#623E2A
+}
+
+.background-white{
+    background-color:#F4F4F4
+}
+
+.primary-black{
+    color:#272727
+}
+
+.primary-purple{
+    color:#8B3DFF
+}
+
+.primary-white{
+    color:#F4F4F4
+}
+@font-face{
+    font-family:'Mager';
+    src: url('/fonts/Catchy-Mager-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Coco';
+    src: url('/fonts/CocoGothic-UntraLight_trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'OpenSauce';
+    src: url('/fonts/OpenSauceOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'OpenSauce';
+    src: url('/fonts/OpenSauceOne-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'OpenSauce';
+    src: url('/fonts/OpenSauceOne-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+

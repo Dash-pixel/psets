@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Select all elements with the class 'wrong'
+                const wrong = document.querySelectorAll('.wrong');
+                const right = document.querySelector('#right');
+                // Loop through all the 'wrong' buttons
+                wrong.forEach(function(wrongButton) {
+                    // Add an onclick event listener to each 'wrong' button
+                    wrongButton.onclick = function() {
+                        // Change the background color of the clicked button
+                        this.style.backgroundColor = 'red';
+                        document.querySelector('#conclusion').innerHTML = 'INCORRECT';
+                    };
+                });
+                // Add an onclick event listener to the 'right' button
+                right.onclick = function() {
+                    this.style.backgroundColor = 'green';
+                    document.querySelector('#conclusion').innerHTML = 'CORRECT!';
+                };
+            // User submits form
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    let userAnswer = (document.querySelector('#userAnswer').value).toLowerCase();
+                    if (userAnswer == 'yes')
+                    {
+                        document.querySelector('#answer').innerHTML = 'CORRECT';
+                    }
+                    else
+                    {
+                        document.querySelector('#answer').innerHTML = 'INCORRECT';
+                    }
+                    // Prevent the form from submitting
+                    event.preventDefault();
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Is Alexandr gay?</h3>
+                <button class='wrong'>HE IS STRAIGHT!! tverdo i chotko</button>
+                <button class='wrong'>he is not</button>
+                <button id='right'>He is femboy sussy baka :3</button>
+                <button class='wrong'>he is VERY musculine</button>
+                <p id='conclusion'>NOTHIN</p>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Is Alexandr denying the fact that his work is useless?</h3>
+                <form>
+                    <input type="text" id="userAnswer" name="userAnswer" placeholder="Type your answer here...">
+                    <button type="submit">Confirm</button>
+                </form>
+                <p id='answer'>NOTHIN</p>
+            </div>
+        </div>
+    </body>
+</html>

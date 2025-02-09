@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+    <table class="table">
+        <tr>
+            <th>symbol</th>
+            <th>shares</th>
+            <th>timestamp price</th>
+            <th>timestamp</th>
+        </tr>
+        {% for row in history_rows %}
+        <tr>
+            <td>{{row.symbol}}</td>
+            <td>{{row.shares}}</td>
+            <td>${{row.timestamp_price | usd }}</td>
+            <td>{{row.timestamp}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

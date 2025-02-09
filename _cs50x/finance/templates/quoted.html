@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registration
+{% endblock %}
+
+{% block main %}
+    <p>
+        {{stock_info.name}}
+        {{stock_info.price | usd }}
+        {{stock_info.symbal}}
+    </p>
+{% endblock %}
