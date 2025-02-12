@@ -1,0 +1,37 @@
+# VS Code
+.vscode/
+.vscode-test/
+**/.vscode/
+**/.vscode-test/
+*.code-workspace
+*.code-settings
+
+# Virtual Environments
+venv/
+.venv/
+env/
+envs/
+**/.venv/
+**/venv/
+**/env/
+**/envs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.egg
+.pytest_cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+__MACOSX
+
+# Other common ignores (optional, but good practice)
+*.swp  # Swap files
+*~ # Backup files
+.cache
+.history
+*.log
+*.tmp
