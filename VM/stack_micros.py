@@ -90,43 +90,15 @@ function_dict = {
     'or': setD + orD_M
 }
 
-"""def add():
-    return setD + sumM_D
-    
-def sub():
-    return setD + minM_D
-def neg():
-    return select_stack + decrement_a + negM
 
-def bit_not():
-    return select_stack + decrement_a + notM
-
-def bit_and():
-    return setD + andD_M
-
-def bit_or():
-    return setD + orD_M
-"""
-"""
-(LABEL)
-    
-    @RAM[1 - 4]
-    D=M
-
-    (function to be repeated 4 times)
-
-    @RAM[0]
-    A=M
-    M=D
-    @RAM[0] (function to select pointer)
-    M=M+1
-
-    (above should be done for RAM[1]-RAM[4] - can be also a function?)
+save_frame = [f"""
 
 
-    BUT i also needed to make the new header
-    how to do function arguments? need to set pointer to them first thing when function is created
 
-    select pointer and minus 4 to it to set current fucntion frame 
 
-"""
+
+
+
+
+
+"""]
