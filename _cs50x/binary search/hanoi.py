@@ -4,16 +4,18 @@ rod_a = list(range(n, 0, -1))
 rod_b = []
 rod_c = []
 
-#start and target are lists (rods)
+
+# start and target are lists (rods)
 def sorting(n, start, target, other):
     # base case
     if n == 1:
-        start = start[:-1]
         target.append(n)
         return
     else:
-        sorting(n-1, start, other)
-        
+        sorting(n - 1, start, other, target)
+        target.append(start.pop())
+        sorting(n - 1, other, target, start)
+
 
 """
      move n-1 to non-target rod -- here we should call the function recursivelly
@@ -24,8 +26,8 @@ def sorting(n, start, target, other):
      rod_c.append(rod_a[-1])
      rod_a = rod_a[:-1]
 """
-#quite importaint that with tower of hanoi of 3 we want to place the first bagel on the futherest rod
-#but with 4 on the closesed
+# quite importaint that with tower of hanoi of 3 we want to place the first bagel on the futherest rod
+# but with 4 on the closesed
 # because odd and even - we want to finish on the futherest away
 # in 1 .. 1 move to C
 # in 2 .. 1 move to B -- 2 move to C

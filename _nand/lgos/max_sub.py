@@ -1,29 +1,30 @@
-def maxSubArray(nums):
-    pref_sum = 0
-    suff_sum = 0
-    prefex = []
-    suffix = []
-
-    for element in nums:
-        pref_sum += element
-        prefex.append(pref_sum)
-    
-    for element in nums[::-1]:
-        suff_sum += element
-        suffix.append(suff_sum)
-    
-    #tuples 
-    max_pref = max(enumerate(prefex), key = lambda x: x[1])
-    max_suff = max(enumerate(suffix[::-1]), key = lambda x: x[1])
-
-    if max_pref[0] > max_suff[0]:
-        print(nums[max_suff[0]: max_pref[0]+1])
-        return sum(nums[max_suff[0]: max_pref[0]+1])
-    else:
-        print(max_pref)
-        print(max_suff)
-        
-        pass
+# bad solution
+def max_subarray_squared(nums):
+    max_sum = 0
+    for i in range(len(nums)):
+        sum = 0
+        for j in nums[i:]:
+            sum += j
+            if sum > max_sum:
+                max_sum = sum
+    return max_sum
 
 
-maxSubArray([2, 3, 1, -2, -3, -4, 5, 1, 1, -1])
+# GOOD SOLUTION
+def max_subarray_linear(nums):
+    sum_ = nums[0]
+    max_sum = nums[0]
+
+    for num in nums[1:]:
+        if sum_ < 0:
+            sum_ = 0
+
+        sum_ += num
+
+        if sum_ > max_sum:
+            max_sum = sum_
+
+    return max_sum
+
+
+# maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
